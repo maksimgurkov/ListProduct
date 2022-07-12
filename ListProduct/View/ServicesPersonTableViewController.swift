@@ -32,7 +32,7 @@ class ServicesPersonTableViewController: UITableViewController {
         let services = person.basketService[indexPath.row]
         cell.nameServicesLabel.text = services.name
         cell.descriptionServicesLabel.text = services.descriptionService
-        cell.countServicesLabel.text = "1"
+        cell.countServicesLabel.text = "\(services.count)"
         cell.priceServicesLabel.text = "\(services.price)"
         return cell
     }

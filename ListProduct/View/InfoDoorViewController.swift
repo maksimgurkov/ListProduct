@@ -91,7 +91,6 @@ class InfoDoorViewController: UIViewController {
         doorImage.image = UIImage(named: doorPerson.nameDoor)
         descriptionDoorLabel.text = doorPerson.descriptionDoor
         specificationsDoorLabel.text = doorPerson.specifications
-        priceDoor550Label.text = "\(doorPerson.price) р. за 1 шт."
     }
     
     //MARK: - Door550
@@ -104,9 +103,22 @@ class InfoDoorViewController: UIViewController {
         doors.descriptionDoor = doorPerson.descriptionDoor
         doors.price = doorPerson.price
         doors.dimensions = "550*1900"
-        StorageManager.shared.saveProduct(persone, door: doors)
-        resultCountDoors550 += 1
-        countDoor550Label.text = "\(resultCountDoors550)"
+        doors.countDoors = 1
+        if persone.basket.isEmpty {
+            countDoor550Label.text = "\(doors.countDoors)"
+            priceDoor550Label.text = "\(doors.price) р."
+            StorageManager.shared.saveProduct(persone, door: doors)
+        } else if !persone.basket.isEmpty {
+            for door in persone.basket {
+                if doors.dimensions == door.dimensions {
+                    StorageManager.shared.renameDoor(door, doors: doorPerson, newValue: 1)
+                    countDoor550Label.text = "\(door.countDoors)"
+                    priceDoor550Label.text = "\(door.price) р."
+                }
+            }
+        }
+//        resultCountDoors550 += 1
+//        countDoor550Label.text = "\(resultCountDoors550)"
     }
     
     //MARK: - Door600
@@ -264,10 +276,13 @@ class InfoDoorViewController: UIViewController {
     }
     
     private func countProduct() {
-        for door in persone.basket {
+        if persone.basket.isEmpty {
+            priceDoor550Label.text = "\(doorPerson.price) р."
+        } else {
+            for door in persone.basket {
             if door.dimensions == "550*1900" {
-                resultCountDoors550 += 1
-                countDoor550Label.text = "\(resultCountDoors550)"
+                countDoor550Label.text = "\(door.countDoors)"
+                priceDoor550Label.text = "\(door.price) р."
             }
             if door.dimensions == "600*2000" {
                 resultCountDoors600 += 1
@@ -311,7 +326,7 @@ class InfoDoorViewController: UIViewController {
                 
             }
         }
-        
+        }
         
         
     }

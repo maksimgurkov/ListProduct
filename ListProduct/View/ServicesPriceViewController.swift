@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import RealmSwift
 
 class ServicesPriceViewController: UIViewController {
     
@@ -42,7 +43,15 @@ class ServicesPriceViewController: UIViewController {
             servis.descriptionService = "Думонтаж межкомнатной двери"
             servis.price = 1500
             servis.count = 1
-            StorageManager.shared.saveSerwice(person, service: servis)
+            if person.basketService.isEmpty {
+                StorageManager.shared.saveSerwice(person, service: servis)
+            } else if !person.basketService.isEmpty {
+                for servise in person.basketService {
+                    if servis.descriptionService == servise.descriptionService {
+                        StorageManager.shared.renameServis(servise, newValue: 1)
+                    }
+                }
+            }
         case catOneButton:
             let servis = Services()
             servis.name = "Монтаж"

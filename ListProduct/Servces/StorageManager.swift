@@ -29,11 +29,6 @@ class StorageManager {
         }
     }
     
-    func edit(_ door: Doors, newValue: Int) {
-        write {
-            door.countDoors += newValue
-        }
-    }
     
     func saveProduct(_ persone: Person, door: Doors) {
         write {
@@ -41,9 +36,22 @@ class StorageManager {
         }
     }
     
+    func renameDoor(_ door: Doors, doors: Door, newValue: Int) {
+        write {
+            door.countDoors += newValue
+            door.price += doors.price
+        }
+    }
+    
     func saveSerwice(_ persone: Person, service: Services) {
         write {
             persone.basketService.append(service)
+        }
+    }
+    
+    func renameServis(_ servis: Services, newValue: Int) {
+        write {
+            servis.count += newValue
         }
     }
     

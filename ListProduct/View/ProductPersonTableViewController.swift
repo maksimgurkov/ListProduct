@@ -34,7 +34,7 @@ class ProductPersonTableViewController: UITableViewController {
         cell.materialDoorLabel.text = product.material
         cell.nameDoorLabel.text = product.nameDoor
         cell.dimensionsDoorLabel.text = product.dimensions
-        cell.countDoorLabel.text = "1"
+        cell.countDoorLabel.text = "\(product.countDoors)"
         cell.priceDoorLabel.text = "\(product.price)"
         return cell
     }

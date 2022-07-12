@@ -889,6 +889,9 @@
                                                             </label>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="5000 р. за 1 шт." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="b2X-Vr-mnD">
                                                                 <rect key="frame" x="324.5" y="0.0" width="141.5" height="31"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="width" constant="141.5" id="Fgp-k2-iMH"/>
+                                                                </constraints>
                                                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                                                 <nil key="textColor"/>
                                                                 <nil key="highlightedColor"/>
