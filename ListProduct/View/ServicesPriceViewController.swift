@@ -18,6 +18,8 @@ class ServicesPriceViewController: UIViewController {
     @IBOutlet weak var catThreeBotton: UIButton!
     @IBOutlet weak var installationLockButton: UIButton!
     
+    @IBOutlet weak var countSeviceLabel: UILabel!
+    
     
     @IBOutlet weak var dismantlingInfoButton: UIButton!
     @IBOutlet weak var catOneInfoButton: UIButton!
@@ -28,6 +30,7 @@ class ServicesPriceViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         title = "Выбор услуг"
+        countService(labelCount: countSeviceLabel)
         dismantlingButton.layer.cornerRadius = 8
         catOneButton.layer.cornerRadius = 8
         catTwoButton.layer.cornerRadius = 8
@@ -35,23 +38,42 @@ class ServicesPriceViewController: UIViewController {
         installationLockButton.layer.cornerRadius = 8
     }
     
+    private func saveNewSerwice(name: String, descriptionService: String, price: Int, count: Int, labelCount: UILabel) {
+        let services = Services()
+        services.name = name
+        services.descriptionService = descriptionService
+        services.price = price
+        services.count = count
+        if person.basketService.isEmpty {
+            StorageManager.shared.saveSerwice(person, service: services)
+            labelCount.text = "\(services.count)"
+        } else if !person.basketService.isEmpty {
+            for service in person.basketService {
+                if services.descriptionService == service.descriptionService {
+                    StorageManager.shared.renameServis(service, newValue: 1)
+                    labelCount.text = "\(service.count)"
+                }
+            }
+        }
+        
+    }
+    
+    private func countService(labelCount: UILabel) {
+        if person.basketService.isEmpty {
+            countSeviceLabel.text = "0"
+        } else if !person.basketService.isEmpty {
+            for service in person.basketService {
+                if service.descriptionService == "Думонтаж межкомнатной двери" {
+                    labelCount.text = "\(service.count)"
+                }
+            }
+        }
+    }
+    
     @IBAction func activeServicesButton(_ sender: UIButton) {
         switch sender {
         case dismantlingButton:
-            let servis = Services()
-            servis.name = "Демонтаж"
-            servis.descriptionService = "Думонтаж межкомнатной двери"
-            servis.price = 1500
-            servis.count = 1
-            if person.basketService.isEmpty {
-                StorageManager.shared.saveSerwice(person, service: servis)
-            } else if !person.basketService.isEmpty {
-                for servise in person.basketService {
-                    if servis.descriptionService == servise.descriptionService {
-                        StorageManager.shared.renameServis(servise, newValue: 1)
-                    }
-                }
-            }
+            saveNewSerwice(name: "Демонтаж", descriptionService: "Думонтаж межкомнатной двери", price: 1500, count: 1, labelCount: countSeviceLabel)
         case catOneButton:
             let servis = Services()
             servis.name = "Монтаж"
@@ -88,7 +110,7 @@ class ServicesPriceViewController: UIViewController {
     @IBAction func activeInfoButton(_ sender: UIButton) {
         switch sender {
         case dismantlingInfoButton:
-            alertInfo(value: "Думонтаж двери клиента")
+            alertInfo(value: "Думонтаж двери клиента, подготовка проема к монтажу. Цена: 1500")
         case catOneInfoButton:
             alertInfo(value: "Монтаж первой категории (Одностворчатая) входит: короба, навес полотна и установка наличников")
         case catTwoInfoButton:

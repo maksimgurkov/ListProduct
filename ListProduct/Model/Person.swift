@@ -41,4 +41,5 @@ class Services: Object {
     @Persisted var count = 0
     @Persisted var descriptionService = ""
     @Persisted var price = 0
+    
 }

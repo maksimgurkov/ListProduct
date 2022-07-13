@@ -33,7 +33,7 @@ class ServicesPersonTableViewController: UITableViewController {
         cell.nameServicesLabel.text = services.name
         cell.descriptionServicesLabel.text = services.descriptionService
         cell.countServicesLabel.text = "\(services.count)"
-        cell.priceServicesLabel.text = "\(services.price)"
+        cell.priceServicesLabel.text = "\(services.price) руб."
         return cell
     }
     
