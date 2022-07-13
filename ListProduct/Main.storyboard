@@ -1643,7 +1643,11 @@
                         <outlet property="catThreeInfoButton" destination="2Rm-KE-3Cn" id="lXN-jH-gCn"/>
                         <outlet property="catTwoButton" destination="2zz-0y-pF4" id="TVk-ql-GuG"/>
                         <outlet property="catTwoInfoButton" destination="7Nv-Qs-OtT" id="00s-FQ-DCN"/>
-                        <outlet property="countSeviceLabel" destination="UH8-6R-e3R" id="vXX-Vs-LBZ"/>
+                        <outlet property="countCatOneLabel" destination="zPV-Iq-np5" id="a1U-ii-rvC"/>
+                        <outlet property="countCatThreeLabel" destination="dR6-Qe-5D0" id="xWH-HX-OHo"/>
+                        <outlet property="countCatTwoLabel" destination="StX-Ib-MdN" id="OL4-WE-WLG"/>
+                        <outlet property="countDismantlingSeviceLabel" destination="UH8-6R-e3R" id="vXX-Vs-LBZ"/>
+                        <outlet property="countInstallationLockLabel" destination="t4a-4v-CqZ" id="3MX-CQ-c14"/>
                         <outlet property="dismantlingButton" destination="A4Z-w7-MVJ" id="8F7-mI-qBL"/>
                         <outlet property="dismantlingInfoButton" destination="4XM-gK-5uZ" id="wSm-ek-isc"/>
                         <outlet property="installationLockButton" destination="VjM-FN-zAC" id="G8Y-c0-t6K"/>

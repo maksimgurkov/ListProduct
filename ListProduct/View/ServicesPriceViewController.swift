@@ -18,7 +18,11 @@ class ServicesPriceViewController: UIViewController {
     @IBOutlet weak var catThreeBotton: UIButton!
     @IBOutlet weak var installationLockButton: UIButton!
     
-    @IBOutlet weak var countSeviceLabel: UILabel!
+    @IBOutlet weak var countDismantlingSeviceLabel: UILabel!
+    @IBOutlet weak var countCatOneLabel: UILabel!
+    @IBOutlet weak var countCatTwoLabel: UILabel!
+    @IBOutlet weak var countCatThreeLabel: UILabel!
+    @IBOutlet weak var countInstallationLockLabel: UILabel!
     
     
     @IBOutlet weak var dismantlingInfoButton: UIButton!
@@ -30,7 +34,12 @@ class ServicesPriceViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         title = "Выбор услуг"
-        countService(labelCount: countSeviceLabel)
+
+//        countDismantlingService()
+//        countCatOneService()
+//        countCatTwoService()
+//        countCatThreeService()
+//        coutInstallationLockService()
         dismantlingButton.layer.cornerRadius = 8
         catOneButton.layer.cornerRadius = 8
         catTwoButton.layer.cornerRadius = 8
@@ -47,25 +56,101 @@ class ServicesPriceViewController: UIViewController {
         if person.basketService.isEmpty {
             StorageManager.shared.saveSerwice(person, service: services)
             labelCount.text = "\(services.count)"
-        } else if !person.basketService.isEmpty {
+            return
+        }
+        if !person.basketService.isEmpty {
             for service in person.basketService {
-                if services.descriptionService == service.descriptionService {
+                if service.descriptionService == services.descriptionService {
                     StorageManager.shared.renameServis(service, newValue: 1)
                     labelCount.text = "\(service.count)"
+                    return
+                }
+            }
+        if !person.basketService.isEmpty {
+            for service in person.basketService {
+                if service.descriptionService != services.descriptionService {
+                    StorageManager.shared.saveSerwice(person, service: services)
+                    labelCount.text = "\(service.count)"
+                    return
                 }
             }
         }
+                
+
+            
         
+//            else if !person.basketService.isEmpty {
+//            for service in person.basketService {
+//                if service.descriptionService != services.descriptionService {
+//                    StorageManager.shared.saveSerwice(person, service: services)
+//                    print("не равно")
+//                } else {
+//                    StorageManager.shared.renameServis(service, newValue: 1)
+//                    labelCount.text = "\(service.count)"
+//                    print("равны")
+//
+//                }
+            
+        }
     }
-    
-    private func countService(labelCount: UILabel) {
+        
+    private func countDismantlingService() {
         if person.basketService.isEmpty {
-            countSeviceLabel.text = "0"
+            countDismantlingSeviceLabel.text = "0"
         } else if !person.basketService.isEmpty {
             for service in person.basketService {
                 if service.descriptionService == "Думонтаж межкомнатной двери" {
-                    labelCount.text = "\(service.count)"
+                    countDismantlingSeviceLabel.text = "\(service.count)"
+                } else {
+                    countDismantlingSeviceLabel.text = "0"
                 }
+            }
+        }
+        for service in person.basketService {
+            if service.descriptionService == "Думонтаж межкомнатной двери" {
+                countDismantlingSeviceLabel.text = "\(service.count)"
+            } else {
+                countDismantlingSeviceLabel.text = "0"
+            }
+        }
+    }
+    
+    private func countCatOneService() {
+        for service in person.basketService {
+            if service.descriptionService == "Монтаж первой категории" {
+                countCatOneLabel.text = "\(service.count)"
+            } else {
+                countCatOneLabel.text = "0"
+            }
+        }
+    }
+    
+    private func countCatTwoService() {
+        for service in person.basketService {
+            if service.descriptionService == "Монтаж второй категории" {
+                countCatTwoLabel.text = "\(service.count)"
+            } else {
+                countCatTwoLabel.text = "0"
+            }
+        }
+    }
+    
+    private func countCatThreeService() {
+        for service in person.basketService {
+            if service.descriptionService == "Монтаж третьей категории" {
+                countCatThreeLabel.text = "\(service.count)"
+            } else {
+                countCatThreeLabel.text = "0"
+            }
+        }
+    }
+    
+    private func coutInstallationLockService() {
+        for service in person.basketService {
+            if service.descriptionService == "Врезка и установка механизма" {
+                countInstallationLockLabel.text = "\(service.count)"
+            } else {
+                countInstallationLockLabel.text = "0"
             }
         }
     }
@@ -73,35 +158,15 @@ class ServicesPriceViewController: UIViewController {
     @IBAction func activeServicesButton(_ sender: UIButton) {
         switch sender {
         case dismantlingButton:
-            saveNewSerwice(name: "Демонтаж", descriptionService: "Думонтаж межкомнатной двери", price: 1500, count: 1, labelCount: countSeviceLabel)
+            saveNewSerwice(name: "Демонтаж", descriptionService: "Думонтаж межкомнатной двери", price: 1500, count: 1, labelCount: countDismantlingSeviceLabel)
         case catOneButton:
-            let servis = Services()
-            servis.name = "Монтаж"
-            servis.descriptionService = "Монтаж первой категории"
-            servis.price = 7500
-            servis.count = 1
-            StorageManager.shared.saveSerwice(person, service: servis)
+            saveNewSerwice(name: "Монтаж", descriptionService: "Монтаж первой категории", price: 6000, count: 1, labelCount: countCatOneLabel)
         case catTwoButton:
-            let servis = Services()
-            servis.name = "Монтаж"
-            servis.descriptionService = "Монтаж второй категории"
-            servis.price = 8500
-            servis.count = 1
-            StorageManager.shared.saveSerwice(person, service: servis)
+            saveNewSerwice(name: "Монтаж", descriptionService: "Монтаж второй категории", price: 7000, count: 1, labelCount: countCatTwoLabel)
         case catThreeBotton:
-            let servis = Services()
-            servis.name = "Монтаж"
-            servis.descriptionService = "Монтаж третьей категории"
-            servis.price = 9500
-            servis.count = 1
-            StorageManager.shared.saveSerwice(person, service: servis)
+            saveNewSerwice(name: "Монтаж", descriptionService: "Монтаж третьей категории", price: 8000, count: 1, labelCount: countCatThreeLabel)
         case installationLockButton:
-            let servis = Services()
-            servis.name = "Врезка замка"
-            servis.descriptionService = "Врезка и установка механизма"
-            servis.price = 9500
-            servis.count = 1
-            StorageManager.shared.saveSerwice(person, service: servis)
+            saveNewSerwice(name: "Врезка замка", descriptionService: "Врезка и установка механизма", price: 2500, count: 1, labelCount: countInstallationLockLabel)
         default:
             break
         }
