@@ -33,6 +33,7 @@ class InfoDoorViewController: UIViewController {
     //MARK: - DoorsLabel
     @IBOutlet weak var descriptionDoorLabel: UILabel!
     @IBOutlet weak var specificationsDoorLabel: UILabel!
+    
     @IBOutlet weak var countDoor550Label: UILabel!
     @IBOutlet weak var priceDoor550Label: UILabel!
     @IBOutlet weak var countDoor600Label: UILabel!
@@ -52,28 +53,12 @@ class InfoDoorViewController: UIViewController {
     @IBOutlet weak var dobor200CountLabel: UILabel!
     @IBOutlet weak var lathCountLabel: UILabel!
     
-    
-    //MARK: - Private
-    
-    private var resultCountDoors550 = 0
-    private var resultCountDoors600 = 0
-    private var resultCountDoors700 = 0
-    private var resultCountDoors800 = 0
-    private var resultCountDoors900 = 0
-    
-    private var resultKorobCount = 0
-    private var resultCasingCount = 0
-    private var resultDobor100Count = 0
-    private var resultDobor150Count = 0
-    private var resultDobor200Count = 0
-    private var resultLathCount = 0
-    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         title = doorPerson.nameDoor
         
-        countProduct()
+        doorCountInfo()
         
         door550Button.layer.cornerRadius = 8
         door600Button.layer.cornerRadius = 8
@@ -92,243 +77,130 @@ class InfoDoorViewController: UIViewController {
         descriptionDoorLabel.text = doorPerson.descriptionDoor
         specificationsDoorLabel.text = doorPerson.specifications
     }
+    //MARK: - privateFunc
     
-    //MARK: - Door550
-    
-    @IBAction func actionToBuyDoor550() {
-        let doors = Doors()
-        doors.factory = doorPerson.factory.rawValue
-        doors.material = doorPerson.material.rawValue
-        doors.nameDoor = doorPerson.nameDoor
-        doors.descriptionDoor = doorPerson.descriptionDoor
-        doors.price = doorPerson.price
-        doors.dimensions = "550*1900"
-        doors.countDoors = 1
+    private func saveDoorPerson(factory: String, material: String, name: String, description: String, price: Int, dimensions: String, count: Int, countDoorInfo: UILabel, priceInfo: UILabel) {
+        let newDoor = Doors()
+        newDoor.factory = factory
+        newDoor.material = material
+        newDoor.nameDoor = name
+        newDoor.descriptionDoor = description
+        newDoor.price = price
+        newDoor.dimensions = dimensions
+        newDoor.countDoors = count
         if persone.basket.isEmpty {
-            countDoor550Label.text = "\(doors.countDoors)"
-            priceDoor550Label.text = "\(doors.price) р."
-            StorageManager.shared.saveProduct(persone, door: doors)
-        } else if !persone.basket.isEmpty {
+            StorageManager.shared.saveProduct(persone, door: newDoor)
+            countDoorInfo.text = "\(newDoor.countDoors)"
+            return
+        }
+        if !persone.basket.isEmpty {
             for door in persone.basket {
-                if doors.dimensions == door.dimensions {
+                if door.dimensions == newDoor.dimensions {
                     StorageManager.shared.renameDoor(door, doors: doorPerson, newValue: 1)
-                    countDoor550Label.text = "\(door.countDoors)"
-                    priceDoor550Label.text = "\(door.price) р."
+                    countDoorInfo.text = "\(door.countDoors)"
+                    priceInfo.text = "\(door.price)"
+                    return
+                }
+            }
+            if !persone.basket.isEmpty {
+                for door in persone.basket {
+                    if door.dimensions != newDoor.dimensions {
+                        StorageManager.shared.saveProduct(persone, door: newDoor)
+                        countDoorInfo.text = "\(newDoor.countDoors)"
+                        priceInfo.text = "\(newDoor.price)"
+                        return
+                    }
                 }
             }
         }
-//        resultCountDoors550 += 1
-//        countDoor550Label.text = "\(resultCountDoors550)"
     }
     
-    //MARK: - Door600
-    
-    @IBAction func actionToBuyDoor600() {
-        resultCountDoors600 += 1
-        countDoor600Label.text = "\(resultCountDoors600)"
-        let doors = Doors()
-        doors.factory = doorPerson.factory.rawValue
-        doors.material = doorPerson.material.rawValue
-        doors.nameDoor = doorPerson.nameDoor
-        doors.descriptionDoor = doorPerson.descriptionDoor
-        doors.price = doorPerson.price
-        doors.dimensions = "600*2000"
-        StorageManager.shared.saveProduct(persone, door: doors)
+    private func doorCountInfo() {
+        if persone.basket.isEmpty {
+            countDoor550Label.text = "0"
+            countDoor600Label.text = "0"
+            countDoor700Label.text = "0"
+            countDoor800Label.text = "0"
+            countDoor900Label.text = "0"
+            priceDoor550Label.text = "\(doorPerson.price)"
+            priceDoor600Label.text = "\(doorPerson.price)"
+            priceDoor700Label.text = "\(doorPerson.price)"
+            priceDoor800Label.text = "\(doorPerson.price)"
+            priceDoor900Label.text = "\(doorPerson.price)"
+        } else {
+            for door in persone.basket {
+                if door.dimensions == "550*1900" {
+                    countDoor550Label.text = "\(door.countDoors)"
+                    priceDoor550Label.text = "\(door.price)"
+                } else if door.dimensions == "600*2000" {
+                    countDoor600Label.text = "\(door.countDoors)"
+                    priceDoor600Label.text = "\(door.price)"
+                } else if door.dimensions == "700*2000" {
+                    countDoor700Label.text = "\(door.countDoors)"
+                    priceDoor700Label.text = "\(door.price)"
+                } else if door.dimensions == "800*2000" {
+                    countDoor800Label.text = "\(door.countDoors)"
+                    priceDoor800Label.text = "\(door.price)"
+                } else if door.dimensions == "900*2000" {
+                    countDoor900Label.text = "\(door.countDoors)"
+                    priceDoor900Label.text = "\(door.price)"
+                }
+                
+            }
+        }
     }
     
-    //MARK: - Door700
+    //MARK: - ActionButtonDoors
     
-    @IBAction func actionToBuyDoor700() {
-        resultCountDoors700 += 1
-        countDoor700Label.text = "\(resultCountDoors700)"
-        let doors = Doors()
-        doors.factory = doorPerson.factory.rawValue
-        doors.material = doorPerson.material.rawValue
-        doors.nameDoor = doorPerson.nameDoor
-        doors.descriptionDoor = doorPerson.descriptionDoor
-        doors.price = doorPerson.price
-        doors.dimensions = "700*2000"
-        StorageManager.shared.saveProduct(persone, door: doors)
-    }
-    
-    //MARK: - Door800
-
-    @IBAction func actionToBuyDoor800() {
-        resultCountDoors800 += 1
-        countDoor800Label.text = "\(resultCountDoors800)"
-        let doors = Doors()
-        doors.factory = doorPerson.factory.rawValue
-        doors.material = doorPerson.material.rawValue
-        doors.nameDoor = doorPerson.nameDoor
-        doors.descriptionDoor = doorPerson.descriptionDoor
-        doors.price = doorPerson.price
-        doors.dimensions = "800*2000"
-        StorageManager.shared.saveProduct(persone, door: doors)
-    }
-    
-    //MARK: - Door900
-    
-    @IBAction func actionToBuyDoor900() {
-        resultCountDoors900 += 1
-        countDoor900Label.text = "\(resultCountDoors900)"
-        let doors = Doors()
-        doors.factory = doorPerson.factory.rawValue
-        doors.material = doorPerson.material.rawValue
-        doors.nameDoor = doorPerson.nameDoor
-        doors.descriptionDoor = doorPerson.descriptionDoor
-        doors.price = doorPerson.price
-        doors.dimensions = "900*2000"
-        StorageManager.shared.saveProduct(persone, door: doors)
-    }
-    
-    //MARK: - KorobButton
-    
-    @IBAction func actionKorobButton() {
-        resultKorobCount += 1
-        korobCountLabel.text = "\(resultKorobCount)"
-        let doors = Doors()
-        doors.factory = doorPerson.factory.rawValue
-        doors.material = doorPerson.material.rawValue
-        doors.nameDoor = "Короб(уплотнитель)"
-        doors.descriptionDoor = ""
-        doors.price = doorPerson.price
-        doors.dimensions = "75*35*2070"
-        StorageManager.shared.saveProduct(persone, door: doors)
-    }
-    
-    //MARK: - CasingButton
-    
-    @IBAction func actionCasingButton() {
-        resultCasingCount += 1
-        casingCountLabel.text = "\(resultCasingCount)"
-        let doors = Doors()
-        doors.factory = doorPerson.factory.rawValue
-        doors.material = doorPerson.material.rawValue
-        doors.nameDoor = "Наличник телескоп"
-        doors.descriptionDoor = ""
-        doors.price = doorPerson.price
-        doors.dimensions = "70*10*2100"
-        StorageManager.shared.saveProduct(persone, door: doors)
-    }
-    
-    //MARK: - Dobor100Button
-    
-    @IBAction func actionDobor100Button() {
-        resultDobor100Count += 1
-        dobor100CountLabel.text = "\(resultDobor100Count)"
-        let doors = Doors()
-        doors.factory = doorPerson.factory.rawValue
-        doors.material = doorPerson.material.rawValue
-        doors.nameDoor = "Добор 100"
-        doors.descriptionDoor = ""
-        doors.price = doorPerson.price
-        doors.dimensions = "100*10*2100"
-        StorageManager.shared.saveProduct(persone, door: doors)
-    }
-    
-    //MARK: - Dobor150Button
-    
-    @IBAction func actionDobor150Button() {
-        resultDobor150Count += 1
-        dobor150CountLabel.text = "\(resultDobor150Count)"
-        let doors = Doors()
-        doors.factory = doorPerson.factory.rawValue
-        doors.material = doorPerson.material.rawValue
-        doors.nameDoor = "Добор 150"
-        doors.descriptionDoor = ""
-        doors.price = doorPerson.price
-        doors.dimensions = "150*10*2100"
-        StorageManager.shared.saveProduct(persone, door: doors)
-    }
-    
-    //MARK: - Dobor200Button
-    
-    @IBAction func actionDobor200Button() {
-        resultDobor200Count += 1
-        dobor200CountLabel.text = "\(resultDobor200Count)"
-        let doors = Doors()
-        doors.factory = doorPerson.factory.rawValue
-        doors.material = doorPerson.material.rawValue
-        doors.nameDoor = "Добор 200"
-        doors.descriptionDoor = ""
-        doors.price = doorPerson.price
-        doors.dimensions = "200*10*2100"
-        StorageManager.shared.saveProduct(persone, door: doors)
-    }
-    
-    //MARK: - lathButton
-    
-    @IBAction func actionLathButton() {
-        resultLathCount += 1
-        lathCountLabel.text = "\(resultLathCount)"
-        let doors = Doors()
-        doors.factory = doorPerson.factory.rawValue
-        doors.material = doorPerson.material.rawValue
-        doors.nameDoor = "Притвор"
-        doors.descriptionDoor = ""
-        doors.price = doorPerson.price
-        doors.dimensions = "30*10*2100"
-        StorageManager.shared.saveProduct(persone, door: doors)
+    @IBAction func actionNewDoorButton(_ sender: UIButton) {
+        switch sender {
+        case door550Button:
+            saveDoorPerson(factory: doorPerson.factory.rawValue,
+                           material: doorPerson.material.rawValue,
+                           name: doorPerson.nameDoor,
+                           description: doorPerson.descriptionDoor,
+                           price: doorPerson.price,
+                           dimensions: "550*1900",
+                           count: 1, countDoorInfo: countDoor550Label, priceInfo: priceDoor550Label)
+        case door600Button:
+            saveDoorPerson(factory: doorPerson.factory.rawValue,
+                           material: doorPerson.material.rawValue,
+                           name: doorPerson.nameDoor,
+                           description: doorPerson.descriptionDoor,
+                           price: doorPerson.price,
+                           dimensions: "600*2000",
+                           count: 1, countDoorInfo: countDoor600Label, priceInfo: priceDoor600Label)
+        case door700Button:
+            saveDoorPerson(factory: doorPerson.factory.rawValue,
+                           material: doorPerson.material.rawValue,
+                           name: doorPerson.nameDoor,
+                           description: doorPerson.descriptionDoor,
+                           price: doorPerson.price,
+                           dimensions: "700*2000",
+                           count: 1, countDoorInfo: countDoor700Label, priceInfo: priceDoor700Label)
+        case door800Button:
+            saveDoorPerson(factory: doorPerson.factory.rawValue,
+                           material: doorPerson.material.rawValue,
+                           name: doorPerson.nameDoor,
+                           description: doorPerson.descriptionDoor,
+                           price: doorPerson.price,
+                           dimensions: "800*2000",
+                           count: 1, countDoorInfo: countDoor800Label, priceInfo: priceDoor800Label)
+        case door900Button:
+            saveDoorPerson(factory: doorPerson.factory.rawValue,
+                           material: doorPerson.material.rawValue,
+                           name: doorPerson.nameDoor,
+                           description: doorPerson.descriptionDoor,
+                           price: doorPerson.price,
+                           dimensions: "900*2000",
+                           count: 1, countDoorInfo: countDoor900Label, priceInfo: priceDoor900Label)
+        default:
+            break
+        }
     }
     
     @IBAction func saveDoorButton() {
        
-    }
-    
-    private func countProduct() {
-        if persone.basket.isEmpty {
-            priceDoor550Label.text = "\(doorPerson.price) р."
-        } else {
-            for door in persone.basket {
-            if door.dimensions == "550*1900" {
-                countDoor550Label.text = "\(door.countDoors)"
-                priceDoor550Label.text = "\(door.price) р."
-            }
-            if door.dimensions == "600*2000" {
-                resultCountDoors600 += 1
-                countDoor600Label.text = "\(resultCountDoors600)"
-            }
-            if door.dimensions == "700*2000" {
-                resultCountDoors700 += 1
-                countDoor700Label.text = "\(resultCountDoors700)"
-            }
-            if door.dimensions == "800*2000" {
-                resultCountDoors800 += 1
-                countDoor800Label.text = "\(resultCountDoors800)"
-            }
-            if door.dimensions == "900*2000" {
-                resultCountDoors900 += 1
-                countDoor900Label.text = "\(resultCountDoors900)"
-            }
-            if door.nameDoor == "Короб(уплотнитель)" {
-                resultKorobCount += 1
-                korobCountLabel.text = "\(resultKorobCount)"
-            }
-            if door.nameDoor == "Наличник телескоп" {
-                resultCasingCount += 1
-                casingCountLabel.text = "\(resultCasingCount)"
-            }
-            if door.nameDoor == "Добор 100" {
-                resultDobor100Count += 1
-                dobor100CountLabel.text = "\(resultDobor100Count)"
-            }
-            if door.nameDoor == "Добор 150" {
-                resultDobor150Count += 1
-                dobor150CountLabel.text = "\(resultDobor150Count)"
-            }
-            if door.nameDoor == "Добор 200" {
-                resultDobor200Count += 1
-                dobor200CountLabel.text = "\(resultDobor200Count)"
-            }
-            if door.nameDoor == "Притвор" {
-                resultLathCount += 1
-                lathCountLabel.text = "\(resultLathCount)"
-                
-            }
-        }
-        }
-        
-        
     }
     
     // MARK: - Navigation

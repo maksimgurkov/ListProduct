@@ -48,7 +48,7 @@ class DataManager {
                                 Изготовление по ГОСТу: 475-2016, 6629-88
                                 """,
              price: 5000,
-             dimensions: "700*2000",
+             dimensions: "550*1900",
              flag: false),
         Door(factory: .sodrugestvo,
              material: .ecoShpone,
