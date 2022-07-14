@@ -34,12 +34,7 @@ class ServicesPriceViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         title = "Выбор услуг"
-
-//        countDismantlingService()
-//        countCatOneService()
-//        countCatTwoService()
-//        countCatThreeService()
-//        coutInstallationLockService()
+        countService()
         dismantlingButton.layer.cornerRadius = 8
         catOneButton.layer.cornerRadius = 8
         catTwoButton.layer.cornerRadius = 8
@@ -66,94 +61,43 @@ class ServicesPriceViewController: UIViewController {
                     return
                 }
             }
-        if !person.basketService.isEmpty {
-            for service in person.basketService {
-                if service.descriptionService != services.descriptionService {
-                    StorageManager.shared.saveSerwice(person, service: services)
-                    labelCount.text = "\(service.count)"
-                    return
+            if !person.basketService.isEmpty {
+                for service in person.basketService {
+                    if service.descriptionService != services.descriptionService {
+                        StorageManager.shared.saveSerwice(person, service: services)
+                        labelCount.text = "\(service.count)"
+                        return
+                    }
                 }
             }
-        }
-                
-
-            
-        
-//            else if !person.basketService.isEmpty {
-//            for service in person.basketService {
-//                if service.descriptionService != services.descriptionService {
-//                    StorageManager.shared.saveSerwice(person, service: services)
-//                    print("не равно")
-//                } else {
-//                    StorageManager.shared.renameServis(service, newValue: 1)
-//                    labelCount.text = "\(service.count)"
-//                    print("равны")
-//
-//                }
             
         }
     }
         
-    private func countDismantlingService() {
+    private func countService() {
         if person.basketService.isEmpty {
             countDismantlingSeviceLabel.text = "0"
-        } else if !person.basketService.isEmpty {
+            countCatOneLabel.text = "0"
+            countCatTwoLabel.text = "0"
+            countCatThreeLabel.text = "0"
+            countInstallationLockLabel.text = "0"
+        } else {
             for service in person.basketService {
                 if service.descriptionService == "Думонтаж межкомнатной двери" {
                     countDismantlingSeviceLabel.text = "\(service.count)"
-                } else {
-                    countDismantlingSeviceLabel.text = "0"
+                } else if service.descriptionService == "Монтаж первой категории" {
+                    countCatOneLabel.text = "\(service.count)"
+                } else if service.descriptionService == "Монтаж второй категории" {
+                    countCatTwoLabel.text = "\(service.count)"
+                } else if service.descriptionService == "Монтаж третьей категории" {
+                    countCatThreeLabel.text = "\(service.count)"
+                } else if service.descriptionService == "Врезка и установка механизма" {
+                    countInstallationLockLabel.text = "\(service.count)"
                 }
             }
         }
-        for service in person.basketService {
-            if service.descriptionService == "Думонтаж межкомнатной двери" {
-                countDismantlingSeviceLabel.text = "\(service.count)"
-            } else {
-                countDismantlingSeviceLabel.text = "0"
-            }
-        }
     }
     
-    private func countCatOneService() {
-        for service in person.basketService {
-            if service.descriptionService == "Монтаж первой категории" {
-                countCatOneLabel.text = "\(service.count)"
-            } else {
-                countCatOneLabel.text = "0"
-            }
-        }
-    }
-    
-    private func countCatTwoService() {
-        for service in person.basketService {
-            if service.descriptionService == "Монтаж второй категории" {
-                countCatTwoLabel.text = "\(service.count)"
-            } else {
-                countCatTwoLabel.text = "0"
-            }
-        }
-    }
-    
-    private func countCatThreeService() {
-        for service in person.basketService {
-            if service.descriptionService == "Монтаж третьей категории" {
-                countCatThreeLabel.text = "\(service.count)"
-            } else {
-                countCatThreeLabel.text = "0"
-            }
-        }
-    }
-    
-    private func coutInstallationLockService() {
-        for service in person.basketService {
-            if service.descriptionService == "Врезка и установка механизма" {
-                countInstallationLockLabel.text = "\(service.count)"
-            } else {
-                countInstallationLockLabel.text = "0"
-            }
-        }
-    }
     
     @IBAction func activeServicesButton(_ sender: UIButton) {
         switch sender {
