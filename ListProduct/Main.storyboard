@@ -1103,18 +1103,18 @@
                                                         <rect key="frame" x="0.0" y="0.0" width="466" height="31"/>
                                                         <subviews>
                                                             <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="249" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nqQ-69-44I">
-                                                                <rect key="frame" x="0.0" y="0.0" width="179" height="31"/>
+                                                                <rect key="frame" x="0.0" y="0.0" width="169.5" height="31"/>
                                                                 <color key="backgroundColor" systemColor="systemBlueColor"/>
                                                                 <state key="normal" title="Button"/>
                                                                 <buttonConfiguration key="configuration" style="plain" title="Короб">
                                                                     <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                 </buttonConfiguration>
                                                                 <connections>
-                                                                    <action selector="actionKorobButton" destination="eXq-Pt-65B" eventType="touchUpInside" id="czy-el-rQa"/>
+                                                                    <action selector="actionNewPogonageButton:" destination="eXq-Pt-65B" eventType="touchUpInside" id="orQ-Yo-k5X"/>
                                                                 </connections>
                                                             </button>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7tq-sk-065">
-                                                                <rect key="frame" x="201" y="0.0" width="50" height="31"/>
+                                                                <rect key="frame" x="191.5" y="0.0" width="50" height="31"/>
                                                                 <constraints>
                                                                     <constraint firstAttribute="width" constant="50" id="fft-k5-KAK"/>
                                                                 </constraints>
@@ -1123,14 +1123,23 @@
                                                                 <nil key="highlightedColor"/>
                                                             </label>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="шт." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ejs-El-2FZ">
-                                                                <rect key="frame" x="273" y="0.0" width="29.5" height="31"/>
+                                                                <rect key="frame" x="263.5" y="0.0" width="29.5" height="31"/>
                                                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                                                 <nil key="textColor"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
-                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="5000 р. за 1 шт." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BTR-Qy-esx">
-                                                                <rect key="frame" x="324.5" y="0.0" width="141.5" height="31"/>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="500" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BTR-Qy-esx">
+                                                                <rect key="frame" x="315" y="0.0" width="100" height="31"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="width" constant="100" id="APQ-XJ-Ufr"/>
+                                                                </constraints>
                                                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                                                <nil key="textColor"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="руб" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GtN-f6-5SY">
+                                                                <rect key="frame" x="437" y="0.0" width="29" height="31"/>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                                 <nil key="textColor"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
@@ -1140,18 +1149,18 @@
                                                         <rect key="frame" x="0.0" y="37" width="466" height="31"/>
                                                         <subviews>
                                                             <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="249" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IUO-3c-7ci">
-                                                                <rect key="frame" x="0.0" y="0.0" width="179" height="31"/>
+                                                                <rect key="frame" x="0.0" y="0.0" width="169.5" height="31"/>
                                                                 <color key="backgroundColor" systemColor="systemBlueColor"/>
                                                                 <state key="normal" title="Button"/>
                                                                 <buttonConfiguration key="configuration" style="plain" title="Наличник">
                                                                     <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                 </buttonConfiguration>
                                                                 <connections>
-                                                                    <action selector="actionCasingButton" destination="eXq-Pt-65B" eventType="touchUpInside" id="A5W-mP-5NX"/>
+                                                                    <action selector="actionNewPogonageButton:" destination="eXq-Pt-65B" eventType="touchUpInside" id="Km4-Cs-tDW"/>
                                                                 </connections>
                                                             </button>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wGX-R0-ZEU">
-                                                                <rect key="frame" x="201" y="0.0" width="50" height="31"/>
+                                                                <rect key="frame" x="191.5" y="0.0" width="50" height="31"/>
                                                                 <constraints>
                                                                     <constraint firstAttribute="width" constant="50" id="eyL-dU-9tB"/>
                                                                 </constraints>
@@ -1160,14 +1169,23 @@
                                                                 <nil key="highlightedColor"/>
                                                             </label>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="шт." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GR5-w6-BbR">
-                                                                <rect key="frame" x="273" y="0.0" width="29.5" height="31"/>
+                                                                <rect key="frame" x="263.5" y="0.0" width="29.5" height="31"/>
                                                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                                                 <nil key="textColor"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
-                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="5000 р. за 1 шт." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QAd-Ag-gON">
-                                                                <rect key="frame" x="324.5" y="0.0" width="141.5" height="31"/>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="500" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QAd-Ag-gON">
+                                                                <rect key="frame" x="315" y="0.0" width="100" height="31"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="width" constant="100" id="cAP-Vk-9Fc"/>
+                                                                </constraints>
                                                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                                                <nil key="textColor"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="руб" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ntJ-Oi-rOn">
+                                                                <rect key="frame" x="437" y="0.0" width="29" height="31"/>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                                 <nil key="textColor"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
@@ -1177,18 +1195,18 @@
                                                         <rect key="frame" x="0.0" y="74" width="466" height="31"/>
                                                         <subviews>
                                                             <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="249" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fZy-OT-ZT9">
-                                                                <rect key="frame" x="0.0" y="0.0" width="179" height="31"/>
+                                                                <rect key="frame" x="0.0" y="0.0" width="169.5" height="31"/>
                                                                 <color key="backgroundColor" systemColor="systemBlueColor"/>
                                                                 <state key="normal" title="Button"/>
                                                                 <buttonConfiguration key="configuration" style="plain" title="Добор 100">
                                                                     <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                 </buttonConfiguration>
                                                                 <connections>
-                                                                    <action selector="actionDobor100Button" destination="eXq-Pt-65B" eventType="touchUpInside" id="Msz-vT-gLP"/>
+                                                                    <action selector="actionNewPogonageButton:" destination="eXq-Pt-65B" eventType="touchUpInside" id="4zT-a9-Hz7"/>
                                                                 </connections>
                                                             </button>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="z1z-IZ-kB0">
-                                                                <rect key="frame" x="201" y="0.0" width="50" height="31"/>
+                                                                <rect key="frame" x="191.5" y="0.0" width="50" height="31"/>
                                                                 <constraints>
                                                                     <constraint firstAttribute="width" constant="50" id="u88-dZ-YUH"/>
                                                                 </constraints>
@@ -1197,14 +1215,23 @@
                                                                 <nil key="highlightedColor"/>
                                                             </label>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="шт." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Nd8-ZJ-sNl">
-                                                                <rect key="frame" x="273" y="0.0" width="29.5" height="31"/>
+                                                                <rect key="frame" x="263.5" y="0.0" width="29.5" height="31"/>
                                                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                                                 <nil key="textColor"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
-                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="5000 р. за 1 шт." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8ro-5p-EP8">
-                                                                <rect key="frame" x="324.5" y="0.0" width="141.5" height="31"/>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="500" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8ro-5p-EP8">
+                                                                <rect key="frame" x="315" y="0.0" width="100" height="31"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="width" constant="100" id="1Ee-IW-Kxq"/>
+                                                                </constraints>
                                                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                                                <nil key="textColor"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="руб" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JKR-Me-gna">
+                                                                <rect key="frame" x="437" y="0.0" width="29" height="31"/>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                                 <nil key="textColor"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
@@ -1214,18 +1241,18 @@
                                                         <rect key="frame" x="0.0" y="111" width="466" height="31"/>
                                                         <subviews>
                                                             <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="249" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jK9-9l-kLI">
-                                                                <rect key="frame" x="0.0" y="0.0" width="179" height="31"/>
+                                                                <rect key="frame" x="0.0" y="0.0" width="169.5" height="31"/>
                                                                 <color key="backgroundColor" systemColor="systemBlueColor"/>
                                                                 <state key="normal" title="Button"/>
                                                                 <buttonConfiguration key="configuration" style="plain" title="Добор 150">
                                                                     <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                 </buttonConfiguration>
                                                                 <connections>
-                                                                    <action selector="actionDobor150Button" destination="eXq-Pt-65B" eventType="touchUpInside" id="tHE-ri-A0l"/>
+                                                                    <action selector="actionNewPogonageButton:" destination="eXq-Pt-65B" eventType="touchUpInside" id="LOm-K1-9Gq"/>
                                                                 </connections>
                                                             </button>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YHh-zp-Pvi">
-                                                                <rect key="frame" x="201" y="0.0" width="50" height="31"/>
+                                                                <rect key="frame" x="191.5" y="0.0" width="50" height="31"/>
                                                                 <constraints>
                                                                     <constraint firstAttribute="width" constant="50" id="Yaz-F8-M8o"/>
                                                                 </constraints>
@@ -1234,14 +1261,23 @@
                                                                 <nil key="highlightedColor"/>
                                                             </label>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="шт." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="D6c-uj-4ge">
-                                                                <rect key="frame" x="273" y="0.0" width="29.5" height="31"/>
+                                                                <rect key="frame" x="263.5" y="0.0" width="29.5" height="31"/>
                                                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                                                 <nil key="textColor"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
-                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="5000 р. за 1 шт." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QSe-nJ-xl7">
-                                                                <rect key="frame" x="324.5" y="0.0" width="141.5" height="31"/>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="500" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QSe-nJ-xl7">
+                                                                <rect key="frame" x="315" y="0.0" width="100" height="31"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="width" constant="100" id="S9g-LF-AKk"/>
+                                                                </constraints>
                                                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                                                <nil key="textColor"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="руб" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6tf-wF-sjM">
+                                                                <rect key="frame" x="437" y="0.0" width="29" height="31"/>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                                 <nil key="textColor"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
@@ -1251,18 +1287,18 @@
                                                         <rect key="frame" x="0.0" y="148" width="466" height="31"/>
                                                         <subviews>
                                                             <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="249" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="acm-A7-9B5">
-                                                                <rect key="frame" x="0.0" y="0.0" width="179" height="31"/>
+                                                                <rect key="frame" x="0.0" y="0.0" width="169.5" height="31"/>
                                                                 <color key="backgroundColor" systemColor="systemBlueColor"/>
                                                                 <state key="normal" title="Button"/>
                                                                 <buttonConfiguration key="configuration" style="plain" title="Добор 200">
                                                                     <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                 </buttonConfiguration>
                                                                 <connections>
-                                                                    <action selector="actionDobor200Button" destination="eXq-Pt-65B" eventType="touchUpInside" id="crm-hU-BCx"/>
+                                                                    <action selector="actionNewPogonageButton:" destination="eXq-Pt-65B" eventType="touchUpInside" id="EKi-IV-HOg"/>
                                                                 </connections>
                                                             </button>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3vT-uz-6bu">
-                                                                <rect key="frame" x="201" y="0.0" width="50" height="31"/>
+                                                                <rect key="frame" x="191.5" y="0.0" width="50" height="31"/>
                                                                 <constraints>
                                                                     <constraint firstAttribute="width" constant="50" id="Wce-hJ-ddh"/>
                                                                 </constraints>
@@ -1271,14 +1307,23 @@
                                                                 <nil key="highlightedColor"/>
                                                             </label>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="шт." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fr6-SX-3tH">
-                                                                <rect key="frame" x="273" y="0.0" width="29.5" height="31"/>
+                                                                <rect key="frame" x="263.5" y="0.0" width="29.5" height="31"/>
                                                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                                                 <nil key="textColor"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
-                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="5000 р. за 1 шт." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RFK-cp-mRW">
-                                                                <rect key="frame" x="324.5" y="0.0" width="141.5" height="31"/>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="500" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RFK-cp-mRW">
+                                                                <rect key="frame" x="315" y="0.0" width="100" height="31"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="width" constant="100" id="nbQ-4I-STC"/>
+                                                                </constraints>
                                                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                                                <nil key="textColor"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="руб" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ycL-Iz-uk1">
+                                                                <rect key="frame" x="437" y="0.0" width="29" height="31"/>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                                 <nil key="textColor"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
@@ -1288,18 +1333,18 @@
                                                         <rect key="frame" x="0.0" y="185" width="466" height="31"/>
                                                         <subviews>
                                                             <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="249" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="M8n-iJ-0LF">
-                                                                <rect key="frame" x="0.0" y="0.0" width="179" height="31"/>
+                                                                <rect key="frame" x="0.0" y="0.0" width="169.5" height="31"/>
                                                                 <color key="backgroundColor" systemColor="systemBlueColor"/>
                                                                 <state key="normal" title="Button"/>
                                                                 <buttonConfiguration key="configuration" style="plain" title="Притвор">
                                                                     <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                 </buttonConfiguration>
                                                                 <connections>
-                                                                    <action selector="actionLathButton" destination="eXq-Pt-65B" eventType="touchUpInside" id="oFn-rp-yUm"/>
+                                                                    <action selector="actionNewPogonageButton:" destination="eXq-Pt-65B" eventType="touchUpInside" id="MdD-Iq-t2R"/>
                                                                 </connections>
                                                             </button>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Cbq-m7-G0I">
-                                                                <rect key="frame" x="201" y="0.0" width="50" height="31"/>
+                                                                <rect key="frame" x="191.5" y="0.0" width="50" height="31"/>
                                                                 <constraints>
                                                                     <constraint firstAttribute="width" constant="50" id="yFl-kk-LhJ"/>
                                                                 </constraints>
@@ -1308,14 +1353,23 @@
                                                                 <nil key="highlightedColor"/>
                                                             </label>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="шт." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="66u-ti-6e5">
-                                                                <rect key="frame" x="273" y="0.0" width="29.5" height="31"/>
+                                                                <rect key="frame" x="263.5" y="0.0" width="29.5" height="31"/>
                                                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                                                 <nil key="textColor"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
-                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="5000 р. за 1 шт." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AjM-IX-kpZ">
-                                                                <rect key="frame" x="324.5" y="0.0" width="141.5" height="31"/>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="500" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AjM-IX-kpZ">
+                                                                <rect key="frame" x="315" y="0.0" width="100" height="31"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="width" constant="100" id="Y9A-JI-GMk"/>
+                                                                </constraints>
                                                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                                                <nil key="textColor"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="руб" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dDR-em-oiL">
+                                                                <rect key="frame" x="437" y="0.0" width="29" height="31"/>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                                 <nil key="textColor"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
@@ -1411,11 +1465,17 @@
                         <outlet property="korobCountLabel" destination="7tq-sk-065" id="rpL-sz-stU"/>
                         <outlet property="lathButton" destination="M8n-iJ-0LF" id="QPW-f2-fWW"/>
                         <outlet property="lathCountLabel" destination="Cbq-m7-G0I" id="U7O-p6-aLd"/>
+                        <outlet property="priceCasingLabel" destination="QAd-Ag-gON" id="oZO-q2-aGE"/>
+                        <outlet property="priceDobor100Label" destination="8ro-5p-EP8" id="rPM-qM-61T"/>
+                        <outlet property="priceDobor150Label" destination="QSe-nJ-xl7" id="Iay-ce-9Po"/>
+                        <outlet property="priceDobor200Label" destination="RFK-cp-mRW" id="rGm-E5-FI0"/>
                         <outlet property="priceDoor550Label" destination="b2X-Vr-mnD" id="KK2-3r-bLK"/>
                         <outlet property="priceDoor600Label" destination="Fkh-kI-Y8o" id="4CI-Cz-4pT"/>
                         <outlet property="priceDoor700Label" destination="KyB-Za-1Vy" id="dHV-hC-Bwb"/>
                         <outlet property="priceDoor800Label" destination="MPG-uL-4PD" id="UsH-s4-lb9"/>
                         <outlet property="priceDoor900Label" destination="LEa-W4-NAH" id="651-z3-WDA"/>
+                        <outlet property="priceKorobLabel" destination="BTR-Qy-esx" id="QL6-Kh-9Wr"/>
+                        <outlet property="priceLathLabel" destination="AjM-IX-kpZ" id="dyV-pR-gD7"/>
                         <outlet property="specificationsDoorLabel" destination="pmb-Ja-c3e" id="Y1x-QJ-SOW"/>
                     </connections>
                 </viewController>

@@ -53,12 +53,21 @@ class InfoDoorViewController: UIViewController {
     @IBOutlet weak var dobor200CountLabel: UILabel!
     @IBOutlet weak var lathCountLabel: UILabel!
     
+    @IBOutlet weak var priceKorobLabel: UILabel!
+    @IBOutlet weak var priceCasingLabel: UILabel!
+    @IBOutlet weak var priceDobor100Label: UILabel!
+    @IBOutlet weak var priceDobor150Label: UILabel!
+    @IBOutlet weak var priceDobor200Label: UILabel!
+    @IBOutlet weak var priceLathLabel: UILabel!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         title = doorPerson.nameDoor
         
-        doorCountInfo()
+        doorCountInfoAndPrice()
+        pogonageCountInfo()
         
         door550Button.layer.cornerRadius = 8
         door600Button.layer.cornerRadius = 8
@@ -115,7 +124,43 @@ class InfoDoorViewController: UIViewController {
         }
     }
     
-    private func doorCountInfo() {
+    private func savePogonagePerson(factory: String, material: String, name: String, price: Int, dimansion: String, count: Int, countInfoPogonage: UILabel, pricePogonage: UILabel) {
+        let pogonage = Doors()
+        pogonage.factory = factory
+        pogonage.material = material
+        pogonage.nameDoor = name
+        pogonage.price = price
+        pogonage.dimensions = dimansion
+        pogonage.countDoors = count
+        if persone.basket.isEmpty {
+            StorageManager.shared.saveProduct(persone, door: pogonage)
+            countInfoPogonage.text = "\(pogonage.countDoors)"
+            pricePogonage.text = "\(pogonage.price)"
+            return
+        }
+        if !persone.basket.isEmpty {
+            for pogonag in persone.basket {
+                if pogonage.nameDoor == pogonag.nameDoor {
+                    StorageManager.shared.renameDoor(pogonag, doors: doorPerson, newValue: 1)
+                    countInfoPogonage.text = "\(pogonag.countDoors)"
+                    pricePogonage.text = "\(pogonag.price)"
+                    return
+                }
+            }
+            if !persone.basket.isEmpty {
+                for pogonag in persone.basket {
+                    if pogonage.nameDoor != pogonag.nameDoor {
+                        StorageManager.shared.saveProduct(persone, door: pogonage)
+                        countInfoPogonage.text = "\(pogonage.countDoors)"
+                        pricePogonage.text = "\(pogonage.price)"
+                        return
+                    }
+                }
+            }
+        }
+    }
+    
+    private func doorCountInfoAndPrice() {
         if persone.basket.isEmpty {
             countDoor550Label.text = "0"
             countDoor600Label.text = "0"
@@ -146,6 +191,33 @@ class InfoDoorViewController: UIViewController {
                     priceDoor900Label.text = "\(door.price)"
                 }
                 
+            }
+        }
+    }
+    
+    private func pogonageCountInfo() {
+        if persone.basket.isEmpty {
+            korobCountLabel.text = "0"
+            casingCountLabel.text = "0"
+            dobor100CountLabel.text = "0"
+            dobor150CountLabel.text = "0"
+            dobor200CountLabel.text = "0"
+            lathCountLabel.text = "0"
+        } else {
+            for ponage in persone.basket {
+                if ponage.nameDoor == "Коробка" {
+                    korobCountLabel.text = "\(ponage.countDoors)"
+                } else if ponage.nameDoor == "Наличник" {
+                    casingCountLabel.text = "\(ponage.countDoors)"
+                } else if ponage.nameDoor == "Добор 100" {
+                    dobor100CountLabel.text = "\(ponage.countDoors)"
+                } else if ponage.nameDoor == "Добор 150" {
+                    dobor150CountLabel.text = "\(ponage.countDoors)"
+                } else if ponage.nameDoor == "Добор 200" {
+                    dobor200CountLabel.text = "\(ponage.countDoors)"
+                } else if ponage.nameDoor == "Притвор" {
+                    lathCountLabel.text = "\(ponage.countDoors)"
+                }
             }
         }
     }
@@ -198,6 +270,68 @@ class InfoDoorViewController: UIViewController {
             break
         }
     }
+    
+    @IBAction func actionNewPogonageButton(_ sender: UIButton) {
+        switch sender {
+        case korobButton:
+            savePogonagePerson(factory: doorPerson.factory.rawValue,
+                               material: doorPerson.material.rawValue,
+                               name: "Коробка",
+                               price: 350,
+                               dimansion: "Описание",
+                               count: 1,
+                               countInfoPogonage: korobCountLabel,
+                               pricePogonage: priceKorobLabel)
+        case casingButton:
+            savePogonagePerson(factory: doorPerson.factory.rawValue,
+                               material: doorPerson.material.rawValue,
+                               name: "Наличник",
+                               price: 150,
+                               dimansion: "Описание",
+                               count: 1,
+                               countInfoPogonage: casingCountLabel,
+                               pricePogonage: priceCasingLabel)
+        case dobor100Button:
+            savePogonagePerson(factory: doorPerson.factory.rawValue,
+                               material: doorPerson.material.rawValue,
+                               name: "Добор 100",
+                               price: 350,
+                               dimansion: "Описание",
+                               count: 1,
+                               countInfoPogonage: dobor100CountLabel,
+                               pricePogonage: priceDobor100Label)
+        case dobor150Button:
+            savePogonagePerson(factory: doorPerson.factory.rawValue,
+                               material: doorPerson.material.rawValue,
+                               name: "Добор 150",
+                               price: 450,
+                               dimansion: "Описание",
+                               count: 1,
+                               countInfoPogonage: dobor150CountLabel,
+                               pricePogonage: priceDobor150Label)
+        case dobor200Button:
+            savePogonagePerson(factory: doorPerson.factory.rawValue,
+                               material: doorPerson.material.rawValue,
+                               name: "Добор 200",
+                               price: 550,
+                               dimansion: "Описание",
+                               count: 1,
+                               countInfoPogonage: dobor200CountLabel,
+                               pricePogonage: priceDobor200Label)
+        case lathButton:
+            savePogonagePerson(factory: doorPerson.factory.rawValue,
+                               material: doorPerson.material.rawValue,
+                               name: "Притвор",
+                               price: 100,
+                               dimansion: "Описание",
+                               count: 1,
+                               countInfoPogonage: lathCountLabel,
+                               pricePogonage: priceLathLabel)
+        default:
+            break
+        }
+    }
+    
     
     @IBAction func saveDoorButton() {
        
