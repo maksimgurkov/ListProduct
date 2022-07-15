@@ -43,6 +43,14 @@ class StorageManager {
         }
     }
     
+    func renamePogonage(_ pogonage: Doors, pogonages: Doors, newValue: Int ) {
+        write {
+            pogonage.countDoors += newValue
+            pogonage.price += pogonages.price
+            
+        }
+    }
+    
     func saveSerwice(_ persone: Person, service: Services) {
         write {
             persone.basketService.append(service)

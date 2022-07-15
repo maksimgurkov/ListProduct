@@ -23,6 +23,9 @@ class InfoPersonViewController: UIViewController {
     @IBOutlet weak var phonePersonLabel: UILabel!
     @IBOutlet weak var addressPersonLabel: UILabel!
     @IBOutlet weak var descriptionPersonLabel: UILabel!
+    @IBOutlet weak var sumMaterialLabel: UILabel!
+    @IBOutlet weak var sumServicesLabel: UILabel!
+    @IBOutlet weak var sumLabel: UILabel!
     
     @IBOutlet weak var personProductLabel: UIButton!
     @IBOutlet weak var personMaterialLabel: UIButton!
@@ -50,6 +53,13 @@ class InfoPersonViewController: UIViewController {
         collectionViewImage.dataSource = self
         
     }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        sumMaterialLabel.text = "Сумма за материал - \(sumPersonMaterial()) р."
+        sumServicesLabel.text = "Сумма за услуги - \(sumPersonSevices()) р."
+        sumLabel.text = "Общая сумма договора - \(sumPersonMaterial() + sumPersonSevices()) р."
+    }
         
     private func setupLabel() {
         surNamePersonLabel.layer.masksToBounds = true
@@ -64,6 +74,12 @@ class InfoPersonViewController: UIViewController {
         addressPersonLabel.layer.cornerRadius = 8
         descriptionPersonLabel.layer.masksToBounds = true
         descriptionPersonLabel.layer.cornerRadius = 8
+        sumMaterialLabel.layer.masksToBounds = true
+        sumMaterialLabel.layer.cornerRadius = 8
+        sumServicesLabel.layer.masksToBounds = true
+        sumServicesLabel.layer.cornerRadius = 8
+        sumLabel.layer.masksToBounds = true
+        sumLabel.layer.cornerRadius = 8
     }
 
     // MARK: - Navigation
@@ -83,6 +99,22 @@ class InfoPersonViewController: UIViewController {
         imagePicker.sourceType = .photoLibrary
         imagePicker.allowsEditing = true
         present(imagePicker, animated: true, completion: nil)
+    }
+    
+    private func sumPersonMaterial() -> Int {
+        var sum = 0
+        for door in person.basket {
+            sum += door.price
+        }
+        return sum
+    }
+    
+    private func sumPersonSevices() -> Int {
+        var sum = 0
+        for services in person.basketService {
+            sum += services.price
+        }
+        return sum
     }
     
     

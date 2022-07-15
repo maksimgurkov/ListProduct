@@ -78,6 +78,7 @@ class InfoDoorViewController: UIViewController {
         doorCountInfoAndPrice()
         
         door550Button.layer.cornerRadius = 8
+        door6001900Button.layer.cornerRadius = 8
         door600Button.layer.cornerRadius = 8
         door700Button.layer.cornerRadius = 8
         door800Button.layer.cornerRadius = 8
@@ -122,7 +123,7 @@ class InfoDoorViewController: UIViewController {
             }
             if !persone.basket.isEmpty {
                 for door in persone.basket {
-                    if door.factory != newDoor.factory && door.dimensions != newDoor.dimensions {
+                    if door.factory == newDoor.factory && door.dimensions != newDoor.dimensions || door.factory != newDoor.factory {
                         StorageManager.shared.saveProduct(persone, door: newDoor)
                         countDoorInfo.text = "\(newDoor.countDoors)"
                         priceInfo.text = "\(newDoor.price)"
@@ -150,7 +151,7 @@ class InfoDoorViewController: UIViewController {
         if !persone.basket.isEmpty {
             for pogonag in persone.basket {
                 if pogonag.nameDoor == pogonage.nameDoor && pogonag.factory == pogonage.factory {
-                    StorageManager.shared.renameDoor(pogonag, doors: doorPerson, newValue: 1)
+                    StorageManager.shared.renamePogonage(pogonag, pogonages: pogonage, newValue: 1)
                     countInfoPogonage.text = "\(pogonag.countDoors)"
                     pricePogonage.text = "\(pogonag.price)"
                     return
