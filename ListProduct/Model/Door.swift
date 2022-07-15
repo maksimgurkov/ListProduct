@@ -33,7 +33,6 @@ class Door {
         self.dimensions = dimensions
         self.flag = flag
     }
-    
 }
 
 enum Factory: String {
