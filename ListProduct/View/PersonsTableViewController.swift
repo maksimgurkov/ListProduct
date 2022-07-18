@@ -33,7 +33,6 @@ class PersonsTableViewController: UITableViewController {
         dateFormatter.dateFormat = "dd.MM.yyyy"
         let weekDay = dateFormatter.string(from: person.data)
         return weekDay
-        
     }
 }
 // MARK: - Table view data source

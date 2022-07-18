@@ -13,7 +13,6 @@ class InfoPersonViewController: UIViewController {
     
     let countCell = 2
     
-    let imagePicker = UIImagePickerController()
     
     @IBOutlet weak var viewColorPerson: UIView!
     
@@ -30,11 +29,6 @@ class InfoPersonViewController: UIViewController {
     @IBOutlet weak var personProductLabel: UIButton!
     @IBOutlet weak var personMaterialLabel: UIButton!
     
-    @IBOutlet weak var collectionViewImage: UICollectionView!
-    
-    private var photoPersonImage = [UIImage]()
-    
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         title = "\(person.name) \(person.patronymic)"
@@ -48,9 +42,6 @@ class InfoPersonViewController: UIViewController {
         descriptionPersonLabel.text = person.personDescription
         viewColorPerson.layer.cornerRadius = 20
         setupLabel()
-        
-        collectionViewImage.delegate = self
-        collectionViewImage.dataSource = self
         
     }
     
@@ -95,10 +86,7 @@ class InfoPersonViewController: UIViewController {
     }
     
     @IBAction func saveImageButton(_ sender: Any) {
-        imagePicker.delegate = self
-        imagePicker.sourceType = .photoLibrary
-        imagePicker.allowsEditing = true
-        present(imagePicker, animated: true, completion: nil)
+
     }
     
     private func sumPersonMaterial() -> Int {
@@ -116,45 +104,9 @@ class InfoPersonViewController: UIViewController {
         }
         return sum
     }
-    
-    
-}
-extension InfoPersonViewController: UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
-    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return photoPersonImage.count
-    }
-
-    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "imageCell", for: indexPath) as! PhptoPersonCollectionViewCell
-        let image = photoPersonImage[indexPath.item]
-        cell.imagePersonView.image = image
-        return cell
-    }
-    
-    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-
-        let frameCollectionView = collectionView.frame
-        let widthCell = frameCollectionView.width / CGFloat(countCell)
-        let heightCell = widthCell
-        return CGSize(width: widthCell, height: heightCell)
-    }
-    
 }
 
-extension InfoPersonViewController: UIImagePickerControllerDelegate, UINavigationControllerDelegate {
-    
-    func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
-        guard let image = info[.editedImage] as? UIImage else { return }
-        photoPersonImage.append(image)
-        print(photoPersonImage.count)
-        imagePicker.dismiss(animated: true)
-        collectionViewImage.reloadData()
-        
-    }
-    
-    func imagePickerControllerDidCancel(_ picker: UIImagePickerController) {
-        imagePicker.dismiss(animated: true)
-    }
-}
+
+
 
 

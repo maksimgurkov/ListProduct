@@ -11,6 +11,7 @@
 		76530C52287B4AA600487D6C /* ServicesPersonTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76530C51287B4AA600487D6C /* ServicesPersonTableViewController.swift */; };
 		76530C54287B4D6800487D6C /* ServicesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76530C53287B4D6800487D6C /* ServicesTableViewCell.swift */; };
 		76530C56287C197C00487D6C /* ServicesPriceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76530C55287C197C00487D6C /* ServicesPriceViewController.swift */; };
+		7671CD262885463A0073B7B5 /* PhotoCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7671CD252885463A0073B7B5 /* PhotoCollectionViewController.swift */; };
 		76A984E5287587D100102AEB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76A984E4287587D100102AEB /* AppDelegate.swift */; };
 		76A984E7287587D100102AEB /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76A984E6287587D100102AEB /* SceneDelegate.swift */; };
 		76A984EE287587D200102AEB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 76A984ED287587D200102AEB /* Assets.xcassets */; };
@@ -41,6 +42,7 @@
 		76530C51287B4AA600487D6C /* ServicesPersonTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServicesPersonTableViewController.swift; sourceTree = "<group>"; };
 		76530C53287B4D6800487D6C /* ServicesTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServicesTableViewCell.swift; sourceTree = "<group>"; };
 		76530C55287C197C00487D6C /* ServicesPriceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServicesPriceViewController.swift; sourceTree = "<group>"; };
+		7671CD252885463A0073B7B5 /* PhotoCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoCollectionViewController.swift; sourceTree = "<group>"; };
 		76A984E1287587D100102AEB /* ListProduct.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ListProduct.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		76A984E4287587D100102AEB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		76A984E6287587D100102AEB /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -164,6 +166,7 @@
 				76A9851628758A2100102AEB /* ListDoorsTableViewController.swift */,
 				76A9851528758A2100102AEB /* InfoDoorViewController.swift */,
 				76530C55287C197C00487D6C /* ServicesPriceViewController.swift */,
+				7671CD252885463A0073B7B5 /* PhotoCollectionViewController.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -273,6 +276,7 @@
 				76530C52287B4AA600487D6C /* ServicesPersonTableViewController.swift in Sources */,
 				76A9851C28758A2100102AEB /* InfoDoorViewController.swift in Sources */,
 				76A9850F287589FE00102AEB /* Person.swift in Sources */,
+				7671CD262885463A0073B7B5 /* PhotoCollectionViewController.swift in Sources */,
 				76A9851D28758A2100102AEB /* ListDoorsTableViewController.swift in Sources */,
 				76A984E7287587D100102AEB /* SceneDelegate.swift in Sources */,
 				76A9850B287589DF00102AEB /* StorageManager.swift in Sources */,
