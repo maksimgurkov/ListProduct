@@ -888,7 +888,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="a3O-tI-kNl">
-                                <rect key="frame" x="0.0" y="122" width="768" height="1028"/>
+                                <rect key="frame" x="0.0" y="70" width="768" height="1080"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Kf4-q8-5w5">
                                         <rect key="frame" x="0.0" y="0.0" width="768" height="1143"/>
@@ -928,7 +928,7 @@
                                             </label>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LVj-u4-FvN">
                                                 <rect key="frame" x="20" y="1062" width="728" height="31"/>
-                                                <color key="backgroundColor" systemColor="tintColor"/>
+                                                <color key="backgroundColor" systemColor="systemOrangeColor"/>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="plain" title="Оформить монтаж">
                                                     <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -946,10 +946,10 @@
                                                         <subviews>
                                                             <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="249" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PKL-vM-eB2">
                                                                 <rect key="frame" x="0.0" y="0.0" width="169.5" height="31"/>
-                                                                <color key="backgroundColor" systemColor="systemBlueColor"/>
+                                                                <color key="backgroundColor" systemColor="systemOrangeColor"/>
                                                                 <state key="normal" title="Button"/>
                                                                 <buttonConfiguration key="configuration" style="plain" title="550*1900 ">
-                                                                    <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                    <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                 </buttonConfiguration>
                                                                 <connections>
                                                                     <action selector="actionNewDoorButton:" destination="eXq-Pt-65B" eventType="touchUpInside" id="viC-yT-T4d"/>
@@ -992,10 +992,10 @@
                                                         <subviews>
                                                             <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="249" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SXs-cz-rVC">
                                                                 <rect key="frame" x="0.0" y="0.0" width="169.5" height="31"/>
-                                                                <color key="backgroundColor" systemColor="systemBlueColor"/>
+                                                                <color key="backgroundColor" systemColor="systemOrangeColor"/>
                                                                 <state key="normal" title="Button"/>
                                                                 <buttonConfiguration key="configuration" style="plain" title="600*1900 ">
-                                                                    <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                    <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                 </buttonConfiguration>
                                                                 <connections>
                                                                     <action selector="actionNewDoorButton:" destination="eXq-Pt-65B" eventType="touchUpInside" id="cyU-97-sqH"/>
@@ -1038,10 +1038,10 @@
                                                         <subviews>
                                                             <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="249" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yIv-Bf-Sc6">
                                                                 <rect key="frame" x="0.0" y="0.0" width="169.5" height="31"/>
-                                                                <color key="backgroundColor" systemColor="systemBlueColor"/>
+                                                                <color key="backgroundColor" systemColor="systemOrangeColor"/>
                                                                 <state key="normal" title="Button"/>
                                                                 <buttonConfiguration key="configuration" style="plain" title="600*2000">
-                                                                    <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                    <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                 </buttonConfiguration>
                                                                 <connections>
                                                                     <action selector="actionNewDoorButton:" destination="eXq-Pt-65B" eventType="touchUpInside" id="Zp7-gP-CLl"/>
@@ -1084,10 +1084,10 @@
                                                         <subviews>
                                                             <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="249" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zpt-Gj-GW2">
                                                                 <rect key="frame" x="0.0" y="0.0" width="169.5" height="31"/>
-                                                                <color key="backgroundColor" systemColor="systemBlueColor"/>
+                                                                <color key="backgroundColor" systemColor="systemOrangeColor"/>
                                                                 <state key="normal" title="Button"/>
                                                                 <buttonConfiguration key="configuration" style="plain" title="700*2000">
-                                                                    <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                    <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                 </buttonConfiguration>
                                                                 <connections>
                                                                     <action selector="actionNewDoorButton:" destination="eXq-Pt-65B" eventType="touchUpInside" id="EV6-Em-AD4"/>
@@ -1130,10 +1130,10 @@
                                                         <subviews>
                                                             <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="249" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qed-cH-4o9">
                                                                 <rect key="frame" x="0.0" y="0.0" width="169.5" height="31"/>
-                                                                <color key="backgroundColor" systemColor="systemBlueColor"/>
+                                                                <color key="backgroundColor" systemColor="systemOrangeColor"/>
                                                                 <state key="normal" title="Button"/>
                                                                 <buttonConfiguration key="configuration" style="plain" title="800*2000">
-                                                                    <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                    <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                 </buttonConfiguration>
                                                                 <connections>
                                                                     <action selector="actionNewDoorButton:" destination="eXq-Pt-65B" eventType="touchUpInside" id="ID8-PS-OvS"/>
@@ -1176,10 +1176,10 @@
                                                         <subviews>
                                                             <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="249" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Uqk-Kk-L0t">
                                                                 <rect key="frame" x="0.0" y="0.0" width="169.5" height="31"/>
-                                                                <color key="backgroundColor" systemColor="systemBlueColor"/>
+                                                                <color key="backgroundColor" systemColor="systemOrangeColor"/>
                                                                 <state key="normal" title="Button"/>
                                                                 <buttonConfiguration key="configuration" style="plain" title="900*2000">
-                                                                    <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                    <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                 </buttonConfiguration>
                                                                 <connections>
                                                                     <action selector="actionNewDoorButton:" destination="eXq-Pt-65B" eventType="touchUpInside" id="sZD-ra-LVA"/>
@@ -1233,10 +1233,10 @@
                                                         <subviews>
                                                             <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="249" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nqQ-69-44I">
                                                                 <rect key="frame" x="0.0" y="0.0" width="169.5" height="31"/>
-                                                                <color key="backgroundColor" systemColor="systemBlueColor"/>
+                                                                <color key="backgroundColor" systemColor="systemOrangeColor"/>
                                                                 <state key="normal" title="Button"/>
                                                                 <buttonConfiguration key="configuration" style="plain" title="Короб">
-                                                                    <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                    <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                 </buttonConfiguration>
                                                                 <connections>
                                                                     <action selector="actionNewPogonageButton:" destination="eXq-Pt-65B" eventType="touchUpInside" id="orQ-Yo-k5X"/>
@@ -1279,10 +1279,10 @@
                                                         <subviews>
                                                             <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="249" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IUO-3c-7ci">
                                                                 <rect key="frame" x="0.0" y="0.0" width="169.5" height="31"/>
-                                                                <color key="backgroundColor" systemColor="systemBlueColor"/>
+                                                                <color key="backgroundColor" systemColor="systemOrangeColor"/>
                                                                 <state key="normal" title="Button"/>
                                                                 <buttonConfiguration key="configuration" style="plain" title="Наличник">
-                                                                    <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                    <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                 </buttonConfiguration>
                                                                 <connections>
                                                                     <action selector="actionNewPogonageButton:" destination="eXq-Pt-65B" eventType="touchUpInside" id="Km4-Cs-tDW"/>
@@ -1325,10 +1325,10 @@
                                                         <subviews>
                                                             <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="249" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fZy-OT-ZT9">
                                                                 <rect key="frame" x="0.0" y="0.0" width="169.5" height="31"/>
-                                                                <color key="backgroundColor" systemColor="systemBlueColor"/>
+                                                                <color key="backgroundColor" systemColor="systemOrangeColor"/>
                                                                 <state key="normal" title="Button"/>
                                                                 <buttonConfiguration key="configuration" style="plain" title="Добор 100">
-                                                                    <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                    <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                 </buttonConfiguration>
                                                                 <connections>
                                                                     <action selector="actionNewPogonageButton:" destination="eXq-Pt-65B" eventType="touchUpInside" id="4zT-a9-Hz7"/>
@@ -1371,10 +1371,10 @@
                                                         <subviews>
                                                             <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="249" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jK9-9l-kLI">
                                                                 <rect key="frame" x="0.0" y="0.0" width="169.5" height="31"/>
-                                                                <color key="backgroundColor" systemColor="systemBlueColor"/>
+                                                                <color key="backgroundColor" systemColor="systemOrangeColor"/>
                                                                 <state key="normal" title="Button"/>
                                                                 <buttonConfiguration key="configuration" style="plain" title="Добор 150">
-                                                                    <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                    <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                 </buttonConfiguration>
                                                                 <connections>
                                                                     <action selector="actionNewPogonageButton:" destination="eXq-Pt-65B" eventType="touchUpInside" id="LOm-K1-9Gq"/>
@@ -1417,10 +1417,10 @@
                                                         <subviews>
                                                             <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="249" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="acm-A7-9B5">
                                                                 <rect key="frame" x="0.0" y="0.0" width="169.5" height="31"/>
-                                                                <color key="backgroundColor" systemColor="systemBlueColor"/>
+                                                                <color key="backgroundColor" systemColor="systemOrangeColor"/>
                                                                 <state key="normal" title="Button"/>
                                                                 <buttonConfiguration key="configuration" style="plain" title="Добор 200">
-                                                                    <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                    <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                 </buttonConfiguration>
                                                                 <connections>
                                                                     <action selector="actionNewPogonageButton:" destination="eXq-Pt-65B" eventType="touchUpInside" id="EKi-IV-HOg"/>
@@ -1463,10 +1463,10 @@
                                                         <subviews>
                                                             <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="249" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="M8n-iJ-0LF">
                                                                 <rect key="frame" x="0.0" y="0.0" width="169.5" height="31"/>
-                                                                <color key="backgroundColor" systemColor="systemBlueColor"/>
+                                                                <color key="backgroundColor" systemColor="systemOrangeColor"/>
                                                                 <state key="normal" title="Button"/>
                                                                 <buttonConfiguration key="configuration" style="plain" title="Притвор">
-                                                                    <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                    <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                 </buttonConfiguration>
                                                                 <connections>
                                                                     <action selector="actionNewPogonageButton:" destination="eXq-Pt-65B" eventType="touchUpInside" id="MdD-Iq-t2R"/>
@@ -1512,28 +1512,189 @@
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Нестандарт" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TtZ-5K-uB5">
+                                                <rect key="frame" x="20" y="831" width="728" height="30"/>
+                                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="b33-ku-tGt">
+                                                <rect key="frame" x="20" y="881" width="728" height="34"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Полотно" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nXr-Jv-Vxa">
+                                                        <rect key="frame" x="0.0" y="0.0" width="100" height="34"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" constant="100" id="3JN-9C-iJz"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Ширина" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="dJY-IL-VvL">
+                                                        <rect key="frame" x="110" y="0.0" width="100" height="34"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" constant="100" id="TAG-2v-sGZ"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                        <textInputTraits key="textInputTraits"/>
+                                                    </textField>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="*" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AzA-7z-yhJ">
+                                                        <rect key="frame" x="220" y="0.0" width="8" height="34"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Высота" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="O8h-RD-Jvr">
+                                                        <rect key="frame" x="238" y="0.0" width="100" height="34"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" constant="100" id="Cze-8Q-aAR"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                        <textInputTraits key="textInputTraits"/>
+                                                    </textField>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="100" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sw5-et-XCt">
+                                                        <rect key="frame" x="348" y="0.0" width="50" height="34"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" constant="50" id="QFl-XR-VYv"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="шт." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="B5H-SS-dLa">
+                                                        <rect key="frame" x="408" y="0.0" width="25.5" height="34"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rh0-gL-ovc">
+                                                        <rect key="frame" x="443.5" y="0.0" width="131.5" height="34"/>
+                                                        <color key="backgroundColor" systemColor="systemOrangeColor"/>
+                                                        <state key="normal" title="Button"/>
+                                                        <buttonConfiguration key="configuration" style="plain" title="Добавить">
+                                                            <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </buttonConfiguration>
+                                                    </button>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="100000" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VgZ-Kd-FBh">
+                                                        <rect key="frame" x="585" y="0.0" width="100" height="34"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" constant="100" id="cTu-SM-KcT"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="руб." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IpG-CT-0Dw">
+                                                        <rect key="frame" x="695" y="0.0" width="33" height="34"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="S3c-ZT-G7i">
+                                                <rect key="frame" x="20" y="935" width="728" height="34"/>
+                                                <subviews>
+                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Название" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="717-88-YQ0">
+                                                        <rect key="frame" x="0.0" y="0.0" width="100" height="34"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" constant="100" id="H1T-8t-bY1"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                        <textInputTraits key="textInputTraits"/>
+                                                    </textField>
+                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Ширина" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Q2M-x3-I9p">
+                                                        <rect key="frame" x="110" y="0.0" width="100" height="34"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" constant="100" id="ScQ-SO-OhJ"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                        <textInputTraits key="textInputTraits"/>
+                                                    </textField>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="*" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KQj-nE-qrm">
+                                                        <rect key="frame" x="220" y="0.0" width="8" height="34"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Высота" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="n8v-ec-7Fu">
+                                                        <rect key="frame" x="238" y="0.0" width="100" height="34"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" constant="100" id="xvD-Wg-Cm9"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                        <textInputTraits key="textInputTraits"/>
+                                                    </textField>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="100" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PB7-9L-cbc">
+                                                        <rect key="frame" x="348" y="0.0" width="50" height="34"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" constant="50" id="p5z-Gs-kFr"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="шт." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CgC-Ek-pbW">
+                                                        <rect key="frame" x="408" y="0.0" width="25.5" height="34"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CCF-sN-Fty">
+                                                        <rect key="frame" x="443.5" y="0.0" width="131.5" height="34"/>
+                                                        <color key="backgroundColor" systemColor="systemOrangeColor"/>
+                                                        <state key="normal" title="Button"/>
+                                                        <buttonConfiguration key="configuration" style="plain" title="Добавить">
+                                                            <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </buttonConfiguration>
+                                                    </button>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="100000" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Dnu-CJ-o7R">
+                                                        <rect key="frame" x="585" y="0.0" width="100" height="34"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" constant="100" id="Mj7-Wg-2pK"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="руб." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="h9V-It-QSl">
+                                                        <rect key="frame" x="695" y="0.0" width="33" height="34"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                            </stackView>
                                         </subviews>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                         <constraints>
                                             <constraint firstItem="dcw-9u-LYL" firstAttribute="leading" secondItem="Kf4-q8-5w5" secondAttribute="leading" constant="20" id="0Rd-08-j1c"/>
+                                            <constraint firstAttribute="trailing" secondItem="b33-ku-tGt" secondAttribute="trailing" constant="20" id="2Tg-YF-amM"/>
                                             <constraint firstItem="pmb-Ja-c3e" firstAttribute="top" secondItem="OnB-uZ-eXa" secondAttribute="bottom" constant="20" id="37K-Sl-6lh"/>
+                                            <constraint firstItem="b33-ku-tGt" firstAttribute="leading" secondItem="Kf4-q8-5w5" secondAttribute="leading" constant="20" id="4dg-GA-MKJ"/>
                                             <constraint firstAttribute="trailing" secondItem="RAv-yf-jNQ" secondAttribute="trailing" constant="20" id="5oz-fp-mDg"/>
                                             <constraint firstAttribute="trailing" secondItem="YkE-r6-TAL" secondAttribute="trailing" constant="20" id="8ds-AT-71Y"/>
                                             <constraint firstItem="e0L-82-5cF" firstAttribute="top" secondItem="JSa-3P-fqD" secondAttribute="bottom" constant="11" id="9Lp-cm-Lrb"/>
                                             <constraint firstItem="OnB-uZ-eXa" firstAttribute="leading" secondItem="Kf4-q8-5w5" secondAttribute="leading" constant="20" id="Ast-7a-fM1"/>
+                                            <constraint firstItem="S3c-ZT-G7i" firstAttribute="leading" secondItem="Kf4-q8-5w5" secondAttribute="leading" constant="20" id="BEv-8d-7sx"/>
+                                            <constraint firstItem="TtZ-5K-uB5" firstAttribute="top" secondItem="pmb-Ja-c3e" secondAttribute="bottom" constant="20" id="BPR-us-NvX"/>
                                             <constraint firstItem="Dgn-cK-TYN" firstAttribute="top" secondItem="dcw-9u-LYL" secondAttribute="bottom" constant="20" id="EUs-g1-DVq"/>
                                             <constraint firstItem="YkE-r6-TAL" firstAttribute="top" secondItem="Dgn-cK-TYN" secondAttribute="bottom" constant="20" id="FlD-Mx-NVB"/>
                                             <constraint firstAttribute="trailing" secondItem="MOc-Tw-gZ9" secondAttribute="trailing" constant="20" id="I6s-Sk-Hu0"/>
+                                            <constraint firstItem="TtZ-5K-uB5" firstAttribute="leading" secondItem="Kf4-q8-5w5" secondAttribute="leading" constant="20" id="JJN-dV-Kaj"/>
                                             <constraint firstItem="YkE-r6-TAL" firstAttribute="leading" secondItem="Kf4-q8-5w5" secondAttribute="leading" constant="20" id="Mpm-iY-ldS"/>
                                             <constraint firstItem="pmb-Ja-c3e" firstAttribute="leading" secondItem="Kf4-q8-5w5" secondAttribute="leading" constant="20" id="P6J-ek-ZOf"/>
+                                            <constraint firstAttribute="trailing" secondItem="S3c-ZT-G7i" secondAttribute="trailing" constant="20" id="QpX-4Q-yho"/>
                                             <constraint firstItem="LVj-u4-FvN" firstAttribute="top" secondItem="pmb-Ja-c3e" secondAttribute="bottom" constant="251" id="Rl3-m0-sJu"/>
                                             <constraint firstItem="JSa-3P-fqD" firstAttribute="top" secondItem="Kf4-q8-5w5" secondAttribute="top" constant="20" id="Tsm-nZ-UhO"/>
                                             <constraint firstItem="RAv-yf-jNQ" firstAttribute="top" secondItem="e0L-82-5cF" secondAttribute="bottom" constant="10" id="UCa-ze-Eul"/>
+                                            <constraint firstAttribute="trailing" secondItem="TtZ-5K-uB5" secondAttribute="trailing" constant="20" id="Vqb-UW-9qJ"/>
                                             <constraint firstItem="e0L-82-5cF" firstAttribute="leading" secondItem="dcw-9u-LYL" secondAttribute="trailing" constant="20" id="W5F-D9-LtP"/>
                                             <constraint firstItem="Dgn-cK-TYN" firstAttribute="leading" secondItem="Kf4-q8-5w5" secondAttribute="leading" constant="20" id="YG1-qh-iY5"/>
                                             <constraint firstAttribute="trailing" secondItem="pmb-Ja-c3e" secondAttribute="trailing" constant="20" id="YqJ-UR-egq"/>
                                             <constraint firstAttribute="trailing" secondItem="e0L-82-5cF" secondAttribute="trailing" constant="20" id="ZAi-0S-PJz"/>
                                             <constraint firstItem="JSa-3P-fqD" firstAttribute="leading" secondItem="dcw-9u-LYL" secondAttribute="trailing" constant="20" id="Zsj-jd-kvY"/>
+                                            <constraint firstItem="S3c-ZT-G7i" firstAttribute="top" secondItem="b33-ku-tGt" secondAttribute="bottom" constant="20" id="b9p-Ke-HE0"/>
                                             <constraint firstItem="MOc-Tw-gZ9" firstAttribute="top" secondItem="RAv-yf-jNQ" secondAttribute="bottom" constant="11" id="bDC-1m-mn6"/>
                                             <constraint firstItem="MOc-Tw-gZ9" firstAttribute="leading" secondItem="dcw-9u-LYL" secondAttribute="trailing" constant="20" id="fMu-dX-s8m"/>
                                             <constraint firstAttribute="trailing" secondItem="JSa-3P-fqD" secondAttribute="trailing" constant="20" id="hDE-V4-n5d"/>
@@ -1541,6 +1702,7 @@
                                             <constraint firstItem="LVj-u4-FvN" firstAttribute="leading" secondItem="Kf4-q8-5w5" secondAttribute="leading" constant="20" id="l4G-Fz-PkG"/>
                                             <constraint firstAttribute="trailing" secondItem="OnB-uZ-eXa" secondAttribute="trailing" constant="20" id="lZm-P2-cFL"/>
                                             <constraint firstAttribute="trailing" secondItem="Dgn-cK-TYN" secondAttribute="trailing" constant="20" id="lvD-sy-rtV"/>
+                                            <constraint firstItem="b33-ku-tGt" firstAttribute="top" secondItem="TtZ-5K-uB5" secondAttribute="bottom" constant="20" id="lyj-yc-HQC"/>
                                             <constraint firstItem="RAv-yf-jNQ" firstAttribute="leading" secondItem="dcw-9u-LYL" secondAttribute="trailing" constant="20" id="psC-ct-1w4"/>
                                             <constraint firstItem="dcw-9u-LYL" firstAttribute="top" secondItem="Kf4-q8-5w5" secondAttribute="top" constant="20" id="sRT-l4-w63"/>
                                             <constraint firstItem="OnB-uZ-eXa" firstAttribute="top" secondItem="YkE-r6-TAL" secondAttribute="bottom" constant="30" id="t2V-V5-EeJ"/>
@@ -1983,6 +2145,9 @@
         </systemColor>
         <systemColor name="systemGrayColor">
             <color red="0.55686274509803924" green="0.55686274509803924" blue="0.57647058823529407" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemOrangeColor">
+            <color red="1" green="0.58431372549019611" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="tintColor">
             <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

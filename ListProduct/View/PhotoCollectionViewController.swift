@@ -47,7 +47,7 @@ extension PhotoCollectionViewController: UICollectionViewDelegate, UICollectionV
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
     
         let frameCollectionView = collectionView.frame
-        let widthCell = frameCollectionView.width / CGFloat(2)
+        let widthCell = frameCollectionView.width / CGFloat(6)
         let heightCell = widthCell
         return CGSize(width: widthCell, height: heightCell)
     }
