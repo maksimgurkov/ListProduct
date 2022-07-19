@@ -7,27 +7,32 @@
 
 import UIKit
 
-class ProductPersonTableViewController: UITableViewController {
+class ProductPersonTableViewController: UIViewController {
     
     var person: Person!
-        
-    @IBOutlet weak var infoProductLabel: UILabel!
     
+    @IBOutlet weak var fulNamePersonLabel: UILabel!
+    @IBOutlet weak var fulAdresPersonLabel: UILabel!
+    
+        
     override func viewDidLoad() {
         super.viewDidLoad()
-        checkingProduct()
         title = "\(person.name) \(person.patronymic)"
+        fulNamePersonLabel.text = "\(person.surName) \(person.name) \(person.patronymic)"
+        fulAdresPersonLabel.text = "\(person.town) \(person.strit) \(person.numberHouse) \(person.body) \(person.numberFlat)"
     }
     
     // MARK: - Table view data source
 
+}
+extension ProductPersonTableViewController: UITableViewDataSource {
 
-    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return person.basket.count
     }
 
     
-    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "productPersonCell", for: indexPath) as! BascetDoorsTableViewCell
         let product = person.basket[indexPath.row]
         cell.factoryDoorLabel.text = product.factory
@@ -39,15 +44,6 @@ class ProductPersonTableViewController: UITableViewController {
         return cell
     }
     
-    private func checkingProduct() {
-        if person.basket.isEmpty {
-            infoProductLabel.text = "Вы не выбрали товар"
-        } else {
-            infoProductLabel.text = ""
-        }
-    }
-    
-
     /*
     // Override to support conditional editing of the table view.
     override func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
