@@ -116,7 +116,7 @@
                             </stackView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aJn-m8-uVw">
                                 <rect key="frame" x="100" y="301" width="568" height="31"/>
-                                <color key="backgroundColor" systemColor="systemBlueColor"/>
+                                <color key="backgroundColor" systemColor="systemOrangeColor"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Добавить">
                                     <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -324,7 +324,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9dg-Ii-X5I" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1028.90625" y="-1327.1484375"/>
+            <point key="canvasLocation" x="1029" y="-1984"/>
         </scene>
         <!--Services Person Table View Controller-->
         <scene sceneID="JjV-tv-7rH">
@@ -415,7 +415,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2Nq-pP-InI" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1679" y="-679"/>
+            <point key="canvasLocation" x="1029" y="-1335"/>
         </scene>
         <!--Product Person Table View Controller-->
         <scene sceneID="dU9-Wu-0uf">
@@ -733,81 +733,81 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nin-cM-Kut">
-                                <rect key="frame" x="20" y="142" width="728" height="470"/>
+                                <rect key="frame" x="20" y="122" width="728" height="456"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="d45-QB-A7v">
-                                        <rect key="frame" x="35" y="30" width="658" height="410"/>
+                                        <rect key="frame" x="35" y="30" width="658" height="396"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Данные клиента" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BcW-SR-CYt">
-                                                <rect key="frame" x="0.0" y="0.0" width="186.5" height="30"/>
-                                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="145.5" height="23"/>
+                                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle2"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="фамилия" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yGZ-aX-Hyg">
-                                                <rect key="frame" x="0.0" y="38" width="658" height="30"/>
+                                                <rect key="frame" x="0.0" y="31" width="658" height="30"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                                 <color key="textColor" systemColor="systemGrayColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Имя" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yAR-YI-lU9">
-                                                <rect key="frame" x="0.0" y="76" width="658" height="30"/>
+                                                <rect key="frame" x="0.0" y="69" width="658" height="30"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                                 <color key="textColor" systemColor="systemGrayColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Отчество" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="t1n-yH-87A">
-                                                <rect key="frame" x="0.0" y="114" width="658" height="30"/>
+                                                <rect key="frame" x="0.0" y="107" width="658" height="30"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                                 <color key="textColor" systemColor="systemGrayColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Тeлефон" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bu3-Ps-mZQ">
-                                                <rect key="frame" x="0.0" y="152" width="658" height="30"/>
+                                                <rect key="frame" x="0.0" y="145" width="658" height="30"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                                 <color key="textColor" systemColor="systemGrayColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Адрес" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ni4-QB-CkE">
-                                                <rect key="frame" x="0.0" y="190" width="658" height="30"/>
+                                                <rect key="frame" x="0.0" y="183" width="658" height="30"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                                 <color key="textColor" systemColor="systemGrayColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Дополнительная информация" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5zd-cV-yeZ">
-                                                <rect key="frame" x="0.0" y="228" width="658" height="30"/>
+                                                <rect key="frame" x="0.0" y="221" width="658" height="30"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                                 <color key="textColor" systemColor="systemGrayColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Расчет межкомнатных дверей" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bVW-Us-MHA">
-                                                <rect key="frame" x="0.0" y="266" width="346" height="30"/>
-                                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
+                                                <rect key="frame" x="0.0" y="259" width="270.5" height="23"/>
+                                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle2"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="материал" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hou-jt-hVz">
-                                                <rect key="frame" x="0.0" y="304" width="658" height="30"/>
+                                                <rect key="frame" x="0.0" y="290" width="658" height="30"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                                 <color key="textColor" systemColor="systemGrayColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="монтаж" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ipY-i4-CVf">
-                                                <rect key="frame" x="0.0" y="342" width="658" height="30"/>
+                                                <rect key="frame" x="0.0" y="328" width="658" height="30"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                                 <color key="textColor" systemColor="systemGrayColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="общая сумма" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ScS-P4-ReA">
-                                                <rect key="frame" x="0.0" y="380" width="658" height="30"/>
+                                                <rect key="frame" x="0.0" y="366" width="658" height="30"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                                 <color key="textColor" systemColor="systemGrayColor"/>
@@ -841,7 +841,7 @@
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hBm-Bz-pmZ">
                                 <rect key="frame" x="20" y="903" width="300" height="31"/>
-                                <color key="backgroundColor" systemColor="tintColor"/>
+                                <color key="backgroundColor" systemColor="systemOrangeColor"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="300" id="AVR-g5-VCA"/>
                                 </constraints>
@@ -855,7 +855,7 @@
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3LY-h8-vUh">
                                 <rect key="frame" x="448" y="903" width="300" height="31"/>
-                                <color key="backgroundColor" systemColor="tintColor"/>
+                                <color key="backgroundColor" systemColor="systemOrangeColor"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="300" id="AMn-AR-aBp"/>
                                 </constraints>
@@ -871,7 +871,7 @@
                         <viewLayoutGuide key="safeArea" id="pKF-wU-uJn"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="nin-cM-Kut" firstAttribute="top" secondItem="pKF-wU-uJn" secondAttribute="top" constant="20" id="0pT-zP-UfY"/>
+                            <constraint firstItem="nin-cM-Kut" firstAttribute="top" secondItem="pKF-wU-uJn" secondAttribute="top" id="0pT-zP-UfY"/>
                             <constraint firstItem="nin-cM-Kut" firstAttribute="leading" secondItem="pKF-wU-uJn" secondAttribute="leading" constant="20" id="3Tp-GC-hcf"/>
                             <constraint firstItem="hBm-Bz-pmZ" firstAttribute="leading" secondItem="pKF-wU-uJn" secondAttribute="leading" constant="20" id="OaD-QK-bO2"/>
                             <constraint firstItem="pKF-wU-uJn" firstAttribute="trailing" secondItem="3LY-h8-vUh" secondAttribute="trailing" constant="20" id="SyY-nm-qGP"/>
@@ -1077,11 +1077,11 @@
             <objects>
                 <viewController id="eXq-Pt-65B" customClass="InfoDoorViewController" customModule="ListProduct" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="gCW-Kk-KKd">
-                        <rect key="frame" x="0.0" y="0.0" width="768" height="1200"/>
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="1300"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="a3O-tI-kNl">
-                                <rect key="frame" x="0.0" y="122" width="768" height="1028"/>
+                                <rect key="frame" x="0.0" y="122" width="768" height="1128"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Kf4-q8-5w5">
                                         <rect key="frame" x="0.0" y="0.0" width="768" height="1143"/>
@@ -1858,6 +1858,17 @@
                                                     </label>
                                                 </subviews>
                                             </stackView>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fpU-EF-ak2">
+                                                <rect key="frame" x="20" y="1011" width="728" height="31"/>
+                                                <color key="backgroundColor" systemColor="systemOrangeColor"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" title="Выбрать фурнитуру">
+                                                    <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </buttonConfiguration>
+                                                <connections>
+                                                    <segue destination="E5X-a6-wce" kind="show" id="SDZ-4L-C2j"/>
+                                                </connections>
+                                            </button>
                                         </subviews>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                         <constraints>
@@ -1872,10 +1883,12 @@
                                             <constraint firstItem="S3c-ZT-G7i" firstAttribute="leading" secondItem="Kf4-q8-5w5" secondAttribute="leading" constant="20" id="BEv-8d-7sx"/>
                                             <constraint firstItem="TtZ-5K-uB5" firstAttribute="top" secondItem="pmb-Ja-c3e" secondAttribute="bottom" constant="20" id="BPR-us-NvX"/>
                                             <constraint firstItem="Dgn-cK-TYN" firstAttribute="top" secondItem="dcw-9u-LYL" secondAttribute="bottom" constant="20" id="EUs-g1-DVq"/>
+                                            <constraint firstItem="fpU-EF-ak2" firstAttribute="leading" secondItem="Kf4-q8-5w5" secondAttribute="leading" constant="20" id="F6u-fV-k8l"/>
                                             <constraint firstItem="YkE-r6-TAL" firstAttribute="top" secondItem="Dgn-cK-TYN" secondAttribute="bottom" constant="20" id="FlD-Mx-NVB"/>
                                             <constraint firstAttribute="trailing" secondItem="MOc-Tw-gZ9" secondAttribute="trailing" constant="20" id="I6s-Sk-Hu0"/>
                                             <constraint firstItem="TtZ-5K-uB5" firstAttribute="leading" secondItem="Kf4-q8-5w5" secondAttribute="leading" constant="20" id="JJN-dV-Kaj"/>
                                             <constraint firstItem="YkE-r6-TAL" firstAttribute="leading" secondItem="Kf4-q8-5w5" secondAttribute="leading" constant="20" id="Mpm-iY-ldS"/>
+                                            <constraint firstItem="LVj-u4-FvN" firstAttribute="top" secondItem="fpU-EF-ak2" secondAttribute="bottom" constant="20" id="OVh-Yw-3tH"/>
                                             <constraint firstItem="pmb-Ja-c3e" firstAttribute="leading" secondItem="Kf4-q8-5w5" secondAttribute="leading" constant="20" id="P6J-ek-ZOf"/>
                                             <constraint firstAttribute="trailing" secondItem="S3c-ZT-G7i" secondAttribute="trailing" constant="20" id="QpX-4Q-yho"/>
                                             <constraint firstItem="LVj-u4-FvN" firstAttribute="top" secondItem="pmb-Ja-c3e" secondAttribute="bottom" constant="251" id="Rl3-m0-sJu"/>
@@ -1899,6 +1912,7 @@
                                             <constraint firstItem="RAv-yf-jNQ" firstAttribute="leading" secondItem="dcw-9u-LYL" secondAttribute="trailing" constant="20" id="psC-ct-1w4"/>
                                             <constraint firstItem="dcw-9u-LYL" firstAttribute="top" secondItem="Kf4-q8-5w5" secondAttribute="top" constant="20" id="sRT-l4-w63"/>
                                             <constraint firstItem="OnB-uZ-eXa" firstAttribute="top" secondItem="YkE-r6-TAL" secondAttribute="bottom" constant="30" id="t2V-V5-EeJ"/>
+                                            <constraint firstAttribute="trailing" secondItem="fpU-EF-ak2" secondAttribute="trailing" constant="20" id="vm4-VK-CvP"/>
                                             <constraint firstAttribute="bottom" secondItem="LVj-u4-FvN" secondAttribute="bottom" constant="50" id="wI1-yI-nu8"/>
                                         </constraints>
                                     </view>
@@ -1923,7 +1937,7 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="orn-ld-4rj"/>
-                    <size key="freeformSize" width="768" height="1200"/>
+                    <size key="freeformSize" width="768" height="1300"/>
                     <connections>
                         <outlet property="casingButton" destination="IUO-3c-7ci" id="J44-Mb-KA8"/>
                         <outlet property="casingCountLabel" destination="wGX-R0-ZEU" id="XGZ-S2-ObH"/>
@@ -1969,263 +1983,914 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="UxU-wq-LDu" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3629.6875" y="37.5"/>
+            <point key="canvasLocation" x="3628" y="67"/>
         </scene>
         <!--Services Price View Controller-->
         <scene sceneID="qmm-1j-JKd">
             <objects>
                 <viewController id="RT6-Bs-H0s" customClass="ServicesPriceViewController" customModule="ListProduct" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Xqc-kB-PlT">
-                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="1300"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" spacing="50" translatesAutoresizingMaskIntoConstraints="NO" id="tlN-Eu-ZAz">
-                                <rect key="frame" x="20" y="142" width="728" height="31"/>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8eD-5C-SVX">
+                                <rect key="frame" x="0.0" y="122" width="768" height="1128"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Демонтаж" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BBo-i8-Xp4">
-                                        <rect key="frame" x="0.0" y="0.0" width="150" height="31"/>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wW6-6U-lg6">
+                                        <rect key="frame" x="0.0" y="0.0" width="768" height="1128"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" spacing="50" translatesAutoresizingMaskIntoConstraints="NO" id="1xd-La-SiH">
+                                                <rect key="frame" x="20" y="328" width="728" height="31"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Огранечители" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EZ0-Up-Grx">
+                                                        <rect key="frame" x="0.0" y="0.0" width="150" height="31"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" constant="150" id="kXi-Zf-YB8"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FFh-N0-LLw">
+                                                        <rect key="frame" x="200" y="0.0" width="238" height="31"/>
+                                                        <state key="normal" title="Button"/>
+                                                        <buttonConfiguration key="configuration" style="plain" title="Монтаж огранечителей"/>
+                                                        <connections>
+                                                            <action selector="activeInfoButton:" destination="RT6-Bs-H0s" eventType="touchUpInside" id="0CQ-JS-ty5"/>
+                                                        </connections>
+                                                    </button>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rof-70-yB6">
+                                                        <rect key="frame" x="488" y="0.0" width="50" height="31"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" constant="50" id="gfo-av-HLq"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rqx-dJ-d9w">
+                                                        <rect key="frame" x="588" y="0.0" width="140" height="31"/>
+                                                        <color key="backgroundColor" systemColor="systemOrangeColor"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" constant="140" id="1Xk-vq-5fy"/>
+                                                        </constraints>
+                                                        <state key="normal" title="Button"/>
+                                                        <buttonConfiguration key="configuration" style="plain" title="Добавить">
+                                                            <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </buttonConfiguration>
+                                                        <connections>
+                                                            <action selector="activeServicesButton:" destination="RT6-Bs-H0s" eventType="touchUpInside" id="6N2-an-3W2"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" spacing="50" translatesAutoresizingMaskIntoConstraints="NO" id="EUb-DC-95c">
+                                                <rect key="frame" x="20" y="533" width="728" height="31"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Монтаж налички" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vjJ-0J-gac">
+                                                        <rect key="frame" x="0.0" y="0.0" width="150" height="31"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" constant="150" id="aLv-sa-Zqn"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7dy-vN-kFR">
+                                                        <rect key="frame" x="200" y="0.0" width="238" height="31"/>
+                                                        <state key="normal" title="Button"/>
+                                                        <buttonConfiguration key="configuration" style="plain" title="1 метр погонный"/>
+                                                        <connections>
+                                                            <action selector="activeInfoButton:" destination="RT6-Bs-H0s" eventType="touchUpInside" id="iQc-Py-ACL"/>
+                                                        </connections>
+                                                    </button>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oUx-zB-sBM">
+                                                        <rect key="frame" x="488" y="0.0" width="50" height="31"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" constant="50" id="FNc-G9-BoN"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="w0V-uU-n2P">
+                                                        <rect key="frame" x="588" y="0.0" width="140" height="31"/>
+                                                        <color key="backgroundColor" systemColor="systemOrangeColor"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" constant="140" id="5x2-g9-xTt"/>
+                                                        </constraints>
+                                                        <state key="normal" title="Button"/>
+                                                        <buttonConfiguration key="configuration" style="plain" title="Добавить">
+                                                            <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </buttonConfiguration>
+                                                        <connections>
+                                                            <action selector="activeServicesButton:" destination="RT6-Bs-H0s" eventType="touchUpInside" id="ZIm-kO-xUk"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" spacing="50" translatesAutoresizingMaskIntoConstraints="NO" id="bye-wI-EF9">
+                                                <rect key="frame" x="20" y="492" width="728" height="31"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Зашив фрамуги" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ikL-aQ-TVh">
+                                                        <rect key="frame" x="0.0" y="0.0" width="150" height="31"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" constant="150" id="wHF-KJ-fp7"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vn2-pn-Oeg">
+                                                        <rect key="frame" x="200" y="0.0" width="238" height="31"/>
+                                                        <state key="normal" title="Button"/>
+                                                        <buttonConfiguration key="configuration" style="plain" title="Зашив"/>
+                                                        <connections>
+                                                            <action selector="activeInfoButton:" destination="RT6-Bs-H0s" eventType="touchUpInside" id="nag-uT-Ksz"/>
+                                                        </connections>
+                                                    </button>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vr6-EB-9vl">
+                                                        <rect key="frame" x="488" y="0.0" width="50" height="31"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" constant="50" id="189-nm-9l1"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IcV-fI-aaZ">
+                                                        <rect key="frame" x="588" y="0.0" width="140" height="31"/>
+                                                        <color key="backgroundColor" systemColor="systemOrangeColor"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" constant="140" id="wdb-qI-KcX"/>
+                                                        </constraints>
+                                                        <state key="normal" title="Button"/>
+                                                        <buttonConfiguration key="configuration" style="plain" title="Добавить">
+                                                            <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </buttonConfiguration>
+                                                        <connections>
+                                                            <action selector="activeServicesButton:" destination="RT6-Bs-H0s" eventType="touchUpInside" id="2jh-fh-OkH"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" spacing="50" translatesAutoresizingMaskIntoConstraints="NO" id="2S8-zU-uDl">
+                                                <rect key="frame" x="20" y="451" width="728" height="31"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Врезка петель" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yeY-u6-MpT">
+                                                        <rect key="frame" x="0.0" y="0.0" width="150" height="31"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" constant="150" id="FBG-no-WWT"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3Oi-XQ-K00">
+                                                        <rect key="frame" x="200" y="0.0" width="238" height="31"/>
+                                                        <state key="normal" title="Button"/>
+                                                        <buttonConfiguration key="configuration" style="plain" title="Врезка петель"/>
+                                                        <connections>
+                                                            <action selector="activeInfoButton:" destination="RT6-Bs-H0s" eventType="touchUpInside" id="eh0-6b-dG8"/>
+                                                        </connections>
+                                                    </button>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vaq-in-pAh">
+                                                        <rect key="frame" x="488" y="0.0" width="50" height="31"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" constant="50" id="Y61-fF-vRv"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gsa-ju-JqU">
+                                                        <rect key="frame" x="588" y="0.0" width="140" height="31"/>
+                                                        <color key="backgroundColor" systemColor="systemOrangeColor"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" constant="140" id="q53-qi-pTe"/>
+                                                        </constraints>
+                                                        <state key="normal" title="Button"/>
+                                                        <buttonConfiguration key="configuration" style="plain" title="Добавить">
+                                                            <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </buttonConfiguration>
+                                                        <connections>
+                                                            <action selector="activeServicesButton:" destination="RT6-Bs-H0s" eventType="touchUpInside" id="hKh-9a-gG7"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" spacing="50" translatesAutoresizingMaskIntoConstraints="NO" id="5Hj-Bb-T9H">
+                                                <rect key="frame" x="20" y="369" width="728" height="31"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Увиличение" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zvd-T0-BU7">
+                                                        <rect key="frame" x="0.0" y="0.0" width="150" height="31"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" constant="150" id="sG2-n7-PdC"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gkh-Go-wrJ">
+                                                        <rect key="frame" x="200" y="0.0" width="238" height="31"/>
+                                                        <state key="normal" title="Button"/>
+                                                        <buttonConfiguration key="configuration" style="plain" title="Одна сторона"/>
+                                                        <connections>
+                                                            <action selector="activeInfoButton:" destination="RT6-Bs-H0s" eventType="touchUpInside" id="a14-9m-qIz"/>
+                                                        </connections>
+                                                    </button>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xt3-DP-4Dq">
+                                                        <rect key="frame" x="488" y="0.0" width="50" height="31"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" constant="50" id="dCc-8N-Qjz"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Pq2-d0-W3a">
+                                                        <rect key="frame" x="588" y="0.0" width="140" height="31"/>
+                                                        <color key="backgroundColor" systemColor="systemOrangeColor"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" constant="140" id="64W-Q9-IAi"/>
+                                                        </constraints>
+                                                        <state key="normal" title="Button"/>
+                                                        <buttonConfiguration key="configuration" style="plain" title="Добавить">
+                                                            <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </buttonConfiguration>
+                                                        <connections>
+                                                            <action selector="activeServicesButton:" destination="RT6-Bs-H0s" eventType="touchUpInside" id="acS-v8-hIJ"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" spacing="50" translatesAutoresizingMaskIntoConstraints="NO" id="6jF-iW-pz8">
+                                                <rect key="frame" x="20" y="410" width="728" height="31"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Сантех-Панель" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JI8-Yb-AVK">
+                                                        <rect key="frame" x="0.0" y="0.0" width="150" height="31"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" constant="150" id="fcH-OP-I6C"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tUT-qv-lM3">
+                                                        <rect key="frame" x="200" y="0.0" width="238" height="31"/>
+                                                        <state key="normal" title="Button"/>
+                                                        <buttonConfiguration key="configuration" style="plain" title="Установка сантех-панель"/>
+                                                        <connections>
+                                                            <action selector="activeInfoButton:" destination="RT6-Bs-H0s" eventType="touchUpInside" id="KSj-MM-Kuo"/>
+                                                        </connections>
+                                                    </button>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fst-IW-kZ7">
+                                                        <rect key="frame" x="488" y="0.0" width="50" height="31"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" constant="50" id="YDX-bc-VKV"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fZd-gY-jc3">
+                                                        <rect key="frame" x="588" y="0.0" width="140" height="31"/>
+                                                        <color key="backgroundColor" systemColor="systemOrangeColor"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" constant="140" id="EiE-HE-n8o"/>
+                                                        </constraints>
+                                                        <state key="normal" title="Button"/>
+                                                        <buttonConfiguration key="configuration" style="plain" title="Добавить">
+                                                            <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </buttonConfiguration>
+                                                        <connections>
+                                                            <action selector="activeServicesButton:" destination="RT6-Bs-H0s" eventType="touchUpInside" id="xzA-9T-ab0"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" spacing="50" translatesAutoresizingMaskIntoConstraints="NO" id="gbr-K6-bvG">
+                                                <rect key="frame" x="20" y="246" width="728" height="31"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Установка Добора" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lBl-rx-le0">
+                                                        <rect key="frame" x="0.0" y="0.0" width="150" height="31"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" constant="150" id="Iib-53-Phg"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xDF-13-AG9">
+                                                        <rect key="frame" x="200" y="0.0" width="238" height="31"/>
+                                                        <state key="normal" title="Button"/>
+                                                        <buttonConfiguration key="configuration" style="plain" title="С выше 100мм"/>
+                                                        <connections>
+                                                            <action selector="activeInfoButton:" destination="RT6-Bs-H0s" eventType="touchUpInside" id="WQc-cj-0Yc"/>
+                                                        </connections>
+                                                    </button>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ntE-r1-OAf">
+                                                        <rect key="frame" x="488" y="0.0" width="50" height="31"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" constant="50" id="uZx-oQ-90G"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aHA-F1-k9x">
+                                                        <rect key="frame" x="588" y="0.0" width="140" height="31"/>
+                                                        <color key="backgroundColor" systemColor="systemOrangeColor"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" constant="140" id="RCE-4j-64c"/>
+                                                        </constraints>
+                                                        <state key="normal" title="Button"/>
+                                                        <buttonConfiguration key="configuration" style="plain" title="Добавить">
+                                                            <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </buttonConfiguration>
+                                                        <connections>
+                                                            <action selector="activeServicesButton:" destination="RT6-Bs-H0s" eventType="touchUpInside" id="8iy-8b-lgV"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" spacing="50" translatesAutoresizingMaskIntoConstraints="NO" id="FBv-b0-aUb">
+                                                <rect key="frame" x="20" y="205" width="728" height="31"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Установка Добора" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fHM-u3-auw">
+                                                        <rect key="frame" x="0.0" y="0.0" width="150" height="31"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" constant="150" id="tAn-bh-tWn"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pe9-2e-Ftx">
+                                                        <rect key="frame" x="200" y="0.0" width="238" height="31"/>
+                                                        <state key="normal" title="Button"/>
+                                                        <buttonConfiguration key="configuration" style="plain" title="До 100 мм"/>
+                                                        <connections>
+                                                            <action selector="activeInfoButton:" destination="RT6-Bs-H0s" eventType="touchUpInside" id="2hN-02-Jka"/>
+                                                        </connections>
+                                                    </button>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bYy-ob-g1A">
+                                                        <rect key="frame" x="488" y="0.0" width="50" height="31"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" constant="50" id="Wxx-jT-kTa"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8Zx-Vb-fMa">
+                                                        <rect key="frame" x="588" y="0.0" width="140" height="31"/>
+                                                        <color key="backgroundColor" systemColor="systemOrangeColor"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" constant="140" id="oF1-2N-R6W"/>
+                                                        </constraints>
+                                                        <state key="normal" title="Button"/>
+                                                        <buttonConfiguration key="configuration" style="plain" title="Добавить">
+                                                            <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </buttonConfiguration>
+                                                        <connections>
+                                                            <action selector="activeServicesButton:" destination="RT6-Bs-H0s" eventType="touchUpInside" id="hO9-p9-AVi"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" spacing="50" translatesAutoresizingMaskIntoConstraints="NO" id="Jfb-K5-Ym5">
+                                                <rect key="frame" x="20" y="123" width="728" height="31"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Монтаж" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="f4p-UB-LRl">
+                                                        <rect key="frame" x="0.0" y="0.0" width="150" height="31"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" constant="150" id="5Vl-SH-0jw"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2Rm-KE-3Cn">
+                                                        <rect key="frame" x="200" y="0.0" width="238" height="31"/>
+                                                        <state key="normal" title="Button"/>
+                                                        <buttonConfiguration key="configuration" style="plain" title="Третья категория"/>
+                                                        <connections>
+                                                            <action selector="activeInfoButton:" destination="RT6-Bs-H0s" eventType="touchUpInside" id="sMW-6c-UzA"/>
+                                                        </connections>
+                                                    </button>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dR6-Qe-5D0">
+                                                        <rect key="frame" x="488" y="0.0" width="50" height="31"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" constant="50" id="WYT-9U-clH"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MWV-gt-jqB">
+                                                        <rect key="frame" x="588" y="0.0" width="140" height="31"/>
+                                                        <color key="backgroundColor" systemColor="systemOrangeColor"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" constant="140" id="uUM-NK-50y"/>
+                                                        </constraints>
+                                                        <state key="normal" title="Button"/>
+                                                        <buttonConfiguration key="configuration" style="plain" title="Добавить">
+                                                            <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </buttonConfiguration>
+                                                        <connections>
+                                                            <action selector="activeServicesButton:" destination="RT6-Bs-H0s" eventType="touchUpInside" id="VXw-SB-4Tx"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" spacing="50" translatesAutoresizingMaskIntoConstraints="NO" id="myv-W2-xcD">
+                                                <rect key="frame" x="20" y="164" width="728" height="31"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Врезка замка" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="96R-5j-GYa">
+                                                        <rect key="frame" x="0.0" y="0.0" width="150" height="31"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" constant="150" id="GQb-hs-Tv6"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="a4I-AL-4HU">
+                                                        <rect key="frame" x="200" y="0.0" width="238" height="31"/>
+                                                        <state key="normal" title="Button"/>
+                                                        <buttonConfiguration key="configuration" style="plain" title="Врезка замка"/>
+                                                        <connections>
+                                                            <action selector="activeInfoButton:" destination="RT6-Bs-H0s" eventType="touchUpInside" id="n1d-di-MZ2"/>
+                                                        </connections>
+                                                    </button>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="t4a-4v-CqZ">
+                                                        <rect key="frame" x="488" y="0.0" width="50" height="31"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" constant="50" id="3R9-as-6bb"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VjM-FN-zAC">
+                                                        <rect key="frame" x="588" y="0.0" width="140" height="31"/>
+                                                        <color key="backgroundColor" systemColor="systemOrangeColor"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" constant="140" id="BXt-7z-0Db"/>
+                                                        </constraints>
+                                                        <state key="normal" title="Button"/>
+                                                        <buttonConfiguration key="configuration" style="plain" title="Добавить">
+                                                            <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </buttonConfiguration>
+                                                        <connections>
+                                                            <action selector="activeServicesButton:" destination="RT6-Bs-H0s" eventType="touchUpInside" id="rmy-5P-dAh"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" spacing="50" translatesAutoresizingMaskIntoConstraints="NO" id="Oia-ta-9lm">
+                                                <rect key="frame" x="20" y="82" width="728" height="31"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Монтаж" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9ht-fd-2vG">
+                                                        <rect key="frame" x="0.0" y="0.0" width="150" height="31"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" constant="150" id="2SW-OQ-vh9"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7Nv-Qs-OtT">
+                                                        <rect key="frame" x="200" y="0.0" width="238" height="31"/>
+                                                        <state key="normal" title="Button"/>
+                                                        <buttonConfiguration key="configuration" style="plain" title="Вторая категоря"/>
+                                                        <connections>
+                                                            <action selector="activeInfoButton:" destination="RT6-Bs-H0s" eventType="touchUpInside" id="FAZ-wi-INK"/>
+                                                        </connections>
+                                                    </button>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="StX-Ib-MdN">
+                                                        <rect key="frame" x="488" y="0.0" width="50" height="31"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" constant="50" id="GSP-fS-3Hf"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2zz-0y-pF4">
+                                                        <rect key="frame" x="588" y="0.0" width="140" height="31"/>
+                                                        <color key="backgroundColor" systemColor="systemOrangeColor"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" constant="140" id="LgW-hJ-7Px"/>
+                                                        </constraints>
+                                                        <state key="normal" title="Button"/>
+                                                        <buttonConfiguration key="configuration" style="plain" title="Добавить">
+                                                            <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </buttonConfiguration>
+                                                        <connections>
+                                                            <action selector="activeServicesButton:" destination="RT6-Bs-H0s" eventType="touchUpInside" id="fYn-FD-OV4"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" spacing="50" translatesAutoresizingMaskIntoConstraints="NO" id="tlN-Eu-ZAz">
+                                                <rect key="frame" x="20" y="0.0" width="728" height="31"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Демонтаж" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BBo-i8-Xp4">
+                                                        <rect key="frame" x="0.0" y="0.0" width="150" height="31"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" constant="150" id="TJ9-1p-sUN"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4XM-gK-5uZ">
+                                                        <rect key="frame" x="200" y="0.0" width="238" height="31"/>
+                                                        <state key="normal" title="Button"/>
+                                                        <buttonConfiguration key="configuration" style="plain" title="Демонтаж"/>
+                                                        <connections>
+                                                            <action selector="activeInfoButton:" destination="RT6-Bs-H0s" eventType="touchUpInside" id="8HD-uz-QZf"/>
+                                                        </connections>
+                                                    </button>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UH8-6R-e3R">
+                                                        <rect key="frame" x="488" y="0.0" width="50" height="31"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" constant="50" id="hl3-Vd-Txk"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="A4Z-w7-MVJ">
+                                                        <rect key="frame" x="588" y="0.0" width="140" height="31"/>
+                                                        <color key="backgroundColor" systemColor="systemOrangeColor"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" constant="140" id="Ieh-Z6-w1X"/>
+                                                        </constraints>
+                                                        <state key="normal" title="Button"/>
+                                                        <buttonConfiguration key="configuration" style="plain" title="Добавить">
+                                                            <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </buttonConfiguration>
+                                                        <connections>
+                                                            <action selector="activeServicesButton:" destination="RT6-Bs-H0s" eventType="touchUpInside" id="3Mt-UN-qvL"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" spacing="50" translatesAutoresizingMaskIntoConstraints="NO" id="7lA-Jt-vv4">
+                                                <rect key="frame" x="20" y="41" width="728" height="31"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Монтаж" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WNn-sf-Zve">
+                                                        <rect key="frame" x="0.0" y="0.0" width="150" height="31"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" constant="150" id="cex-up-eVa"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ran-8Q-8FY">
+                                                        <rect key="frame" x="200" y="0.0" width="238" height="31"/>
+                                                        <state key="normal" title="Button"/>
+                                                        <buttonConfiguration key="configuration" style="plain" title="Первая категория"/>
+                                                        <connections>
+                                                            <action selector="activeInfoButton:" destination="RT6-Bs-H0s" eventType="touchUpInside" id="9Nc-K5-Q2P"/>
+                                                        </connections>
+                                                    </button>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zPV-Iq-np5">
+                                                        <rect key="frame" x="488" y="0.0" width="50" height="31"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" constant="50" id="o5D-M6-BEx"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Td8-A6-DUE">
+                                                        <rect key="frame" x="588" y="0.0" width="140" height="31"/>
+                                                        <color key="backgroundColor" systemColor="systemOrangeColor"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" constant="140" id="iv9-hC-FEB"/>
+                                                        </constraints>
+                                                        <state key="normal" title="Button"/>
+                                                        <buttonConfiguration key="configuration" style="plain" title="Добавить">
+                                                            <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </buttonConfiguration>
+                                                        <connections>
+                                                            <action selector="activeServicesButton:" destination="RT6-Bs-H0s" eventType="touchUpInside" id="Exl-76-riw"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" spacing="50" translatesAutoresizingMaskIntoConstraints="NO" id="CIi-3Q-zQb">
+                                                <rect key="frame" x="20" y="287" width="728" height="31"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Подпил" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9ZB-2Z-9rq">
+                                                        <rect key="frame" x="0.0" y="0.0" width="150" height="31"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" constant="150" id="BNl-lr-4GO"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rsg-BL-WTy">
+                                                        <rect key="frame" x="200" y="0.0" width="238" height="31"/>
+                                                        <state key="normal" title="Button"/>
+                                                        <buttonConfiguration key="configuration" style="plain" title="Подпил полотна"/>
+                                                        <connections>
+                                                            <action selector="activeInfoButton:" destination="RT6-Bs-H0s" eventType="touchUpInside" id="zKb-wH-DZh"/>
+                                                        </connections>
+                                                    </button>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="np7-Ad-sIo">
+                                                        <rect key="frame" x="488" y="0.0" width="50" height="31"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" constant="50" id="aE0-N3-jHP"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lid-BY-lgp">
+                                                        <rect key="frame" x="588" y="0.0" width="140" height="31"/>
+                                                        <color key="backgroundColor" systemColor="systemOrangeColor"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" constant="140" id="bnC-lS-H53"/>
+                                                        </constraints>
+                                                        <state key="normal" title="Button"/>
+                                                        <buttonConfiguration key="configuration" style="plain" title="Добавить">
+                                                            <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </buttonConfiguration>
+                                                        <connections>
+                                                            <action selector="activeServicesButton:" destination="RT6-Bs-H0s" eventType="touchUpInside" id="BsM-fM-ygh"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" spacing="50" translatesAutoresizingMaskIntoConstraints="NO" id="74h-s1-LGe">
+                                                <rect key="frame" x="20" y="954" width="728" height="31"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Доставка" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EGq-Ir-Y5f">
+                                                        <rect key="frame" x="0.0" y="0.0" width="150" height="31"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" constant="150" id="f7R-T4-Ld5"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7b7-6D-q3q">
+                                                        <rect key="frame" x="200" y="0.0" width="238" height="31"/>
+                                                        <state key="normal" title="Button"/>
+                                                        <buttonConfiguration key="configuration" style="plain" title="На лифте"/>
+                                                        <connections>
+                                                            <action selector="activeInfoButton:" destination="RT6-Bs-H0s" eventType="touchUpInside" id="uf1-CW-nrW"/>
+                                                        </connections>
+                                                    </button>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CHY-dB-GGE">
+                                                        <rect key="frame" x="488" y="0.0" width="50" height="31"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" constant="50" id="jgK-Z9-Xzo"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4sR-7d-iww">
+                                                        <rect key="frame" x="588" y="0.0" width="140" height="31"/>
+                                                        <color key="backgroundColor" systemColor="systemOrangeColor"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" constant="140" id="BuM-Wi-L62"/>
+                                                        </constraints>
+                                                        <state key="normal" title="Button"/>
+                                                        <buttonConfiguration key="configuration" style="plain" title="Добавить">
+                                                            <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </buttonConfiguration>
+                                                        <connections>
+                                                            <action selector="activeServicesButton:" destination="RT6-Bs-H0s" eventType="touchUpInside" id="tRK-qg-7UU"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" spacing="50" translatesAutoresizingMaskIntoConstraints="NO" id="GI5-KS-aoS">
+                                                <rect key="frame" x="20" y="995" width="728" height="31"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Подъем" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ahG-8h-M6u">
+                                                        <rect key="frame" x="0.0" y="0.0" width="150" height="31"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" constant="150" id="Bf4-0T-2bb"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aAB-sM-4Va">
+                                                        <rect key="frame" x="200" y="0.0" width="238" height="31"/>
+                                                        <state key="normal" title="Button"/>
+                                                        <buttonConfiguration key="configuration" style="plain" title="За один этаж"/>
+                                                        <connections>
+                                                            <action selector="activeInfoButton:" destination="RT6-Bs-H0s" eventType="touchUpInside" id="r1x-BR-BY7"/>
+                                                        </connections>
+                                                    </button>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zgS-2c-0KM">
+                                                        <rect key="frame" x="488" y="0.0" width="50" height="31"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" constant="50" id="gDA-yP-hub"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eIb-Wp-sd8">
+                                                        <rect key="frame" x="588" y="0.0" width="140" height="31"/>
+                                                        <color key="backgroundColor" systemColor="systemOrangeColor"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" constant="140" id="BhT-HA-yMC"/>
+                                                        </constraints>
+                                                        <state key="normal" title="Button"/>
+                                                        <buttonConfiguration key="configuration" style="plain" title="Добавить">
+                                                            <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </buttonConfiguration>
+                                                        <connections>
+                                                            <action selector="activeServicesButton:" destination="RT6-Bs-H0s" eventType="touchUpInside" id="gqa-qC-PTr"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" spacing="50" translatesAutoresizingMaskIntoConstraints="NO" id="YzK-oe-W5N">
+                                                <rect key="frame" x="20" y="1036" width="728" height="31"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Подъем" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="drK-Od-Cb3">
+                                                        <rect key="frame" x="0.0" y="0.0" width="150" height="31"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" constant="150" id="8Kf-d2-Gce"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="adm-pe-p0g">
+                                                        <rect key="frame" x="200" y="0.0" width="238" height="31"/>
+                                                        <state key="normal" title="Button"/>
+                                                        <buttonConfiguration key="configuration" style="plain" title="За один этаж"/>
+                                                        <connections>
+                                                            <action selector="activeInfoButton:" destination="RT6-Bs-H0s" eventType="touchUpInside" id="CBj-7K-C8D"/>
+                                                        </connections>
+                                                    </button>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tJt-be-brD">
+                                                        <rect key="frame" x="488" y="0.0" width="50" height="31"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" constant="50" id="EVb-Jy-Wtb"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fZL-iU-YFK">
+                                                        <rect key="frame" x="588" y="0.0" width="140" height="31"/>
+                                                        <color key="backgroundColor" systemColor="systemOrangeColor"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" constant="140" id="hcF-V9-15e"/>
+                                                        </constraints>
+                                                        <state key="normal" title="Button"/>
+                                                        <buttonConfiguration key="configuration" style="plain" title="Добавить">
+                                                            <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </buttonConfiguration>
+                                                        <connections>
+                                                            <action selector="activeServicesButton:" destination="RT6-Bs-H0s" eventType="touchUpInside" id="Ahx-RL-ex4"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" spacing="50" translatesAutoresizingMaskIntoConstraints="NO" id="GjL-3k-RVM">
+                                                <rect key="frame" x="20" y="1077" width="728" height="31"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Утиль" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="25k-vt-KIc">
+                                                        <rect key="frame" x="0.0" y="0.0" width="150" height="31"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" constant="150" id="fno-q1-Z0p"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="g33-d8-TU4">
+                                                        <rect key="frame" x="200" y="0.0" width="238" height="31"/>
+                                                        <state key="normal" title="Button"/>
+                                                        <buttonConfiguration key="configuration" style="plain" title="Дверей клиента"/>
+                                                        <connections>
+                                                            <action selector="activeInfoButton:" destination="RT6-Bs-H0s" eventType="touchUpInside" id="utw-TN-FhM"/>
+                                                        </connections>
+                                                    </button>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Yoo-af-obF">
+                                                        <rect key="frame" x="488" y="0.0" width="50" height="31"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" constant="50" id="x1A-Ab-7cM"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ywu-kc-8eM">
+                                                        <rect key="frame" x="588" y="0.0" width="140" height="31"/>
+                                                        <color key="backgroundColor" systemColor="systemOrangeColor"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" constant="140" id="MQE-vv-uDJ"/>
+                                                        </constraints>
+                                                        <state key="normal" title="Button"/>
+                                                        <buttonConfiguration key="configuration" style="plain" title="Добавить">
+                                                            <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </buttonConfiguration>
+                                                        <connections>
+                                                            <action selector="activeServicesButton:" destination="RT6-Bs-H0s" eventType="touchUpInside" id="SCP-K4-fGn"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                         <constraints>
-                                            <constraint firstAttribute="width" constant="150" id="TJ9-1p-sUN"/>
+                                            <constraint firstItem="Oia-ta-9lm" firstAttribute="leading" secondItem="wW6-6U-lg6" secondAttribute="leading" constant="20" id="1Km-9I-PLq"/>
+                                            <constraint firstAttribute="trailing" secondItem="FBv-b0-aUb" secondAttribute="trailing" constant="20" id="3tQ-dl-Pw9"/>
+                                            <constraint firstItem="YzK-oe-W5N" firstAttribute="leading" secondItem="wW6-6U-lg6" secondAttribute="leading" constant="20" id="8Qz-DH-h85"/>
+                                            <constraint firstItem="EUb-DC-95c" firstAttribute="top" secondItem="bye-wI-EF9" secondAttribute="bottom" constant="10" id="9Tw-Wh-CV5"/>
+                                            <constraint firstAttribute="trailing" secondItem="Oia-ta-9lm" secondAttribute="trailing" constant="20" id="9fY-FD-zA4"/>
+                                            <constraint firstAttribute="trailing" secondItem="Jfb-K5-Ym5" secondAttribute="trailing" constant="20" id="AbR-CH-yvb"/>
+                                            <constraint firstItem="2S8-zU-uDl" firstAttribute="top" secondItem="6jF-iW-pz8" secondAttribute="bottom" constant="10" id="BiT-uY-V61"/>
+                                            <constraint firstItem="EUb-DC-95c" firstAttribute="leading" secondItem="wW6-6U-lg6" secondAttribute="leading" constant="20" id="C2M-58-wsj"/>
+                                            <constraint firstItem="CIi-3Q-zQb" firstAttribute="leading" secondItem="wW6-6U-lg6" secondAttribute="leading" constant="20" id="ECa-cD-tto"/>
+                                            <constraint firstItem="bye-wI-EF9" firstAttribute="leading" secondItem="wW6-6U-lg6" secondAttribute="leading" constant="20" id="F6w-Hh-tZL"/>
+                                            <constraint firstItem="6jF-iW-pz8" firstAttribute="top" secondItem="5Hj-Bb-T9H" secondAttribute="bottom" constant="10" id="Hxa-DA-ak3"/>
+                                            <constraint firstAttribute="trailing" secondItem="74h-s1-LGe" secondAttribute="trailing" constant="20" id="IMv-9d-fkB"/>
+                                            <constraint firstItem="myv-W2-xcD" firstAttribute="top" secondItem="Jfb-K5-Ym5" secondAttribute="bottom" constant="10" id="JcJ-es-ZzC"/>
+                                            <constraint firstItem="GI5-KS-aoS" firstAttribute="top" secondItem="74h-s1-LGe" secondAttribute="bottom" constant="10" id="PLf-tz-Q6A"/>
+                                            <constraint firstAttribute="trailing" secondItem="6jF-iW-pz8" secondAttribute="trailing" constant="20" id="PnX-Fo-mFn"/>
+                                            <constraint firstItem="7lA-Jt-vv4" firstAttribute="top" secondItem="tlN-Eu-ZAz" secondAttribute="bottom" constant="10" id="QaK-91-ln6"/>
+                                            <constraint firstItem="1xd-La-SiH" firstAttribute="top" secondItem="CIi-3Q-zQb" secondAttribute="bottom" constant="10" id="SJU-eJ-kZd"/>
+                                            <constraint firstItem="FBv-b0-aUb" firstAttribute="top" secondItem="myv-W2-xcD" secondAttribute="bottom" constant="10" id="SPG-rd-3LX"/>
+                                            <constraint firstItem="5Hj-Bb-T9H" firstAttribute="top" secondItem="1xd-La-SiH" secondAttribute="bottom" constant="10" id="SyH-vU-V9Y"/>
+                                            <constraint firstItem="myv-W2-xcD" firstAttribute="leading" secondItem="wW6-6U-lg6" secondAttribute="leading" constant="20" id="W6v-mw-rZw"/>
+                                            <constraint firstItem="74h-s1-LGe" firstAttribute="leading" secondItem="wW6-6U-lg6" secondAttribute="leading" constant="20" id="WKw-eb-yVC"/>
+                                            <constraint firstAttribute="trailing" secondItem="bye-wI-EF9" secondAttribute="trailing" constant="20" id="WVN-U0-Dnh"/>
+                                            <constraint firstItem="GI5-KS-aoS" firstAttribute="leading" secondItem="wW6-6U-lg6" secondAttribute="leading" constant="20" id="Wst-Th-Pc2"/>
+                                            <constraint firstAttribute="trailing" secondItem="tlN-Eu-ZAz" secondAttribute="trailing" constant="20" id="WuA-fg-qil"/>
+                                            <constraint firstAttribute="trailing" secondItem="GI5-KS-aoS" secondAttribute="trailing" constant="20" id="XPd-KD-Qwh"/>
+                                            <constraint firstAttribute="trailing" secondItem="myv-W2-xcD" secondAttribute="trailing" constant="20" id="Z8Q-Gj-ATB"/>
+                                            <constraint firstAttribute="trailing" secondItem="EUb-DC-95c" secondAttribute="trailing" constant="20" id="b07-qt-gYx"/>
+                                            <constraint firstItem="GjL-3k-RVM" firstAttribute="top" secondItem="YzK-oe-W5N" secondAttribute="bottom" constant="10" id="b6l-W8-r9H"/>
+                                            <constraint firstAttribute="trailing" secondItem="GjL-3k-RVM" secondAttribute="trailing" constant="20" id="bi9-pE-Q9x"/>
+                                            <constraint firstItem="CIi-3Q-zQb" firstAttribute="top" secondItem="gbr-K6-bvG" secondAttribute="bottom" constant="10" id="cQ8-Qh-E5g"/>
+                                            <constraint firstAttribute="trailing" secondItem="5Hj-Bb-T9H" secondAttribute="trailing" constant="20" id="crg-M7-G9Q"/>
+                                            <constraint firstItem="YzK-oe-W5N" firstAttribute="top" secondItem="GI5-KS-aoS" secondAttribute="bottom" constant="10" id="djH-ML-8Kc"/>
+                                            <constraint firstItem="bye-wI-EF9" firstAttribute="top" secondItem="2S8-zU-uDl" secondAttribute="bottom" constant="10" id="fcn-i1-ex5"/>
+                                            <constraint firstItem="Jfb-K5-Ym5" firstAttribute="top" secondItem="Oia-ta-9lm" secondAttribute="bottom" constant="10" id="gDb-4f-Fbu"/>
+                                            <constraint firstItem="GjL-3k-RVM" firstAttribute="leading" secondItem="wW6-6U-lg6" secondAttribute="leading" constant="20" id="gbO-st-Pqg"/>
+                                            <constraint firstItem="gbr-K6-bvG" firstAttribute="top" secondItem="FBv-b0-aUb" secondAttribute="bottom" constant="10" id="hag-SR-WDE"/>
+                                            <constraint firstAttribute="trailing" secondItem="YzK-oe-W5N" secondAttribute="trailing" constant="20" id="kh6-Wk-dkb"/>
+                                            <constraint firstAttribute="trailing" secondItem="CIi-3Q-zQb" secondAttribute="trailing" constant="20" id="kn1-RS-4Gr"/>
+                                            <constraint firstItem="tlN-Eu-ZAz" firstAttribute="top" secondItem="wW6-6U-lg6" secondAttribute="top" id="mk2-Sw-q2l"/>
+                                            <constraint firstItem="FBv-b0-aUb" firstAttribute="leading" secondItem="wW6-6U-lg6" secondAttribute="leading" constant="20" id="moA-iC-qV9"/>
+                                            <constraint firstItem="gbr-K6-bvG" firstAttribute="leading" secondItem="wW6-6U-lg6" secondAttribute="leading" constant="20" id="nDk-fy-ire"/>
+                                            <constraint firstItem="Jfb-K5-Ym5" firstAttribute="leading" secondItem="wW6-6U-lg6" secondAttribute="leading" constant="20" id="nae-LX-b2v"/>
+                                            <constraint firstAttribute="trailing" secondItem="1xd-La-SiH" secondAttribute="trailing" constant="20" id="qRS-zG-5hy"/>
+                                            <constraint firstAttribute="trailing" secondItem="2S8-zU-uDl" secondAttribute="trailing" constant="20" id="qSp-6k-jdi"/>
+                                            <constraint firstItem="7lA-Jt-vv4" firstAttribute="leading" secondItem="wW6-6U-lg6" secondAttribute="leading" constant="20" id="qmR-Ce-vmo"/>
+                                            <constraint firstItem="5Hj-Bb-T9H" firstAttribute="leading" secondItem="wW6-6U-lg6" secondAttribute="leading" constant="20" id="rI6-Rh-3pr"/>
+                                            <constraint firstAttribute="trailing" secondItem="7lA-Jt-vv4" secondAttribute="trailing" constant="20" id="syB-q5-GE5"/>
+                                            <constraint firstItem="6jF-iW-pz8" firstAttribute="leading" secondItem="wW6-6U-lg6" secondAttribute="leading" constant="20" id="tTd-Rc-KpQ"/>
+                                            <constraint firstAttribute="bottom" secondItem="GjL-3k-RVM" secondAttribute="bottom" constant="20" id="u7R-Os-lgq"/>
+                                            <constraint firstAttribute="trailing" secondItem="gbr-K6-bvG" secondAttribute="trailing" constant="20" id="usI-96-8uM"/>
+                                            <constraint firstItem="Oia-ta-9lm" firstAttribute="top" secondItem="7lA-Jt-vv4" secondAttribute="bottom" constant="10" id="vN3-Xh-tYZ"/>
+                                            <constraint firstItem="1xd-La-SiH" firstAttribute="leading" secondItem="wW6-6U-lg6" secondAttribute="leading" constant="20" id="xDu-IT-Pam"/>
+                                            <constraint firstItem="74h-s1-LGe" firstAttribute="top" secondItem="EUb-DC-95c" secondAttribute="bottom" constant="390" id="yEb-9c-iHC"/>
+                                            <constraint firstItem="2S8-zU-uDl" firstAttribute="leading" secondItem="wW6-6U-lg6" secondAttribute="leading" constant="20" id="zjP-2V-b1B"/>
+                                            <constraint firstItem="tlN-Eu-ZAz" firstAttribute="leading" secondItem="wW6-6U-lg6" secondAttribute="leading" constant="20" id="ztp-HL-QHd"/>
                                         </constraints>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <nil key="textColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4XM-gK-5uZ">
-                                        <rect key="frame" x="200" y="0.0" width="238" height="31"/>
-                                        <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="plain" title="Демонтаж"/>
-                                        <connections>
-                                            <action selector="activeInfoButton:" destination="RT6-Bs-H0s" eventType="touchUpInside" id="8HD-uz-QZf"/>
-                                        </connections>
-                                    </button>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UH8-6R-e3R">
-                                        <rect key="frame" x="488" y="0.0" width="50" height="31"/>
-                                        <constraints>
-                                            <constraint firstAttribute="width" constant="50" id="hl3-Vd-Txk"/>
-                                        </constraints>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <nil key="textColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="A4Z-w7-MVJ">
-                                        <rect key="frame" x="588" y="0.0" width="140" height="31"/>
-                                        <color key="backgroundColor" systemColor="tintColor"/>
-                                        <constraints>
-                                            <constraint firstAttribute="width" constant="140" id="Ieh-Z6-w1X"/>
-                                        </constraints>
-                                        <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="plain" title="Добавить">
-                                            <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        </buttonConfiguration>
-                                        <connections>
-                                            <action selector="activeServicesButton:" destination="RT6-Bs-H0s" eventType="touchUpInside" id="3Mt-UN-qvL"/>
-                                        </connections>
-                                    </button>
+                                    </view>
                                 </subviews>
-                            </stackView>
-                            <stackView opaque="NO" contentMode="scaleToFill" spacing="50" translatesAutoresizingMaskIntoConstraints="NO" id="7lA-Jt-vv4">
-                                <rect key="frame" x="20" y="193" width="728" height="31"/>
-                                <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Монтаж" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WNn-sf-Zve">
-                                        <rect key="frame" x="0.0" y="0.0" width="150" height="31"/>
-                                        <constraints>
-                                            <constraint firstAttribute="width" constant="150" id="cex-up-eVa"/>
-                                        </constraints>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <nil key="textColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ran-8Q-8FY">
-                                        <rect key="frame" x="200" y="0.0" width="238" height="31"/>
-                                        <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="plain" title="Первая категория"/>
-                                        <connections>
-                                            <action selector="activeInfoButton:" destination="RT6-Bs-H0s" eventType="touchUpInside" id="9Nc-K5-Q2P"/>
-                                        </connections>
-                                    </button>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zPV-Iq-np5">
-                                        <rect key="frame" x="488" y="0.0" width="50" height="31"/>
-                                        <constraints>
-                                            <constraint firstAttribute="width" constant="50" id="o5D-M6-BEx"/>
-                                        </constraints>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <nil key="textColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Td8-A6-DUE">
-                                        <rect key="frame" x="588" y="0.0" width="140" height="31"/>
-                                        <color key="backgroundColor" systemColor="tintColor"/>
-                                        <constraints>
-                                            <constraint firstAttribute="width" constant="140" id="iv9-hC-FEB"/>
-                                        </constraints>
-                                        <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="plain" title="Добавить">
-                                            <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        </buttonConfiguration>
-                                        <connections>
-                                            <action selector="activeServicesButton:" destination="RT6-Bs-H0s" eventType="touchUpInside" id="Exl-76-riw"/>
-                                        </connections>
-                                    </button>
-                                </subviews>
-                            </stackView>
-                            <stackView opaque="NO" contentMode="scaleToFill" spacing="50" translatesAutoresizingMaskIntoConstraints="NO" id="Oia-ta-9lm">
-                                <rect key="frame" x="20" y="244" width="728" height="31"/>
-                                <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Монтаж" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9ht-fd-2vG">
-                                        <rect key="frame" x="0.0" y="0.0" width="150" height="31"/>
-                                        <constraints>
-                                            <constraint firstAttribute="width" constant="150" id="2SW-OQ-vh9"/>
-                                        </constraints>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <nil key="textColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7Nv-Qs-OtT">
-                                        <rect key="frame" x="200" y="0.0" width="238" height="31"/>
-                                        <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="plain" title="Вторая категоря"/>
-                                        <connections>
-                                            <action selector="activeInfoButton:" destination="RT6-Bs-H0s" eventType="touchUpInside" id="FAZ-wi-INK"/>
-                                        </connections>
-                                    </button>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="StX-Ib-MdN">
-                                        <rect key="frame" x="488" y="0.0" width="50" height="31"/>
-                                        <constraints>
-                                            <constraint firstAttribute="width" constant="50" id="GSP-fS-3Hf"/>
-                                        </constraints>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <nil key="textColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2zz-0y-pF4">
-                                        <rect key="frame" x="588" y="0.0" width="140" height="31"/>
-                                        <color key="backgroundColor" systemColor="tintColor"/>
-                                        <constraints>
-                                            <constraint firstAttribute="width" constant="140" id="LgW-hJ-7Px"/>
-                                        </constraints>
-                                        <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="plain" title="Добавить">
-                                            <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        </buttonConfiguration>
-                                        <connections>
-                                            <action selector="activeServicesButton:" destination="RT6-Bs-H0s" eventType="touchUpInside" id="fYn-FD-OV4"/>
-                                        </connections>
-                                    </button>
-                                </subviews>
-                            </stackView>
-                            <stackView opaque="NO" contentMode="scaleToFill" spacing="50" translatesAutoresizingMaskIntoConstraints="NO" id="myv-W2-xcD">
-                                <rect key="frame" x="20" y="346" width="728" height="31"/>
-                                <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Врезка замка" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="96R-5j-GYa">
-                                        <rect key="frame" x="0.0" y="0.0" width="150" height="31"/>
-                                        <constraints>
-                                            <constraint firstAttribute="width" constant="150" id="GQb-hs-Tv6"/>
-                                        </constraints>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <nil key="textColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="a4I-AL-4HU">
-                                        <rect key="frame" x="200" y="0.0" width="238" height="31"/>
-                                        <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="plain" title="Первая категория"/>
-                                        <connections>
-                                            <action selector="activeInfoButton:" destination="RT6-Bs-H0s" eventType="touchUpInside" id="n1d-di-MZ2"/>
-                                        </connections>
-                                    </button>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="t4a-4v-CqZ">
-                                        <rect key="frame" x="488" y="0.0" width="50" height="31"/>
-                                        <constraints>
-                                            <constraint firstAttribute="width" constant="50" id="3R9-as-6bb"/>
-                                        </constraints>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <nil key="textColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VjM-FN-zAC">
-                                        <rect key="frame" x="588" y="0.0" width="140" height="31"/>
-                                        <color key="backgroundColor" systemColor="tintColor"/>
-                                        <constraints>
-                                            <constraint firstAttribute="width" constant="140" id="BXt-7z-0Db"/>
-                                        </constraints>
-                                        <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="plain" title="Добавить">
-                                            <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        </buttonConfiguration>
-                                        <connections>
-                                            <action selector="activeServicesButton:" destination="RT6-Bs-H0s" eventType="touchUpInside" id="rmy-5P-dAh"/>
-                                        </connections>
-                                    </button>
-                                </subviews>
-                            </stackView>
-                            <stackView opaque="NO" contentMode="scaleToFill" spacing="50" translatesAutoresizingMaskIntoConstraints="NO" id="Jfb-K5-Ym5">
-                                <rect key="frame" x="20" y="295" width="728" height="31"/>
-                                <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Монтаж" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="f4p-UB-LRl">
-                                        <rect key="frame" x="0.0" y="0.0" width="150" height="31"/>
-                                        <constraints>
-                                            <constraint firstAttribute="width" constant="150" id="5Vl-SH-0jw"/>
-                                        </constraints>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <nil key="textColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2Rm-KE-3Cn">
-                                        <rect key="frame" x="200" y="0.0" width="238" height="31"/>
-                                        <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="plain" title="Третья категория"/>
-                                        <connections>
-                                            <action selector="activeInfoButton:" destination="RT6-Bs-H0s" eventType="touchUpInside" id="sMW-6c-UzA"/>
-                                        </connections>
-                                    </button>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dR6-Qe-5D0">
-                                        <rect key="frame" x="488" y="0.0" width="50" height="31"/>
-                                        <constraints>
-                                            <constraint firstAttribute="width" constant="50" id="WYT-9U-clH"/>
-                                        </constraints>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <nil key="textColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MWV-gt-jqB">
-                                        <rect key="frame" x="588" y="0.0" width="140" height="31"/>
-                                        <color key="backgroundColor" systemColor="tintColor"/>
-                                        <constraints>
-                                            <constraint firstAttribute="width" constant="140" id="uUM-NK-50y"/>
-                                        </constraints>
-                                        <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="plain" title="Добавить">
-                                            <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        </buttonConfiguration>
-                                        <connections>
-                                            <action selector="activeServicesButton:" destination="RT6-Bs-H0s" eventType="touchUpInside" id="VXw-SB-4Tx"/>
-                                        </connections>
-                                    </button>
-                                </subviews>
-                            </stackView>
+                                <constraints>
+                                    <constraint firstItem="wW6-6U-lg6" firstAttribute="leading" secondItem="8eD-5C-SVX" secondAttribute="leading" id="Avs-1L-mPH"/>
+                                    <constraint firstItem="wW6-6U-lg6" firstAttribute="width" secondItem="8eD-5C-SVX" secondAttribute="width" id="CEW-sU-C0U"/>
+                                    <constraint firstAttribute="trailing" secondItem="wW6-6U-lg6" secondAttribute="trailing" id="DYq-U4-5OQ"/>
+                                    <constraint firstAttribute="bottom" secondItem="wW6-6U-lg6" secondAttribute="bottom" id="ViF-yQ-75c"/>
+                                    <constraint firstItem="wW6-6U-lg6" firstAttribute="height" secondItem="8eD-5C-SVX" secondAttribute="height" priority="250" id="Wbh-5j-C26"/>
+                                    <constraint firstItem="wW6-6U-lg6" firstAttribute="top" secondItem="8eD-5C-SVX" secondAttribute="top" id="X4V-f8-fce"/>
+                                </constraints>
+                            </scrollView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="gLB-J9-6XR"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="Oia-ta-9lm" firstAttribute="top" secondItem="7lA-Jt-vv4" secondAttribute="bottom" constant="20" id="0pe-nM-DGL"/>
-                            <constraint firstItem="myv-W2-xcD" firstAttribute="top" secondItem="Jfb-K5-Ym5" secondAttribute="bottom" constant="20" id="6tR-5x-VdD"/>
-                            <constraint firstItem="gLB-J9-6XR" firstAttribute="trailing" secondItem="tlN-Eu-ZAz" secondAttribute="trailing" constant="20" id="7xl-4d-sCW"/>
-                            <constraint firstItem="7lA-Jt-vv4" firstAttribute="leading" secondItem="gLB-J9-6XR" secondAttribute="leading" constant="20" id="DWw-c3-PCW"/>
-                            <constraint firstItem="gLB-J9-6XR" firstAttribute="trailing" secondItem="myv-W2-xcD" secondAttribute="trailing" constant="20" id="E0b-xw-fry"/>
-                            <constraint firstItem="Jfb-K5-Ym5" firstAttribute="leading" secondItem="gLB-J9-6XR" secondAttribute="leading" constant="20" id="Huu-qM-d4j"/>
-                            <constraint firstItem="gLB-J9-6XR" firstAttribute="trailing" secondItem="7lA-Jt-vv4" secondAttribute="trailing" constant="20" id="K04-uM-ihh"/>
-                            <constraint firstItem="myv-W2-xcD" firstAttribute="leading" secondItem="gLB-J9-6XR" secondAttribute="leading" constant="20" id="L1Z-L3-JCh"/>
-                            <constraint firstItem="Oia-ta-9lm" firstAttribute="leading" secondItem="gLB-J9-6XR" secondAttribute="leading" constant="20" id="bXh-hf-mVk"/>
-                            <constraint firstItem="tlN-Eu-ZAz" firstAttribute="leading" secondItem="gLB-J9-6XR" secondAttribute="leading" constant="20" id="dsi-nz-2xM"/>
-                            <constraint firstItem="gLB-J9-6XR" firstAttribute="trailing" secondItem="Jfb-K5-Ym5" secondAttribute="trailing" constant="20" id="g2q-Un-Q30"/>
-                            <constraint firstItem="7lA-Jt-vv4" firstAttribute="top" secondItem="tlN-Eu-ZAz" secondAttribute="bottom" constant="20" id="icC-iM-VcY"/>
-                            <constraint firstItem="Jfb-K5-Ym5" firstAttribute="top" secondItem="Oia-ta-9lm" secondAttribute="bottom" constant="20" id="kDu-9Q-yQb"/>
-                            <constraint firstItem="tlN-Eu-ZAz" firstAttribute="top" secondItem="gLB-J9-6XR" secondAttribute="top" constant="20" id="okp-h4-1kw"/>
-                            <constraint firstItem="gLB-J9-6XR" firstAttribute="trailing" secondItem="Oia-ta-9lm" secondAttribute="trailing" constant="20" id="siJ-dR-D5t"/>
+                            <constraint firstAttribute="trailing" secondItem="8eD-5C-SVX" secondAttribute="trailing" id="BwC-dM-PwH"/>
+                            <constraint firstItem="8eD-5C-SVX" firstAttribute="bottom" secondItem="gLB-J9-6XR" secondAttribute="bottom" id="Ppf-jA-arV"/>
+                            <constraint firstItem="8eD-5C-SVX" firstAttribute="leading" secondItem="Xqc-kB-PlT" secondAttribute="leading" id="cyc-47-3fG"/>
+                            <constraint firstItem="8eD-5C-SVX" firstAttribute="top" secondItem="gLB-J9-6XR" secondAttribute="top" id="epH-Vx-R7u"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="U5n-Kz-iI3"/>
+                    <size key="freeformSize" width="768" height="1300"/>
                     <connections>
                         <outlet property="catOneButton" destination="Td8-A6-DUE" id="QX7-km-PTI"/>
                         <outlet property="catOneInfoButton" destination="Ran-8Q-8FY" id="VyC-P2-3V9"/>
@@ -2246,7 +2911,36 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="h83-lB-8bZ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4298" y="-15"/>
+            <point key="canvasLocation" x="3626.5625" y="-779.296875"/>
+        </scene>
+        <!--Table View Controller-->
+        <scene sceneID="4aL-de-ogR">
+            <objects>
+                <tableViewController id="E5X-a6-wce" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="33z-UR-9sK">
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="cMU-kf-B0i">
+                                <rect key="frame" x="0.0" y="44.5" width="768" height="43.5"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="cMU-kf-B0i" id="0td-vD-cf0">
+                                    <rect key="frame" x="0.0" y="0.0" width="768" height="43.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="E5X-a6-wce" id="DhJ-SD-zhv"/>
+                            <outlet property="delegate" destination="E5X-a6-wce" id="04r-z9-Q6r"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" id="Qlq-2h-L5a"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6Ws-0y-QAp" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3627" y="-1497"/>
         </scene>
         <!--Спецыалист по замеру-->
         <scene sceneID="HqJ-wM-LMq">
@@ -2324,9 +3018,6 @@
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
-        <systemColor name="systemBlueColor">
-            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </systemColor>
         <systemColor name="systemGray2Color">
             <color red="0.68235294117647061" green="0.68235294117647061" blue="0.69803921568627447" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
@@ -2341,9 +3032,6 @@
         </systemColor>
         <systemColor name="systemOrangeColor">
             <color red="1" green="0.58431372549019611" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </systemColor>
-        <systemColor name="tintColor">
-            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

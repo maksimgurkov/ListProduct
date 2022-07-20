@@ -102,15 +102,35 @@ class ServicesPriceViewController: UIViewController {
     @IBAction func activeServicesButton(_ sender: UIButton) {
         switch sender {
         case dismantlingButton:
-            saveNewSerwice(name: "Демонтаж", descriptionService: "Думонтаж межкомнатной двери", price: 1500, count: 1, labelCount: countDismantlingSeviceLabel)
+            saveNewSerwice(name: "Демонтаж",
+                           descriptionService: "Думонтаж межкомнатной двери",
+                           price: 1400,
+                           count: 1,
+                           labelCount: countDismantlingSeviceLabel)
         case catOneButton:
-            saveNewSerwice(name: "Монтаж", descriptionService: "Монтаж первой категории", price: 6000, count: 1, labelCount: countCatOneLabel)
+            saveNewSerwice(name: "Монтаж",
+                           descriptionService: "Монтаж первой категории",
+                           price: 7350,
+                           count: 1,
+                           labelCount: countCatOneLabel)
         case catTwoButton:
-            saveNewSerwice(name: "Монтаж", descriptionService: "Монтаж второй категории", price: 7000, count: 1, labelCount: countCatTwoLabel)
+            saveNewSerwice(name: "Монтаж",
+                           descriptionService: "Монтаж второй категории",
+                           price: 9120,
+                           count: 1,
+                           labelCount: countCatTwoLabel)
         case catThreeBotton:
-            saveNewSerwice(name: "Монтаж", descriptionService: "Монтаж третьей категории", price: 8000, count: 1, labelCount: countCatThreeLabel)
+            saveNewSerwice(name: "Монтаж",
+                           descriptionService: "Монтаж третьей категории",
+                           price: 10900,
+                           count: 1,
+                           labelCount: countCatThreeLabel)
         case installationLockButton:
-            saveNewSerwice(name: "Врезка замка", descriptionService: "Врезка и установка механизма", price: 2500, count: 1, labelCount: countInstallationLockLabel)
+            saveNewSerwice(name: "Врезка замка",
+                           descriptionService: "Врезка и установка механизма",
+                           price: 2700,
+                           count: 1,
+                           labelCount: countInstallationLockLabel)
         default:
             break
         }
@@ -119,15 +139,15 @@ class ServicesPriceViewController: UIViewController {
     @IBAction func activeInfoButton(_ sender: UIButton) {
         switch sender {
         case dismantlingInfoButton:
-            alertInfo(value: "Думонтаж двери клиента, подготовка проема к монтажу. Цена: 1500")
+            alertInfo(value: "Думонтаж двери клиента, подготовка проема к монтажу. Цена: 1400")
         case catOneInfoButton:
-            alertInfo(value: "Монтаж первой категории (Одностворчатая) входит: короба, навес полотна и установка наличников")
+            alertInfo(value: "Монтаж первой категории (Одностворчатая) входит: короба, навес полотна и установка наличников Цена: 7350")
         case catTwoInfoButton:
-            alertInfo(value: "Монтаж второй категории (Двестворчатая) входит: установка короба, навес полотна и установка наличников")
+            alertInfo(value: "Монтаж второй категории (Двестворчатая) входит: установка короба, навес полотна и установка наличников Цена: 9120")
         case catThreeInfoButton:
-            alertInfo(value: "Монтаж третьей категории (раздвижная) входит: монтаж механизма, навес полотна, установка доборов и установка наличников")
+            alertInfo(value: "Монтаж третьей категории (раздвижная) входит: монтаж механизма, навес полотна, установка доборов и установка наличников Цена: 10900")
         case installationLockInfoButton:
-            alertInfo(value: "Врезка замка и его установка и монтаж ручек")
+            alertInfo(value: "Врезка замка и его установка и монтаж ручек Цена: 2700")
         default:
             break
         }
