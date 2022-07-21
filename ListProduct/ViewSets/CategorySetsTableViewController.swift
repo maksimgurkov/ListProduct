@@ -6,24 +6,51 @@
 //
 
 import UIKit
+import RealmSwift
 
 class CategorySetsTableViewController: UITableViewController {
+    
+    var categorySet: [Sets]!
+    
+    private var catefory: [String] = []
+    private var listProductSet: [Sets] = []
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        forCategoriaSets()
+        title = "Выбор категории"
+    }
+    
+    private func forCategoriaSets() {
+        for categoria in categorySet {
+            if !catefory.contains(categoria.category.rawValue) {
+                catefory.append(categoria.category.rawValue)
+            }
+        }
+    }
+    
+    private func forProductSets() {
+        guard let index = tableView.indexPathForSelectedRow else { return }
+        listProductSet = []
+        for product in categorySet {
+            if product.category.rawValue == catefory[index.row] {
+                listProductSet.append(product)
+            }
+        }
     }
 
     // MARK: - Table view data source
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 10
+        return catefory.count
     }
 
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "categorySets", for: indexPath)
         var content = cell.defaultContentConfiguration()
-        content.text = "10"
+        let category = catefory[indexPath.row]
+        content.text = "\(category)"
         cell.contentConfiguration = content
         return cell
     }
@@ -64,14 +91,16 @@ class CategorySetsTableViewController: UITableViewController {
     }
     */
 
-    /*
+    
     // MARK: - Navigation
 
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
+ 
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+        guard let productSetVC = segue.destination as? ProductSetTableViewController else { return }
+        forProductSets()
+        productSetVC.productSets = listProductSet
+
     }
-    */
+    
 
 }

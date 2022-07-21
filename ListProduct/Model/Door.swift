@@ -14,7 +14,6 @@ class Door {
     let descriptionDoor: String
     let specifications: String
     let price: Int
-    let dimensions: String
     let flag: Bool
     
     
@@ -23,14 +22,13 @@ class Door {
         return door
     }
     
-    init(factory: Factory, material: Material, nameDoor: String, descriptionDoor: String, specifications: String, price: Int, dimensions: String, flag: Bool) {
+    init(factory: Factory, material: Material, nameDoor: String, descriptionDoor: String, specifications: String, price: Int, flag: Bool) {
         self.factory = factory
         self.material = material
         self.nameDoor = nameDoor
         self.descriptionDoor = descriptionDoor
         self.specifications = specifications
         self.price = price
-        self.dimensions = dimensions
         self.flag = flag
     }
 }

@@ -1,62 +1,34 @@
 //
-//  SetsTableViewController.swift
+//  ProductSetTableViewController.swift
 //  ListProduct
 //
 //  Created by Максим Гурков on 21.07.2022.
 //
 
 import UIKit
+import SwiftUI
 
-class SetsTableViewController: UITableViewController {
+class ProductSetTableViewController: UITableViewController {
     
-    var sets = Sets.forSet()
-    
-    private var factory: [String] = []
-    private var categoru: [Sets] = []
+    var productSets: [Sets]!
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        title = "Выбор производителя Фурнитуры"
-        factorySet()
+        title = "Выбор фурнитуры"
     }
-    
-    
-    private func factorySet() {
-        for sets in sets {
-            if !factory.contains(sets.factory.rawValue) {
-                factory.append(sets.factory.rawValue)
-            }
-        }
-    }
-    
-    private func getCategoriySet() {
-        guard let index = tableView.indexPathForSelectedRow else { return }
-        categoru = []
-        for sets in sets {
-            if sets.factory.rawValue == factory[index.row] {
-                categoru.append(sets)
-            }
-        }
-    }
-    
-    
-    
-    
-    
-    
 
     // MARK: - Table view data source
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return factory.count
+        return productSets.count
     }
 
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "setsCell", for: indexPath) as! SetsTableViewCell
-        let set = factory[indexPath.row]
-        cell.imageFactory.image = UIImage(named: set)
-        cell.factoryLabel.text = "\(set)"
+        let cell = tableView.dequeueReusableCell(withIdentifier: "productSetCell", for: indexPath) as! SetsProductTableViewCell
+        let product = productSets[indexPath.row]
+        cell.imageProductSet.image = UIImage(named: product.name)
+        cell.nameProductSetLabel.text = "\(product.name)"
         return cell
     }
     
@@ -101,9 +73,9 @@ class SetsTableViewController: UITableViewController {
 
 
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        guard let categoryVC = segue.destination as? CategorySetsTableViewController else { return }
-        getCategoriySet()
-        categoryVC.categorySet = categoru
+        guard let index = tableView.indexPathForSelectedRow else { return }
+        guard let infoProductVC = segue.destination as? InfoProductSetViewController else { return }
+        infoProductVC.infoProduct = productSets[index.row]
     }
     
 

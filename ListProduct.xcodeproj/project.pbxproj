@@ -16,6 +16,9 @@
 		7662303E28893E1A00F1BC6A /* SetsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7662303D28893E1A00F1BC6A /* SetsTableViewController.swift */; };
 		76623041288940CC00F1BC6A /* SetsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76623040288940CC00F1BC6A /* SetsTableViewCell.swift */; };
 		766230442889451000F1BC6A /* CategorySetsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 766230432889451000F1BC6A /* CategorySetsTableViewController.swift */; };
+		7662304628896CB000F1BC6A /* ProductSetTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7662304528896CB000F1BC6A /* ProductSetTableViewController.swift */; };
+		766230492889732700F1BC6A /* SetsProductTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 766230482889732700F1BC6A /* SetsProductTableViewCell.swift */; };
+		7662304B288977CA00F1BC6A /* InfoProductSetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7662304A288977CA00F1BC6A /* InfoProductSetViewController.swift */; };
 		7671CD262885463A0073B7B5 /* PhotoCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7671CD252885463A0073B7B5 /* PhotoCollectionViewController.swift */; };
 		76A984E5287587D100102AEB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76A984E4287587D100102AEB /* AppDelegate.swift */; };
 		76A984E7287587D100102AEB /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76A984E6287587D100102AEB /* SceneDelegate.swift */; };
@@ -52,6 +55,9 @@
 		7662303D28893E1A00F1BC6A /* SetsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetsTableViewController.swift; sourceTree = "<group>"; };
 		76623040288940CC00F1BC6A /* SetsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetsTableViewCell.swift; sourceTree = "<group>"; };
 		766230432889451000F1BC6A /* CategorySetsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategorySetsTableViewController.swift; sourceTree = "<group>"; };
+		7662304528896CB000F1BC6A /* ProductSetTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductSetTableViewController.swift; sourceTree = "<group>"; };
+		766230482889732700F1BC6A /* SetsProductTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetsProductTableViewCell.swift; sourceTree = "<group>"; };
+		7662304A288977CA00F1BC6A /* InfoProductSetViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoProductSetViewController.swift; sourceTree = "<group>"; };
 		7671CD252885463A0073B7B5 /* PhotoCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoCollectionViewController.swift; sourceTree = "<group>"; };
 		76A984E1287587D100102AEB /* ListProduct.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ListProduct.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		76A984E4287587D100102AEB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -96,8 +102,19 @@
 			children = (
 				7662303D28893E1A00F1BC6A /* SetsTableViewController.swift */,
 				766230432889451000F1BC6A /* CategorySetsTableViewController.swift */,
+				7662304528896CB000F1BC6A /* ProductSetTableViewController.swift */,
+				7662304A288977CA00F1BC6A /* InfoProductSetViewController.swift */,
 			);
 			path = ViewSets;
+			sourceTree = "<group>";
+		};
+		76623047288972D300F1BC6A /* CellSets */ = {
+			isa = PBXGroup;
+			children = (
+				76623040288940CC00F1BC6A /* SetsTableViewCell.swift */,
+				766230482889732700F1BC6A /* SetsProductTableViewCell.swift */,
+			);
+			path = CellSets;
 			sourceTree = "<group>";
 		};
 		76A984D8287587D100102AEB = {
@@ -119,12 +136,13 @@
 		76A984E3287587D100102AEB /* ListProduct */ = {
 			isa = PBXGroup;
 			children = (
+				76623047288972D300F1BC6A /* CellSets */,
 				766230422889439300F1BC6A /* ViewSets */,
 				76B42F41287D425B007139E2 /* CollectionCell */,
 				76A9851128758A0F00102AEB /* ViewDoors */,
 				76A9850C287589EA00102AEB /* Model */,
 				76A98507287589B500102AEB /* Servces */,
-				76A985002875898500102AEB /* Cells */,
+				76A985002875898500102AEB /* CellsDoors */,
 				76A984F82875880000102AEB /* App */,
 				76A984FE2875894400102AEB /* Main.storyboard */,
 				76A984ED287587D200102AEB /* Assets.xcassets */,
@@ -143,7 +161,7 @@
 			path = App;
 			sourceTree = "<group>";
 		};
-		76A985002875898500102AEB /* Cells */ = {
+		76A985002875898500102AEB /* CellsDoors */ = {
 			isa = PBXGroup;
 			children = (
 				76A98503287589A400102AEB /* FactoryDoorsTableViewCell.swift */,
@@ -151,9 +169,8 @@
 				76A98502287589A400102AEB /* PersonCellTableViewCell.swift */,
 				76A985202875BA5400102AEB /* BascetDoorsTableViewCell.swift */,
 				76530C53287B4D6800487D6C /* ServicesTableViewCell.swift */,
-				76623040288940CC00F1BC6A /* SetsTableViewCell.swift */,
 			);
-			path = Cells;
+			path = CellsDoors;
 			sourceTree = "<group>";
 		};
 		76A98507287589B500102AEB /* Servces */ = {
@@ -285,6 +302,7 @@
 				76A985212875BA5400102AEB /* BascetDoorsTableViewCell.swift in Sources */,
 				76A98504287589A400102AEB /* ImageDoorTableViewCell.swift in Sources */,
 				76A9851B28758A2100102AEB /* FactoryProductTableViewController.swift in Sources */,
+				7662304B288977CA00F1BC6A /* InfoProductSetViewController.swift in Sources */,
 				76B42F43287D428E007139E2 /* PhptoPersonCollectionViewCell.swift in Sources */,
 				76530C54287B4D6800487D6C /* ServicesTableViewCell.swift in Sources */,
 				76A9851F28758A2100102AEB /* InfoPersonViewController.swift in Sources */,
@@ -292,6 +310,7 @@
 				76A98510287589FE00102AEB /* Door.swift in Sources */,
 				76530C5028781E8F00487D6C /* ProductPersonTableViewController.swift in Sources */,
 				76A9851928758A2100102AEB /* PersonsTableViewController.swift in Sources */,
+				766230492889732700F1BC6A /* SetsProductTableViewCell.swift in Sources */,
 				766230442889451000F1BC6A /* CategorySetsTableViewController.swift in Sources */,
 				76A9850A287589DF00102AEB /* DataManagerDoors.swift in Sources */,
 				7662303C2889391000F1BC6A /* DataManagerSets.swift in Sources */,
@@ -304,6 +323,7 @@
 				76A9850F287589FE00102AEB /* Person.swift in Sources */,
 				76623041288940CC00F1BC6A /* SetsTableViewCell.swift in Sources */,
 				7671CD262885463A0073B7B5 /* PhotoCollectionViewController.swift in Sources */,
+				7662304628896CB000F1BC6A /* ProductSetTableViewController.swift in Sources */,
 				76A9851D28758A2100102AEB /* ListDoorsTableViewController.swift in Sources */,
 				76A984E7287587D100102AEB /* SceneDelegate.swift in Sources */,
 				7662303E28893E1A00F1BC6A /* SetsTableViewController.swift in Sources */,

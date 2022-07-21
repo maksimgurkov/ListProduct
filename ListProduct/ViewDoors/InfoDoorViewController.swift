@@ -365,11 +365,6 @@ class InfoDoorViewController: UIViewController {
         }
     }
     
-    
-    @IBAction func saveDoorButton() {
-       
-    }
-    
     // MARK: - Navigation
 
    

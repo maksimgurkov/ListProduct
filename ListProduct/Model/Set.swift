@@ -11,13 +11,15 @@ class Sets {
     let factory: SetFactory
     let category: SetCategory
     let name: String
+    let description: String
     let countSet: Int
     let priceSet: Int
     
-    init(factory: SetFactory, category: SetCategory, name: String, count: Int, price: Int) {
+    init(factory: SetFactory, category: SetCategory, name: String, description: String, count: Int, price: Int) {
         self.factory = factory
         self.category = category
         self.name = name
+        self.description = description
         self.countSet = count
         self.priceSet = price
     }
