@@ -1,5 +1,5 @@
 //
-//  DataManager.swift
+//  DataManagerDoors.swift
 //  MyPriceList
 //
 //  Created by Максим Гурков on 30.06.2022.
@@ -7,9 +7,9 @@
 
 import Foundation
 
-class DataManager {
+class DataManagerDoors {
     
-    static let shared = DataManager()
+    static let shared = DataManagerDoors()
     
     let dors = [
         Door(factory: .luxor,

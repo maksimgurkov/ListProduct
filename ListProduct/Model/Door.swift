@@ -19,7 +19,7 @@ class Door {
     
     
     static func forDoors() -> [Door] {
-        let door = DataManager.shared.dors
+        let door = DataManagerDoors.shared.dors
         return door
     }
     
