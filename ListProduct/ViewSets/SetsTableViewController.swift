@@ -10,12 +10,14 @@ import UIKit
 class SetsTableViewController: UITableViewController {
     
     var sets = Sets.forSet()
-    var factory: [String] = []
+    
+    private var factory: [String] = []
+    private var categoru: [Sets] = []
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        title = "Выбор производителя Фурнитуры"
         factorySet()
-
     }
     
     
@@ -23,6 +25,16 @@ class SetsTableViewController: UITableViewController {
         for sets in sets {
             if !factory.contains(sets.factory.rawValue) {
                 factory.append(sets.factory.rawValue)
+            }
+        }
+    }
+    
+    private func getCategoriySet() {
+        guard let index = tableView.indexPathForSelectedRow else { return }
+        categoru = []
+        for sets in sets {
+            if sets.factory.rawValue == factory[index.row] {
+                categoru.append(sets)
             }
         }
     }
@@ -41,11 +53,10 @@ class SetsTableViewController: UITableViewController {
 
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "setsCell", for: indexPath)
-        var content = cell.defaultContentConfiguration()
-        content.text = factory[indexPath.row]
-        cell.contentConfiguration = content
-
+        let cell = tableView.dequeueReusableCell(withIdentifier: "setsCell", for: indexPath) as! SetsTableViewCell
+        let set = factory[indexPath.row]
+        cell.imageFactory.image = UIImage(named: set)
+        cell.factoryLabel.text = "\(set)"
         return cell
     }
     
@@ -85,14 +96,13 @@ class SetsTableViewController: UITableViewController {
     }
     */
 
-    /*
+    
     // MARK: - Navigation
 
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
+
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+        guard let categoryVC = segue.destination as? CategorySetsTableViewController else { return }
     }
-    */
+    
 
 }

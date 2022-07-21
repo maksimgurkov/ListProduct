@@ -8,6 +8,10 @@
 import UIKit
 
 class SetsTableViewCell: UITableViewCell {
+    
+    @IBOutlet weak var imageFactory: UIImageView!
+    @IBOutlet weak var factoryLabel: UILabel!
+    
 
     override func awakeFromNib() {
         super.awakeFromNib()

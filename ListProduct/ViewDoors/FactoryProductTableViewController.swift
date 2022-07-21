@@ -19,7 +19,7 @@ class FactoryProductTableViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         categories()
-        title = "Выбор производителя"
+        title = "Выбор производителя Дверей"
     }
     
     
