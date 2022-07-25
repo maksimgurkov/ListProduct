@@ -19,6 +19,7 @@ class InfoDoorViewController: UIViewController {
     @IBOutlet weak var door700Button: UIButton!
     @IBOutlet weak var door800Button: UIButton!
     @IBOutlet weak var door900Button: UIButton!
+    @IBOutlet weak var nonStandartDoorButton: UIButton!
     
     //MARK: - Pogonzh Button
     @IBOutlet weak var korobButton: UIButton!
@@ -27,6 +28,7 @@ class InfoDoorViewController: UIViewController {
     @IBOutlet weak var dobor150Button: UIButton!
     @IBOutlet weak var dobor200Button: UIButton!
     @IBOutlet weak var lathButton: UIButton!
+    @IBOutlet weak var nonStandartPogonageButton: UIButton!
     
     //MARK: - Image
     @IBOutlet weak var doorImage: UIImageView!
@@ -35,6 +37,7 @@ class InfoDoorViewController: UIViewController {
     @IBOutlet weak var descriptionDoorLabel: UILabel!
     @IBOutlet weak var specificationsDoorLabel: UILabel!
     @IBOutlet weak var priceDoorPersonLabel: UILabel!
+    @IBOutlet weak var nonStandartDoorLabel: UILabel!
     
     
     @IBOutlet weak var countDoor550Label: UILabel!
@@ -66,10 +69,16 @@ class InfoDoorViewController: UIViewController {
     @IBOutlet weak var priceLathLabel: UILabel!
     
     
+    
+    @IBOutlet weak var setsButton: UIButton!
+    @IBOutlet weak var servicesButton: UIButton!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         title = doorPerson.nameDoor
+        nonStandartDoorLabel.text = doorPerson.nameDoor
         
         priceDoorPersonLabel.text = "Выбор полотен. Цена за полотно: \(doorPerson.price) р."
         
@@ -88,6 +97,12 @@ class InfoDoorViewController: UIViewController {
         dobor150Button.layer.cornerRadius = 8
         dobor200Button.layer.cornerRadius = 8
         lathButton.layer.cornerRadius = 8
+        
+        nonStandartDoorButton.layer.cornerRadius = 8
+        nonStandartPogonageButton.layer.cornerRadius = 8
+        
+        setsButton.layer.cornerRadius = 8
+        servicesButton.layer.cornerRadius = 8
         
         doorImage.image = UIImage(named: doorPerson.nameDoor)
         descriptionDoorLabel.text = doorPerson.descriptionDoor
@@ -265,6 +280,8 @@ class InfoDoorViewController: UIViewController {
                            price: doorPerson.price,
                            dimensions: "900*2000",
                            count: 1, countDoorInfo: countDoor900Label, priceInfo: priceDoor900Label)
+        case nonStandartDoorButton:
+            print("nonstandart")
         default:
             break
         }

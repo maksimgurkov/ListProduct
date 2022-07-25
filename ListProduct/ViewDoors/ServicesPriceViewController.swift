@@ -65,7 +65,7 @@ class ServicesPriceViewController: UIViewController {
                 for service in person.basketService {
                     if service.descriptionService != services.descriptionService {
                         StorageManager.shared.saveSerwice(person, service: services)
-                        labelCount.text = "\(service.count)"
+                        labelCount.text = "\(services.count)"
                         return
                     }
                 }
@@ -75,25 +75,17 @@ class ServicesPriceViewController: UIViewController {
     }
         
     private func countService() {
-        if person.basketService.isEmpty {
-            countDismantlingSeviceLabel.text = "0"
-            countCatOneLabel.text = "0"
-            countCatTwoLabel.text = "0"
-            countCatThreeLabel.text = "0"
-            countInstallationLockLabel.text = "0"
-        } else {
-            for service in person.basketService {
-                if service.descriptionService == "Думонтаж межкомнатной двери" {
-                    countDismantlingSeviceLabel.text = "\(service.count)"
-                } else if service.descriptionService == "Монтаж первой категории" {
-                    countCatOneLabel.text = "\(service.count)"
-                } else if service.descriptionService == "Монтаж второй категории" {
-                    countCatTwoLabel.text = "\(service.count)"
-                } else if service.descriptionService == "Монтаж третьей категории" {
-                    countCatThreeLabel.text = "\(service.count)"
-                } else if service.descriptionService == "Врезка и установка механизма" {
-                    countInstallationLockLabel.text = "\(service.count)"
-                }
+        for service in person.basketService {
+            if service.descriptionService == "Думонтаж межкомнатной двери" {
+                countDismantlingSeviceLabel.text = "\(service.count)"
+            } else if service.descriptionService == "Монтаж первой категории" {
+                countCatOneLabel.text = "\(service.count)"
+            } else if service.descriptionService == "Монтаж второй категории" {
+                countCatTwoLabel.text = "\(service.count)"
+            } else if service.descriptionService == "Монтаж третьей категории" {
+                countCatThreeLabel.text = "\(service.count)"
+            } else if service.descriptionService == "Врезка и установка механизма" {
+                countInstallationLockLabel.text = "\(service.count)"
             }
         }
     }
