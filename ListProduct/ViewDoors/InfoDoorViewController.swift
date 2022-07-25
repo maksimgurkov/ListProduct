@@ -73,8 +73,6 @@ class InfoDoorViewController: UIViewController {
         
         priceDoorPersonLabel.text = "Выбор полотен. Цена за полотно: \(doorPerson.price) р."
         
-//        doorCountInfoAndPrice()
-//        pogonageCountInfo()
         doorCountInfoAndPrice()
         
         door550Button.layer.cornerRadius = 8
@@ -114,7 +112,7 @@ class InfoDoorViewController: UIViewController {
         }
         if !persone.basket.isEmpty {
             for door in persone.basket {
-                if door.dimensions == newDoor.dimensions && door.factory == newDoor.factory {
+                if door.dimensions == newDoor.dimensions && door.factory == newDoor.factory && door.nameDoor == doorPerson.nameDoor {
                     StorageManager.shared.renameDoor(door, doors: doorPerson, newValue: 1)
                     countDoorInfo.text = "\(door.countDoors)"
                     priceInfo.text = "\(door.price)"
@@ -138,7 +136,8 @@ class InfoDoorViewController: UIViewController {
         let pogonage = Doors()
         pogonage.factory = factory
         pogonage.material = material
-        pogonage.nameDoor = name
+        pogonage.nameDoor = doorPerson.nameDoor
+        pogonage.namePogonage = name
         pogonage.price = price
         pogonage.dimensions = dimansion
         pogonage.countDoors = count
@@ -150,7 +149,7 @@ class InfoDoorViewController: UIViewController {
         }
         if !persone.basket.isEmpty {
             for pogonag in persone.basket {
-                if pogonag.nameDoor == pogonage.nameDoor && pogonag.factory == pogonage.factory {
+                if pogonag.namePogonage == pogonage.namePogonage && pogonag.factory == pogonage.factory && pogonag.nameDoor == pogonage.nameDoor {
                     StorageManager.shared.renamePogonage(pogonag, pogonages: pogonage, newValue: 1)
                     countInfoPogonage.text = "\(pogonag.countDoors)"
                     pricePogonage.text = "\(pogonag.price)"
@@ -159,7 +158,7 @@ class InfoDoorViewController: UIViewController {
             }
             if !persone.basket.isEmpty {
                 for pogonag in persone.basket {
-                    if pogonag.nameDoor != pogonage.nameDoor {
+                    if pogonag.namePogonage != pogonage.namePogonage {
                         StorageManager.shared.saveProduct(persone, door: pogonage)
                         countInfoPogonage.text = "\(pogonage.countDoors)"
                         pricePogonage.text = "\(pogonage.price)"
@@ -169,77 +168,44 @@ class InfoDoorViewController: UIViewController {
             }
         }
     }
-    
-    private func pogonageCountInfo() {
-        if persone.basket.isEmpty {
-            korobCountLabel.text = "0"
-            casingCountLabel.text = "0"
-            dobor100CountLabel.text = "0"
-            dobor150CountLabel.text = "0"
-            dobor200CountLabel.text = "0"
-            lathCountLabel.text = "0"
-        } else {
-            for ponage in persone.basket {
-                if ponage.nameDoor == "Коробка" {
-                    korobCountLabel.text = "\(ponage.countDoors)"
-                    priceKorobLabel.text = "\(ponage.price)"
-                } else if ponage.nameDoor == "Наличник" {
-                    casingCountLabel.text = "\(ponage.countDoors)"
-                    priceCasingLabel.text = "\(ponage.price)"
-                } else if ponage.nameDoor == "Добор 100" {
-                    dobor100CountLabel.text = "\(ponage.countDoors)"
-                    priceDobor100Label.text = "\(ponage.price)"
-                } else if ponage.nameDoor == "Добор 150" {
-                    dobor150CountLabel.text = "\(ponage.countDoors)"
-                    priceDobor150Label.text = "\(ponage.price)"
-                } else if ponage.nameDoor == "Добор 200" {
-                    dobor200CountLabel.text = "\(ponage.countDoors)"
-                    priceDobor200Label.text = "\(ponage.price)"
-                } else if ponage.nameDoor == "Притвор" {
-                    lathCountLabel.text = "\(ponage.countDoors)"
-                    priceLathLabel.text = "\(ponage.price)"
-                }
-            }
-        }
-    }
-    
+        
     private func doorCountInfoAndPrice() {
         for door in persone.basket {
             if door.factory == doorPerson.factory.rawValue {
-                if door.dimensions == "550*1900" {
+                if door.dimensions == "550*1900" && door.nameDoor == doorPerson.nameDoor {
                     countDoor550Label.text = "\(door.countDoors)"
                     priceDoor550Label.text = "\(door.price)"
-                } else if door.dimensions == "600*1900" {
+                } else if door.dimensions == "600*1900" && door.nameDoor == doorPerson.nameDoor {
                     countDoor6001900Label.text = "\(door.countDoors)"
                     priceDoor6001900Label.text = "\(door.price)"
-                } else if door.dimensions == "600*2000" {
+                } else if door.dimensions == "600*2000" && door.nameDoor == doorPerson.nameDoor {
                     countDoor600Label.text = "\(door.countDoors)"
                     priceDoor600Label.text = "\(door.price)"
-                } else if door.dimensions == "700*2000" {
+                } else if door.dimensions == "700*2000" && door.nameDoor == doorPerson.nameDoor {
                     countDoor700Label.text = "\(door.countDoors)"
                     priceDoor700Label.text = "\(door.price)"
-                } else if door.dimensions == "800*2000" {
+                } else if door.dimensions == "800*2000" && door.nameDoor == doorPerson.nameDoor {
                     countDoor800Label.text = "\(door.countDoors)"
                     priceDoor800Label.text = "\(door.price)"
-                } else if door.dimensions == "900*2000" {
+                } else if door.dimensions == "900*2000" && door.nameDoor == doorPerson.nameDoor {
                     countDoor900Label.text = "\(door.countDoors)"
                     priceDoor900Label.text = "\(door.price)"
-                } else if door.nameDoor == "Коробка" {
+                } else if door.namePogonage == "Коробка" && door.nameDoor == doorPerson.nameDoor {
                     korobCountLabel.text = "\(door.countDoors)"
                     priceKorobLabel.text = "\(door.price)"
-                } else if door.nameDoor == "Наличник" {
+                } else if door.namePogonage == "Наличник" && door.nameDoor == doorPerson.nameDoor {
                     casingCountLabel.text = "\(door.countDoors)"
                     priceCasingLabel.text = "\(door.price)"
-                } else if door.nameDoor == "Добор 100" {
+                } else if door.namePogonage == "Добор 100" && door.nameDoor == doorPerson.nameDoor {
                     dobor100CountLabel.text = "\(door.countDoors)"
                     priceDobor100Label.text = "\(door.price)"
-                } else if door.nameDoor == "Добор 150" {
+                } else if door.namePogonage == "Добор 150" && door.nameDoor == doorPerson.nameDoor {
                     dobor150CountLabel.text = "\(door.countDoors)"
                     priceDobor150Label.text = "\(door.price)"
-                } else if door.nameDoor == "Добор 200" {
+                } else if door.namePogonage == "Добор 200" && door.nameDoor == doorPerson.nameDoor {
                     dobor200CountLabel.text = "\(door.countDoors)"
                     priceDobor200Label.text = "\(door.price)"
-                } else if door.nameDoor == "Притвор" {
+                } else if door.namePogonage == "Притвор" && door.nameDoor == doorPerson.nameDoor {
                     lathCountLabel.text = "\(door.countDoors)"
                     priceLathLabel.text = "\(door.price)"
                 }

@@ -30,6 +30,7 @@ class Doors: Object {
     @Persisted var factory = ""
     @Persisted var material = ""
     @Persisted var nameDoor = ""
+    @Persisted var namePogonage = ""
     @Persisted var descriptionDoor = ""
     @Persisted var price = 0
     @Persisted var dimensions = ""
