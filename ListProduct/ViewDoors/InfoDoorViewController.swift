@@ -9,6 +9,7 @@ import UIKit
 import RealmSwift
 
 class InfoDoorViewController: UIViewController {
+    
     var persone: Person!
     var doorPerson: Door!
     
@@ -53,6 +54,10 @@ class InfoDoorViewController: UIViewController {
     @IBOutlet weak var countDoor900Label: UILabel!
     @IBOutlet weak var priceDoor900Label: UILabel!
     
+    @IBOutlet weak var nonStandartCountDoorsLabel: UILabel!
+    @IBOutlet weak var nonStandartPriceDoorsLabel: UILabel!
+    
+    
     //MARK: - Pogonzh label
     @IBOutlet weak var korobCountLabel: UILabel!
     @IBOutlet weak var casingCountLabel: UILabel!
@@ -68,10 +73,15 @@ class InfoDoorViewController: UIViewController {
     @IBOutlet weak var priceDobor200Label: UILabel!
     @IBOutlet weak var priceLathLabel: UILabel!
     
-    
-    
     @IBOutlet weak var setsButton: UIButton!
     @IBOutlet weak var servicesButton: UIButton!
+    
+    //MARK: - NonStandart TextField
+    @IBOutlet weak var nonStandartWidthTextField: UITextField!
+    @IBOutlet weak var nonStandartHeightTextField: UITextField!
+    @IBOutlet weak var nameNonStandartPogonageTextField: UITextField!
+    @IBOutlet weak var nonStandartHeightPogonageTextField: UITextField!
+    
     
     
     override func viewDidLoad() {
@@ -83,6 +93,7 @@ class InfoDoorViewController: UIViewController {
         priceDoorPersonLabel.text = "Выбор полотен. Цена за полотно: \(doorPerson.price) р."
         
         doorCountInfoAndPrice()
+        forActiveButton()
         
         door550Button.layer.cornerRadius = 8
         door6001900Button.layer.cornerRadius = 8
@@ -184,6 +195,28 @@ class InfoDoorViewController: UIViewController {
         }
     }
         
+    private func nonStandarDoortData() -> String {
+        var resalt = ""
+        guard let width = nonStandartWidthTextField.text, !width.isEmpty else { return "" }
+        guard let height = nonStandartHeightTextField.text, !height.isEmpty else { return "" }
+        resalt = "\(width)*\(height)"
+        return resalt
+    }
+    
+    private func nonStandartPogonageData() {
+        
+    }
+    
+    private func forActiveButton() {
+        if doorPerson.flag {
+            nonStandartDoorButton.isEnabled = true
+            nonStandartPogonageButton.isEnabled = true
+        } else {
+            nonStandartDoorButton.isEnabled = false
+            nonStandartPogonageButton.isEnabled = false
+        }
+    }
+        
     private func doorCountInfoAndPrice() {
         for door in persone.basket {
             if door.factory == doorPerson.factory.rawValue {
@@ -239,7 +272,9 @@ class InfoDoorViewController: UIViewController {
                            description: doorPerson.descriptionDoor,
                            price: doorPerson.price,
                            dimensions: "550*1900",
-                           count: 1, countDoorInfo: countDoor550Label, priceInfo: priceDoor550Label)
+                           count: 1,
+                           countDoorInfo: countDoor550Label,
+                           priceInfo: priceDoor550Label)
         case door6001900Button:
             saveDoorPerson(factory: doorPerson.factory.rawValue,
                            material: doorPerson.material.rawValue,
@@ -247,7 +282,9 @@ class InfoDoorViewController: UIViewController {
                            description: doorPerson.descriptionDoor,
                            price: doorPerson.price,
                            dimensions: "600*1900",
-                           count: 1, countDoorInfo: countDoor6001900Label, priceInfo: priceDoor6001900Label)
+                           count: 1,
+                           countDoorInfo: countDoor6001900Label,
+                           priceInfo: priceDoor6001900Label)
         case door600Button:
             saveDoorPerson(factory: doorPerson.factory.rawValue,
                            material: doorPerson.material.rawValue,
@@ -255,7 +292,9 @@ class InfoDoorViewController: UIViewController {
                            description: doorPerson.descriptionDoor,
                            price: doorPerson.price,
                            dimensions: "600*2000",
-                           count: 1, countDoorInfo: countDoor600Label, priceInfo: priceDoor600Label)
+                           count: 1,
+                           countDoorInfo: countDoor600Label,
+                           priceInfo: priceDoor600Label)
         case door700Button:
             saveDoorPerson(factory: doorPerson.factory.rawValue,
                            material: doorPerson.material.rawValue,
@@ -263,7 +302,9 @@ class InfoDoorViewController: UIViewController {
                            description: doorPerson.descriptionDoor,
                            price: doorPerson.price,
                            dimensions: "700*2000",
-                           count: 1, countDoorInfo: countDoor700Label, priceInfo: priceDoor700Label)
+                           count: 1,
+                           countDoorInfo: countDoor700Label,
+                           priceInfo: priceDoor700Label)
         case door800Button:
             saveDoorPerson(factory: doorPerson.factory.rawValue,
                            material: doorPerson.material.rawValue,
@@ -271,7 +312,9 @@ class InfoDoorViewController: UIViewController {
                            description: doorPerson.descriptionDoor,
                            price: doorPerson.price,
                            dimensions: "800*2000",
-                           count: 1, countDoorInfo: countDoor800Label, priceInfo: priceDoor800Label)
+                           count: 1,
+                           countDoorInfo: countDoor800Label,
+                           priceInfo: priceDoor800Label)
         case door900Button:
             saveDoorPerson(factory: doorPerson.factory.rawValue,
                            material: doorPerson.material.rawValue,
@@ -279,9 +322,19 @@ class InfoDoorViewController: UIViewController {
                            description: doorPerson.descriptionDoor,
                            price: doorPerson.price,
                            dimensions: "900*2000",
-                           count: 1, countDoorInfo: countDoor900Label, priceInfo: priceDoor900Label)
+                           count: 1,
+                           countDoorInfo: countDoor900Label,
+                           priceInfo: priceDoor900Label)
         case nonStandartDoorButton:
-            print("nonstandart")
+            saveDoorPerson(factory: doorPerson.factory.rawValue,
+                           material: doorPerson.material.rawValue,
+                           name: doorPerson.nameDoor,
+                           description: doorPerson.descriptionDoor,
+                           price: (doorPerson.price / 100 * 30) + doorPerson.price,
+                           dimensions: nonStandarDoortData(),
+                           count: 1,
+                           countDoorInfo: nonStandartCountDoorsLabel,
+                           priceInfo: nonStandartPriceDoorsLabel)
         default:
             break
         }
@@ -343,6 +396,8 @@ class InfoDoorViewController: UIViewController {
                                count: 1,
                                countInfoPogonage: lathCountLabel,
                                pricePogonage: priceLathLabel)
+        case nonStandartPogonageButton:
+            print("dddddddd")
         default:
             break
         }

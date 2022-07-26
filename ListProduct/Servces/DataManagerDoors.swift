@@ -109,7 +109,7 @@ class DataManagerDoors {
              descriptionDoor: "",
              specifications: "",
              price: 5000,
-             flag: false),
+             flag: true),
         Door(factory: .sodrugestvo,
              material: .ecoShpone,
              nameDoor: "Эко-2",

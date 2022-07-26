@@ -1729,7 +1729,7 @@
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
-                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Ш" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="dJY-IL-VvL">
+                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Ш" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="dJY-IL-VvL">
                                                         <rect key="frame" x="200" y="0.0" width="50" height="34"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" constant="50" id="TAG-2v-sGZ"/>
@@ -1835,6 +1835,9 @@
                                                         <buttonConfiguration key="configuration" style="plain" title="Добавить">
                                                             <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         </buttonConfiguration>
+                                                        <connections>
+                                                            <action selector="actionNewPogonageButton:" destination="eXq-Pt-65B" eventType="touchUpInside" id="kR4-Us-Wb8"/>
+                                                        </connections>
                                                     </button>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Dnu-CJ-o7R">
                                                         <rect key="frame" x="585" y="0.0" width="100" height="34"/>
@@ -1960,9 +1963,15 @@
                         <outlet property="korobCountLabel" destination="7tq-sk-065" id="rpL-sz-stU"/>
                         <outlet property="lathButton" destination="M8n-iJ-0LF" id="QPW-f2-fWW"/>
                         <outlet property="lathCountLabel" destination="Cbq-m7-G0I" id="U7O-p6-aLd"/>
+                        <outlet property="nameNonStandartPogonageTextField" destination="717-88-YQ0" id="uWn-8m-9aM"/>
+                        <outlet property="nonStandartCountDoorsLabel" destination="sw5-et-XCt" id="fIL-VM-Ac0"/>
                         <outlet property="nonStandartDoorButton" destination="Rh0-gL-ovc" id="Qe3-PY-lQV"/>
                         <outlet property="nonStandartDoorLabel" destination="nXr-Jv-Vxa" id="SAd-Ni-c39"/>
+                        <outlet property="nonStandartHeightPogonageTextField" destination="n8v-ec-7Fu" id="MIp-mK-BFe"/>
+                        <outlet property="nonStandartHeightTextField" destination="O8h-RD-Jvr" id="JOa-za-Iz3"/>
                         <outlet property="nonStandartPogonageButton" destination="CCF-sN-Fty" id="VLC-Ui-cFa"/>
+                        <outlet property="nonStandartPriceDoorsLabel" destination="VgZ-Kd-FBh" id="AXV-Qg-hAm"/>
+                        <outlet property="nonStandartWidthTextField" destination="dJY-IL-VvL" id="Ol0-UO-y9f"/>
                         <outlet property="priceCasingLabel" destination="QAd-Ag-gON" id="oZO-q2-aGE"/>
                         <outlet property="priceDobor100Label" destination="8ro-5p-EP8" id="rPM-qM-61T"/>
                         <outlet property="priceDobor150Label" destination="QSe-nJ-xl7" id="Iay-ce-9Po"/>
