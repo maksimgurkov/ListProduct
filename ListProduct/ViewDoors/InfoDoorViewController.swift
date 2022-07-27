@@ -12,6 +12,8 @@ class InfoDoorViewController: UIViewController {
     
     var persone: Person!
     var doorPerson: Door!
+    var pogonages = Pogonage.forPogonages()
+    var sortPogonages: [Pogonage] = []
     
     //MARK: - Doors Button
     @IBOutlet weak var door550Button: UIButton!
@@ -56,6 +58,8 @@ class InfoDoorViewController: UIViewController {
     
     @IBOutlet weak var nonStandartCountDoorsLabel: UILabel!
     @IBOutlet weak var nonStandartPriceDoorsLabel: UILabel!
+    @IBOutlet weak var nonStandartCountPogonageLabel: UILabel!
+    @IBOutlet weak var nonStandartPricePogonageLabel: UILabel!
     
     
     //MARK: - Pogonzh label
@@ -94,6 +98,7 @@ class InfoDoorViewController: UIViewController {
         
         doorCountInfoAndPrice()
         forActiveButton()
+        forSortPogonages()
         
         door550Button.layer.cornerRadius = 8
         door6001900Button.layer.cornerRadius = 8
@@ -120,6 +125,24 @@ class InfoDoorViewController: UIViewController {
         specificationsDoorLabel.text = doorPerson.specifications
     }
     //MARK: - privateFunc
+    
+    private func forSortPogonages() {
+        for test in pogonages {
+            if test.factory.rawValue == doorPerson.factory.rawValue && test.material.rawValue == doorPerson.material.rawValue {
+                sortPogonages.append(test)
+            }
+        }
+    }
+    
+    private func testPrice(name: String) -> Int {
+        var price = 0
+        for pogonag in sortPogonages {
+            if pogonag.nameDoor == name {
+                price = pogonag.price
+            }
+        }
+        return price
+    }
     
     private func saveDoorPerson(factory: String, material: String, name: String, description: String, price: Int, dimensions: String, count: Int, countDoorInfo: UILabel, priceInfo: UILabel) {
         let newDoor = Doors()
@@ -162,7 +185,7 @@ class InfoDoorViewController: UIViewController {
         let pogonage = Doors()
         pogonage.factory = factory
         pogonage.material = material
-        pogonage.nameDoor = doorPerson.nameDoor
+        pogonage.nameDoor = name
         pogonage.namePogonage = name
         pogonage.price = price
         pogonage.dimensions = dimansion
@@ -175,7 +198,7 @@ class InfoDoorViewController: UIViewController {
         }
         if !persone.basket.isEmpty {
             for pogonag in persone.basket {
-                if pogonag.namePogonage == pogonage.namePogonage && pogonag.factory == pogonage.factory && pogonag.nameDoor == pogonage.nameDoor {
+                if pogonag.namePogonage == pogonage.namePogonage && pogonag.factory == pogonage.factory && pogonag.nameDoor == pogonage.nameDoor && pogonag.dimensions == pogonage.dimensions {
                     StorageManager.shared.renamePogonage(pogonag, pogonages: pogonage, newValue: 1)
                     countInfoPogonage.text = "\(pogonag.countDoors)"
                     pricePogonage.text = "\(pogonag.price)"
@@ -203,8 +226,14 @@ class InfoDoorViewController: UIViewController {
         return resalt
     }
     
-    private func nonStandartPogonageData() {
-        
+    private func nonStandartNamePogonageData() -> String {
+        guard let name = nameNonStandartPogonageTextField.text else { return "" }
+        return name
+    }
+    
+    private func nonSyandertHeightPogonage() -> String {
+        guard let height = nonStandartHeightPogonageTextField.text else { return "" }
+        return height
     }
     
     private func forActiveButton() {
@@ -346,8 +375,8 @@ class InfoDoorViewController: UIViewController {
             savePogonagePerson(factory: doorPerson.factory.rawValue,
                                material: doorPerson.material.rawValue,
                                name: "Коробка",
-                               price: 350,
-                               dimansion: "Описание",
+                               price: testPrice(name: "Коробка"),
+                               dimansion: "Cтандарт",
                                count: 1,
                                countInfoPogonage: korobCountLabel,
                                pricePogonage: priceKorobLabel)
@@ -355,8 +384,8 @@ class InfoDoorViewController: UIViewController {
             savePogonagePerson(factory: doorPerson.factory.rawValue,
                                material: doorPerson.material.rawValue,
                                name: "Наличник",
-                               price: 150,
-                               dimansion: "Описание",
+                               price: testPrice(name: "Наличник"),
+                               dimansion: "Cтандарт",
                                count: 1,
                                countInfoPogonage: casingCountLabel,
                                pricePogonage: priceCasingLabel)
@@ -364,8 +393,8 @@ class InfoDoorViewController: UIViewController {
             savePogonagePerson(factory: doorPerson.factory.rawValue,
                                material: doorPerson.material.rawValue,
                                name: "Добор 100",
-                               price: 350,
-                               dimansion: "Описание",
+                               price: testPrice(name: "Добор 100"),
+                               dimansion: "Cтандарт",
                                count: 1,
                                countInfoPogonage: dobor100CountLabel,
                                pricePogonage: priceDobor100Label)
@@ -373,8 +402,8 @@ class InfoDoorViewController: UIViewController {
             savePogonagePerson(factory: doorPerson.factory.rawValue,
                                material: doorPerson.material.rawValue,
                                name: "Добор 150",
-                               price: 450,
-                               dimansion: "Описание",
+                               price: testPrice(name: "Добор 150"),
+                               dimansion: "Cтандарт",
                                count: 1,
                                countInfoPogonage: dobor150CountLabel,
                                pricePogonage: priceDobor150Label)
@@ -382,8 +411,8 @@ class InfoDoorViewController: UIViewController {
             savePogonagePerson(factory: doorPerson.factory.rawValue,
                                material: doorPerson.material.rawValue,
                                name: "Добор 200",
-                               price: 550,
-                               dimansion: "Описание",
+                               price: testPrice(name: "Добор 200"),
+                               dimansion: "Cтандарт",
                                count: 1,
                                countInfoPogonage: dobor200CountLabel,
                                pricePogonage: priceDobor200Label)
@@ -391,13 +420,20 @@ class InfoDoorViewController: UIViewController {
             savePogonagePerson(factory: doorPerson.factory.rawValue,
                                material: doorPerson.material.rawValue,
                                name: "Притвор",
-                               price: 100,
-                               dimansion: "Описание",
+                               price: testPrice(name: "Притвор"),
+                               dimansion: "Cтандарт",
                                count: 1,
                                countInfoPogonage: lathCountLabel,
                                pricePogonage: priceLathLabel)
         case nonStandartPogonageButton:
-            print("dddddddd")
+            savePogonagePerson(factory: doorPerson.factory.rawValue,
+                               material: doorPerson.material.rawValue,
+                               name: nonStandartNamePogonageData(),
+                               price: (testPrice(name: nonStandartNamePogonageData()) / 100 * 30) + testPrice(name: nonStandartNamePogonageData()),
+                               dimansion: nonSyandertHeightPogonage(),
+                               count: 1,
+                               countInfoPogonage: nonStandartCountPogonageLabel,
+                               pricePogonage: nonStandartPricePogonageLabel)
         default:
             break
         }

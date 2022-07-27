@@ -43,6 +43,8 @@
 		76A9851F28758A2100102AEB /* InfoPersonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76A9851828758A2100102AEB /* InfoPersonViewController.swift */; };
 		76A985212875BA5400102AEB /* BascetDoorsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76A985202875BA5400102AEB /* BascetDoorsTableViewCell.swift */; };
 		76B42F43287D428E007139E2 /* PhptoPersonCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76B42F42287D428E007139E2 /* PhptoPersonCollectionViewCell.swift */; };
+		76CF4A0C2891158400024C33 /* Pogonage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76CF4A0B2891158400024C33 /* Pogonage.swift */; };
+		76CF4A0E2891174200024C33 /* DataManagerPogonage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76CF4A0D2891174200024C33 /* DataManagerPogonage.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -82,6 +84,8 @@
 		76A9851828758A2100102AEB /* InfoPersonViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InfoPersonViewController.swift; sourceTree = "<group>"; };
 		76A985202875BA5400102AEB /* BascetDoorsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BascetDoorsTableViewCell.swift; sourceTree = "<group>"; };
 		76B42F42287D428E007139E2 /* PhptoPersonCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhptoPersonCollectionViewCell.swift; sourceTree = "<group>"; };
+		76CF4A0B2891158400024C33 /* Pogonage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pogonage.swift; sourceTree = "<group>"; };
+		76CF4A0D2891174200024C33 /* DataManagerPogonage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManagerPogonage.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -179,6 +183,7 @@
 				76A98508287589DF00102AEB /* DataManagerDoors.swift */,
 				76A98509287589DF00102AEB /* StorageManager.swift */,
 				7662303B2889391000F1BC6A /* DataManagerSets.swift */,
+				76CF4A0D2891174200024C33 /* DataManagerPogonage.swift */,
 			);
 			path = Servces;
 			sourceTree = "<group>";
@@ -189,6 +194,7 @@
 				76A9850E287589FE00102AEB /* Door.swift */,
 				76623039288935B000F1BC6A /* Set.swift */,
 				76A9850D287589FE00102AEB /* Person.swift */,
+				76CF4A0B2891158400024C33 /* Pogonage.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -310,6 +316,7 @@
 				76A98510287589FE00102AEB /* Door.swift in Sources */,
 				76530C5028781E8F00487D6C /* ProductPersonTableViewController.swift in Sources */,
 				76A9851928758A2100102AEB /* PersonsTableViewController.swift in Sources */,
+				76CF4A0E2891174200024C33 /* DataManagerPogonage.swift in Sources */,
 				766230492889732700F1BC6A /* SetsProductTableViewCell.swift in Sources */,
 				766230442889451000F1BC6A /* CategorySetsTableViewController.swift in Sources */,
 				76A9850A287589DF00102AEB /* DataManagerDoors.swift in Sources */,
@@ -322,6 +329,7 @@
 				76A9851C28758A2100102AEB /* InfoDoorViewController.swift in Sources */,
 				76A9850F287589FE00102AEB /* Person.swift in Sources */,
 				76623041288940CC00F1BC6A /* SetsTableViewCell.swift in Sources */,
+				76CF4A0C2891158400024C33 /* Pogonage.swift in Sources */,
 				7671CD262885463A0073B7B5 /* PhotoCollectionViewController.swift in Sources */,
 				7662304628896CB000F1BC6A /* ProductSetTableViewController.swift in Sources */,
 				76A9851D28758A2100102AEB /* ListDoorsTableViewController.swift in Sources */,

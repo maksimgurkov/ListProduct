@@ -1965,12 +1965,14 @@
                         <outlet property="lathCountLabel" destination="Cbq-m7-G0I" id="U7O-p6-aLd"/>
                         <outlet property="nameNonStandartPogonageTextField" destination="717-88-YQ0" id="uWn-8m-9aM"/>
                         <outlet property="nonStandartCountDoorsLabel" destination="sw5-et-XCt" id="fIL-VM-Ac0"/>
+                        <outlet property="nonStandartCountPogonageLabel" destination="PB7-9L-cbc" id="t51-c9-caS"/>
                         <outlet property="nonStandartDoorButton" destination="Rh0-gL-ovc" id="Qe3-PY-lQV"/>
                         <outlet property="nonStandartDoorLabel" destination="nXr-Jv-Vxa" id="SAd-Ni-c39"/>
                         <outlet property="nonStandartHeightPogonageTextField" destination="n8v-ec-7Fu" id="MIp-mK-BFe"/>
                         <outlet property="nonStandartHeightTextField" destination="O8h-RD-Jvr" id="JOa-za-Iz3"/>
                         <outlet property="nonStandartPogonageButton" destination="CCF-sN-Fty" id="VLC-Ui-cFa"/>
                         <outlet property="nonStandartPriceDoorsLabel" destination="VgZ-Kd-FBh" id="AXV-Qg-hAm"/>
+                        <outlet property="nonStandartPricePogonageLabel" destination="Dnu-CJ-o7R" id="J1s-AU-NfW"/>
                         <outlet property="nonStandartWidthTextField" destination="dJY-IL-VvL" id="Ol0-UO-y9f"/>
                         <outlet property="priceCasingLabel" destination="QAd-Ag-gON" id="oZO-q2-aGE"/>
                         <outlet property="priceDobor100Label" destination="8ro-5p-EP8" id="rPM-qM-61T"/>

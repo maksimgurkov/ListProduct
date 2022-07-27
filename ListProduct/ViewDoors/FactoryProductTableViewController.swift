@@ -13,20 +13,20 @@ class FactoryProductTableViewController: UITableViewController {
     
     var doors = Door.forDoors()
     
-    private var cat: [String] = []
+    private var factoryDoor: [String] = []
     private var listDoors: [Door] = []
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        categories()
+        factoryDoorList()
         title = "Выбор производителя Дверей"
     }
     
     
-    private func categories() {
+    private func factoryDoorList() {
         for door in doors {
-            if !cat.contains(door.factory.rawValue) {
-                cat.append(door.factory.rawValue)
+            if !factoryDoor.contains(door.factory.rawValue) {
+                factoryDoor.append(door.factory.rawValue)
             }
         }
     }
@@ -35,7 +35,7 @@ class FactoryProductTableViewController: UITableViewController {
         guard let index = tableView.indexPathForSelectedRow else { return }
         listDoors = []
         for door in doors {
-            if door.factory.rawValue == cat[index.row] {
+            if door.factory.rawValue == factoryDoor[index.row] {
                 listDoors.append(door)
             }
         }
@@ -59,12 +59,12 @@ class FactoryProductTableViewController: UITableViewController {
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return cat.count
+        return factoryDoor.count
     }
 
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "productCell", for: indexPath) as! FactoryDoorsTableViewCell
-        let cat = cat[indexPath.row]
+        let cat = factoryDoor[indexPath.row]
         cell.nameFactoryDoorsLabel.text = cat
         cell.factoryDoorsImage.image = UIImage(named: cat)
         cell.descriptionDoorsLabel.text = "Российчкий производитель"

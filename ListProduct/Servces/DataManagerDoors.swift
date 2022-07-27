@@ -18,7 +18,7 @@ class DataManagerDoors {
              descriptionDoor: "",
              specifications: "",
              price: 5000,
-             flag: false),
+             flag: true),
         Door(factory: .luxor,
              material: .ecoShpone,
              nameDoor: "Lu-21 Беленый дуб",
