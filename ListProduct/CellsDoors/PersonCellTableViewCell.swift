@@ -13,7 +13,6 @@ class PersonCellTableViewCell: UITableViewCell {
     @IBOutlet weak var surNamePersonLabel: UILabel!
     @IBOutlet weak var datePersonLabel: UILabel!
     @IBOutlet weak var fulAddressPersonLabel: UILabel!
-    @IBOutlet weak var sumChequeLabel: UILabel!
     
     override func awakeFromNib() {
         super.awakeFromNib()

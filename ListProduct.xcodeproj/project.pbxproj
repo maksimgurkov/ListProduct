@@ -20,6 +20,8 @@
 		766230492889732700F1BC6A /* SetsProductTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 766230482889732700F1BC6A /* SetsProductTableViewCell.swift */; };
 		7662304B288977CA00F1BC6A /* InfoProductSetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7662304A288977CA00F1BC6A /* InfoProductSetViewController.swift */; };
 		7671CD262885463A0073B7B5 /* PhotoCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7671CD252885463A0073B7B5 /* PhotoCollectionViewController.swift */; };
+		76A737A4289A62C8006332E9 /* Services.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76A737A3289A62C8006332E9 /* Services.swift */; };
+		76A737A6289A63FE006332E9 /* DataServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76A737A5289A63FE006332E9 /* DataServices.swift */; };
 		76A984E5287587D100102AEB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76A984E4287587D100102AEB /* AppDelegate.swift */; };
 		76A984E7287587D100102AEB /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76A984E6287587D100102AEB /* SceneDelegate.swift */; };
 		76A984EE287587D200102AEB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 76A984ED287587D200102AEB /* Assets.xcassets */; };
@@ -61,6 +63,8 @@
 		766230482889732700F1BC6A /* SetsProductTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetsProductTableViewCell.swift; sourceTree = "<group>"; };
 		7662304A288977CA00F1BC6A /* InfoProductSetViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoProductSetViewController.swift; sourceTree = "<group>"; };
 		7671CD252885463A0073B7B5 /* PhotoCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoCollectionViewController.swift; sourceTree = "<group>"; };
+		76A737A3289A62C8006332E9 /* Services.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Services.swift; sourceTree = "<group>"; };
+		76A737A5289A63FE006332E9 /* DataServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataServices.swift; sourceTree = "<group>"; };
 		76A984E1287587D100102AEB /* ListProduct.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ListProduct.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		76A984E4287587D100102AEB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		76A984E6287587D100102AEB /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -184,6 +188,7 @@
 				76A98509287589DF00102AEB /* StorageManager.swift */,
 				7662303B2889391000F1BC6A /* DataManagerSets.swift */,
 				76CF4A0D2891174200024C33 /* DataManagerPogonage.swift */,
+				76A737A5289A63FE006332E9 /* DataServices.swift */,
 			);
 			path = Servces;
 			sourceTree = "<group>";
@@ -191,10 +196,11 @@
 		76A9850C287589EA00102AEB /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				76A9850D287589FE00102AEB /* Person.swift */,
 				76A9850E287589FE00102AEB /* Door.swift */,
 				76623039288935B000F1BC6A /* Set.swift */,
-				76A9850D287589FE00102AEB /* Person.swift */,
 				76CF4A0B2891158400024C33 /* Pogonage.swift */,
+				76A737A3289A62C8006332E9 /* Services.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -318,8 +324,10 @@
 				76A9851928758A2100102AEB /* PersonsTableViewController.swift in Sources */,
 				76CF4A0E2891174200024C33 /* DataManagerPogonage.swift in Sources */,
 				766230492889732700F1BC6A /* SetsProductTableViewCell.swift in Sources */,
+				76A737A6289A63FE006332E9 /* DataServices.swift in Sources */,
 				766230442889451000F1BC6A /* CategorySetsTableViewController.swift in Sources */,
 				76A9850A287589DF00102AEB /* DataManagerDoors.swift in Sources */,
+				76A737A4289A62C8006332E9 /* Services.swift in Sources */,
 				7662303C2889391000F1BC6A /* DataManagerSets.swift in Sources */,
 				76A98505287589A400102AEB /* PersonCellTableViewCell.swift in Sources */,
 				76A9851E28758A2100102AEB /* AppendInfoPersonViewController.swift in Sources */,
@@ -473,7 +481,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 3;
 				DEVELOPMENT_TEAM = N85MKK397C;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = ListProduct/App/Info.plist;
@@ -482,11 +490,12 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 0.1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = maksim.gurkov.ListProduct;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -501,7 +510,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 3;
 				DEVELOPMENT_TEAM = N85MKK397C;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = ListProduct/App/Info.plist;
@@ -510,11 +519,12 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 0.1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = maksim.gurkov.ListProduct;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;

@@ -2,6 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="trA-St-LH5">
     <device id="ipad9_7" orientation="portrait" layout="fullscreen" appearance="light"/>
     <dependencies>
+        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
@@ -181,7 +182,7 @@
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" verticalCompressionResistancePriority="752" text="Максим Александрович" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oaA-RQ-l5y">
-                                            <rect key="frame" x="30" y="16" width="568" height="36"/>
+                                            <rect key="frame" x="30" y="16" width="331" height="36"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
@@ -204,24 +205,12 @@
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ожидание" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="U0v-0D-rBy">
-                                            <rect key="frame" x="608" y="16" width="150" height="36"/>
-                                            <constraints>
-                                                <constraint firstAttribute="width" constant="150" id="u0h-t3-8Gr"/>
-                                            </constraints>
-                                            <fontDescription key="fontDescription" type="system" pointSize="30"/>
-                                            <nil key="textColor"/>
-                                            <nil key="highlightedColor"/>
-                                        </label>
                                     </subviews>
                                     <constraints>
                                         <constraint firstAttribute="trailingMargin" secondItem="su2-Yk-ACF" secondAttribute="trailing" constant="10" id="4Mg-T4-ejF"/>
-                                        <constraint firstItem="U0v-0D-rBy" firstAttribute="top" secondItem="Gev-9n-ni0" secondAttribute="topMargin" constant="5" id="7u2-pQ-HHq"/>
-                                        <constraint firstItem="U0v-0D-rBy" firstAttribute="trailing" secondItem="Gev-9n-ni0" secondAttribute="trailingMargin" constant="10" id="CU1-3Z-VFg"/>
                                         <constraint firstAttribute="trailingMargin" secondItem="yem-X9-7ZU" secondAttribute="trailing" constant="10" id="DAE-gx-Gh2"/>
                                         <constraint firstItem="oaA-RQ-l5y" firstAttribute="top" secondItem="Gev-9n-ni0" secondAttribute="topMargin" constant="5" id="N9h-2E-hke"/>
                                         <constraint firstItem="su2-Yk-ACF" firstAttribute="leading" secondItem="Gev-9n-ni0" secondAttribute="leadingMargin" constant="10" id="OPk-MS-KYi"/>
-                                        <constraint firstItem="U0v-0D-rBy" firstAttribute="leading" secondItem="oaA-RQ-l5y" secondAttribute="trailing" constant="10" id="TEl-At-VkJ"/>
                                         <constraint firstItem="yem-X9-7ZU" firstAttribute="leading" secondItem="Gev-9n-ni0" secondAttribute="leadingMargin" constant="10" id="TRJ-cf-fdm"/>
                                         <constraint firstItem="FlT-ry-fCt" firstAttribute="top" secondItem="su2-Yk-ACF" secondAttribute="bottom" constant="4" id="ecx-Q0-GmL"/>
                                         <constraint firstItem="FlT-ry-fCt" firstAttribute="leading" secondItem="Gev-9n-ni0" secondAttribute="leadingMargin" constant="10" id="gDQ-aQ-MW4"/>
@@ -236,7 +225,6 @@
                                     <outlet property="datePersonLabel" destination="FlT-ry-fCt" id="khl-v8-CbW"/>
                                     <outlet property="fulAddressPersonLabel" destination="su2-Yk-ACF" id="ygM-Qn-IJH"/>
                                     <outlet property="fulNamePersonLabel" destination="oaA-RQ-l5y" id="oZX-FW-5HO"/>
-                                    <outlet property="sumChequeLabel" destination="U0v-0D-rBy" id="bPp-U0-059"/>
                                     <outlet property="surNamePersonLabel" destination="yem-X9-7ZU" id="TpC-42-19t"/>
                                     <segue destination="xhw-pC-o1H" kind="show" id="KaS-Od-AhQ"/>
                                 </connections>
@@ -2922,7 +2910,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="h83-lB-8bZ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3626.5625" y="-779.296875"/>
+            <point key="canvasLocation" x="5562" y="29"/>
         </scene>
         <!--Sets Table View Controller-->
         <scene sceneID="4aL-de-ogR">

@@ -18,8 +18,7 @@ class Pogonage {
     
     
     static func forPogonages() -> [Pogonage] {
-        let door = DataManagerPogonage.sharet.pogonages
-        return door
+        DataManagerPogonage.sharet.pogonages
     }
     
     init(factory: FactoryPjgonage, material: MaterialPogonage, nameDoor: String, dimansion: String, specifications: String, price: Int, flag: Bool) {
