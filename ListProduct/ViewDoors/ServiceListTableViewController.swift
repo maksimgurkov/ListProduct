@@ -25,10 +25,9 @@ class ServiceListTableViewController: UITableViewController {
 
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "serviceCell", for: indexPath)
-        var content = cell.defaultContentConfiguration()
-        content.text = serviceList[indexPath.row].nameServices
-        cell.contentConfiguration = content
+        let cell = tableView.dequeueReusableCell(withIdentifier: "serviceCell", for: indexPath) as! ServiceTableViewCell
+        let service = serviceList[indexPath.row]
+        cell.nameServiceLabel.text = service.nameServices
         return cell
     }
     
@@ -68,14 +67,14 @@ class ServiceListTableViewController: UITableViewController {
     }
     */
 
-    /*
+    
     // MARK: - Navigation
 
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+       guard let index = tableView.indexPathForSelectedRow else { return }
+       guard let infoVC = segue.destination as? ServiceInfoViewController else { return }
+        infoVC.service = serviceList[index.row]
     }
-    */
+    
 
 }

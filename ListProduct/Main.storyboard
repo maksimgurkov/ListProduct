@@ -2,7 +2,6 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="trA-St-LH5">
     <device id="ipad9_7" orientation="portrait" layout="fullscreen" appearance="light"/>
     <dependencies>
-        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
@@ -2910,7 +2909,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="h83-lB-8bZ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="5562" y="29"/>
+            <point key="canvasLocation" x="4915" y="-598"/>
         </scene>
         <!--Sets Table View Controller-->
         <scene sceneID="4aL-de-ogR">
@@ -2968,7 +2967,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6Ws-0y-QAp" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3626.5625" y="-1497.0703125"/>
+            <point key="canvasLocation" x="3627" y="-1349"/>
         </scene>
         <!--Service List Table View Controller-->
         <scene sceneID="8bZ-NY-hb5">
@@ -2979,13 +2978,39 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="serviceCell" id="qvk-5A-eM3">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="serviceCell" id="qvk-5A-eM3" customClass="ServiceTableViewCell" customModule="ListProduct" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="44.5" width="768" height="43.5"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="qvk-5A-eM3" id="6UW-9R-pFx">
                                     <rect key="frame" x="0.0" y="0.0" width="768" height="43.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wfZ-Kz-RRk">
+                                            <rect key="frame" x="681" y="6" width="67" height="31"/>
+                                            <color key="backgroundColor" systemColor="systemOrangeColor"/>
+                                            <state key="normal" title="Button"/>
+                                            <buttonConfiguration key="configuration" style="plain" title="Button">
+                                                <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </buttonConfiguration>
+                                        </button>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="l0k-48-ASV">
+                                            <rect key="frame" x="40" y="11" width="42" height="21"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="l0k-48-ASV" firstAttribute="leading" secondItem="6UW-9R-pFx" secondAttribute="leadingMargin" constant="20" id="79z-h9-VA0"/>
+                                        <constraint firstAttribute="trailing" secondItem="wfZ-Kz-RRk" secondAttribute="trailing" constant="20" id="pPt-f9-JTH"/>
+                                        <constraint firstItem="l0k-48-ASV" firstAttribute="top" secondItem="6UW-9R-pFx" secondAttribute="topMargin" id="pWP-2P-fbO"/>
+                                        <constraint firstItem="wfZ-Kz-RRk" firstAttribute="top" secondItem="6UW-9R-pFx" secondAttribute="top" constant="6" id="v38-go-Qkr"/>
+                                    </constraints>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="nameServiceLabel" destination="l0k-48-ASV" id="Lyv-3j-N9h"/>
+                                    <segue destination="t5j-Cq-Xb8" kind="show" id="f1X-RJ-1P4"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -2997,7 +3022,23 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="XWx-6b-Ip7" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3637" y="-736"/>
+            <point key="canvasLocation" x="3627" y="-679"/>
+        </scene>
+        <!--Service Info View Controller-->
+        <scene sceneID="Fq0-im-9cV">
+            <objects>
+                <viewController id="t5j-Cq-Xb8" customClass="ServiceInfoViewController" customModule="ListProduct" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="HJC-bu-jMq">
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="9jv-uA-Lwj"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="6y7-Js-CHd"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Qyu-Hq-K2l" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4287" y="-679"/>
         </scene>
         <!--Category Sets Table View Controller-->
         <scene sceneID="Hdz-Vz-nnz">
@@ -3029,7 +3070,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Nlf-ga-p5c" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4293" y="-1497"/>
+            <point key="canvasLocation" x="4287" y="-1349"/>
         </scene>
         <!--Product Set Table View Controller-->
         <scene sceneID="tBY-DS-zIr">
@@ -3087,7 +3128,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9LJ-MH-sJj" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4939.84375" y="-1497.0703125"/>
+            <point key="canvasLocation" x="4946" y="-1349"/>
         </scene>
         <!--Info Product Set View Controller-->
         <scene sceneID="BrA-RI-pLb">
@@ -3184,7 +3225,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fTc-Zc-xLe" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="5622" y="-1497"/>
+            <point key="canvasLocation" x="5609" y="-1349"/>
         </scene>
         <!--Спецыалист по замеру-->
         <scene sceneID="HqJ-wM-LMq">
