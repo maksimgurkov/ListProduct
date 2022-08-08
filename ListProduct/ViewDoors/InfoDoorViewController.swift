@@ -443,7 +443,7 @@ class InfoDoorViewController: UIViewController {
 
    
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        guard let servicesPriceLustVC = segue.destination as? ServicesPriceViewController else {return}
+        guard let servicesPriceLustVC = segue.destination as? ServiceListTableViewController else {return}
         servicesPriceLustVC.person = persone
     }
     

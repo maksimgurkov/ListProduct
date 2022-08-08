@@ -12,7 +12,6 @@
 		76530C5028781E8F00487D6C /* ProductPersonTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76530C4F28781E8F00487D6C /* ProductPersonTableViewController.swift */; };
 		76530C52287B4AA600487D6C /* ServicesPersonTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76530C51287B4AA600487D6C /* ServicesPersonTableViewController.swift */; };
 		76530C54287B4D6800487D6C /* ServicesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76530C53287B4D6800487D6C /* ServicesTableViewCell.swift */; };
-		76530C56287C197C00487D6C /* ServicesPriceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76530C55287C197C00487D6C /* ServicesPriceViewController.swift */; };
 		7662303A288935B000F1BC6A /* Set.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76623039288935B000F1BC6A /* Set.swift */; };
 		7662303C2889391000F1BC6A /* DataManagerSets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7662303B2889391000F1BC6A /* DataManagerSets.swift */; };
 		7662303E28893E1A00F1BC6A /* SetsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7662303D28893E1A00F1BC6A /* SetsTableViewController.swift */; };
@@ -58,7 +57,6 @@
 		76530C4F28781E8F00487D6C /* ProductPersonTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductPersonTableViewController.swift; sourceTree = "<group>"; };
 		76530C51287B4AA600487D6C /* ServicesPersonTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServicesPersonTableViewController.swift; sourceTree = "<group>"; };
 		76530C53287B4D6800487D6C /* ServicesTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServicesTableViewCell.swift; sourceTree = "<group>"; };
-		76530C55287C197C00487D6C /* ServicesPriceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServicesPriceViewController.swift; sourceTree = "<group>"; };
 		76623039288935B000F1BC6A /* Set.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Set.swift; sourceTree = "<group>"; };
 		7662303B2889391000F1BC6A /* DataManagerSets.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManagerSets.swift; sourceTree = "<group>"; };
 		7662303D28893E1A00F1BC6A /* SetsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetsTableViewController.swift; sourceTree = "<group>"; };
@@ -199,10 +197,10 @@
 		76A98507287589B500102AEB /* Servces */ = {
 			isa = PBXGroup;
 			children = (
+				76CF4A0D2891174200024C33 /* DataManagerPogonage.swift */,
 				76A98508287589DF00102AEB /* DataManagerDoors.swift */,
 				76A98509287589DF00102AEB /* StorageManager.swift */,
 				7662303B2889391000F1BC6A /* DataManagerSets.swift */,
-				76CF4A0D2891174200024C33 /* DataManagerPogonage.swift */,
 				76A737A5289A63FE006332E9 /* DataServices.swift */,
 			);
 			path = Servces;
@@ -223,6 +221,7 @@
 		76A9851128758A0F00102AEB /* ViewDoors */ = {
 			isa = PBXGroup;
 			children = (
+				7671CD252885463A0073B7B5 /* PhotoCollectionViewController.swift */,
 				76A9851228758A2100102AEB /* PersonsTableViewController.swift */,
 				76A9851728758A2100102AEB /* AppendInfoPersonViewController.swift */,
 				76A9851828758A2100102AEB /* InfoPersonViewController.swift */,
@@ -232,8 +231,6 @@
 				76A9851328758A2100102AEB /* MaterialDoorsTableViewController.swift */,
 				76A9851628758A2100102AEB /* ListDoorsTableViewController.swift */,
 				76A9851528758A2100102AEB /* InfoDoorViewController.swift */,
-				76530C55287C197C00487D6C /* ServicesPriceViewController.swift */,
-				7671CD252885463A0073B7B5 /* PhotoCollectionViewController.swift */,
 				76A737A7289A9108006332E9 /* ServiceListTableViewController.swift */,
 				763BD2A3289A9F5D005C1819 /* ServiceInfoViewController.swift */,
 			);
@@ -349,7 +346,6 @@
 				76A98505287589A400102AEB /* PersonCellTableViewCell.swift in Sources */,
 				76A9851E28758A2100102AEB /* AppendInfoPersonViewController.swift in Sources */,
 				763BD2A2289A9C8A005C1819 /* ServiceTableViewCell.swift in Sources */,
-				76530C56287C197C00487D6C /* ServicesPriceViewController.swift in Sources */,
 				76A984E5287587D100102AEB /* AppDelegate.swift in Sources */,
 				76530C52287B4AA600487D6C /* ServicesPersonTableViewController.swift in Sources */,
 				76A9851C28758A2100102AEB /* InfoDoorViewController.swift in Sources */,

@@ -9,6 +9,7 @@ import UIKit
 
 class ServiceListTableViewController: UITableViewController {
     
+    var person: Person!
     var serviceList = Service.services()
 
     override func viewDidLoad() {
@@ -74,6 +75,7 @@ class ServiceListTableViewController: UITableViewController {
        guard let index = tableView.indexPathForSelectedRow else { return }
        guard let infoVC = segue.destination as? ServiceInfoViewController else { return }
         infoVC.service = serviceList[index.row]
+        infoVC.person = person
     }
     
 
