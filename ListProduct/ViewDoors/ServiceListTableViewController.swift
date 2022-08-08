@@ -74,7 +74,7 @@ class ServiceListTableViewController: UITableViewController {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
        guard let index = tableView.indexPathForSelectedRow else { return }
        guard let infoVC = segue.destination as? ServiceInfoViewController else { return }
-        infoVC.service = serviceList[index.row]
+        infoVC.servicePerson = serviceList[index.row]
         infoVC.person = person
     }
     

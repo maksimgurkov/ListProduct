@@ -57,10 +57,10 @@ class StorageManager {
         }
     }
     
-    func renameServis(_ servis: Services, newValue: Int) {
+    func renameServis(_ servis: Services, services: Service, newValue: Int) {
         write {
             servis.count += newValue
-            servis.price += servis.price
+            servis.price += services.priceServices
         }
     }
     
