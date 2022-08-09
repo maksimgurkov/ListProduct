@@ -11,6 +11,7 @@ import RealmSwift
 class CategorySetsTableViewController: UITableViewController {
     
     var categorySet: [Sets]!
+    var person: Person!
     
     private var catefory: [String] = []
     private var listProductSet: [Sets] = []
@@ -99,6 +100,7 @@ class CategorySetsTableViewController: UITableViewController {
         guard let productSetVC = segue.destination as? ProductSetTableViewController else { return }
         forProductSets()
         productSetVC.productSets = listProductSet
+        productSetVC.person = person
 
     }
     

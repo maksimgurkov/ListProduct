@@ -11,6 +11,7 @@ import SwiftUI
 class ProductSetTableViewController: UITableViewController {
     
     var productSets: [Sets]!
+    var person: Person!
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -76,6 +77,7 @@ class ProductSetTableViewController: UITableViewController {
         guard let index = tableView.indexPathForSelectedRow else { return }
         guard let infoProductVC = segue.destination as? InfoProductSetViewController else { return }
         infoProductVC.infoProduct = productSets[index.row]
+        infoProductVC.person = person
     }
     
 

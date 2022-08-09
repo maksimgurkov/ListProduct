@@ -10,6 +10,7 @@ import UIKit
 class SetsTableViewController: UITableViewController {
     
     var sets = Sets.forSet()
+    var person: Person!
     
     private var factory: [String] = []
     private var categoru: [Sets] = []
@@ -104,6 +105,7 @@ class SetsTableViewController: UITableViewController {
         guard let categoryVC = segue.destination as? CategorySetsTableViewController else { return }
         getCategoriySet()
         categoryVC.categorySet = categoru
+        categoryVC.person = person
     }
     
 
