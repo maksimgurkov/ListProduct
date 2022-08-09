@@ -51,6 +51,20 @@ class StorageManager {
         }
     }
     
+    func renameService(_ service: Services, services: Service, newValue: Int ) {
+        write {
+            service.count -= newValue
+            service.price -= services.priceServices
+            
+        }
+    }
+    
+    func deleteService(service: Services) {
+        write {
+            realm.delete(service)
+        }
+    }
+    
     func saveSerwice(_ persone: Person, service: Services) {
         write {
             persone.basketService.append(service)

@@ -39,7 +39,7 @@ class ServiceInfoViewController: UIViewController {
     }
     
     @IBAction func actionDeleteServiceButton() {
-        
+        deleteService()
     }
     
     
@@ -75,6 +75,24 @@ class ServiceInfoViewController: UIViewController {
                 }
             }
             
+        }
+    }
+    
+    private func deleteService() {
+        if !person.basketService.isEmpty {
+            for servic in person.basketService {
+                if servic.name == servicePerson.nameServices {
+                    if servic.count > 1 {
+                        StorageManager.shared.renameService(servic, services: servicePerson, newValue: 1)
+                        countServiceLabel.text = "\(servic.count)"
+                        priceServiceLabel.text = "\(servic.price)"
+                    } else if servic.count == 1 {
+                        StorageManager.shared.deleteService(service: servic)
+                        countServiceLabel.text = "\(0)"
+                        priceServiceLabel.text = "\(0)"
+                    }
+                }
+            }
         }
     }
         

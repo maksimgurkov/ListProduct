@@ -11,8 +11,8 @@ class Service {
     
     let nameServices: String
     let descriptionServices: String
-    let countServices: Int
-    let priceServices: Int
+    var countServices: Int
+    var priceServices: Int
     
     init(nameServices: String, descriptionServices: String, countServices: Int, priceServices: Int) {
         self.nameServices = nameServices
