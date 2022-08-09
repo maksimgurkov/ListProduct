@@ -13,6 +13,11 @@ class InfoProductSetViewController: UIViewController {
 
     @IBOutlet weak var imageProductSet: UIImageView!
     @IBOutlet weak var descriptionProductSetLabel: UILabel!
+    @IBOutlet weak var nameSetLabel: UILabel!
+    @IBOutlet weak var saveSetButton: UIButton!
+    @IBOutlet weak var deleteSetButton: UIButton!
+    @IBOutlet weak var countSetLabel: UILabel!
+    @IBOutlet weak var priceSetLabel: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -20,6 +25,9 @@ class InfoProductSetViewController: UIViewController {
         title = infoProduct.name
         imageProductSet.image = UIImage(named: infoProduct.name)
         descriptionProductSetLabel.text = "\(infoProduct.description)"
+        nameSetLabel.text = infoProduct.name
+        saveSetButton.layer.cornerRadius = 8
+        deleteSetButton.layer.cornerRadius = 8
     }
     
 
