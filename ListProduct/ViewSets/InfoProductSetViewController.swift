@@ -29,6 +29,7 @@ class InfoProductSetViewController: UIViewController {
         nameSetLabel.text = infoProduct.name
         saveSetButton.layer.cornerRadius = 8
         deleteSetButton.layer.cornerRadius = 8
+        forCountSet()
     }
     
     @IBAction func actionSaveSetBasketButton() {
@@ -36,6 +37,7 @@ class InfoProductSetViewController: UIViewController {
     }
 
     @IBAction func activDeleteSetBasketButton() {
+        deleteSet()
     }
     
     
@@ -76,19 +78,28 @@ class InfoProductSetViewController: UIViewController {
     }
     
     private func deleteSet() {
-        if !person.basketService.isEmpty {
+        if !person.basket.isEmpty {
             for setProduct in person.basket {
                 if setProduct.nameDoor == infoProduct.name {
                     if setProduct.countDoors > 1 {
                         StorageManager.shared.renameSetDelete(setProduct, doors: infoProduct, newValue: 1)
                         countSetLabel.text = "\(setProduct.countDoors)"
-                        priceSetLabel.text = "\(setProduct.countDoors)"
+                        priceSetLabel.text = "\(setProduct.price)"
                     } else if setProduct.countDoors == 1 {
                         StorageManager.shared.delete(setProduct)
                         countSetLabel.text = "\(0)"
                         priceSetLabel.text = "\(0)"
                     }
                 }
+            }
+        }
+    }
+    
+    private func forCountSet() {
+        for setPerson in person.basket {
+            if setPerson.nameDoor == infoProduct.name {
+                countSetLabel.text = "\(setPerson.countDoors)"
+                priceSetLabel.text = "\(setPerson.price)"
             }
         }
     }

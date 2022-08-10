@@ -11,9 +11,6 @@ class InfoPersonViewController: UIViewController {
     
     var person: Person!
     
-    let countCell = 2
-    
-    
     @IBOutlet weak var viewColorPerson: UIView!
     
     @IBOutlet weak var namePersonLabel: UILabel!
@@ -26,14 +23,18 @@ class InfoPersonViewController: UIViewController {
     @IBOutlet weak var sumServicesLabel: UILabel!
     @IBOutlet weak var sumLabel: UILabel!
     
-    @IBOutlet weak var personProductLabel: UIButton!
-    @IBOutlet weak var personMaterialLabel: UIButton!
+    @IBOutlet weak var sumPoPersonButton: UIButton!
+    @IBOutlet weak var personProductButton: UIButton!
+    @IBOutlet weak var personMaterialButton: UIButton!
+    
+    @IBOutlet weak var personSumTextField: UITextField!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         title = "\(person.name) \(person.patronymic)"
-        personProductLabel.layer.cornerRadius = 8
-        personMaterialLabel.layer.cornerRadius = 8
+        personProductButton.layer.cornerRadius = 8
+        personMaterialButton.layer.cornerRadius = 8
+        sumPoPersonButton.layer.cornerRadius = 8
         surNamePersonLabel.text = person.surName
         namePersonLabel.text = person.name
         patronymicPersonLabel.text = person.patronymic
@@ -42,15 +43,21 @@ class InfoPersonViewController: UIViewController {
         descriptionPersonLabel.text = person.personDescription
         viewColorPerson.layer.cornerRadius = 20
         setupLabel()
+        personSumTextField.placeholder = "\(person.sumPo)"
         
     }
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        sumMaterialLabel.text = "Сумма за материал - \(sumPersonMaterial()) р."
+        sumMaterialLabel.text = "Сумма за материал - \(sumPersonMaterial() - person.sumPo) р."
         sumServicesLabel.text = "Сумма за услуги - \(sumPersonSevices()) р."
         sumLabel.text = "Общая сумма договора - \(sumPersonMaterial() + sumPersonSevices()) р."
     }
+    
+    @IBAction func actionPoPersonButton() {
+        forPersonSumPo()
+    }
+    
         
     private func setupLabel() {
         surNamePersonLabel.layer.masksToBounds = true
@@ -84,11 +91,7 @@ class InfoPersonViewController: UIViewController {
             servicesVC.person = person
         }
     }
-    
-    @IBAction func saveImageButton(_ sender: Any) {
-
-    }
-    
+        
     private func sumPersonMaterial() -> Int {
         var sum = 0
         for door in person.basket {
@@ -103,6 +106,14 @@ class InfoPersonViewController: UIViewController {
             sum += services.price
         }
         return sum
+    }
+    
+    private func forPersonSumPo() {
+        var resaltSum = 0
+            guard let sum = personSumTextField.text, !sum.isEmpty else {return}
+            StorageManager.shared.renamePerson(person: person, newValue: Int(sum) ?? 0)
+            resaltSum = sumPersonMaterial() - person.sumPo
+            sumMaterialLabel.text = "Сумма за материал - \(resaltSum) "
     }
 }
 

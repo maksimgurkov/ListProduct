@@ -15,13 +15,18 @@ class StorageManager {
     
     private init() {}
     
+    //MARK: - Person
     func save(_ person: Person) {
         write {
             realm.add(person)
         }
     }
     
-    
+    func renamePerson(person: Person, newValue: Int) {
+        write {
+            person.sumPo = newValue
+        }
+    }
     
     func delete(_ person: Person) {
         write {

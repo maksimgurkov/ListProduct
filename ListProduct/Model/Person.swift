@@ -20,6 +20,7 @@ class Person: Object {
     @Persisted var body = ""
     @Persisted var numberFlat = ""
     @Persisted var personDescription = ""
+    @Persisted var sumPo = 0
     @Persisted var data = Date()
     @Persisted var basket = List<Doors>()
     @Persisted var basketService = List<Services>()
