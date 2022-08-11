@@ -43,4 +43,5 @@ enum SetCategory: String {
     case castle = "Защелка L40"
     case cstleWC = "Защелка L70"
     case stopWC = "Фиксатор"
+    case set = "Комплет Prima"
 }
