@@ -87,7 +87,7 @@ class InfoPersonViewController: UIViewController {
             infoDoorVC.person = person
         } else if let listVC = segue.destination as? ProductPersonTableViewController {
             listVC.person = person
-        } else if let servicesVC = segue.destination as? ServicesPersonTableViewController {
+        } else if let servicesVC = segue.destination as? DocumentServicesPersonViewController {
             servicesVC.person = person
         }
     }
