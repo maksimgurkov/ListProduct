@@ -22,19 +22,25 @@ class InfoPersonViewController: UIViewController {
     @IBOutlet weak var sumMaterialLabel: UILabel!
     @IBOutlet weak var sumServicesLabel: UILabel!
     @IBOutlet weak var sumLabel: UILabel!
+    @IBOutlet weak var sumPoPersonLabel: UILabel!
+    @IBOutlet weak var selseCountPersonLabel: UILabel!
     
     @IBOutlet weak var sumPoPersonButton: UIButton!
-    @IBOutlet weak var personProductButton: UIButton!
-    @IBOutlet weak var personMaterialButton: UIButton!
+    @IBOutlet weak var delePOPersonButton: UIButton!
+    
+    @IBOutlet weak var appendSelseButton: UIButton!
+    @IBOutlet weak var deleteSelseButton: UIButton!
     
     @IBOutlet weak var personSumTextField: UITextField!
+    @IBOutlet weak var selsePersonTextField: UITextField!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         title = "\(person.name) \(person.patronymic)"
-        personProductButton.layer.cornerRadius = 8
-        personMaterialButton.layer.cornerRadius = 8
+        delePOPersonButton.layer.cornerRadius = 8
         sumPoPersonButton.layer.cornerRadius = 8
+        appendSelseButton.layer.cornerRadius = 8
+        deleteSelseButton.layer.cornerRadius = 8
         surNamePersonLabel.text = person.surName
         namePersonLabel.text = person.name
         patronymicPersonLabel.text = person.patronymic
@@ -78,6 +84,10 @@ class InfoPersonViewController: UIViewController {
         sumServicesLabel.layer.cornerRadius = 8
         sumLabel.layer.masksToBounds = true
         sumLabel.layer.cornerRadius = 8
+        sumPoPersonLabel.layer.masksToBounds = true
+        sumPoPersonLabel.layer.cornerRadius = 8
+        selseCountPersonLabel.layer.masksToBounds = true
+        selseCountPersonLabel.layer.cornerRadius = 8
     }
 
     // MARK: - Navigation
@@ -114,6 +124,13 @@ class InfoPersonViewController: UIViewController {
             StorageManager.shared.renamePerson(person: person, newValue: Int(sum) ?? 0)
             resaltSum = sumPersonMaterial() - person.sumPo
             sumMaterialLabel.text = "Сумма за материал - \(resaltSum) "
+    }
+    
+    private func forSelsePerson() {
+        var resultSum = 0
+        for product in person.basket {
+            resultSum += product.price
+        }
     }
 }
 

@@ -741,10 +741,10 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nin-cM-Kut">
-                                <rect key="frame" x="20" y="122" width="728" height="498"/>
+                                <rect key="frame" x="20" y="122" width="728" height="540"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="d45-QB-A7v">
-                                        <rect key="frame" x="35" y="30" width="658" height="438"/>
+                                        <rect key="frame" x="35" y="30" width="658" height="480"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Данные клиента" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BcW-SR-CYt">
                                                 <rect key="frame" x="0.0" y="0.0" width="145.5" height="23"/>
@@ -821,8 +821,8 @@
                                                 <color key="textColor" systemColor="systemGrayColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <stackView opaque="NO" contentMode="scaleToFill" spacing="72" translatesAutoresizingMaskIntoConstraints="NO" id="x40-qO-Ks8">
-                                                <rect key="frame" x="0.0" y="404" width="644" height="34"/>
+                                            <stackView opaque="NO" contentMode="scaleToFill" spacing="35" translatesAutoresizingMaskIntoConstraints="NO" id="x40-qO-Ks8">
+                                                <rect key="frame" x="0.0" y="404" width="655.5" height="34"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Сумма предоплаты" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rfv-MG-ml0">
                                                         <rect key="frame" x="0.0" y="0.0" width="222.5" height="34"/>
@@ -832,8 +832,11 @@
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cyK-Gc-IXC">
-                                                        <rect key="frame" x="294.5" y="0.0" width="72.5" height="34"/>
+                                                        <rect key="frame" x="257.5" y="0.0" width="100" height="34"/>
                                                         <color key="backgroundColor" systemColor="systemOrangeColor"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" constant="100" id="zf5-np-gpG"/>
+                                                        </constraints>
                                                         <state key="normal" title="Button"/>
                                                         <buttonConfiguration key="configuration" style="plain" title="Внести">
                                                             <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -842,16 +845,81 @@
                                                             <action selector="actionPoPersonButton" destination="xhw-pC-o1H" eventType="touchUpInside" id="oVu-ap-0Uw"/>
                                                         </connections>
                                                     </button>
-                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="5000" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="HPp-ge-ooo">
-                                                        <rect key="frame" x="439" y="0.0" width="100" height="34"/>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="64b-Yt-IMJ">
+                                                        <rect key="frame" x="392.5" y="0.0" width="100" height="34"/>
+                                                        <color key="backgroundColor" systemColor="systemRedColor"/>
                                                         <constraints>
-                                                            <constraint firstAttribute="width" constant="100" id="EDs-sa-Y14"/>
+                                                            <constraint firstAttribute="width" constant="100" id="m55-7U-Iwk"/>
+                                                        </constraints>
+                                                        <state key="normal" title="Button"/>
+                                                        <buttonConfiguration key="configuration" style="plain" title="Удалить">
+                                                            <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </buttonConfiguration>
+                                                        <connections>
+                                                            <action selector="actionPoPersonButton" destination="xhw-pC-o1H" eventType="touchUpInside" id="9vN-VC-qFn"/>
+                                                        </connections>
+                                                    </button>
+                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="5000" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="HPp-ge-ooo">
+                                                        <rect key="frame" x="527.5" y="0.0" width="60" height="34"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" constant="60" id="EDs-sa-Y14"/>
                                                         </constraints>
                                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                         <textInputTraits key="textInputTraits"/>
                                                     </textField>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="руб." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pGr-GZ-pUc">
-                                                        <rect key="frame" x="611" y="0.0" width="33" height="34"/>
+                                                        <rect key="frame" x="622.5" y="0.0" width="33" height="34"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" spacing="35" translatesAutoresizingMaskIntoConstraints="NO" id="5nj-GA-gTR">
+                                                <rect key="frame" x="0.0" y="446" width="638" height="34"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Процент скидки" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qC0-Nl-HtA">
+                                                        <rect key="frame" x="0.0" y="0.0" width="222.5" height="34"/>
+                                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" constant="222.5" id="LSR-SV-nm9"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                                        <color key="textColor" systemColor="systemGrayColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="b0K-8h-vlw">
+                                                        <rect key="frame" x="257.5" y="0.0" width="100" height="34"/>
+                                                        <color key="backgroundColor" systemColor="systemOrangeColor"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" constant="100" id="gIr-Bl-juQ"/>
+                                                        </constraints>
+                                                        <state key="normal" title="Button"/>
+                                                        <buttonConfiguration key="configuration" style="plain" title="Внести">
+                                                            <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </buttonConfiguration>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jrb-bn-0AI">
+                                                        <rect key="frame" x="392.5" y="0.0" width="100" height="34"/>
+                                                        <color key="backgroundColor" systemColor="systemRedColor"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" constant="100" id="moe-Hm-nNt"/>
+                                                        </constraints>
+                                                        <state key="normal" title="Button"/>
+                                                        <buttonConfiguration key="configuration" style="plain" title="Удалить">
+                                                            <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </buttonConfiguration>
+                                                    </button>
+                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="10" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="b2f-Dy-aE6">
+                                                        <rect key="frame" x="527.5" y="0.0" width="60" height="34"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" constant="60" id="rdu-DV-uwR"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                        <textInputTraits key="textInputTraits"/>
+                                                    </textField>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="%" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mU7-TZ-wit">
+                                                        <rect key="frame" x="622.5" y="0.0" width="15.5" height="34"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
@@ -884,49 +952,27 @@
                                     <constraint firstAttribute="bottom" secondItem="d45-QB-A7v" secondAttribute="bottom" constant="30" id="uVb-hf-4hF"/>
                                 </constraints>
                             </view>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hBm-Bz-pmZ">
-                                <rect key="frame" x="20" y="640" width="300" height="31"/>
-                                <color key="backgroundColor" systemColor="systemOrangeColor"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="300" id="AVR-g5-VCA"/>
-                                </constraints>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="Просмотр выбранного материала">
-                                    <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                </buttonConfiguration>
-                                <connections>
-                                    <segue destination="uMB-Xg-Wcr" kind="show" id="mTI-3b-rKD"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3LY-h8-vUh">
-                                <rect key="frame" x="448" y="640" width="300" height="31"/>
-                                <color key="backgroundColor" systemColor="systemOrangeColor"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="300" id="AMn-AR-aBp"/>
-                                </constraints>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="Просмотр выбранных услуг">
-                                    <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                </buttonConfiguration>
-                                <connections>
-                                    <segue destination="k77-7k-Kkc" kind="show" id="2Au-kg-UVJ"/>
-                                </connections>
-                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="pKF-wU-uJn"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="nin-cM-Kut" firstAttribute="top" secondItem="pKF-wU-uJn" secondAttribute="top" id="0pT-zP-UfY"/>
                             <constraint firstItem="nin-cM-Kut" firstAttribute="leading" secondItem="pKF-wU-uJn" secondAttribute="leading" constant="20" id="3Tp-GC-hcf"/>
-                            <constraint firstItem="hBm-Bz-pmZ" firstAttribute="top" secondItem="nin-cM-Kut" secondAttribute="bottom" constant="20" id="A39-qd-Bdm"/>
-                            <constraint firstItem="hBm-Bz-pmZ" firstAttribute="leading" secondItem="pKF-wU-uJn" secondAttribute="leading" constant="20" id="OaD-QK-bO2"/>
-                            <constraint firstItem="pKF-wU-uJn" firstAttribute="trailing" secondItem="3LY-h8-vUh" secondAttribute="trailing" constant="20" id="SyY-nm-qGP"/>
                             <constraint firstItem="pKF-wU-uJn" firstAttribute="trailing" secondItem="nin-cM-Kut" secondAttribute="trailing" constant="20" id="f2n-zF-U1w"/>
-                            <constraint firstItem="3LY-h8-vUh" firstAttribute="top" secondItem="nin-cM-Kut" secondAttribute="bottom" constant="20" id="tMQ-aJ-iDn"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="8WX-Hi-nxe">
                         <rightBarButtonItems>
+                            <barButtonItem title="Услуги" id="4yw-1x-fUD">
+                                <connections>
+                                    <segue destination="k77-7k-Kkc" kind="show" id="WWo-EV-xHX"/>
+                                </connections>
+                            </barButtonItem>
+                            <barButtonItem title="Маиериал" id="a8A-ob-uTZ">
+                                <connections>
+                                    <segue destination="uMB-Xg-Wcr" kind="show" id="HZU-pG-bnS"/>
+                                </connections>
+                            </barButtonItem>
                             <barButtonItem title="Составить заказ" id="OER-b8-nxg">
                                 <connections>
                                     <segue destination="bdb-t8-owW" kind="show" id="loG-hb-iir"/>
@@ -941,16 +987,20 @@
                     </navigationItem>
                     <connections>
                         <outlet property="addressPersonLabel" destination="ni4-QB-CkE" id="fqV-yY-vjh"/>
+                        <outlet property="appendSelseButton" destination="b0K-8h-vlw" id="6oY-25-A4w"/>
+                        <outlet property="delePOPersonButton" destination="64b-Yt-IMJ" id="JAo-wU-i5U"/>
+                        <outlet property="deleteSelseButton" destination="Jrb-bn-0AI" id="Pjs-sk-gTY"/>
                         <outlet property="descriptionPersonLabel" destination="5zd-cV-yeZ" id="Yoh-pI-vn0"/>
                         <outlet property="namePersonLabel" destination="yAR-YI-lU9" id="iSc-3w-BtT"/>
                         <outlet property="patronymicPersonLabel" destination="t1n-yH-87A" id="JiC-Xs-UM7"/>
-                        <outlet property="personMaterialButton" destination="3LY-h8-vUh" id="2kK-qA-7dY"/>
-                        <outlet property="personProductButton" destination="hBm-Bz-pmZ" id="F5b-w3-eVN"/>
                         <outlet property="personSumTextField" destination="HPp-ge-ooo" id="Jma-GZ-xuv"/>
                         <outlet property="phonePersonLabel" destination="bu3-Ps-mZQ" id="tpj-Ng-be8"/>
+                        <outlet property="selseCountPersonLabel" destination="qC0-Nl-HtA" id="MpE-uU-HNb"/>
+                        <outlet property="selsePersonTextField" destination="b2f-Dy-aE6" id="FdW-WK-sBF"/>
                         <outlet property="sumLabel" destination="ScS-P4-ReA" id="gSk-tG-Dbf"/>
                         <outlet property="sumMaterialLabel" destination="Hou-jt-hVz" id="ujL-8j-9Ro"/>
                         <outlet property="sumPoPersonButton" destination="cyK-Gc-IXC" id="0l1-wC-KHX"/>
+                        <outlet property="sumPoPersonLabel" destination="rfv-MG-ml0" id="3HX-Pb-ao5"/>
                         <outlet property="sumServicesLabel" destination="ipY-i4-CVf" id="MWj-4c-oYK"/>
                         <outlet property="surNamePersonLabel" destination="yGZ-aX-Hyg" id="dLY-3L-zUX"/>
                         <outlet property="viewColorPerson" destination="nin-cM-Kut" id="teJ-FS-y9A"/>
