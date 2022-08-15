@@ -16,16 +16,17 @@ class ProductPersonTableViewController: UIViewController {
     @IBOutlet weak var sumPersonLabel: UILabel!
     @IBOutlet weak var sumPoPersonLabel: UILabel!
     @IBOutlet weak var fulSumPersonLabel: UILabel!
+    @IBOutlet weak var dataDocumentPersonLabel: UILabel!
     
         
     override func viewDidLoad() {
         super.viewDidLoad()
-        title = "\(person.name) \(person.patronymic)"
         fulNamePersonLabel.text = "\(person.surName) \(person.name) \(person.patronymic)"
         fulAdresPersonLabel.text = "\(person.town) \(person.strit) \(person.numberHouse) \(person.body) \(person.numberFlat)"
         sumPersonLabel.text = "\(sumPerson())"
         sumPoPersonLabel.text = "\(person.sumPo)"
         fulSumPersonLabel.text = "\(fulSumPersonProduct())"
+        dataDocumentPersonLabel.text = forDataDocument()
     }
     
     private func sumPerson() -> Int {
@@ -40,6 +41,13 @@ class ProductPersonTableViewController: UIViewController {
         var resultSum = 0
         resultSum = sumPerson() - person.sumPo
         return resultSum
+    }
+    
+    private func forDataDocument() -> String {
+        let dateFormater = DateFormatter()
+        dateFormater.dateFormat = "dd.MM.yyyy"
+        let day = dateFormater.string(from: person.data)
+        return day
     }
     
     // MARK: - Table view data source
