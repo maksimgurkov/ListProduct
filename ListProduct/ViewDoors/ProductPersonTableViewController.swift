@@ -17,16 +17,18 @@ class ProductPersonTableViewController: UIViewController {
     @IBOutlet weak var sumPoPersonLabel: UILabel!
     @IBOutlet weak var fulSumPersonLabel: UILabel!
     @IBOutlet weak var dataDocumentPersonLabel: UILabel!
+    @IBOutlet weak var infoResultSumPersonLabel: UILabel!
     
         
     override func viewDidLoad() {
         super.viewDidLoad()
         fulNamePersonLabel.text = "\(person.surName) \(person.name) \(person.patronymic)"
         fulAdresPersonLabel.text = "\(person.town) \(person.strit) \(person.numberHouse) \(person.body) \(person.numberFlat)"
-        sumPersonLabel.text = "\(sumPerson())"
+        sumPersonLabel.text = "\(sumPerson() - forResultSelse())"
         sumPoPersonLabel.text = "\(person.sumPo)"
         fulSumPersonLabel.text = "\(fulSumPersonProduct())"
         dataDocumentPersonLabel.text = forDataDocument()
+        infoResultSumPersonLabel.text = forInfoResultSumPerson()
     }
     
     private func sumPerson() -> Int {
@@ -35,6 +37,11 @@ class ProductPersonTableViewController: UIViewController {
             resultSum += product.price
         }
         return resultSum
+    }
+    
+    private func forResultSelse() -> Int {
+        let result = sumPerson() / 100 * person.salse
+        return result
     }
     
     private func fulSumPersonProduct() -> Int {
@@ -48,6 +55,16 @@ class ProductPersonTableViewController: UIViewController {
         dateFormater.dateFormat = "dd.MM.yyyy"
         let day = dateFormater.string(from: person.data)
         return day
+    }
+    
+    private func forInfoResultSumPerson() -> String {
+        var info = ""
+        if person.salse == 0 {
+            info = "Итого к оплате"
+        } else {
+            info = "Итого к оплате с учетом скидки \(person.salse) %"
+        }
+        return info
     }
     
     // MARK: - Table view data source

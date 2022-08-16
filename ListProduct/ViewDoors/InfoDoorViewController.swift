@@ -134,7 +134,7 @@ class InfoDoorViewController: UIViewController {
         }
     }
     
-    private func testPrice(name: String) -> Int {
+    private func forPricePogonage(name: String) -> Int {
         var price = 0
         for pogonag in sortPogonages {
             if pogonag.nameDoor == name {
@@ -185,7 +185,7 @@ class InfoDoorViewController: UIViewController {
         let pogonage = Doors()
         pogonage.factory = factory
         pogonage.material = material
-        pogonage.nameDoor = name
+        pogonage.nameDoor = doorPerson.nameDoor
         pogonage.namePogonage = name
         pogonage.price = price
         pogonage.dimensions = dimansion
@@ -267,7 +267,7 @@ class InfoDoorViewController: UIViewController {
                 } else if door.dimensions == "900*2000" && door.nameDoor == doorPerson.nameDoor {
                     countDoor900Label.text = "\(door.countDoors)"
                     priceDoor900Label.text = "\(door.price)"
-                } else if door.namePogonage == "Коробка" && door.nameDoor == doorPerson.nameDoor {
+                } else if door.namePogonage == "Короб" && door.nameDoor == doorPerson.nameDoor {
                     korobCountLabel.text = "\(door.countDoors)"
                     priceKorobLabel.text = "\(door.price)"
                 } else if door.namePogonage == "Наличник" && door.nameDoor == doorPerson.nameDoor {
@@ -374,8 +374,8 @@ class InfoDoorViewController: UIViewController {
         case korobButton:
             savePogonagePerson(factory: doorPerson.factory.rawValue,
                                material: doorPerson.material.rawValue,
-                               name: "Коробка",
-                               price: testPrice(name: "Коробка"),
+                               name: "Короб",
+                               price: forPricePogonage(name: "Короб"),
                                dimansion: "Cтандарт",
                                count: 1,
                                countInfoPogonage: korobCountLabel,
@@ -384,7 +384,7 @@ class InfoDoorViewController: UIViewController {
             savePogonagePerson(factory: doorPerson.factory.rawValue,
                                material: doorPerson.material.rawValue,
                                name: "Наличник",
-                               price: testPrice(name: "Наличник"),
+                               price: forPricePogonage(name: "Наличник"),
                                dimansion: "Cтандарт",
                                count: 1,
                                countInfoPogonage: casingCountLabel,
@@ -393,7 +393,7 @@ class InfoDoorViewController: UIViewController {
             savePogonagePerson(factory: doorPerson.factory.rawValue,
                                material: doorPerson.material.rawValue,
                                name: "Добор 100",
-                               price: testPrice(name: "Добор 100"),
+                               price: forPricePogonage(name: "Добор 100"),
                                dimansion: "Cтандарт",
                                count: 1,
                                countInfoPogonage: dobor100CountLabel,
@@ -402,7 +402,7 @@ class InfoDoorViewController: UIViewController {
             savePogonagePerson(factory: doorPerson.factory.rawValue,
                                material: doorPerson.material.rawValue,
                                name: "Добор 150",
-                               price: testPrice(name: "Добор 150"),
+                               price: forPricePogonage(name: "Добор 150"),
                                dimansion: "Cтандарт",
                                count: 1,
                                countInfoPogonage: dobor150CountLabel,
@@ -411,7 +411,7 @@ class InfoDoorViewController: UIViewController {
             savePogonagePerson(factory: doorPerson.factory.rawValue,
                                material: doorPerson.material.rawValue,
                                name: "Добор 200",
-                               price: testPrice(name: "Добор 200"),
+                               price: forPricePogonage(name: "Добор 200"),
                                dimansion: "Cтандарт",
                                count: 1,
                                countInfoPogonage: dobor200CountLabel,
@@ -420,7 +420,7 @@ class InfoDoorViewController: UIViewController {
             savePogonagePerson(factory: doorPerson.factory.rawValue,
                                material: doorPerson.material.rawValue,
                                name: "Притвор",
-                               price: testPrice(name: "Притвор"),
+                               price: forPricePogonage(name: "Притвор"),
                                dimansion: "Cтандарт",
                                count: 1,
                                countInfoPogonage: lathCountLabel,
@@ -429,7 +429,7 @@ class InfoDoorViewController: UIViewController {
             savePogonagePerson(factory: doorPerson.factory.rawValue,
                                material: doorPerson.material.rawValue,
                                name: nonStandartNamePogonageData(),
-                               price: (testPrice(name: nonStandartNamePogonageData()) / 100 * 30) + testPrice(name: nonStandartNamePogonageData()),
+                               price: (forPricePogonage(name: nonStandartNamePogonageData()) / 100 * 30) + forPricePogonage(name: nonStandartNamePogonageData()),
                                dimansion: nonSyandertHeightPogonage(),
                                count: 1,
                                countInfoPogonage: nonStandartCountPogonageLabel,

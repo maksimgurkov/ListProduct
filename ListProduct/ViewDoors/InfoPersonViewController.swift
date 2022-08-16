@@ -50,19 +50,26 @@ class InfoPersonViewController: UIViewController {
         viewColorPerson.layer.cornerRadius = 20
         setupLabel()
         personSumTextField.placeholder = "\(person.sumPo)"
+        selsePersonTextField.placeholder = "\(person.salse)"
         
     }
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        sumMaterialLabel.text = "Сумма за материал - \(sumPersonMaterial() - person.sumPo) р."
-        sumServicesLabel.text = "Сумма за услуги - \(sumPersonSevices()) р."
-        sumLabel.text = "Общая сумма договора - \(sumPersonMaterial() + sumPersonSevices()) р."
+        sumMaterialLabel.text = "Сумма за материал - \(sumPersonMaterial() - resultSumSelsePerson() - person.sumPo) р."
+        sumServicesLabel.text = "Сумма за услуги - \(sumPersonServices()) р."
+        sumLabel.text = "Общая сумма договора - \(sumPersonMaterial() + sumPersonServices()) р."
     }
     
     @IBAction func actionPoPersonButton() {
         forPersonSumPo()
     }
+    
+    @IBAction func actionSalsePersonButton() {
+        forSelsePerson()
+    }
+    
+    
     
         
     private func setupLabel() {
@@ -110,7 +117,7 @@ class InfoPersonViewController: UIViewController {
         return sum
     }
     
-    private func sumPersonSevices() -> Int {
+    private func sumPersonServices() -> Int {
         var sum = 0
         for services in person.basketService {
             sum += services.price
@@ -120,17 +127,24 @@ class InfoPersonViewController: UIViewController {
     
     private func forPersonSumPo() {
         var resaltSum = 0
-            guard let sum = personSumTextField.text, !sum.isEmpty else {return}
-            StorageManager.shared.renamePerson(person: person, newValue: Int(sum) ?? 0)
+            guard let sum = personSumTextField.text, !sum.isEmpty else { return }
+            StorageManager.shared.renamePersonSumPo(person: person, newValue: Int(sum) ?? 0)
             resaltSum = sumPersonMaterial() - person.sumPo
             sumMaterialLabel.text = "Сумма за материал - \(resaltSum) "
     }
     
     private func forSelsePerson() {
         var resultSum = 0
-        for product in person.basket {
-            resultSum += product.price
-        }
+        guard let selse = selsePersonTextField.text, !selse.isEmpty else { return }
+        StorageManager.shared.renamePersonSelse(person: person, newValue: Int(selse) ?? 0)
+        resultSum = sumPersonMaterial() - (sumPersonMaterial() / 100 * (Int(selse) ?? 0))
+        sumMaterialLabel.text = "Сумма за материал - \(resultSum - person.sumPo)"
+    }
+    
+    private func resultSumSelsePerson() -> Int {
+        var result = 0
+        result = sumPersonMaterial() / 100 * person.salse
+        return result
     }
 }
 

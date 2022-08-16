@@ -620,11 +620,14 @@
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="dBs-Jb-0Aj">
                                 <rect key="frame" x="20" y="862.5" width="728" height="81.5"/>
                                 <subviews>
-                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="508" translatesAutoresizingMaskIntoConstraints="NO" id="Pk0-fd-9mw">
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="328" translatesAutoresizingMaskIntoConstraints="NO" id="Pk0-fd-9mw">
                                         <rect key="frame" x="0.0" y="0.0" width="728" height="20.5"/>
                                         <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Итого к оплате" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TWR-zv-6hf">
-                                                <rect key="frame" x="0.0" y="0.0" width="120" height="20.5"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Итого к оплате с учетом скидки 10 %  " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TWR-zv-6hf">
+                                                <rect key="frame" x="0.0" y="0.0" width="300" height="20.5"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="300" id="YEq-ZQ-cgg"/>
+                                                </constraints>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
@@ -724,6 +727,7 @@
                         <outlet property="fulAdresPersonLabel" destination="hGC-ss-A7g" id="ao1-yn-CfM"/>
                         <outlet property="fulNamePersonLabel" destination="dWC-m3-Vgf" id="QXs-PE-ev8"/>
                         <outlet property="fulSumPersonLabel" destination="sEE-dc-Z75" id="ncG-B0-LLU"/>
+                        <outlet property="infoResultSumPersonLabel" destination="TWR-zv-6hf" id="2yL-23-C4L"/>
                         <outlet property="sumPersonLabel" destination="oZE-My-XTO" id="TOD-k3-216"/>
                         <outlet property="sumPoPersonLabel" destination="Jdr-Cq-28X" id="fpg-Gr-Yka"/>
                     </connections>
@@ -898,6 +902,9 @@
                                                         <buttonConfiguration key="configuration" style="plain" title="Внести">
                                                             <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         </buttonConfiguration>
+                                                        <connections>
+                                                            <action selector="actionSalsePersonButton" destination="xhw-pC-o1H" eventType="touchUpInside" id="OZH-IM-nFD"/>
+                                                        </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jrb-bn-0AI">
                                                         <rect key="frame" x="392.5" y="0.0" width="100" height="34"/>

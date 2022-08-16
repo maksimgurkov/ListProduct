@@ -14,7 +14,7 @@ class DataManagerPogonage {
     let pogonages = [
         Pogonage(factory: .luxor,
                  material: .ecoShpone,
-                 nameDoor: "Коробка",
+                 nameDoor: "Короб",
                  dimansion: "",
                  specifications: "",
                  price: 450,
@@ -56,7 +56,7 @@ class DataManagerPogonage {
                  flag: false),
         Pogonage(factory: .luxor,
                  material: .shpone,
-                 nameDoor: "Коробка",
+                 nameDoor: "Короб",
                  dimansion: "",
                  specifications: "",
                  price: 500,

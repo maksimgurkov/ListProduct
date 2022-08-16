@@ -22,9 +22,15 @@ class StorageManager {
         }
     }
     
-    func renamePerson(person: Person, newValue: Int) {
+    func renamePersonSumPo(person: Person, newValue: Int) {
         write {
             person.sumPo = newValue
+        }
+    }
+    
+    func renamePersonSelse(person: Person, newValue: Int) {
+        write {
+            person.salse = newValue
         }
     }
     
