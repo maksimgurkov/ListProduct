@@ -46,7 +46,7 @@ class ProductPersonTableViewController: UIViewController {
     
     private func fulSumPersonProduct() -> Int {
         var resultSum = 0
-        resultSum = sumPerson() - person.sumPo
+        resultSum = sumPerson() - forResultSelse() - person.sumPo
         return resultSum
     }
     

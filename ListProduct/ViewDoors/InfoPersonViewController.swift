@@ -125,20 +125,20 @@ class InfoPersonViewController: UIViewController {
         return sum
     }
     
-    private func forPersonSumPo() {
-        var resaltSum = 0
-            guard let sum = personSumTextField.text, !sum.isEmpty else { return }
-            StorageManager.shared.renamePersonSumPo(person: person, newValue: Int(sum) ?? 0)
-            resaltSum = sumPersonMaterial() - person.sumPo
-            sumMaterialLabel.text = "Сумма за материал - \(resaltSum) "
-    }
-    
     private func forSelsePerson() {
         var resultSum = 0
         guard let selse = selsePersonTextField.text, !selse.isEmpty else { return }
         StorageManager.shared.renamePersonSelse(person: person, newValue: Int(selse) ?? 0)
         resultSum = sumPersonMaterial() - (sumPersonMaterial() / 100 * (Int(selse) ?? 0))
-        sumMaterialLabel.text = "Сумма за материал - \(resultSum - person.sumPo)"
+        sumMaterialLabel.text = "Сумма за материал - \(resultSum)"
+    }
+    
+    private func forPersonSumPo() {
+        var resaltSum = 0
+            guard let sum = personSumTextField.text, !sum.isEmpty else { return }
+            StorageManager.shared.renamePersonSumPo(person: person, newValue: Int(sum) ?? 0)
+            resaltSum = sumPersonMaterial() - resultSumSelsePerson() - person.sumPo
+            sumMaterialLabel.text = "Сумма за материал - \(resaltSum) "
     }
     
     private func resultSumSelsePerson() -> Int {
