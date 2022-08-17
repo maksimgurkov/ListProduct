@@ -26,10 +26,8 @@ class InfoPersonViewController: UIViewController {
     @IBOutlet weak var selseCountPersonLabel: UILabel!
     
     @IBOutlet weak var sumPoPersonButton: UIButton!
-    @IBOutlet weak var delePOPersonButton: UIButton!
     
     @IBOutlet weak var appendSelseButton: UIButton!
-    @IBOutlet weak var deleteSelseButton: UIButton!
     
     @IBOutlet weak var personSumTextField: UITextField!
     @IBOutlet weak var selsePersonTextField: UITextField!
@@ -37,10 +35,8 @@ class InfoPersonViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         title = "\(person.name) \(person.patronymic)"
-        delePOPersonButton.layer.cornerRadius = 8
         sumPoPersonButton.layer.cornerRadius = 8
         appendSelseButton.layer.cornerRadius = 8
-        deleteSelseButton.layer.cornerRadius = 8
         surNamePersonLabel.text = person.surName
         namePersonLabel.text = person.name
         patronymicPersonLabel.text = person.patronymic
@@ -51,6 +47,8 @@ class InfoPersonViewController: UIViewController {
         setupLabel()
         personSumTextField.placeholder = "\(person.sumPo)"
         selsePersonTextField.placeholder = "\(person.salse)"
+//        forRenameButtonAppendPo()
+//        forRenameButtonAppendSelse()
         
     }
     
@@ -59,19 +57,22 @@ class InfoPersonViewController: UIViewController {
         sumMaterialLabel.text = "Сумма за материал - \(sumPersonMaterial() - resultSumSelsePerson() - person.sumPo) р."
         sumServicesLabel.text = "Сумма за услуги - \(sumPersonServices()) р."
         sumLabel.text = "Общая сумма договора - \(sumPersonMaterial() + sumPersonServices()) р."
+        forRenameButtonAppendPo()
+        forRenameButtonAppendSelse()
     }
     
     @IBAction func actionPoPersonButton() {
         forPersonSumPo()
+        forRenameButtonAppendPo()
+        reloadInputViews()
     }
     
     @IBAction func actionSalsePersonButton() {
         forSelsePerson()
+        forRenameButtonAppendSelse()
+        reloadInputViews()
     }
     
-    
-    
-        
     private func setupLabel() {
         surNamePersonLabel.layer.masksToBounds = true
         surNamePersonLabel.layer.cornerRadius = 8
@@ -135,16 +136,32 @@ class InfoPersonViewController: UIViewController {
     
     private func forPersonSumPo() {
         var resaltSum = 0
-            guard let sum = personSumTextField.text, !sum.isEmpty else { return }
-            StorageManager.shared.renamePersonSumPo(person: person, newValue: Int(sum) ?? 0)
-            resaltSum = sumPersonMaterial() - resultSumSelsePerson() - person.sumPo
-            sumMaterialLabel.text = "Сумма за материал - \(resaltSum) "
+        guard let sum = personSumTextField.text, !sum.isEmpty else { return }
+        StorageManager.shared.renamePersonSumPo(person: person, newValue: Int(sum) ?? 0)
+        resaltSum = sumPersonMaterial() - resultSumSelsePerson() - person.sumPo
+        sumMaterialLabel.text = "Сумма за материал - \(resaltSum) "
     }
     
     private func resultSumSelsePerson() -> Int {
         var result = 0
         result = sumPersonMaterial() / 100 * person.salse
         return result
+    }
+    
+    private func forRenameButtonAppendSelse() {
+        if person.salse > 0 {
+            appendSelseButton.titleLabel?.text = "Изменить"
+        } else if person.salse == 0 {
+            appendSelseButton.titleLabel?.text = "Внести"
+        }
+    }
+    
+    private func forRenameButtonAppendPo() {
+        if person.sumPo == 0 {
+            sumPoPersonButton.titleLabel?.text = "Внести"
+        } else {
+            sumPoPersonButton.titleLabel?.text = "Изменить"
+        }
     }
 }
 

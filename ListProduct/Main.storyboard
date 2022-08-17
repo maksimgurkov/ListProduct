@@ -825,24 +825,24 @@
                                                 <color key="textColor" systemColor="systemGrayColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <stackView opaque="NO" contentMode="scaleToFill" spacing="35" translatesAutoresizingMaskIntoConstraints="NO" id="5nj-GA-gTR">
-                                                <rect key="frame" x="0.0" y="404" width="638" height="34"/>
+                                            <stackView opaque="NO" contentMode="scaleToFill" spacing="60" translatesAutoresizingMaskIntoConstraints="NO" id="5nj-GA-gTR">
+                                                <rect key="frame" x="0.0" y="404" width="635.5" height="34"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Процент скидки" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qC0-Nl-HtA">
-                                                        <rect key="frame" x="0.0" y="0.0" width="222.5" height="34"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="230" height="34"/>
                                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <constraints>
-                                                            <constraint firstAttribute="width" constant="222.5" id="LSR-SV-nm9"/>
+                                                            <constraint firstAttribute="width" constant="230" id="LSR-SV-nm9"/>
                                                         </constraints>
                                                         <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                                         <color key="textColor" systemColor="systemGrayColor"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="b0K-8h-vlw">
-                                                        <rect key="frame" x="257.5" y="0.0" width="100" height="34"/>
+                                                        <rect key="frame" x="290" y="0.0" width="150" height="34"/>
                                                         <color key="backgroundColor" systemColor="systemOrangeColor"/>
                                                         <constraints>
-                                                            <constraint firstAttribute="width" constant="100" id="gIr-Bl-juQ"/>
+                                                            <constraint firstAttribute="width" constant="150" id="gIr-Bl-juQ"/>
                                                         </constraints>
                                                         <state key="normal" title="Button"/>
                                                         <buttonConfiguration key="configuration" style="plain" title="Внести">
@@ -852,19 +852,8 @@
                                                             <action selector="actionSalsePersonButton" destination="xhw-pC-o1H" eventType="touchUpInside" id="OZH-IM-nFD"/>
                                                         </connections>
                                                     </button>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jrb-bn-0AI">
-                                                        <rect key="frame" x="392.5" y="0.0" width="100" height="34"/>
-                                                        <color key="backgroundColor" systemColor="systemRedColor"/>
-                                                        <constraints>
-                                                            <constraint firstAttribute="width" constant="100" id="moe-Hm-nNt"/>
-                                                        </constraints>
-                                                        <state key="normal" title="Button"/>
-                                                        <buttonConfiguration key="configuration" style="plain" title="Удалить">
-                                                            <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                        </buttonConfiguration>
-                                                    </button>
                                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="10" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="b2f-Dy-aE6">
-                                                        <rect key="frame" x="527.5" y="0.0" width="60" height="34"/>
+                                                        <rect key="frame" x="500" y="0.0" width="60" height="34"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" constant="60" id="rdu-DV-uwR"/>
                                                         </constraints>
@@ -872,28 +861,31 @@
                                                         <textInputTraits key="textInputTraits"/>
                                                     </textField>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="%" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mU7-TZ-wit">
-                                                        <rect key="frame" x="622.5" y="0.0" width="15.5" height="34"/>
+                                                        <rect key="frame" x="620" y="0.0" width="15.5" height="34"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                 </subviews>
                                             </stackView>
-                                            <stackView opaque="NO" contentMode="scaleToFill" spacing="35" translatesAutoresizingMaskIntoConstraints="NO" id="x40-qO-Ks8">
-                                                <rect key="frame" x="0.0" y="446" width="655.5" height="34"/>
+                                            <stackView opaque="NO" contentMode="scaleToFill" spacing="60" translatesAutoresizingMaskIntoConstraints="NO" id="x40-qO-Ks8">
+                                                <rect key="frame" x="0.0" y="446" width="653" height="34"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Сумма предоплаты" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rfv-MG-ml0">
-                                                        <rect key="frame" x="0.0" y="0.0" width="222.5" height="34"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="230" height="34"/>
                                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" constant="230" id="KYT-lQ-NSV"/>
+                                                        </constraints>
                                                         <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                                         <color key="textColor" systemColor="systemGrayColor"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cyK-Gc-IXC">
-                                                        <rect key="frame" x="257.5" y="0.0" width="100" height="34"/>
+                                                        <rect key="frame" x="290" y="0.0" width="150" height="34"/>
                                                         <color key="backgroundColor" systemColor="systemOrangeColor"/>
                                                         <constraints>
-                                                            <constraint firstAttribute="width" constant="100" id="zf5-np-gpG"/>
+                                                            <constraint firstAttribute="width" constant="150" id="zf5-np-gpG"/>
                                                         </constraints>
                                                         <state key="normal" title="Button"/>
                                                         <buttonConfiguration key="configuration" style="plain" title="Внести">
@@ -903,22 +895,8 @@
                                                             <action selector="actionPoPersonButton" destination="xhw-pC-o1H" eventType="touchUpInside" id="oVu-ap-0Uw"/>
                                                         </connections>
                                                     </button>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="64b-Yt-IMJ">
-                                                        <rect key="frame" x="392.5" y="0.0" width="100" height="34"/>
-                                                        <color key="backgroundColor" systemColor="systemRedColor"/>
-                                                        <constraints>
-                                                            <constraint firstAttribute="width" constant="100" id="m55-7U-Iwk"/>
-                                                        </constraints>
-                                                        <state key="normal" title="Button"/>
-                                                        <buttonConfiguration key="configuration" style="plain" title="Удалить">
-                                                            <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                        </buttonConfiguration>
-                                                        <connections>
-                                                            <action selector="actionPoPersonButton" destination="xhw-pC-o1H" eventType="touchUpInside" id="9vN-VC-qFn"/>
-                                                        </connections>
-                                                    </button>
                                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="5000" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="HPp-ge-ooo">
-                                                        <rect key="frame" x="527.5" y="0.0" width="60" height="34"/>
+                                                        <rect key="frame" x="500" y="0.0" width="60" height="34"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" constant="60" id="EDs-sa-Y14"/>
                                                         </constraints>
@@ -926,7 +904,7 @@
                                                         <textInputTraits key="textInputTraits"/>
                                                     </textField>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="руб." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pGr-GZ-pUc">
-                                                        <rect key="frame" x="622.5" y="0.0" width="33" height="34"/>
+                                                        <rect key="frame" x="620" y="0.0" width="33" height="34"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
@@ -995,8 +973,6 @@
                     <connections>
                         <outlet property="addressPersonLabel" destination="ni4-QB-CkE" id="fqV-yY-vjh"/>
                         <outlet property="appendSelseButton" destination="b0K-8h-vlw" id="6oY-25-A4w"/>
-                        <outlet property="delePOPersonButton" destination="64b-Yt-IMJ" id="JAo-wU-i5U"/>
-                        <outlet property="deleteSelseButton" destination="Jrb-bn-0AI" id="Pjs-sk-gTY"/>
                         <outlet property="descriptionPersonLabel" destination="5zd-cV-yeZ" id="Yoh-pI-vn0"/>
                         <outlet property="namePersonLabel" destination="yAR-YI-lU9" id="iSc-3w-BtT"/>
                         <outlet property="patronymicPersonLabel" destination="t1n-yH-87A" id="JiC-Xs-UM7"/>
@@ -1296,11 +1272,11 @@
                                                             </label>
                                                         </subviews>
                                                     </stackView>
-                                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="22" translatesAutoresizingMaskIntoConstraints="NO" id="TUx-nI-TiU">
+                                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="TUx-nI-TiU">
                                                         <rect key="frame" x="0.0" y="37" width="466" height="31"/>
                                                         <subviews>
                                                             <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="249" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SXs-cz-rVC">
-                                                                <rect key="frame" x="0.0" y="0.0" width="169.5" height="31"/>
+                                                                <rect key="frame" x="0.0" y="0.0" width="134" height="31"/>
                                                                 <color key="backgroundColor" systemColor="systemOrangeColor"/>
                                                                 <state key="normal" title="Button"/>
                                                                 <buttonConfiguration key="configuration" style="plain" title="600*1900 ">
@@ -1310,23 +1286,34 @@
                                                                     <action selector="actionNewDoorButton:" destination="eXq-Pt-65B" eventType="touchUpInside" id="cyU-97-sqH"/>
                                                                 </connections>
                                                             </button>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CSM-Jc-uAC">
+                                                                <rect key="frame" x="144" y="0.0" width="79" height="31"/>
+                                                                <color key="backgroundColor" systemColor="systemRedColor"/>
+                                                                <state key="normal" title="Button"/>
+                                                                <buttonConfiguration key="configuration" style="plain" title="Удалить">
+                                                                    <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                </buttonConfiguration>
+                                                            </button>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zgc-kP-eL2">
-                                                                <rect key="frame" x="191.5" y="0.0" width="50" height="31"/>
+                                                                <rect key="frame" x="233" y="0.0" width="40" height="31"/>
                                                                 <constraints>
-                                                                    <constraint firstAttribute="width" constant="50" id="pjk-ax-TS2"/>
+                                                                    <constraint firstAttribute="width" constant="40" id="pjk-ax-TS2"/>
                                                                 </constraints>
                                                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                                                 <nil key="textColor"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="шт." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jpi-Uc-CNu">
-                                                                <rect key="frame" x="263.5" y="0.0" width="29.5" height="31"/>
+                                                                <rect key="frame" x="283" y="0.0" width="30" height="31"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="width" constant="30" id="QCM-kn-7ph"/>
+                                                                </constraints>
                                                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                                                 <nil key="textColor"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="N6F-hZ-hlk">
-                                                                <rect key="frame" x="315" y="0.0" width="100" height="31"/>
+                                                                <rect key="frame" x="323" y="0.0" width="100" height="31"/>
                                                                 <constraints>
                                                                     <constraint firstAttribute="width" constant="100" id="VCM-xu-8sT"/>
                                                                 </constraints>
@@ -1334,19 +1321,22 @@
                                                                 <nil key="textColor"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
-                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="руб" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oWL-QA-RP2">
-                                                                <rect key="frame" x="437" y="0.0" width="29" height="31"/>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="руб." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oWL-QA-RP2">
+                                                                <rect key="frame" x="433" y="0.0" width="33" height="31"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="width" constant="33" id="Q4y-Yq-F9i"/>
+                                                                </constraints>
                                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                                 <nil key="textColor"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
                                                         </subviews>
                                                     </stackView>
-                                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="22" translatesAutoresizingMaskIntoConstraints="NO" id="bp9-hZ-nOO">
+                                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="bp9-hZ-nOO">
                                                         <rect key="frame" x="0.0" y="74" width="466" height="31"/>
                                                         <subviews>
                                                             <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="249" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yIv-Bf-Sc6">
-                                                                <rect key="frame" x="0.0" y="0.0" width="169.5" height="31"/>
+                                                                <rect key="frame" x="0.0" y="0.0" width="134.5" height="31"/>
                                                                 <color key="backgroundColor" systemColor="systemOrangeColor"/>
                                                                 <state key="normal" title="Button"/>
                                                                 <buttonConfiguration key="configuration" style="plain" title="600*2000">
@@ -1356,23 +1346,31 @@
                                                                     <action selector="actionNewDoorButton:" destination="eXq-Pt-65B" eventType="touchUpInside" id="Zp7-gP-CLl"/>
                                                                 </connections>
                                                             </button>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NP7-vU-C12">
+                                                                <rect key="frame" x="144.5" y="0.0" width="79" height="31"/>
+                                                                <color key="backgroundColor" systemColor="systemRedColor"/>
+                                                                <state key="normal" title="Button"/>
+                                                                <buttonConfiguration key="configuration" style="plain" title="Удалить">
+                                                                    <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                </buttonConfiguration>
+                                                            </button>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TDY-Mq-qxZ">
-                                                                <rect key="frame" x="191.5" y="0.0" width="50" height="31"/>
+                                                                <rect key="frame" x="233.5" y="0.0" width="40" height="31"/>
                                                                 <constraints>
-                                                                    <constraint firstAttribute="width" constant="50" id="bdj-sS-tSL"/>
+                                                                    <constraint firstAttribute="width" constant="40" id="bdj-sS-tSL"/>
                                                                 </constraints>
                                                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                                                 <nil key="textColor"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="шт." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8iZ-tB-WsV">
-                                                                <rect key="frame" x="263.5" y="0.0" width="29.5" height="31"/>
+                                                                <rect key="frame" x="283.5" y="0.0" width="29.5" height="31"/>
                                                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                                                 <nil key="textColor"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fkh-kI-Y8o">
-                                                                <rect key="frame" x="315" y="0.0" width="100" height="31"/>
+                                                                <rect key="frame" x="323" y="0.0" width="100" height="31"/>
                                                                 <constraints>
                                                                     <constraint firstAttribute="width" constant="100" id="iiq-pl-Vc9"/>
                                                                 </constraints>
@@ -1380,19 +1378,22 @@
                                                                 <nil key="textColor"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
-                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="руб" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="art-Dz-7jG">
-                                                                <rect key="frame" x="437" y="0.0" width="29" height="31"/>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="руб." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="art-Dz-7jG">
+                                                                <rect key="frame" x="433" y="0.0" width="33" height="31"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="width" constant="33" id="aUs-ZY-vWh"/>
+                                                                </constraints>
                                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                                 <nil key="textColor"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
                                                         </subviews>
                                                     </stackView>
-                                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="22" translatesAutoresizingMaskIntoConstraints="NO" id="rzV-TG-GgI">
+                                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="rzV-TG-GgI">
                                                         <rect key="frame" x="0.0" y="111" width="466" height="31"/>
                                                         <subviews>
                                                             <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="249" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zpt-Gj-GW2">
-                                                                <rect key="frame" x="0.0" y="0.0" width="169.5" height="31"/>
+                                                                <rect key="frame" x="0.0" y="0.0" width="134" height="31"/>
                                                                 <color key="backgroundColor" systemColor="systemOrangeColor"/>
                                                                 <state key="normal" title="Button"/>
                                                                 <buttonConfiguration key="configuration" style="plain" title="700*2000">
@@ -1402,23 +1403,34 @@
                                                                     <action selector="actionNewDoorButton:" destination="eXq-Pt-65B" eventType="touchUpInside" id="EV6-Em-AD4"/>
                                                                 </connections>
                                                             </button>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eQD-t2-b9e">
+                                                                <rect key="frame" x="144" y="0.0" width="79" height="31"/>
+                                                                <color key="backgroundColor" systemColor="systemRedColor"/>
+                                                                <state key="normal" title="Button"/>
+                                                                <buttonConfiguration key="configuration" style="plain" title="Удалить">
+                                                                    <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                </buttonConfiguration>
+                                                            </button>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PTn-dV-Jal">
-                                                                <rect key="frame" x="191.5" y="0.0" width="50" height="31"/>
+                                                                <rect key="frame" x="233" y="0.0" width="40" height="31"/>
                                                                 <constraints>
-                                                                    <constraint firstAttribute="width" constant="50" id="9NA-46-ra4"/>
+                                                                    <constraint firstAttribute="width" constant="40" id="9NA-46-ra4"/>
                                                                 </constraints>
                                                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                                                 <nil key="textColor"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="шт." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xn0-73-RHt">
-                                                                <rect key="frame" x="263.5" y="0.0" width="29.5" height="31"/>
+                                                                <rect key="frame" x="283" y="0.0" width="30" height="31"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="width" constant="30" id="d72-eM-Uik"/>
+                                                                </constraints>
                                                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                                                 <nil key="textColor"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KyB-Za-1Vy">
-                                                                <rect key="frame" x="315" y="0.0" width="100" height="31"/>
+                                                                <rect key="frame" x="323" y="0.0" width="100" height="31"/>
                                                                 <constraints>
                                                                     <constraint firstAttribute="width" constant="100" id="fM5-FF-5HR"/>
                                                                 </constraints>
@@ -1426,19 +1438,22 @@
                                                                 <nil key="textColor"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
-                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="руб" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rMl-CN-yo2">
-                                                                <rect key="frame" x="437" y="0.0" width="29" height="31"/>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="руб." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rMl-CN-yo2">
+                                                                <rect key="frame" x="433" y="0.0" width="33" height="31"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="width" constant="33" id="1T3-4f-GGC"/>
+                                                                </constraints>
                                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                                 <nil key="textColor"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
                                                         </subviews>
                                                     </stackView>
-                                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="22" translatesAutoresizingMaskIntoConstraints="NO" id="5fD-fW-Hb6">
+                                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="5fD-fW-Hb6">
                                                         <rect key="frame" x="0.0" y="148" width="466" height="31"/>
                                                         <subviews>
                                                             <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="249" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qed-cH-4o9">
-                                                                <rect key="frame" x="0.0" y="0.0" width="169.5" height="31"/>
+                                                                <rect key="frame" x="0.0" y="0.0" width="134" height="31"/>
                                                                 <color key="backgroundColor" systemColor="systemOrangeColor"/>
                                                                 <state key="normal" title="Button"/>
                                                                 <buttonConfiguration key="configuration" style="plain" title="800*2000">
@@ -1448,23 +1463,34 @@
                                                                     <action selector="actionNewDoorButton:" destination="eXq-Pt-65B" eventType="touchUpInside" id="ID8-PS-OvS"/>
                                                                 </connections>
                                                             </button>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pIf-O1-jUl">
+                                                                <rect key="frame" x="144" y="0.0" width="79" height="31"/>
+                                                                <color key="backgroundColor" systemColor="systemRedColor"/>
+                                                                <state key="normal" title="Button"/>
+                                                                <buttonConfiguration key="configuration" style="plain" title="Удалить">
+                                                                    <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                </buttonConfiguration>
+                                                            </button>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wd2-Au-Pfw">
-                                                                <rect key="frame" x="191.5" y="0.0" width="50" height="31"/>
+                                                                <rect key="frame" x="233" y="0.0" width="40" height="31"/>
                                                                 <constraints>
-                                                                    <constraint firstAttribute="width" constant="50" id="iLo-jl-v7E"/>
+                                                                    <constraint firstAttribute="width" constant="40" id="iLo-jl-v7E"/>
                                                                 </constraints>
                                                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                                                 <nil key="textColor"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="шт." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cQN-At-XwR">
-                                                                <rect key="frame" x="263.5" y="0.0" width="29.5" height="31"/>
+                                                                <rect key="frame" x="283" y="0.0" width="30" height="31"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="width" constant="30" id="oG0-Hd-o5c"/>
+                                                                </constraints>
                                                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                                                 <nil key="textColor"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MPG-uL-4PD">
-                                                                <rect key="frame" x="315" y="0.0" width="100" height="31"/>
+                                                                <rect key="frame" x="323" y="0.0" width="100" height="31"/>
                                                                 <constraints>
                                                                     <constraint firstAttribute="width" constant="100" id="snc-VB-ZSh"/>
                                                                 </constraints>
@@ -1472,19 +1498,22 @@
                                                                 <nil key="textColor"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
-                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="руб" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Uqf-ob-0bL">
-                                                                <rect key="frame" x="437" y="0.0" width="29" height="31"/>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="руб." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Uqf-ob-0bL">
+                                                                <rect key="frame" x="433" y="0.0" width="33" height="31"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="width" constant="33" id="UIp-wn-Cni"/>
+                                                                </constraints>
                                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                                 <nil key="textColor"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
                                                         </subviews>
                                                     </stackView>
-                                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="22" translatesAutoresizingMaskIntoConstraints="NO" id="old-O6-tbP">
+                                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="old-O6-tbP">
                                                         <rect key="frame" x="0.0" y="185" width="466" height="31"/>
                                                         <subviews>
                                                             <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="249" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Uqk-Kk-L0t">
-                                                                <rect key="frame" x="0.0" y="0.0" width="169.5" height="31"/>
+                                                                <rect key="frame" x="0.0" y="0.0" width="134" height="31"/>
                                                                 <color key="backgroundColor" systemColor="systemOrangeColor"/>
                                                                 <state key="normal" title="Button"/>
                                                                 <buttonConfiguration key="configuration" style="plain" title="900*2000">
@@ -1494,23 +1523,34 @@
                                                                     <action selector="actionNewDoorButton:" destination="eXq-Pt-65B" eventType="touchUpInside" id="sZD-ra-LVA"/>
                                                                 </connections>
                                                             </button>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XOa-hw-kdx">
+                                                                <rect key="frame" x="144" y="0.0" width="79" height="31"/>
+                                                                <color key="backgroundColor" systemColor="systemRedColor"/>
+                                                                <state key="normal" title="Button"/>
+                                                                <buttonConfiguration key="configuration" style="plain" title="Удалить">
+                                                                    <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                </buttonConfiguration>
+                                                            </button>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mDp-Xy-rnd">
-                                                                <rect key="frame" x="191.5" y="0.0" width="50" height="31"/>
+                                                                <rect key="frame" x="233" y="0.0" width="40" height="31"/>
                                                                 <constraints>
-                                                                    <constraint firstAttribute="width" constant="50" id="Byw-CU-Kdz"/>
+                                                                    <constraint firstAttribute="width" constant="40" id="Byw-CU-Kdz"/>
                                                                 </constraints>
                                                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                                                 <nil key="textColor"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="шт." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Q2S-pT-3st">
-                                                                <rect key="frame" x="263.5" y="0.0" width="29.5" height="31"/>
+                                                                <rect key="frame" x="283" y="0.0" width="30" height="31"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="width" constant="30" id="SGq-TG-7uw"/>
+                                                                </constraints>
                                                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                                                 <nil key="textColor"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LEa-W4-NAH">
-                                                                <rect key="frame" x="315" y="0.0" width="100" height="31"/>
+                                                                <rect key="frame" x="323" y="0.0" width="100" height="31"/>
                                                                 <constraints>
                                                                     <constraint firstAttribute="width" constant="100" id="2WT-2p-v8Q"/>
                                                                 </constraints>
@@ -1518,8 +1558,11 @@
                                                                 <nil key="textColor"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
-                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="руб" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CHl-0a-LQY">
-                                                                <rect key="frame" x="437" y="0.0" width="29" height="31"/>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="руб." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CHl-0a-LQY">
+                                                                <rect key="frame" x="433" y="0.0" width="33" height="31"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="width" constant="33" id="bUD-ek-2Xw"/>
+                                                                </constraints>
                                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                                 <nil key="textColor"/>
                                                                 <nil key="highlightedColor"/>
@@ -1537,11 +1580,11 @@
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="6" translatesAutoresizingMaskIntoConstraints="NO" id="MOc-Tw-gZ9">
                                                 <rect key="frame" x="282" y="314" width="466" height="216"/>
                                                 <subviews>
-                                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="22" translatesAutoresizingMaskIntoConstraints="NO" id="csT-4N-ObR">
+                                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="csT-4N-ObR">
                                                         <rect key="frame" x="0.0" y="0.0" width="466" height="31"/>
                                                         <subviews>
                                                             <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="249" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nqQ-69-44I">
-                                                                <rect key="frame" x="0.0" y="0.0" width="169.5" height="31"/>
+                                                                <rect key="frame" x="0.0" y="0.0" width="134" height="31"/>
                                                                 <color key="backgroundColor" systemColor="systemOrangeColor"/>
                                                                 <state key="normal" title="Button"/>
                                                                 <buttonConfiguration key="configuration" style="plain" title="Короб">
@@ -1551,23 +1594,34 @@
                                                                     <action selector="actionNewPogonageButton:" destination="eXq-Pt-65B" eventType="touchUpInside" id="orQ-Yo-k5X"/>
                                                                 </connections>
                                                             </button>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8Cg-in-FI0">
+                                                                <rect key="frame" x="144" y="0.0" width="79" height="31"/>
+                                                                <color key="backgroundColor" systemColor="systemRedColor"/>
+                                                                <state key="normal" title="Button"/>
+                                                                <buttonConfiguration key="configuration" style="plain" title="Удалить">
+                                                                    <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                </buttonConfiguration>
+                                                            </button>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7tq-sk-065">
-                                                                <rect key="frame" x="191.5" y="0.0" width="50" height="31"/>
+                                                                <rect key="frame" x="233" y="0.0" width="40" height="31"/>
                                                                 <constraints>
-                                                                    <constraint firstAttribute="width" constant="50" id="fft-k5-KAK"/>
+                                                                    <constraint firstAttribute="width" constant="40" id="fft-k5-KAK"/>
                                                                 </constraints>
                                                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                                                 <nil key="textColor"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="шт." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ejs-El-2FZ">
-                                                                <rect key="frame" x="263.5" y="0.0" width="29.5" height="31"/>
+                                                                <rect key="frame" x="283" y="0.0" width="30" height="31"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="width" constant="30" id="Xll-NN-gr9"/>
+                                                                </constraints>
                                                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                                                 <nil key="textColor"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BTR-Qy-esx">
-                                                                <rect key="frame" x="315" y="0.0" width="100" height="31"/>
+                                                                <rect key="frame" x="323" y="0.0" width="100" height="31"/>
                                                                 <constraints>
                                                                     <constraint firstAttribute="width" constant="100" id="APQ-XJ-Ufr"/>
                                                                 </constraints>
@@ -1575,19 +1629,22 @@
                                                                 <nil key="textColor"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
-                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="руб" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GtN-f6-5SY">
-                                                                <rect key="frame" x="437" y="0.0" width="29" height="31"/>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="руб." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GtN-f6-5SY">
+                                                                <rect key="frame" x="433" y="0.0" width="33" height="31"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="width" constant="33" id="a0x-4X-n8f"/>
+                                                                </constraints>
                                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                                 <nil key="textColor"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
                                                         </subviews>
                                                     </stackView>
-                                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="22" translatesAutoresizingMaskIntoConstraints="NO" id="xUS-49-Mze">
+                                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="xUS-49-Mze">
                                                         <rect key="frame" x="0.0" y="37" width="466" height="31"/>
                                                         <subviews>
                                                             <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="249" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IUO-3c-7ci">
-                                                                <rect key="frame" x="0.0" y="0.0" width="169.5" height="31"/>
+                                                                <rect key="frame" x="0.0" y="0.0" width="134" height="31"/>
                                                                 <color key="backgroundColor" systemColor="systemOrangeColor"/>
                                                                 <state key="normal" title="Button"/>
                                                                 <buttonConfiguration key="configuration" style="plain" title="Наличник">
@@ -1597,23 +1654,34 @@
                                                                     <action selector="actionNewPogonageButton:" destination="eXq-Pt-65B" eventType="touchUpInside" id="Km4-Cs-tDW"/>
                                                                 </connections>
                                                             </button>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TtP-cX-nHn">
+                                                                <rect key="frame" x="144" y="0.0" width="79" height="31"/>
+                                                                <color key="backgroundColor" systemColor="systemRedColor"/>
+                                                                <state key="normal" title="Button"/>
+                                                                <buttonConfiguration key="configuration" style="plain" title="Удалить">
+                                                                    <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                </buttonConfiguration>
+                                                            </button>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wGX-R0-ZEU">
-                                                                <rect key="frame" x="191.5" y="0.0" width="50" height="31"/>
+                                                                <rect key="frame" x="233" y="0.0" width="40" height="31"/>
                                                                 <constraints>
-                                                                    <constraint firstAttribute="width" constant="50" id="eyL-dU-9tB"/>
+                                                                    <constraint firstAttribute="width" constant="40" id="eyL-dU-9tB"/>
                                                                 </constraints>
                                                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                                                 <nil key="textColor"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="шт." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GR5-w6-BbR">
-                                                                <rect key="frame" x="263.5" y="0.0" width="29.5" height="31"/>
+                                                                <rect key="frame" x="283" y="0.0" width="30" height="31"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="width" constant="30" id="zDy-eZ-mwz"/>
+                                                                </constraints>
                                                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                                                 <nil key="textColor"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QAd-Ag-gON">
-                                                                <rect key="frame" x="315" y="0.0" width="100" height="31"/>
+                                                                <rect key="frame" x="323" y="0.0" width="100" height="31"/>
                                                                 <constraints>
                                                                     <constraint firstAttribute="width" constant="100" id="cAP-Vk-9Fc"/>
                                                                 </constraints>
@@ -1621,19 +1689,22 @@
                                                                 <nil key="textColor"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
-                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="руб" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ntJ-Oi-rOn">
-                                                                <rect key="frame" x="437" y="0.0" width="29" height="31"/>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="руб." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ntJ-Oi-rOn">
+                                                                <rect key="frame" x="433" y="0.0" width="33" height="31"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="width" constant="33" id="Euf-94-fsl"/>
+                                                                </constraints>
                                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                                 <nil key="textColor"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
                                                         </subviews>
                                                     </stackView>
-                                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="22" translatesAutoresizingMaskIntoConstraints="NO" id="5mQ-xO-yab">
+                                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="5mQ-xO-yab">
                                                         <rect key="frame" x="0.0" y="74" width="466" height="31"/>
                                                         <subviews>
                                                             <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="249" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fZy-OT-ZT9">
-                                                                <rect key="frame" x="0.0" y="0.0" width="169.5" height="31"/>
+                                                                <rect key="frame" x="0.0" y="0.0" width="134" height="31"/>
                                                                 <color key="backgroundColor" systemColor="systemOrangeColor"/>
                                                                 <state key="normal" title="Button"/>
                                                                 <buttonConfiguration key="configuration" style="plain" title="Добор 100">
@@ -1643,23 +1714,34 @@
                                                                     <action selector="actionNewPogonageButton:" destination="eXq-Pt-65B" eventType="touchUpInside" id="4zT-a9-Hz7"/>
                                                                 </connections>
                                                             </button>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bix-BS-XX2">
+                                                                <rect key="frame" x="144" y="0.0" width="79" height="31"/>
+                                                                <color key="backgroundColor" systemColor="systemRedColor"/>
+                                                                <state key="normal" title="Button"/>
+                                                                <buttonConfiguration key="configuration" style="plain" title="Удалить">
+                                                                    <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                </buttonConfiguration>
+                                                            </button>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="z1z-IZ-kB0">
-                                                                <rect key="frame" x="191.5" y="0.0" width="50" height="31"/>
+                                                                <rect key="frame" x="233" y="0.0" width="40" height="31"/>
                                                                 <constraints>
-                                                                    <constraint firstAttribute="width" constant="50" id="u88-dZ-YUH"/>
+                                                                    <constraint firstAttribute="width" constant="40" id="u88-dZ-YUH"/>
                                                                 </constraints>
                                                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                                                 <nil key="textColor"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="шт." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Nd8-ZJ-sNl">
-                                                                <rect key="frame" x="263.5" y="0.0" width="29.5" height="31"/>
+                                                                <rect key="frame" x="283" y="0.0" width="30" height="31"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="width" constant="30" id="DZh-Ko-hJ6"/>
+                                                                </constraints>
                                                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                                                 <nil key="textColor"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8ro-5p-EP8">
-                                                                <rect key="frame" x="315" y="0.0" width="100" height="31"/>
+                                                                <rect key="frame" x="323" y="0.0" width="100" height="31"/>
                                                                 <constraints>
                                                                     <constraint firstAttribute="width" constant="100" id="1Ee-IW-Kxq"/>
                                                                 </constraints>
@@ -1667,19 +1749,22 @@
                                                                 <nil key="textColor"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
-                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="руб" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JKR-Me-gna">
-                                                                <rect key="frame" x="437" y="0.0" width="29" height="31"/>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="руб." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JKR-Me-gna">
+                                                                <rect key="frame" x="433" y="0.0" width="33" height="31"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="width" constant="33" id="pXy-nl-EAc"/>
+                                                                </constraints>
                                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                                 <nil key="textColor"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
                                                         </subviews>
                                                     </stackView>
-                                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="22" translatesAutoresizingMaskIntoConstraints="NO" id="Ph2-md-yKd">
+                                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="Ph2-md-yKd">
                                                         <rect key="frame" x="0.0" y="111" width="466" height="31"/>
                                                         <subviews>
                                                             <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="249" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jK9-9l-kLI">
-                                                                <rect key="frame" x="0.0" y="0.0" width="169.5" height="31"/>
+                                                                <rect key="frame" x="0.0" y="0.0" width="134" height="31"/>
                                                                 <color key="backgroundColor" systemColor="systemOrangeColor"/>
                                                                 <state key="normal" title="Button"/>
                                                                 <buttonConfiguration key="configuration" style="plain" title="Добор 150">
@@ -1689,23 +1774,34 @@
                                                                     <action selector="actionNewPogonageButton:" destination="eXq-Pt-65B" eventType="touchUpInside" id="LOm-K1-9Gq"/>
                                                                 </connections>
                                                             </button>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ibJ-jc-kIa">
+                                                                <rect key="frame" x="144" y="0.0" width="79" height="31"/>
+                                                                <color key="backgroundColor" systemColor="systemRedColor"/>
+                                                                <state key="normal" title="Button"/>
+                                                                <buttonConfiguration key="configuration" style="plain" title="Удалить">
+                                                                    <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                </buttonConfiguration>
+                                                            </button>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YHh-zp-Pvi">
-                                                                <rect key="frame" x="191.5" y="0.0" width="50" height="31"/>
+                                                                <rect key="frame" x="233" y="0.0" width="40" height="31"/>
                                                                 <constraints>
-                                                                    <constraint firstAttribute="width" constant="50" id="Yaz-F8-M8o"/>
+                                                                    <constraint firstAttribute="width" constant="40" id="Yaz-F8-M8o"/>
                                                                 </constraints>
                                                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                                                 <nil key="textColor"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="шт." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="D6c-uj-4ge">
-                                                                <rect key="frame" x="263.5" y="0.0" width="29.5" height="31"/>
+                                                                <rect key="frame" x="283" y="0.0" width="30" height="31"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="width" constant="30" id="Nqy-h0-cMW"/>
+                                                                </constraints>
                                                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                                                 <nil key="textColor"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QSe-nJ-xl7">
-                                                                <rect key="frame" x="315" y="0.0" width="100" height="31"/>
+                                                                <rect key="frame" x="323" y="0.0" width="100" height="31"/>
                                                                 <constraints>
                                                                     <constraint firstAttribute="width" constant="100" id="S9g-LF-AKk"/>
                                                                 </constraints>
@@ -1713,19 +1809,22 @@
                                                                 <nil key="textColor"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
-                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="руб" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6tf-wF-sjM">
-                                                                <rect key="frame" x="437" y="0.0" width="29" height="31"/>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="руб." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6tf-wF-sjM">
+                                                                <rect key="frame" x="433" y="0.0" width="33" height="31"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="width" constant="33" id="Psb-tE-7Bg"/>
+                                                                </constraints>
                                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                                 <nil key="textColor"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
                                                         </subviews>
                                                     </stackView>
-                                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="22" translatesAutoresizingMaskIntoConstraints="NO" id="JpP-Vb-CN1">
+                                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="JpP-Vb-CN1">
                                                         <rect key="frame" x="0.0" y="148" width="466" height="31"/>
                                                         <subviews>
                                                             <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="249" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="acm-A7-9B5">
-                                                                <rect key="frame" x="0.0" y="0.0" width="169.5" height="31"/>
+                                                                <rect key="frame" x="0.0" y="0.0" width="134" height="31"/>
                                                                 <color key="backgroundColor" systemColor="systemOrangeColor"/>
                                                                 <state key="normal" title="Button"/>
                                                                 <buttonConfiguration key="configuration" style="plain" title="Добор 200">
@@ -1735,23 +1834,34 @@
                                                                     <action selector="actionNewPogonageButton:" destination="eXq-Pt-65B" eventType="touchUpInside" id="EKi-IV-HOg"/>
                                                                 </connections>
                                                             </button>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VBJ-Rn-b6a">
+                                                                <rect key="frame" x="144" y="0.0" width="79" height="31"/>
+                                                                <color key="backgroundColor" systemColor="systemRedColor"/>
+                                                                <state key="normal" title="Button"/>
+                                                                <buttonConfiguration key="configuration" style="plain" title="Удалить">
+                                                                    <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                </buttonConfiguration>
+                                                            </button>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3vT-uz-6bu">
-                                                                <rect key="frame" x="191.5" y="0.0" width="50" height="31"/>
+                                                                <rect key="frame" x="233" y="0.0" width="40" height="31"/>
                                                                 <constraints>
-                                                                    <constraint firstAttribute="width" constant="50" id="Wce-hJ-ddh"/>
+                                                                    <constraint firstAttribute="width" constant="40" id="Wce-hJ-ddh"/>
                                                                 </constraints>
                                                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                                                 <nil key="textColor"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="шт." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fr6-SX-3tH">
-                                                                <rect key="frame" x="263.5" y="0.0" width="29.5" height="31"/>
+                                                                <rect key="frame" x="283" y="0.0" width="30" height="31"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="width" constant="30" id="ePK-7B-a1K"/>
+                                                                </constraints>
                                                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                                                 <nil key="textColor"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RFK-cp-mRW">
-                                                                <rect key="frame" x="315" y="0.0" width="100" height="31"/>
+                                                                <rect key="frame" x="323" y="0.0" width="100" height="31"/>
                                                                 <constraints>
                                                                     <constraint firstAttribute="width" constant="100" id="nbQ-4I-STC"/>
                                                                 </constraints>
@@ -1759,19 +1869,22 @@
                                                                 <nil key="textColor"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
-                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="руб" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ycL-Iz-uk1">
-                                                                <rect key="frame" x="437" y="0.0" width="29" height="31"/>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="руб." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ycL-Iz-uk1">
+                                                                <rect key="frame" x="433" y="0.0" width="33" height="31"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="width" constant="33" id="gER-h2-HhF"/>
+                                                                </constraints>
                                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                                 <nil key="textColor"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
                                                         </subviews>
                                                     </stackView>
-                                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="22" translatesAutoresizingMaskIntoConstraints="NO" id="6iA-6h-i1y">
+                                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="6iA-6h-i1y">
                                                         <rect key="frame" x="0.0" y="185" width="466" height="31"/>
                                                         <subviews>
                                                             <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="249" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="M8n-iJ-0LF">
-                                                                <rect key="frame" x="0.0" y="0.0" width="169.5" height="31"/>
+                                                                <rect key="frame" x="0.0" y="0.0" width="134" height="31"/>
                                                                 <color key="backgroundColor" systemColor="systemOrangeColor"/>
                                                                 <state key="normal" title="Button"/>
                                                                 <buttonConfiguration key="configuration" style="plain" title="Притвор">
@@ -1781,23 +1894,34 @@
                                                                     <action selector="actionNewPogonageButton:" destination="eXq-Pt-65B" eventType="touchUpInside" id="MdD-Iq-t2R"/>
                                                                 </connections>
                                                             </button>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dbL-zC-ndX">
+                                                                <rect key="frame" x="144" y="0.0" width="79" height="31"/>
+                                                                <color key="backgroundColor" systemColor="systemRedColor"/>
+                                                                <state key="normal" title="Button"/>
+                                                                <buttonConfiguration key="configuration" style="plain" title="Удалить">
+                                                                    <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                </buttonConfiguration>
+                                                            </button>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Cbq-m7-G0I">
-                                                                <rect key="frame" x="191.5" y="0.0" width="50" height="31"/>
+                                                                <rect key="frame" x="233" y="0.0" width="40" height="31"/>
                                                                 <constraints>
-                                                                    <constraint firstAttribute="width" constant="50" id="yFl-kk-LhJ"/>
+                                                                    <constraint firstAttribute="width" constant="40" id="yFl-kk-LhJ"/>
                                                                 </constraints>
                                                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                                                 <nil key="textColor"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="шт." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="66u-ti-6e5">
-                                                                <rect key="frame" x="263.5" y="0.0" width="29.5" height="31"/>
+                                                                <rect key="frame" x="283" y="0.0" width="30" height="31"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="width" constant="30" id="OUD-UV-Ggt"/>
+                                                                </constraints>
                                                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                                                 <nil key="textColor"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AjM-IX-kpZ">
-                                                                <rect key="frame" x="315" y="0.0" width="100" height="31"/>
+                                                                <rect key="frame" x="323" y="0.0" width="100" height="31"/>
                                                                 <constraints>
                                                                     <constraint firstAttribute="width" constant="100" id="Y9A-JI-GMk"/>
                                                                 </constraints>
@@ -1805,8 +1929,11 @@
                                                                 <nil key="textColor"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
-                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="руб" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dDR-em-oiL">
-                                                                <rect key="frame" x="437" y="0.0" width="29" height="31"/>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="руб." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dDR-em-oiL">
+                                                                <rect key="frame" x="433" y="0.0" width="33" height="31"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="width" constant="33" id="LAD-Tx-Q8Q"/>
+                                                                </constraints>
                                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                                 <nil key="textColor"/>
                                                                 <nil key="highlightedColor"/>
