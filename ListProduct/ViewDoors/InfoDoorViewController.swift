@@ -27,7 +27,7 @@ class InfoDoorViewController: UIViewController {
     @IBOutlet weak var deleteDoor6001900Button: UIButton!
     @IBOutlet weak var deleteDoor600Button: UIButton!
     @IBOutlet weak var deleteDoor700Button: UIButton!
-    @IBOutlet weak var deletrDoor800Button: UIButton!
+    @IBOutlet weak var deleteDoor800Button: UIButton!
     @IBOutlet weak var deleteDoor900Button: UIButton!
     
     
@@ -125,7 +125,7 @@ class InfoDoorViewController: UIViewController {
         deleteDoor6001900Button.layer.cornerRadius = 8
         deleteDoor600Button.layer.cornerRadius = 8
         deleteDoor700Button.layer.cornerRadius = 8
-        deletrDoor800Button.layer.cornerRadius = 8
+        deleteDoor800Button.layer.cornerRadius = 8
         deleteDoor900Button.layer.cornerRadius = 8
         
         korobButton.layer.cornerRadius = 8
@@ -246,18 +246,18 @@ class InfoDoorViewController: UIViewController {
         }
     }
     
-    private func deleteDoor() {
+    private func deleteDoor(dimention: String, countLabel: UILabel, priceLabel: UILabel) {
         if !persone.basket.isEmpty {
             for door in persone.basket {
-                if door.nameDoor == doorPerson.nameDoor && door.dimensions == "550*1900" {
+                if door.nameDoor == doorPerson.nameDoor && door.dimensions == dimention {
                     if door.countDoors > 1 {
                         StorageManager.shared.renameDoorDelete(door, doors: doorPerson, newValue: 1)
-                        countDoor550Label.text = "\(door.countDoors)"
-                        priceDoor550Label.text = "\(door.price)"
+                        countLabel.text = "\(door.countDoors)"
+                        priceLabel.text = "\(door.price)"
                     } else if door.countDoors == 1 {
                         StorageManager.shared.delete(door)
-                        countDoor550Label.text = "0"
-                        priceDoor550Label.text = "0"
+                        countLabel.text = "0"
+                        priceLabel.text = "0"
                     }
                 }
             }
@@ -485,9 +485,25 @@ class InfoDoorViewController: UIViewController {
         }
     }
     
-    @IBAction func actionDeleteDoor550Button() {
-        deleteDoor()
+    @IBAction func actionDeleteDoorButton(_ sender: UIButton) {
+        switch sender {
+        case deleteDoor550Button:
+            deleteDoor(dimention: "550*1900", countLabel: countDoor550Label, priceLabel: priceDoor550Label)
+        case deleteDoor6001900Button:
+            deleteDoor(dimention: "600*1900", countLabel: countDoor6001900Label, priceLabel: priceDoor6001900Label)
+        case deleteDoor600Button:
+            deleteDoor(dimention: "600*1900", countLabel: countDoor600Label, priceLabel: priceDoor600Label)
+        case deleteDoor700Button:
+            deleteDoor(dimention: "700*2000", countLabel: countDoor700Label, priceLabel: priceDoor700Label)
+        case deleteDoor800Button:
+            deleteDoor(dimention: "800*2000", countLabel: countDoor800Label, priceLabel: priceDoor800Label)
+        case deleteDoor900Button:
+            deleteDoor(dimention: "900*2000", countLabel: countDoor900Label, priceLabel: priceDoor900Label)
+        default:
+            break
+        }
     }
+    
     
     
     // MARK: - Navigation

@@ -1234,7 +1234,7 @@
                                                                     <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                 </buttonConfiguration>
                                                                 <connections>
-                                                                    <action selector="actionDeleteDoor550Button" destination="eXq-Pt-65B" eventType="touchUpInside" id="mGl-eO-jgx"/>
+                                                                    <action selector="actionDeleteDoorButton:" destination="eXq-Pt-65B" eventType="touchUpInside" id="Mi5-jb-gc4"/>
                                                                 </connections>
                                                             </button>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LRw-iW-kTe">
@@ -1296,6 +1296,9 @@
                                                                 <buttonConfiguration key="configuration" style="plain" title="Удалить">
                                                                     <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                 </buttonConfiguration>
+                                                                <connections>
+                                                                    <action selector="actionDeleteDoorButton:" destination="eXq-Pt-65B" eventType="touchUpInside" id="ltY-AE-FbQ"/>
+                                                                </connections>
                                                             </button>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zgc-kP-eL2">
                                                                 <rect key="frame" x="233" y="0.0" width="40" height="31"/>
@@ -1356,6 +1359,9 @@
                                                                 <buttonConfiguration key="configuration" style="plain" title="Удалить">
                                                                     <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                 </buttonConfiguration>
+                                                                <connections>
+                                                                    <action selector="actionDeleteDoorButton:" destination="eXq-Pt-65B" eventType="touchUpInside" id="QU9-o3-ylu"/>
+                                                                </connections>
                                                             </button>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TDY-Mq-qxZ">
                                                                 <rect key="frame" x="233.5" y="0.0" width="40" height="31"/>
@@ -1413,6 +1419,9 @@
                                                                 <buttonConfiguration key="configuration" style="plain" title="Удалить">
                                                                     <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                 </buttonConfiguration>
+                                                                <connections>
+                                                                    <action selector="actionDeleteDoorButton:" destination="eXq-Pt-65B" eventType="touchUpInside" id="G5Z-4f-v1m"/>
+                                                                </connections>
                                                             </button>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PTn-dV-Jal">
                                                                 <rect key="frame" x="233" y="0.0" width="40" height="31"/>
@@ -1473,6 +1482,9 @@
                                                                 <buttonConfiguration key="configuration" style="plain" title="Удалить">
                                                                     <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                 </buttonConfiguration>
+                                                                <connections>
+                                                                    <action selector="actionDeleteDoorButton:" destination="eXq-Pt-65B" eventType="touchUpInside" id="6gD-TP-S5a"/>
+                                                                </connections>
                                                             </button>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wd2-Au-Pfw">
                                                                 <rect key="frame" x="233" y="0.0" width="40" height="31"/>
@@ -1533,6 +1545,9 @@
                                                                 <buttonConfiguration key="configuration" style="plain" title="Удалить">
                                                                     <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                 </buttonConfiguration>
+                                                                <connections>
+                                                                    <action selector="actionDeleteDoorButton:" destination="eXq-Pt-65B" eventType="touchUpInside" id="WQo-3S-8Vu"/>
+                                                                </connections>
                                                             </button>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mDp-Xy-rnd">
                                                                 <rect key="frame" x="233" y="0.0" width="40" height="31"/>
@@ -2189,6 +2204,7 @@
                         <outlet property="deleteDoor6001900Button" destination="CSM-Jc-uAC" id="JTB-Pc-TDm"/>
                         <outlet property="deleteDoor600Button" destination="NP7-vU-C12" id="PjS-tL-8ee"/>
                         <outlet property="deleteDoor700Button" destination="eQD-t2-b9e" id="pMY-7M-uoQ"/>
+                        <outlet property="deleteDoor800Button" destination="pIf-O1-jUl" id="DLN-3x-FkE"/>
                         <outlet property="deleteDoor900Button" destination="XOa-hw-kdx" id="JHH-A5-TER"/>
                         <outlet property="deletecasingButton" destination="TtP-cX-nHn" id="GOD-lO-8Pb"/>
                         <outlet property="deletedobor100Button" destination="Bix-BS-XX2" id="ELv-UI-QpW"/>
@@ -2196,7 +2212,6 @@
                         <outlet property="deletedobor200Button" destination="VBJ-Rn-b6a" id="Ezj-Rb-MCA"/>
                         <outlet property="deletekorobButton" destination="8Cg-in-FI0" id="Oyy-OK-LBb"/>
                         <outlet property="deletelathButton" destination="dbL-zC-ndX" id="zcL-gD-lAb"/>
-                        <outlet property="deletrDoor800Button" destination="pIf-O1-jUl" id="DLN-3x-FkE"/>
                         <outlet property="descriptionDoorLabel" destination="YkE-r6-TAL" id="dzz-Sr-UH7"/>
                         <outlet property="dobor100Button" destination="fZy-OT-ZT9" id="3dg-1u-mP5"/>
                         <outlet property="dobor100CountLabel" destination="z1z-IZ-kB0" id="EUn-L4-XN3"/>
