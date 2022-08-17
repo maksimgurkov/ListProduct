@@ -948,6 +948,11 @@
                     </view>
                     <navigationItem key="navigationItem" id="8WX-Hi-nxe">
                         <rightBarButtonItems>
+                            <barButtonItem title="Составить заказ" id="OER-b8-nxg">
+                                <connections>
+                                    <segue destination="bdb-t8-owW" kind="show" id="loG-hb-iir"/>
+                                </connections>
+                            </barButtonItem>
                             <barButtonItem title="Услуги" id="4yw-1x-fUD">
                                 <connections>
                                     <segue destination="k77-7k-Kkc" kind="show" id="WWo-EV-xHX"/>
@@ -956,11 +961,6 @@
                             <barButtonItem title="Маиериал" id="a8A-ob-uTZ">
                                 <connections>
                                     <segue destination="uMB-Xg-Wcr" kind="show" id="HZU-pG-bnS"/>
-                                </connections>
-                            </barButtonItem>
-                            <barButtonItem title="Составить заказ" id="OER-b8-nxg">
-                                <connections>
-                                    <segue destination="bdb-t8-owW" kind="show" id="loG-hb-iir"/>
                                 </connections>
                             </barButtonItem>
                             <barButtonItem title="Фотографии" id="mJO-cS-bqQ">
@@ -1233,6 +1233,9 @@
                                                                 <buttonConfiguration key="configuration" style="plain" title="Удалить">
                                                                     <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                 </buttonConfiguration>
+                                                                <connections>
+                                                                    <action selector="actionDeleteDoor550Button" destination="eXq-Pt-65B" eventType="touchUpInside" id="mGl-eO-jgx"/>
+                                                                </connections>
                                                             </button>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LRw-iW-kTe">
                                                                 <rect key="frame" x="233" y="0.0" width="40" height="31"/>

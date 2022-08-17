@@ -108,7 +108,7 @@ class InfoDoorViewController: UIViewController {
         title = doorPerson.nameDoor
         nonStandartDoorLabel.text = doorPerson.nameDoor
         
-        priceDoorPersonLabel.text = "Выбор полотен. Цена за полотно: \(doorPerson.price) р."
+        priceDoorPersonLabel.text = "Выбор полотен."
         
         doorCountInfoAndPrice()
         forActiveButton()
@@ -240,6 +240,24 @@ class InfoDoorViewController: UIViewController {
                         countInfoPogonage.text = "\(pogonage.countDoors)"
                         pricePogonage.text = "\(pogonage.price)"
                         return
+                    }
+                }
+            }
+        }
+    }
+    
+    private func deleteDoor() {
+        if !persone.basket.isEmpty {
+            for door in persone.basket {
+                if door.nameDoor == doorPerson.nameDoor && door.dimensions == "550*1900" {
+                    if door.countDoors > 1 {
+                        StorageManager.shared.renameDoorDelete(door, doors: doorPerson, newValue: 1)
+                        countDoor550Label.text = "\(door.countDoors)"
+                        priceDoor550Label.text = "\(door.price)"
+                    } else if door.countDoors == 1 {
+                        StorageManager.shared.delete(door)
+                        countDoor550Label.text = "0"
+                        priceDoor550Label.text = "0"
                     }
                 }
             }
@@ -466,6 +484,11 @@ class InfoDoorViewController: UIViewController {
             break
         }
     }
+    
+    @IBAction func actionDeleteDoor550Button() {
+        deleteDoor()
+    }
+    
     
     // MARK: - Navigation
 

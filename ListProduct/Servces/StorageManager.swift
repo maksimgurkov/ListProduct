@@ -54,6 +54,13 @@ class StorageManager {
         }
     }
     
+    func renameDoorDelete(_ door: Doors, doors: Door, newValue: Int) {
+        write {
+            door.countDoors -= newValue
+            door.price -= doors.price
+        }
+    }
+    
     func renameSetAppand(_ door: Doors, doors: Sets, newValue: Int) {
         write {
             door.countDoors += newValue
