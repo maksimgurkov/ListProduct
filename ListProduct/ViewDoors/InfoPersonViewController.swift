@@ -47,30 +47,23 @@ class InfoPersonViewController: UIViewController {
         setupLabel()
         personSumTextField.placeholder = "\(person.sumPo)"
         selsePersonTextField.placeholder = "\(person.salse)"
-//        forRenameButtonAppendPo()
-//        forRenameButtonAppendSelse()
-        
     }
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         sumMaterialLabel.text = "Сумма за материал - \(sumPersonMaterial() - resultSumSelsePerson() - person.sumPo) р."
         sumServicesLabel.text = "Сумма за услуги - \(sumPersonServices()) р."
-        sumLabel.text = "Общая сумма договора - \(sumPersonMaterial() + sumPersonServices()) р."
+        sumLabel.text = "Общая сумма договора - \(sumPersonMaterial() - resultSumSelsePerson() + sumPersonServices()) р."
         forRenameButtonAppendPo()
         forRenameButtonAppendSelse()
     }
     
     @IBAction func actionPoPersonButton() {
         forPersonSumPo()
-        forRenameButtonAppendPo()
-        reloadInputViews()
     }
     
     @IBAction func actionSalsePersonButton() {
         forSelsePerson()
-        forRenameButtonAppendSelse()
-        reloadInputViews()
     }
     
     private func setupLabel() {
@@ -130,8 +123,9 @@ class InfoPersonViewController: UIViewController {
         var resultSum = 0
         guard let selse = selsePersonTextField.text, !selse.isEmpty else { return }
         StorageManager.shared.renamePersonSelse(person: person, newValue: Int(selse) ?? 0)
-        resultSum = sumPersonMaterial() - (sumPersonMaterial() / 100 * (Int(selse) ?? 0))
+        resultSum = sumPersonMaterial() - resultSumSelsePerson()
         sumMaterialLabel.text = "Сумма за материал - \(resultSum)"
+        sumLabel.text = "Общая сумма договора - \(sumPersonMaterial() - resultSumSelsePerson() + sumPersonServices())"
     }
     
     private func forPersonSumPo() {
@@ -149,10 +143,10 @@ class InfoPersonViewController: UIViewController {
     }
     
     private func forRenameButtonAppendSelse() {
-        if person.salse > 0 {
-            appendSelseButton.titleLabel?.text = "Изменить"
-        } else if person.salse == 0 {
+        if person.salse == 0 {
             appendSelseButton.titleLabel?.text = "Внести"
+        } else {
+            appendSelseButton.titleLabel?.text = "Изменить"
         }
     }
     

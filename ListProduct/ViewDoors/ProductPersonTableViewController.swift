@@ -62,7 +62,7 @@ class ProductPersonTableViewController: UIViewController {
         if person.salse == 0 {
             info = "Итого к оплате"
         } else {
-            info = "Итого к оплате с учетом скидки \(person.salse) %"
+            info = "Итого к оплате с учетом скидки \(person.salse) % Сумма скидки - \(forResultSelse()) р."
         }
         return info
     }

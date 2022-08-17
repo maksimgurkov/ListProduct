@@ -620,13 +620,13 @@
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="dBs-Jb-0Aj">
                                 <rect key="frame" x="20" y="862.5" width="728" height="81.5"/>
                                 <subviews>
-                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="328" translatesAutoresizingMaskIntoConstraints="NO" id="Pk0-fd-9mw">
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="71" translatesAutoresizingMaskIntoConstraints="NO" id="Pk0-fd-9mw">
                                         <rect key="frame" x="0.0" y="0.0" width="728" height="20.5"/>
                                         <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Итого к оплате с учетом скидки 10 %  " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TWR-zv-6hf">
-                                                <rect key="frame" x="0.0" y="0.0" width="300" height="20.5"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Итого к оплате с учетом скидки 10 %  Cevvf crblrb cjcnfdbkf 100000 h." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TWR-zv-6hf">
+                                                <rect key="frame" x="0.0" y="0.0" width="557" height="20.5"/>
                                                 <constraints>
-                                                    <constraint firstAttribute="width" constant="300" id="YEq-ZQ-cgg"/>
+                                                    <constraint firstAttribute="width" constant="557" id="7iv-YM-PuH"/>
                                                 </constraints>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <nil key="textColor"/>
@@ -2182,6 +2182,18 @@
                         <outlet property="countDoor700Label" destination="PTn-dV-Jal" id="6qH-uJ-17k"/>
                         <outlet property="countDoor800Label" destination="Wd2-Au-Pfw" id="wyP-cO-vxn"/>
                         <outlet property="countDoor900Label" destination="mDp-Xy-rnd" id="HY5-Kx-6KJ"/>
+                        <outlet property="deleteDoor550Button" destination="1tJ-ld-fee" id="Re2-2H-1Gt"/>
+                        <outlet property="deleteDoor6001900Button" destination="CSM-Jc-uAC" id="JTB-Pc-TDm"/>
+                        <outlet property="deleteDoor600Button" destination="NP7-vU-C12" id="PjS-tL-8ee"/>
+                        <outlet property="deleteDoor700Button" destination="eQD-t2-b9e" id="pMY-7M-uoQ"/>
+                        <outlet property="deleteDoor900Button" destination="XOa-hw-kdx" id="JHH-A5-TER"/>
+                        <outlet property="deletecasingButton" destination="TtP-cX-nHn" id="GOD-lO-8Pb"/>
+                        <outlet property="deletedobor100Button" destination="Bix-BS-XX2" id="ELv-UI-QpW"/>
+                        <outlet property="deletedobor150Button" destination="ibJ-jc-kIa" id="Dsx-Eq-ooY"/>
+                        <outlet property="deletedobor200Button" destination="VBJ-Rn-b6a" id="Ezj-Rb-MCA"/>
+                        <outlet property="deletekorobButton" destination="8Cg-in-FI0" id="Oyy-OK-LBb"/>
+                        <outlet property="deletelathButton" destination="dbL-zC-ndX" id="zcL-gD-lAb"/>
+                        <outlet property="deletrDoor800Button" destination="pIf-O1-jUl" id="DLN-3x-FkE"/>
                         <outlet property="descriptionDoorLabel" destination="YkE-r6-TAL" id="dzz-Sr-UH7"/>
                         <outlet property="dobor100Button" destination="fZy-OT-ZT9" id="3dg-1u-mP5"/>
                         <outlet property="dobor100CountLabel" destination="z1z-IZ-kB0" id="EUn-L4-XN3"/>

@@ -23,6 +23,13 @@ class InfoDoorViewController: UIViewController {
     @IBOutlet weak var door800Button: UIButton!
     @IBOutlet weak var door900Button: UIButton!
     @IBOutlet weak var nonStandartDoorButton: UIButton!
+    @IBOutlet weak var deleteDoor550Button: UIButton!
+    @IBOutlet weak var deleteDoor6001900Button: UIButton!
+    @IBOutlet weak var deleteDoor600Button: UIButton!
+    @IBOutlet weak var deleteDoor700Button: UIButton!
+    @IBOutlet weak var deletrDoor800Button: UIButton!
+    @IBOutlet weak var deleteDoor900Button: UIButton!
+    
     
     //MARK: - Pogonzh Button
     @IBOutlet weak var korobButton: UIButton!
@@ -32,6 +39,13 @@ class InfoDoorViewController: UIViewController {
     @IBOutlet weak var dobor200Button: UIButton!
     @IBOutlet weak var lathButton: UIButton!
     @IBOutlet weak var nonStandartPogonageButton: UIButton!
+    @IBOutlet weak var deletekorobButton: UIButton!
+    @IBOutlet weak var deletecasingButton: UIButton!
+    @IBOutlet weak var deletedobor100Button: UIButton!
+    @IBOutlet weak var deletedobor150Button: UIButton!
+    @IBOutlet weak var deletedobor200Button: UIButton!
+    @IBOutlet weak var deletelathButton: UIButton!
+    
     
     //MARK: - Image
     @IBOutlet weak var doorImage: UIImageView!
@@ -107,12 +121,26 @@ class InfoDoorViewController: UIViewController {
         door800Button.layer.cornerRadius = 8
         door900Button.layer.cornerRadius = 8
         
+        deleteDoor550Button.layer.cornerRadius = 8
+        deleteDoor6001900Button.layer.cornerRadius = 8
+        deleteDoor600Button.layer.cornerRadius = 8
+        deleteDoor700Button.layer.cornerRadius = 8
+        deletrDoor800Button.layer.cornerRadius = 8
+        deleteDoor900Button.layer.cornerRadius = 8
+        
         korobButton.layer.cornerRadius = 8
         casingButton.layer.cornerRadius = 8
         dobor100Button.layer.cornerRadius = 8
         dobor150Button.layer.cornerRadius = 8
         dobor200Button.layer.cornerRadius = 8
         lathButton.layer.cornerRadius = 8
+        
+        deletekorobButton.layer.cornerRadius = 8
+        deletecasingButton.layer.cornerRadius = 8
+        deletedobor100Button.layer.cornerRadius = 8
+        deletedobor150Button.layer.cornerRadius = 8
+        deletedobor200Button.layer.cornerRadius = 8
+        deletelathButton.layer.cornerRadius = 8
         
         nonStandartDoorButton.layer.cornerRadius = 8
         nonStandartPogonageButton.layer.cornerRadius = 8
