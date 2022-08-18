@@ -50,14 +50,14 @@ class StorageManager {
     func renameDoor(_ door: Doors, doors: Door, newValue: Int) {
         write {
             door.countDoors += newValue
-            door.price += doors.price
+            door.price += doors.price * 3
         }
     }
     
     func renameDoorDelete(_ door: Doors, doors: Door, newValue: Int) {
         write {
             door.countDoors -= newValue
-            door.price -= doors.price
+            door.price -= doors.price * 3
         }
     }
     
@@ -71,14 +71,22 @@ class StorageManager {
     func renameSetDelete(_ door: Doors, doors: Sets, newValue: Int) {
         write {
             door.countDoors -= newValue
-            door.price -= doors.priceSet
+            door.price -= doors.priceSet * 3
         }
     }
     
-    func renamePogonage(_ pogonage: Doors, pogonages: Doors, newValue: Int ) {
+    func renamePogonage(_ pogonage: Doors, pogonages: Int, newValue: Int ) {
         write {
             pogonage.countDoors += newValue
-            pogonage.price += pogonages.price
+            pogonage.price += pogonages * 3
+            
+        }
+    }
+    
+    func renamePogonageDelete(_ pogonage: Doors, pogonages: Int, newValue: Int ) {
+        write {
+            pogonage.countDoors -= newValue
+            pogonage.price -= pogonages * 3
             
         }
     }

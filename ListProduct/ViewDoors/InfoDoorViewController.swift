@@ -227,7 +227,7 @@ class InfoDoorViewController: UIViewController {
         if !persone.basket.isEmpty {
             for pogonag in persone.basket {
                 if pogonag.namePogonage == pogonage.namePogonage && pogonag.factory == pogonage.factory && pogonag.nameDoor == pogonage.nameDoor && pogonag.dimensions == pogonage.dimensions {
-                    StorageManager.shared.renamePogonage(pogonag, pogonages: pogonage, newValue: 1)
+                    StorageManager.shared.renamePogonage(pogonag, pogonages: price, newValue: 1)
                     countInfoPogonage.text = "\(pogonag.countDoors)"
                     pricePogonage.text = "\(pogonag.price)"
                     return
@@ -256,6 +256,24 @@ class InfoDoorViewController: UIViewController {
                         priceLabel.text = "\(door.price)"
                     } else if door.countDoors == 1 {
                         StorageManager.shared.delete(door)
+                        countLabel.text = "0"
+                        priceLabel.text = "0"
+                    }
+                }
+            }
+        }
+    }
+    
+    private func deletePogonage(name: String, countLabel: UILabel, priceLabel: UILabel, price: Int) {
+        if !persone.basket.isEmpty {
+            for pogonage in persone.basket {
+                if pogonage.nameDoor == doorPerson.nameDoor && pogonage.namePogonage == name {
+                    if pogonage.countDoors > 1 {
+                        StorageManager.shared.renamePogonageDelete(pogonage, pogonages: price, newValue: 1)
+                        countLabel.text = "\(pogonage.countDoors)"
+                        priceLabel.text = "\(pogonage.price)"
+                    } else if pogonage.countDoors == 1 {
+                        StorageManager.shared.delete(pogonage)
                         countLabel.text = "0"
                         priceLabel.text = "0"
                     }
@@ -499,6 +517,10 @@ class InfoDoorViewController: UIViewController {
             deleteDoor(dimention: "800*2000", countLabel: countDoor800Label, priceLabel: priceDoor800Label)
         case deleteDoor900Button:
             deleteDoor(dimention: "900*2000", countLabel: countDoor900Label, priceLabel: priceDoor900Label)
+        case deletekorobButton:
+            deletePogonage(name: "Короб", countLabel: korobCountLabel, priceLabel: priceKorobLabel, price: forPricePogonage(name: "Короб"))
+        case deletecasingButton:
+            deletePogonage(name: "Наличник", countLabel: casingCountLabel, priceLabel: priceCasingLabel, price: forPricePogonage(name: "Наличник"))
         default:
             break
         }
