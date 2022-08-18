@@ -178,7 +178,7 @@ class InfoDoorViewController: UIViewController {
         newDoor.material = material
         newDoor.nameDoor = name
         newDoor.descriptionDoor = description
-        newDoor.price = price
+        newDoor.price = price * 3
         newDoor.dimensions = dimensions
         newDoor.countDoors = count
         if persone.basket.isEmpty {
@@ -215,7 +215,7 @@ class InfoDoorViewController: UIViewController {
         pogonage.material = material
         pogonage.nameDoor = doorPerson.nameDoor
         pogonage.namePogonage = name
-        pogonage.price = price
+        pogonage.price = price * 3
         pogonage.dimensions = dimansion
         pogonage.countDoors = count
         if persone.basket.isEmpty {
