@@ -35,13 +35,17 @@ class Sets {
 enum SetFactory: String {
     case punto = "Punto"
     case fuaro = "Fuaro"
+    case armadillo = "Армадилло"
+    case agb = "AGB"
 }
 
 enum SetCategory: String {
     case luop = "Петля"
     case handle = "Ручка"
     case castle = "Защелка L40"
-    case cstleWC = "Защелка L70"
+    case cstleWC = "Защелка L72"
     case stopWC = "Фиксатор"
     case set = "Комплет Prima"
+    case rigel = "Ригель"
+    case castleWCMagnet = "Защелка L72 магнитная"
 }

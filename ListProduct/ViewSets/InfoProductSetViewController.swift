@@ -47,7 +47,7 @@ class InfoProductSetViewController: UIViewController {
         newSet.material = infoProduct.category.rawValue
         newSet.nameDoor = infoProduct.name
         newSet.descriptionDoor = infoProduct.description
-        newSet.price = infoProduct.priceSet
+        newSet.price = infoProduct.priceSet * 3
         newSet.countDoors = 1
         if person.basket.isEmpty {
             StorageManager.shared.saveProduct(person, door: newSet)

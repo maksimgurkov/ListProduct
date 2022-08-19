@@ -64,7 +64,7 @@ class StorageManager {
     func renameSetAppand(_ door: Doors, doors: Sets, newValue: Int) {
         write {
             door.countDoors += newValue
-            door.price += doors.priceSet
+            door.price += doors.priceSet * 3
         }
     }
     
