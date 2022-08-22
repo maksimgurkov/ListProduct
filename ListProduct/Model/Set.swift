@@ -49,4 +49,8 @@ enum SetCategory: String {
     case rigel = "Ригель"
     case castleWCMagnet = "Защелка L72 магнитная"
     case castleMagnet = "Защелка L45 магнитеая"
+    case castleCylinder = "Защелка под цилиндр"
+    case cylinder = "Цилиндер"
+    case hairpiece = "Накладка на личинку"
+    case guide = "Направляющая для раздвижной системы"
 }
