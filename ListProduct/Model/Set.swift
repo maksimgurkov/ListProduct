@@ -53,4 +53,6 @@ enum SetCategory: String {
     case cylinder = "Цилиндер"
     case hairpiece = "Накладка на личинку"
     case guide = "Направляющая для раздвижной системы"
+    case cupe = "Ручка купе"
+    case rollers = "Ролики для раздвижной системы"
 }
