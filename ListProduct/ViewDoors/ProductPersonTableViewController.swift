@@ -82,7 +82,7 @@ extension ProductPersonTableViewController: UITableViewDataSource {
         let product = person.basket[indexPath.row]
         cell.factoryDoorLabel.text = product.factory
         cell.materialDoorLabel.text = product.material
-        cell.nameDoorLabel.text = product.nameDoor
+        cell.nameDoorLabel.text = product.namePogonage
         cell.dimensionsDoorLabel.text = product.dimensions
         cell.countDoorLabel.text = "\(product.countDoors)"
         cell.priceDoorLabel.text = "\(product.price)"

@@ -177,6 +177,7 @@ class InfoDoorViewController: UIViewController {
         newDoor.factory = factory
         newDoor.material = material
         newDoor.nameDoor = name
+        newDoor.namePogonage = name
         newDoor.descriptionDoor = description
         newDoor.price = price * 3
         newDoor.dimensions = dimensions
