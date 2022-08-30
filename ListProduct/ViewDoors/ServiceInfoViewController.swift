@@ -50,6 +50,7 @@ class ServiceInfoViewController: UIViewController {
         services.price = servicePerson.priceServices
         services.count = servicePerson.countServices
         if person.basketService.isEmpty {
+            alertInfoPerson(name: "Подъем стандарт", service: services)
             StorageManager.shared.saveSerwice(person, service: services)
             countServiceLabel.text = "\(services.count)"
             priceServiceLabel.text = "\(servicePerson.priceServices)"
@@ -58,6 +59,7 @@ class ServiceInfoViewController: UIViewController {
         if !person.basketService.isEmpty {
             for service in person.basketService {
                 if service.descriptionService == services.descriptionService {
+                    alertInfoPerson(name: "Подъем стандарт", service: services)
                     StorageManager.shared.renameServis(service, services: servicePerson, newValue: 1)
                     countServiceLabel.text = "\(service.count)"
                     priceServiceLabel.text = "\(service.price)"
@@ -67,6 +69,7 @@ class ServiceInfoViewController: UIViewController {
             if !person.basketService.isEmpty {
                 for service in person.basketService {
                     if service.descriptionService != services.descriptionService {
+                        alertInfoPerson(name: "Подъем стандарт", service: services)
                         StorageManager.shared.saveSerwice(person, service: services)
                         countServiceLabel.text = "\(services.count)"
                         priceServiceLabel.text = "\(servicePerson.priceServices)"
@@ -95,6 +98,13 @@ class ServiceInfoViewController: UIViewController {
             }
         }
     }
+    
+    private func alertInfoPerson(name: String, service: Services) {
+        if service.name == name {
+            alertInfo()
+        }
+        
+    }
         
     private func countService() {
         for servic in person.basketService {
@@ -110,6 +120,13 @@ class ServiceInfoViewController: UIViewController {
                 priceServiceLabel.text = "\(servic.price)"
             }
         }
+    }
+    
+    private func alertInfo() {
+        let alert = UIAlertController(title: "Внимание!", message: "Вы уверены что выбранный вами вариант подъема подходит?", preferredStyle: .alert)
+        let actionAlert = UIAlertAction(title: "OK", style: .default)
+        alert.addAction(actionAlert)
+        present(alert, animated: true)
     }
     
 }
