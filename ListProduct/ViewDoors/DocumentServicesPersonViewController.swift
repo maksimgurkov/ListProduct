@@ -10,15 +10,19 @@ import UIKit
 class DocumentServicesPersonViewController: UIViewController {
     
     var person: Person!
-
+    
+    @IBOutlet weak var dataPersonLabel: UILabel!
     @IBOutlet weak var fulNamePersonLabel: UILabel!
+    @IBOutlet weak var fulAdresPersonLabel: UILabel!
     @IBOutlet weak var fulSumPersonLabel: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
         title = " OOO Абада Груп "
+        dataPersonLabel.text = "Дата: \(forDataDocument())"
         fulNamePersonLabel.text = "Заказчик: \(person.surName) \(person.name) \(person.patronymic)"
+        fulAdresPersonLabel.text = "Адрес: г. \(person.town) ул. \(person.strit) \(person.numberHouse)-\(person.body)-\(person.numberFlat)"
         fulSumPersonLabel.text = "\(forSumPerson())"
     }
     
@@ -28,6 +32,13 @@ class DocumentServicesPersonViewController: UIViewController {
             resultSum += servic.price
         }
         return resultSum
+    }
+    
+    private func forDataDocument() -> String {
+        let dataFormater = DateFormatter()
+        dataFormater.dateFormat = "dd.MM.yyyy"
+        let day = dataFormater.string(from: person.data)
+        return day
     }
     
 }

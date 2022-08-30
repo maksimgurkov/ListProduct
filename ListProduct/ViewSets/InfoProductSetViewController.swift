@@ -45,7 +45,7 @@ class InfoProductSetViewController: UIViewController {
         let newSet = Doors()
         newSet.factory = infoProduct.factory.rawValue
         newSet.material = infoProduct.category.rawValue
-        newSet.nameDoor = infoProduct.name
+        newSet.namePogonage = infoProduct.name
         newSet.descriptionDoor = infoProduct.description
         newSet.price = infoProduct.priceSet * 3
         newSet.countDoors = 1
@@ -57,7 +57,7 @@ class InfoProductSetViewController: UIViewController {
         }
         if !person.basket.isEmpty {
             for setProduct in person.basket {
-                if setProduct.dimensions == newSet.dimensions && setProduct.factory == newSet.factory && setProduct.nameDoor == infoProduct.name {
+                if setProduct.dimensions == newSet.dimensions && setProduct.factory == newSet.factory && setProduct.namePogonage == infoProduct.name {
                     StorageManager.shared.renameSetAppand(setProduct, doors: infoProduct, newValue: 1)
                     countSetLabel.text = "\(setProduct.countDoors)"
                     priceSetLabel.text = "\(setProduct.price)"
@@ -66,7 +66,7 @@ class InfoProductSetViewController: UIViewController {
             }
             if !person.basket.isEmpty {
                 for setProduct in person.basket {
-                    if setProduct.factory == newSet.factory && setProduct.nameDoor != newSet.nameDoor || setProduct.factory != newSet.factory {
+                    if setProduct.factory == newSet.factory && setProduct.namePogonage != newSet.namePogonage || setProduct.factory != newSet.factory {
                         StorageManager.shared.saveProduct(person, door: newSet)
                         countSetLabel.text = "\(newSet.countDoors)"
                         priceSetLabel.text = "\(newSet.price)"
@@ -80,7 +80,7 @@ class InfoProductSetViewController: UIViewController {
     private func deleteSet() {
         if !person.basket.isEmpty {
             for setProduct in person.basket {
-                if setProduct.nameDoor == infoProduct.name {
+                if setProduct.namePogonage == infoProduct.name {
                     if setProduct.countDoors > 1 {
                         StorageManager.shared.renameSetDelete(setProduct, doors: infoProduct, newValue: 1)
                         countSetLabel.text = "\(setProduct.countDoors)"
@@ -97,7 +97,7 @@ class InfoProductSetViewController: UIViewController {
     
     private func forCountSet() {
         for setPerson in person.basket {
-            if setPerson.nameDoor == infoProduct.name {
+            if setPerson.namePogonage == infoProduct.name {
                 countSetLabel.text = "\(setPerson.countDoors)"
                 priceSetLabel.text = "\(setPerson.price)"
             }

@@ -355,7 +355,12 @@ class InfoDoorViewController: UIViewController {
         }
     }
     
-    //MARK: - ActionButtonDoors
+    //MARK: - ActionButton
+    
+    @IBAction func homeButtonAtion(_ sender: Any) {
+        navigationController?.popToRootViewController(animated: true)
+    }
+    
     
     @IBAction func actionNewDoorButton(_ sender: UIButton) {
         switch sender {

@@ -41,7 +41,7 @@ class InfoPersonViewController: UIViewController {
         namePersonLabel.text = person.name
         patronymicPersonLabel.text = person.patronymic
         phonePersonLabel.text = person.phone
-        addressPersonLabel.text = "\(person.town) \(person.strit) \(person.numberHouse) \(person.body) \(person.numberFlat)"
+        addressPersonLabel.text = "г. \(person.town) ул. \(person.strit) \(person.numberHouse)-\(person.body)-\(person.numberFlat)"
         descriptionPersonLabel.text = person.personDescription
         viewColorPerson.layer.cornerRadius = 20
         setupLabel()

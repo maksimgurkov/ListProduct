@@ -51,7 +51,7 @@ extension PersonsTableViewController {
         let person = persons[indexPath.row]
         cell.fulNamePersonLabel.text = "\(person.name) \(person.patronymic)"
         cell.surNamePersonLabel.text = person.surName
-        cell.fulAddressPersonLabel.text = "\(person.town) \(person.strit) \(person.numberHouse) \(person.body) \(person.numberFlat)"
+        cell.fulAddressPersonLabel.text = "г. \(person.town) ул. \(person.strit) \(person.numberHouse)-\(person.body)-\(person.numberFlat)"
         cell.datePersonLabel.text = dateFormat(person)
         
         return cell
