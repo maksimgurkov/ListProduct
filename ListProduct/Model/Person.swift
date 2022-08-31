@@ -9,6 +9,14 @@ import Foundation
 import RealmSwift
 import UIKit
 
+class Specialist: Object {
+    @Persisted var surName = ""
+    @Persisted var name = ""
+    @Persisted var patronymic = ""
+    @Persisted var imageSpecialist = ""
+    @Persisted var baza = List<Person>()
+}
+
 class Person: Object {
     @Persisted var name = ""
     @Persisted var patronymic = ""

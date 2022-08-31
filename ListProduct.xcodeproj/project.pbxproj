@@ -49,6 +49,8 @@
 		76B42F43287D428E007139E2 /* PhptoPersonCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76B42F42287D428E007139E2 /* PhptoPersonCollectionViewCell.swift */; };
 		76CF4A0C2891158400024C33 /* Pogonage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76CF4A0B2891158400024C33 /* Pogonage.swift */; };
 		76CF4A0E2891174200024C33 /* DataManagerPogonage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76CF4A0D2891174200024C33 /* DataManagerPogonage.swift */; };
+		76F147F928BF5BF500864C6E /* SpecialisrRegistrationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76F147F828BF5BF500864C6E /* SpecialisrRegistrationViewController.swift */; };
+		76F147FB28BF5E1C00864C6E /* HomeSpecialistViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76F147FA28BF5E1C00864C6E /* HomeSpecialistViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -94,6 +96,8 @@
 		76B42F42287D428E007139E2 /* PhptoPersonCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhptoPersonCollectionViewCell.swift; sourceTree = "<group>"; };
 		76CF4A0B2891158400024C33 /* Pogonage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pogonage.swift; sourceTree = "<group>"; };
 		76CF4A0D2891174200024C33 /* DataManagerPogonage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManagerPogonage.swift; sourceTree = "<group>"; };
+		76F147F828BF5BF500864C6E /* SpecialisrRegistrationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpecialisrRegistrationViewController.swift; sourceTree = "<group>"; };
+		76F147FA28BF5E1C00864C6E /* HomeSpecialistViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeSpecialistViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -156,6 +160,7 @@
 		76A984E3287587D100102AEB /* ListProduct */ = {
 			isa = PBXGroup;
 			children = (
+				76F147F728BF5B8800864C6E /* ViewSpecialist */,
 				763BD2A0289A9C4D005C1819 /* ServicesCell */,
 				76623047288972D300F1BC6A /* CellSets */,
 				766230422889439300F1BC6A /* ViewSets */,
@@ -243,6 +248,15 @@
 				76B42F42287D428E007139E2 /* PhptoPersonCollectionViewCell.swift */,
 			);
 			path = CollectionCell;
+			sourceTree = "<group>";
+		};
+		76F147F728BF5B8800864C6E /* ViewSpecialist */ = {
+			isa = PBXGroup;
+			children = (
+				76F147F828BF5BF500864C6E /* SpecialisrRegistrationViewController.swift */,
+				76F147FA28BF5E1C00864C6E /* HomeSpecialistViewController.swift */,
+			);
+			path = ViewSpecialist;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -353,10 +367,12 @@
 				76623041288940CC00F1BC6A /* SetsTableViewCell.swift in Sources */,
 				76CF4A0C2891158400024C33 /* Pogonage.swift in Sources */,
 				7671CD262885463A0073B7B5 /* PhotoCollectionViewController.swift in Sources */,
+				76F147FB28BF5E1C00864C6E /* HomeSpecialistViewController.swift in Sources */,
 				7662304628896CB000F1BC6A /* ProductSetTableViewController.swift in Sources */,
 				76A9851D28758A2100102AEB /* ListDoorsTableViewController.swift in Sources */,
 				76A984E7287587D100102AEB /* SceneDelegate.swift in Sources */,
 				763BD2A4289A9F5D005C1819 /* ServiceInfoViewController.swift in Sources */,
+				76F147F928BF5BF500864C6E /* SpecialisrRegistrationViewController.swift in Sources */,
 				7662303E28893E1A00F1BC6A /* SetsTableViewController.swift in Sources */,
 				76A9850B287589DF00102AEB /* StorageManager.swift in Sources */,
 				76A737A8289A9108006332E9 /* ServiceListTableViewController.swift in Sources */,
@@ -497,7 +513,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 5;
+				CURRENT_PROJECT_VERSION = 6;
 				DEVELOPMENT_TEAM = N85MKK397C;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = ListProduct/App/Info.plist;
@@ -526,7 +542,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 5;
+				CURRENT_PROJECT_VERSION = 6;
 				DEVELOPMENT_TEAM = N85MKK397C;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = ListProduct/App/Info.plist;
