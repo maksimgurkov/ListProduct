@@ -18,14 +18,19 @@ class HomeSpecialistViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         specialists = StorageManager.shared.realm.objects(Specialist.self)
-        title = "Главная"
+        title = "Специалист"
+        fulNameSpecialistLabel.text = specialistData()
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
         fulNameSpecialistLabel.text = specialistData()
     }
     
     private func specialistData() -> String {
         var fulName = ""
         for specialist in specialists {
-            fulName = "Специалист \(specialist.surName) \(specialist.name) \(specialist.patronymic)"
+            fulName = "\(specialist.surName) \(specialist.name) \(specialist.patronymic)"
         }
         return fulName
     }

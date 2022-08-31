@@ -22,6 +22,12 @@ class StorageManager {
         }
     }
     
+    func specialistSave(_ specialist: Specialist) {
+        write {
+            realm.add(specialist)
+        }
+    }
+    
     func renamePersonSumPo(person: Person, newValue: Int) {
         write {
             person.sumPo = newValue

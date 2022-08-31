@@ -27,7 +27,7 @@ class AppendInfoPersonViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        savePersonButton.layer.cornerRadius = 10
+        savePersonButton.layer.cornerRadius = 8
     }
     
     @IBAction func closeViewButton(_ sender: Any) {

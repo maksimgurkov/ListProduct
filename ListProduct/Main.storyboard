@@ -2753,24 +2753,32 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vUU-Tb-Gsp">
+                                <rect key="frame" x="100" y="843" width="568" height="31"/>
+                                <color key="backgroundColor" systemColor="systemOrangeColor"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Регистрация">
+                                    <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <segue destination="hPL-9x-1bu" kind="showDetail" id="hIq-gp-7bF"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="1HS-Ts-w8I"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="1HS-Ts-w8I" firstAttribute="trailing" secondItem="rQF-Ay-MQt" secondAttribute="trailing" constant="20" id="1QN-Nq-TNQ"/>
                             <constraint firstItem="mKH-rL-miW" firstAttribute="top" secondItem="1HS-Ts-w8I" secondAttribute="top" constant="50" id="ZYS-5v-Yv5"/>
+                            <constraint firstItem="1HS-Ts-w8I" firstAttribute="trailing" secondItem="vUU-Tb-Gsp" secondAttribute="trailing" constant="100" id="cWW-2t-ffn"/>
                             <constraint firstItem="rQF-Ay-MQt" firstAttribute="top" secondItem="mKH-rL-miW" secondAttribute="bottom" constant="20" id="e8U-yi-ivL"/>
+                            <constraint firstItem="vUU-Tb-Gsp" firstAttribute="leading" secondItem="1HS-Ts-w8I" secondAttribute="leading" constant="100" id="kz6-hB-qpA"/>
                             <constraint firstItem="rQF-Ay-MQt" firstAttribute="leading" secondItem="1HS-Ts-w8I" secondAttribute="leading" constant="20" id="pDW-4J-P81"/>
+                            <constraint firstItem="1HS-Ts-w8I" firstAttribute="bottom" secondItem="vUU-Tb-Gsp" secondAttribute="bottom" constant="100" id="sTL-1A-3Vb"/>
                             <constraint firstItem="mKH-rL-miW" firstAttribute="centerX" secondItem="QvV-D8-cyb" secondAttribute="centerX" id="v9J-kc-Pmo"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="xBh-KT-EyW">
-                        <barButtonItem key="rightBarButtonItem" title="Регистрация" id="vsq-nR-DaH">
-                            <connections>
-                                <segue destination="hPL-9x-1bu" kind="show" id="NCe-1e-O5U"/>
-                            </connections>
-                        </barButtonItem>
-                    </navigationItem>
+                    <navigationItem key="navigationItem" id="xBh-KT-EyW"/>
                     <connections>
                         <outlet property="fulNameSpecialistLabel" destination="rQF-Ay-MQt" id="u4w-cF-fjM"/>
                         <outlet property="photoSpecialistImageView" destination="mKH-rL-miW" id="tpj-5M-gMH"/>
@@ -2783,13 +2791,13 @@
         <!--Specialisr Registration View Controller-->
         <scene sceneID="lFO-36-0Z2">
             <objects>
-                <viewController id="hPL-9x-1bu" customClass="SpecialisrRegistrationViewController" customModule="ListProduct" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController modalPresentationStyle="fullScreen" id="hPL-9x-1bu" customClass="SpecialisrRegistrationViewController" customModule="ListProduct" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="O32-CM-qA7">
                         <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="ozo-El-DoD">
-                                <rect key="frame" x="50" y="205" width="668" height="162"/>
+                                <rect key="frame" x="50" y="83" width="668" height="162"/>
                                 <subviews>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Фамилия" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="gtg-8U-Gft">
                                         <rect key="frame" x="0.0" y="0.0" width="668" height="34"/>
@@ -2809,13 +2817,13 @@
                                 </subviews>
                             </stackView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Информация о специалисте." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Eyp-zB-rS1">
-                                <rect key="frame" x="20" y="152" width="728" height="23"/>
+                                <rect key="frame" x="20" y="30" width="728" height="23"/>
                                 <fontDescription key="fontDescription" style="UICTFontTextStyleTitle2"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pVf-U7-Pa4">
-                                <rect key="frame" x="300" y="397" width="168" height="31"/>
+                                <rect key="frame" x="300" y="275" width="168" height="31"/>
                                 <color key="backgroundColor" systemColor="tintColor"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Добавить фото">
@@ -2823,12 +2831,15 @@
                                 </buttonConfiguration>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LAM-dC-QhQ">
-                                <rect key="frame" x="300" y="458" width="168" height="31"/>
+                                <rect key="frame" x="300" y="336" width="168" height="31"/>
                                 <color key="backgroundColor" systemColor="systemOrangeColor"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Сохранить">
                                     <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <action selector="saveActivSpecialistButton" destination="hPL-9x-1bu" eventType="touchUpInside" id="zKl-5q-GW9"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="BNA-TT-JY6"/>
@@ -2850,8 +2861,11 @@
                     </view>
                     <navigationItem key="navigationItem" id="GDH-gy-NTc"/>
                     <connections>
+                        <outlet property="nameTextField" destination="urO-my-ahm" id="yg9-rb-j2Y"/>
+                        <outlet property="patronycTextField" destination="9Tb-Vh-6rY" id="94F-Vg-Tjs"/>
                         <outlet property="photoSpecialistButton" destination="pVf-U7-Pa4" id="xjV-fS-cSf"/>
                         <outlet property="saveSpecialistInfoButton" destination="LAM-dC-QhQ" id="CHV-vG-Qaw"/>
+                        <outlet property="surNameTextField" destination="gtg-8U-Gft" id="t7E-p9-2pa"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8q4-Bz-7lh" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
