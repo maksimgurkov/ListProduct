@@ -12,14 +12,21 @@ class HomeSpecialistViewController: UIViewController {
     
     var specialists: Results<Specialist>!
     
-    @IBOutlet weak var photoSpecialistImageView: UIImageView!
+    @IBOutlet weak var photoSpecialistImageView: UIImageView! {
+        didSet {
+            photoSpecialistImageView.layer.cornerRadius = photoSpecialistImageView.frame.width / 2
+        }
+    }
     @IBOutlet weak var fulNameSpecialistLabel: UILabel!
+    @IBOutlet weak var registredPersonButton: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         specialists = StorageManager.shared.realm.objects(Specialist.self)
         title = "Специалист"
         fulNameSpecialistLabel.text = specialistData()
+        registredPersonButton.layer.cornerRadius = 8
+        countSpecialistClouced()
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -33,6 +40,12 @@ class HomeSpecialistViewController: UIViewController {
             fulName = "\(specialist.surName) \(specialist.name) \(specialist.patronymic)"
         }
         return fulName
+    }
+    
+    private func countSpecialistClouced() {
+        if specialists.count > 0 {
+            registredPersonButton.titleLabel?.text = "Выйти"
+        }
     }
     
 

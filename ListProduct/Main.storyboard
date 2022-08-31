@@ -2740,8 +2740,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="person.crop.circle" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="mKH-rL-miW">
-                                <rect key="frame" x="234" y="172.5" width="300" height="299"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Максим1" translatesAutoresizingMaskIntoConstraints="NO" id="mKH-rL-miW">
+                                <rect key="frame" x="234" y="172" width="300" height="300"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="300" id="70H-nk-kCe"/>
                                     <constraint firstAttribute="width" constant="300" id="oix-no-QHT"/>
@@ -2754,7 +2754,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vUU-Tb-Gsp">
-                                <rect key="frame" x="100" y="843" width="568" height="31"/>
+                                <rect key="frame" x="150" y="843" width="468" height="31"/>
                                 <color key="backgroundColor" systemColor="systemOrangeColor"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Регистрация">
@@ -2770,9 +2770,9 @@
                         <constraints>
                             <constraint firstItem="1HS-Ts-w8I" firstAttribute="trailing" secondItem="rQF-Ay-MQt" secondAttribute="trailing" constant="20" id="1QN-Nq-TNQ"/>
                             <constraint firstItem="mKH-rL-miW" firstAttribute="top" secondItem="1HS-Ts-w8I" secondAttribute="top" constant="50" id="ZYS-5v-Yv5"/>
-                            <constraint firstItem="1HS-Ts-w8I" firstAttribute="trailing" secondItem="vUU-Tb-Gsp" secondAttribute="trailing" constant="100" id="cWW-2t-ffn"/>
+                            <constraint firstItem="1HS-Ts-w8I" firstAttribute="trailing" secondItem="vUU-Tb-Gsp" secondAttribute="trailing" constant="150" id="cWW-2t-ffn"/>
                             <constraint firstItem="rQF-Ay-MQt" firstAttribute="top" secondItem="mKH-rL-miW" secondAttribute="bottom" constant="20" id="e8U-yi-ivL"/>
-                            <constraint firstItem="vUU-Tb-Gsp" firstAttribute="leading" secondItem="1HS-Ts-w8I" secondAttribute="leading" constant="100" id="kz6-hB-qpA"/>
+                            <constraint firstItem="vUU-Tb-Gsp" firstAttribute="leading" secondItem="1HS-Ts-w8I" secondAttribute="leading" constant="150" id="kz6-hB-qpA"/>
                             <constraint firstItem="rQF-Ay-MQt" firstAttribute="leading" secondItem="1HS-Ts-w8I" secondAttribute="leading" constant="20" id="pDW-4J-P81"/>
                             <constraint firstItem="1HS-Ts-w8I" firstAttribute="bottom" secondItem="vUU-Tb-Gsp" secondAttribute="bottom" constant="100" id="sTL-1A-3Vb"/>
                             <constraint firstItem="mKH-rL-miW" firstAttribute="centerX" secondItem="QvV-D8-cyb" secondAttribute="centerX" id="v9J-kc-Pmo"/>
@@ -2782,6 +2782,7 @@
                     <connections>
                         <outlet property="fulNameSpecialistLabel" destination="rQF-Ay-MQt" id="u4w-cF-fjM"/>
                         <outlet property="photoSpecialistImageView" destination="mKH-rL-miW" id="tpj-5M-gMH"/>
+                        <outlet property="registredPersonButton" destination="vUU-Tb-Gsp" id="68g-h2-bio"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="AjU-0y-jfy" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -2841,17 +2842,27 @@
                                     <action selector="saveActivSpecialistButton" destination="hPL-9x-1bu" eventType="touchUpInside" id="zKl-5q-GW9"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VSQ-Cr-6be">
+                                <rect key="frame" x="667.5" y="20" width="80.5" height="31"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Закрыть"/>
+                                <connections>
+                                    <action selector="clousedButton" destination="hPL-9x-1bu" eventType="touchUpInside" id="tRk-DO-ZX3"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="BNA-TT-JY6"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="BNA-TT-JY6" firstAttribute="trailing" secondItem="LAM-dC-QhQ" secondAttribute="trailing" constant="300" id="01x-CW-uOm"/>
                             <constraint firstItem="LAM-dC-QhQ" firstAttribute="top" secondItem="pVf-U7-Pa4" secondAttribute="bottom" constant="30" id="5GV-Mn-8Qb"/>
+                            <constraint firstItem="BNA-TT-JY6" firstAttribute="trailing" secondItem="VSQ-Cr-6be" secondAttribute="trailing" constant="20" id="BwL-P9-kBV"/>
                             <constraint firstItem="pVf-U7-Pa4" firstAttribute="top" secondItem="ozo-El-DoD" secondAttribute="bottom" constant="30" id="E1P-aX-CpG"/>
                             <constraint firstItem="pVf-U7-Pa4" firstAttribute="leading" secondItem="BNA-TT-JY6" secondAttribute="leading" constant="300" id="IJI-jm-oUZ"/>
                             <constraint firstItem="BNA-TT-JY6" firstAttribute="trailing" secondItem="pVf-U7-Pa4" secondAttribute="trailing" constant="300" id="KDs-H4-rDr"/>
                             <constraint firstItem="ozo-El-DoD" firstAttribute="leading" secondItem="BNA-TT-JY6" secondAttribute="leading" constant="50" id="Tod-dU-jt7"/>
                             <constraint firstItem="LAM-dC-QhQ" firstAttribute="leading" secondItem="BNA-TT-JY6" secondAttribute="leading" constant="300" id="UTR-ir-DUy"/>
+                            <constraint firstItem="VSQ-Cr-6be" firstAttribute="top" secondItem="BNA-TT-JY6" secondAttribute="top" constant="20" id="cMV-TU-Abk"/>
                             <constraint firstItem="Eyp-zB-rS1" firstAttribute="top" secondItem="BNA-TT-JY6" secondAttribute="top" constant="30" id="eqZ-eE-c9X"/>
                             <constraint firstItem="Eyp-zB-rS1" firstAttribute="leading" secondItem="BNA-TT-JY6" secondAttribute="leading" constant="20" id="gvc-h9-T9b"/>
                             <constraint firstItem="ozo-El-DoD" firstAttribute="top" secondItem="Eyp-zB-rS1" secondAttribute="bottom" constant="30" id="lQs-sL-iVz"/>
@@ -2965,9 +2976,9 @@
     </scenes>
     <resources>
         <image name="person" catalog="system" width="128" height="117"/>
-        <image name="person.crop.circle" catalog="system" width="128" height="121"/>
         <image name="rectangle.portrait" catalog="system" width="115" height="128"/>
         <image name="rectangle.portrait.center.inset.filled" catalog="system" width="115" height="128"/>
+        <image name="Максим1" width="300" height="400"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

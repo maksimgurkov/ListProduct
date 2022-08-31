@@ -27,6 +27,10 @@ class SpecialisrRegistrationViewController: UIViewController {
 
     }
     
+    @IBAction func clousedButton() {
+        dismiss(animated: true)
+    }
+    
     @IBAction func saveActivSpecialistButton() {
         let specialist = Specialist()
         guard let surName = surNameTextField.text, !surName.isEmpty else { return }
