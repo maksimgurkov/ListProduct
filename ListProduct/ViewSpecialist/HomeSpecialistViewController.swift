@@ -24,14 +24,13 @@ class HomeSpecialistViewController: UIViewController {
         super.viewDidLoad()
         specialists = StorageManager.shared.realm.objects(Specialist.self)
         title = "Специалист"
-        fulNameSpecialistLabel.text = specialistData()
         registredPersonButton.layer.cornerRadius = 8
         countSpecialistClouced()
     }
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        fulNameSpecialistLabel.text = specialistData()
+        countSpecialistClouced()
     }
     
     private func specialistData() -> String {
@@ -42,9 +41,21 @@ class HomeSpecialistViewController: UIViewController {
         return fulName
     }
     
+    private func forSpecialistImage() -> String {
+        var imageSsring = ""
+        for specialist in specialists {
+            imageSsring = specialist.name
+        }
+        return imageSsring
+    }
+    
     private func countSpecialistClouced() {
         if specialists.count > 0 {
             registredPersonButton.titleLabel?.text = "Выйти"
+            fulNameSpecialistLabel.text = specialistData()
+            photoSpecialistImageView.image = UIImage(named: "\(forSpecialistImage())")
+        } else {
+            fulNameSpecialistLabel.text = "Специалист Ф.И"
         }
     }
     

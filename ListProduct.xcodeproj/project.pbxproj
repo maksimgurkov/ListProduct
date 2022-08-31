@@ -235,8 +235,8 @@
 				76A9851428758A2100102AEB /* FactoryProductTableViewController.swift */,
 				76A9851328758A2100102AEB /* MaterialDoorsTableViewController.swift */,
 				76A9851628758A2100102AEB /* ListDoorsTableViewController.swift */,
-				76A9851528758A2100102AEB /* InfoDoorViewController.swift */,
 				76A737A7289A9108006332E9 /* ServiceListTableViewController.swift */,
+				76A9851528758A2100102AEB /* InfoDoorViewController.swift */,
 				763BD2A3289A9F5D005C1819 /* ServiceInfoViewController.swift */,
 			);
 			path = ViewDoors;
