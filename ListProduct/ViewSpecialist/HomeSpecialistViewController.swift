@@ -10,14 +10,24 @@ import RealmSwift
 
 class HomeSpecialistViewController: UIViewController {
     
-    var specialist: Specialist!
+    var specialists: Results<Specialist>!
+    
     @IBOutlet weak var photoSpecialistImageView: UIImageView!
     @IBOutlet weak var fulNameSpecialistLabel: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        specialists = StorageManager.shared.realm.objects(Specialist.self)
         title = "Главная"
+        fulNameSpecialistLabel.text = specialistData()
+    }
+    
+    private func specialistData() -> String {
+        var fulName = ""
+        for specialist in specialists {
+            fulName = "Специалист \(specialist.surName) \(specialist.name) \(specialist.patronymic)"
+        }
+        return fulName
     }
     
 

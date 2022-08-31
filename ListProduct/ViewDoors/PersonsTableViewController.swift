@@ -13,8 +13,8 @@ class PersonsTableViewController: UITableViewController {
     private var persons: Results<Person>!
 
     override func viewDidLoad() {
-        persons = StorageManager.shared.realm.objects(Person.self)
         super.viewDidLoad()
+        persons = StorageManager.shared.realm.objects(Person.self)
     }
     
     override func viewWillAppear(_ animated: Bool) {
