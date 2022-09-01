@@ -37,9 +37,11 @@ enum FactoryPjgonage: String {
     case onyx = "Оникс"
     case sodrugestvo = "Cодружество"
     case holl = "Холл"
+    case tehno = "ТехноНиколь"
 }
 
 enum MaterialPogonage: String {
     case shpone = "Шпон"
     case ecoShpone = "ЭкоШпон"
+    case foam = "Пена"
 }

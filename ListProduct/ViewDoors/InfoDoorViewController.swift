@@ -46,6 +46,11 @@ class InfoDoorViewController: UIViewController {
     @IBOutlet weak var deletedobor200Button: UIButton!
     @IBOutlet weak var deletelathButton: UIButton!
     
+    //MARK: - Foam Button
+    @IBOutlet weak var foamButton: UIButton!
+    @IBOutlet weak var deleteFoamButton: UIButton!
+    
+    
     
     //MARK: - Image
     @IBOutlet weak var doorImage: UIImageView!
@@ -94,6 +99,11 @@ class InfoDoorViewController: UIViewController {
     @IBOutlet weak var setsButton: UIButton!
     @IBOutlet weak var servicesButton: UIButton!
     
+    //MARK: - Foam Label
+    @IBOutlet weak var countFoamLabel: UILabel!
+    @IBOutlet weak var priceFoamLabel: UILabel!
+    
+    
     //MARK: - NonStandart TextField
     @IBOutlet weak var nonStandartWidthTextField: UITextField!
     @IBOutlet weak var nonStandartHeightTextField: UITextField!
@@ -127,6 +137,9 @@ class InfoDoorViewController: UIViewController {
         deleteDoor700Button.layer.cornerRadius = 8
         deleteDoor800Button.layer.cornerRadius = 8
         deleteDoor900Button.layer.cornerRadius = 8
+        
+        foamButton.layer.cornerRadius = 8
+        deleteFoamButton.layer.cornerRadius = 8
         
         korobButton.layer.cornerRadius = 8
         casingButton.layer.cornerRadius = 8
@@ -350,6 +363,9 @@ class InfoDoorViewController: UIViewController {
                 } else if door.namePogonage == "Притвор" && door.nameDoor == doorPerson.nameDoor {
                     lathCountLabel.text = "\(door.countDoors)"
                     priceLathLabel.text = "\(door.price)"
+                } else if door.namePogonage == "Пена" && door.nameDoor == doorPerson.nameDoor {
+                    countFoamLabel.text = "\(door.countDoors)"
+                    priceFoamLabel.text = "\(door.price)"
                 }
             }
         }
@@ -495,6 +511,15 @@ class InfoDoorViewController: UIViewController {
                                count: 1,
                                countInfoPogonage: lathCountLabel,
                                pricePogonage: priceLathLabel)
+        case foamButton:
+            savePogonagePerson(factory: doorPerson.factory.rawValue,
+                               material: doorPerson.material.rawValue,
+                               name: "Пена",
+                               price: 380,
+                               dimansion: "Балон",
+                               count: 1,
+                               countInfoPogonage: countFoamLabel,
+                               pricePogonage: priceFoamLabel)
         case nonStandartPogonageButton:
             savePogonagePerson(factory: doorPerson.factory.rawValue,
                                material: doorPerson.material.rawValue,
@@ -527,6 +552,16 @@ class InfoDoorViewController: UIViewController {
             deletePogonage(name: "Короб", countLabel: korobCountLabel, priceLabel: priceKorobLabel, price: forPricePogonage(name: "Короб"))
         case deletecasingButton:
             deletePogonage(name: "Наличник", countLabel: casingCountLabel, priceLabel: priceCasingLabel, price: forPricePogonage(name: "Наличник"))
+        case deletedobor100Button:
+            deletePogonage(name: "Добор 100", countLabel: dobor100CountLabel, priceLabel: priceDobor100Label, price: forPricePogonage(name: "Добор 100"))
+        case deletedobor150Button:
+            deletePogonage(name: "Добор 150", countLabel: dobor150CountLabel, priceLabel: priceDobor150Label, price: forPricePogonage(name: "Добор 150"))
+        case deletedobor200Button:
+            deletePogonage(name: "Добор 200", countLabel: dobor200CountLabel, priceLabel: priceDobor200Label, price: forPricePogonage(name: "Добор 200"))
+        case deletelathButton:
+            deletePogonage(name: "Притвор", countLabel: lathCountLabel, priceLabel: priceLathLabel, price: forPricePogonage(name: "Притвор"))
+        case deleteFoamButton:
+            deletePogonage(name: "Пена", countLabel: countFoamLabel, priceLabel: priceFoamLabel, price: 320)
         default:
             break
         }

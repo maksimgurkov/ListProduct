@@ -138,6 +138,13 @@ class DataManagerPogonage {
                  specifications: "",
                  price: 800,
                  flag: false),
+        Pogonage(factory: .tehno,
+                 material: .foam,
+                 nameDoor: "Пена",
+                 dimansion: "",
+                 specifications: "",
+                 price: 320,
+                 flag: false),
         
     ]
     

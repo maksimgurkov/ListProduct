@@ -22,6 +22,7 @@ class ProductPersonTableViewController: UIViewController {
         
     override func viewDidLoad() {
         super.viewDidLoad()
+        title = "ООО Абада Груп"
         fulNamePersonLabel.text = "\(person.surName) \(person.name) \(person.patronymic)"
         fulAdresPersonLabel.text = "г. \(person.town) ул. \(person.strit) \(person.numberHouse)-\(person.body)-\(person.numberFlat)"
         sumPersonLabel.text = "\(sumPerson() - forResultSelse())"
