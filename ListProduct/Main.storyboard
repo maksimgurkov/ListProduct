@@ -2760,17 +2760,62 @@
                                     <segue destination="hPL-9x-1bu" kind="showDetail" id="hIq-gp-7bF"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="S4I-aA-Bm1">
+                                <rect key="frame" x="316" y="561" width="133" height="38"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Статистика">
+                                    <fontDescription key="titleFontDescription" type="system" pointSize="20"/>
+                                </buttonConfiguration>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="53L-oe-AAC">
+                                <rect key="frame" x="248.5" y="624" width="266.5" height="38"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Расчет заработной платы">
+                                    <fontDescription key="titleFontDescription" type="system" pointSize="20"/>
+                                </buttonConfiguration>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="chart.xyaxis.line" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="WTI-Gm-Iz6">
+                                <rect key="frame" x="212" y="562.5" width="22" height="17.5"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="slider.vertical.3" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="gHq-V0-mVG">
+                                <rect key="frame" x="212" y="634" width="19.5" height="17"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IIy-Qc-81a">
+                                <rect key="frame" x="319" y="687" width="128" height="38"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Настройки">
+                                    <fontDescription key="titleFontDescription" type="system" pointSize="20"/>
+                                </buttonConfiguration>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="gear" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="TV3-Kr-JC9">
+                                <rect key="frame" x="212" y="694" width="22" height="20.5"/>
+                            </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="1HS-Ts-w8I"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="1HS-Ts-w8I" firstAttribute="trailing" secondItem="rQF-Ay-MQt" secondAttribute="trailing" constant="20" id="1QN-Nq-TNQ"/>
+                            <constraint firstItem="WTI-Gm-Iz6" firstAttribute="top" secondItem="rQF-Ay-MQt" secondAttribute="bottom" constant="45" id="FVs-Q3-GTy"/>
+                            <constraint firstItem="53L-oe-AAC" firstAttribute="leading" secondItem="gHq-V0-mVG" secondAttribute="trailing" constant="17" id="M0t-w5-Kee"/>
+                            <constraint firstItem="1HS-Ts-w8I" firstAttribute="trailing" secondItem="IIy-Qc-81a" secondAttribute="trailing" constant="321" id="N6h-Qb-P8x"/>
+                            <constraint firstItem="1HS-Ts-w8I" firstAttribute="trailing" secondItem="S4I-aA-Bm1" secondAttribute="trailing" constant="319" id="NI5-gC-fOq"/>
                             <constraint firstItem="mKH-rL-miW" firstAttribute="top" secondItem="1HS-Ts-w8I" secondAttribute="top" constant="50" id="ZYS-5v-Yv5"/>
+                            <constraint firstItem="IIy-Qc-81a" firstAttribute="leading" secondItem="TV3-Kr-JC9" secondAttribute="trailing" constant="85" id="aEA-zD-sbp"/>
+                            <constraint firstItem="gHq-V0-mVG" firstAttribute="leading" secondItem="1HS-Ts-w8I" secondAttribute="leading" constant="212" id="aPf-ce-dpo"/>
                             <constraint firstItem="1HS-Ts-w8I" firstAttribute="trailing" secondItem="vUU-Tb-Gsp" secondAttribute="trailing" constant="150" id="cWW-2t-ffn"/>
                             <constraint firstItem="rQF-Ay-MQt" firstAttribute="top" secondItem="mKH-rL-miW" secondAttribute="bottom" constant="20" id="e8U-yi-ivL"/>
+                            <constraint firstItem="IIy-Qc-81a" firstAttribute="top" secondItem="53L-oe-AAC" secondAttribute="bottom" constant="25" id="fh9-32-RMy"/>
+                            <constraint firstItem="TV3-Kr-JC9" firstAttribute="leading" secondItem="1HS-Ts-w8I" secondAttribute="leading" constant="212" id="gV0-b8-2Ps"/>
+                            <constraint firstItem="WTI-Gm-Iz6" firstAttribute="leading" secondItem="1HS-Ts-w8I" secondAttribute="leading" constant="212" id="hZS-Ak-5kH"/>
+                            <constraint firstItem="gHq-V0-mVG" firstAttribute="top" secondItem="WTI-Gm-Iz6" secondAttribute="bottom" constant="52" id="j9g-eM-v0i"/>
                             <constraint firstItem="vUU-Tb-Gsp" firstAttribute="leading" secondItem="1HS-Ts-w8I" secondAttribute="leading" constant="150" id="kz6-hB-qpA"/>
+                            <constraint firstItem="1HS-Ts-w8I" firstAttribute="trailing" secondItem="53L-oe-AAC" secondAttribute="trailing" constant="253" id="lgP-E7-gPD"/>
+                            <constraint firstItem="S4I-aA-Bm1" firstAttribute="leading" secondItem="WTI-Gm-Iz6" secondAttribute="trailing" constant="82" id="m8t-UE-IZn"/>
                             <constraint firstItem="rQF-Ay-MQt" firstAttribute="leading" secondItem="1HS-Ts-w8I" secondAttribute="leading" constant="20" id="pDW-4J-P81"/>
+                            <constraint firstItem="S4I-aA-Bm1" firstAttribute="top" secondItem="rQF-Ay-MQt" secondAttribute="bottom" constant="45" id="sBY-Ey-8ZT"/>
+                            <constraint firstItem="TV3-Kr-JC9" firstAttribute="top" secondItem="gHq-V0-mVG" secondAttribute="bottom" constant="41" id="sPm-bn-O3e"/>
                             <constraint firstItem="1HS-Ts-w8I" firstAttribute="bottom" secondItem="vUU-Tb-Gsp" secondAttribute="bottom" constant="100" id="sTL-1A-3Vb"/>
+                            <constraint firstItem="53L-oe-AAC" firstAttribute="top" secondItem="S4I-aA-Bm1" secondAttribute="bottom" constant="25" id="tOy-4X-UWd"/>
                             <constraint firstItem="mKH-rL-miW" firstAttribute="centerX" secondItem="QvV-D8-cyb" secondAttribute="centerX" id="v9J-kc-Pmo"/>
                         </constraints>
                     </view>
@@ -2783,7 +2828,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="AjU-0y-jfy" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="380" y="1310"/>
+            <point key="canvasLocation" x="379.6875" y="1309.5703125"/>
         </scene>
         <!--Specialisr Registration View Controller-->
         <scene sceneID="lFO-36-0Z2">
@@ -2971,10 +3016,13 @@
         </scene>
     </scenes>
     <resources>
+        <image name="chart.xyaxis.line" catalog="system" width="128" height="101"/>
+        <image name="gear" catalog="system" width="128" height="119"/>
         <image name="person" catalog="system" width="128" height="117"/>
         <image name="person.circle" catalog="system" width="128" height="121"/>
         <image name="rectangle.portrait" catalog="system" width="115" height="128"/>
         <image name="rectangle.portrait.center.inset.filled" catalog="system" width="115" height="128"/>
+        <image name="slider.vertical.3" catalog="system" width="128" height="111"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
