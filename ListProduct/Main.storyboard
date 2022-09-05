@@ -146,6 +146,9 @@
                                 <buttonConfiguration key="configuration" style="plain" title="Добавить Металлическая дверь">
                                     <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <action selector="actionPersonMetallDoorButton" destination="I1F-y2-Cx0" eventType="touchUpInside" id="lB2-ED-dJ9"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="Zs7-Z4-EsH"/>

@@ -24,8 +24,6 @@ class AppendInfoPersonViewController: UIViewController {
     @IBOutlet weak var savePersonButton: UIButton!
     @IBOutlet weak var savePersonMetallDoorButton: UIButton!
     
-    private var person: Results<Person>!
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         savePersonButton.layer.cornerRadius = 8
@@ -36,7 +34,6 @@ class AppendInfoPersonViewController: UIViewController {
         dismiss(animated: true)
     }
     
-
     @IBAction func savePersonButtonAction() {
         let person = Person()
         guard let name = nameTextField.text, !name.isEmpty else { return }
@@ -63,5 +60,32 @@ class AppendInfoPersonViewController: UIViewController {
         dismiss(animated: true)
         
     }
+    
+    @IBAction func actionPersonMetallDoorButton() {
+        let personMetall = PersonMetall()
+        guard let name = nameTextField.text, !name.isEmpty else { return }
+        guard let surName = surNameTextField.text, !surName.isEmpty else { return }
+        guard let patronymic = patronymicPersonTextField.text, !patronymic.isEmpty else {return}
+        guard let phone = phonePersonTextField.text, !phone.isEmpty else { return }
+        guard let town = townPersonTextField.text, !town.isEmpty else { return }
+        guard let strit = stritPersonTexttField.text, !strit.isEmpty else { return }
+        guard let numberHous = numberHousePersonTextField.text, !numberHous.isEmpty else { return }
+        guard let body = bodyPersonTextField.text, !body.isEmpty else { return }
+        guard let numberFlat = numberFlatPersonTextField.text, !numberFlat.isEmpty else { return }
+        guard let description = descriptionTextField.text, !description.isEmpty else { return }
+        personMetall.name = name
+        personMetall.surName = surName
+        personMetall.patronymic = patronymic
+        personMetall.phone = phone
+        personMetall.town = town
+        personMetall.strit = strit
+        personMetall.numberHouse = numberHous
+        personMetall.body = body
+        personMetall.numberFlat = numberFlat
+        personMetall.personDescription = description
+        StorageManager.shared.savePersonMetall(personMetall)
+        dismiss(animated: true)
+    }
+    
 
 }

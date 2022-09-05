@@ -22,6 +22,12 @@ class StorageManager {
         }
     }
     
+    func savePersonMetall(_ person: PersonMetall) {
+        write {
+            realm.add(person)
+        }
+    }
+    
     func specialistSave(_ specialist: Specialist) {
         write {
             realm.add(specialist)

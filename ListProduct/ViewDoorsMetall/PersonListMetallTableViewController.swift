@@ -10,11 +10,11 @@ import RealmSwift
 
 class PersonListMetallTableViewController: UITableViewController {
     
-    private var personMetall: Results<Person>!
+    private var personMetall: Results<PersonMetall>!
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        personMetall = StorageManager.shared.realm.objects(Person.self)
+        personMetall = StorageManager.shared.realm.objects(PersonMetall.self)
 
     }
     override func viewWillAppear(_ animated: Bool) {
@@ -22,7 +22,7 @@ class PersonListMetallTableViewController: UITableViewController {
         tableView.reloadData()
     }
     
-    private func personDateInfo(person: Person) -> String {
+    private func personDateInfo(person: PersonMetall) -> String {
         let dateFormatter = DateFormatter()
         dateFormatter.dateFormat = "dd.MM.yyyy"
         let day = dateFormatter.string(from: person.data)
