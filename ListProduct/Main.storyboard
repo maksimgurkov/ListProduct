@@ -32,7 +32,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <stackView opaque="NO" contentMode="scaleToFill" spacing="17" translatesAutoresizingMaskIntoConstraints="NO" id="Z2Q-62-dvG">
-                                <rect key="frame" x="408" y="237" width="260" height="34"/>
+                                <rect key="frame" x="418" y="237" width="280" height="34"/>
                                 <subviews>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Дом" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="Pbk-ly-FZM">
                                         <rect key="frame" x="0.0" y="0.0" width="57" height="34"/>
@@ -43,7 +43,7 @@
                                         <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
                                     </textField>
                                     <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="249" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Корпус" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="Wbk-a8-Ic7">
-                                        <rect key="frame" x="74" y="0.0" width="77" height="34"/>
+                                        <rect key="frame" x="74" y="0.0" width="97" height="34"/>
                                         <constraints>
                                             <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="77" id="72j-Ga-akZ"/>
                                         </constraints>
@@ -51,7 +51,7 @@
                                         <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
                                     </textField>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Квартира" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="Eci-py-7qh">
-                                        <rect key="frame" x="168" y="0.0" width="92" height="34"/>
+                                        <rect key="frame" x="188" y="0.0" width="92" height="34"/>
                                         <constraints>
                                             <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="92" id="qFs-xK-18m"/>
                                         </constraints>
@@ -60,89 +60,117 @@
                                     </textField>
                                 </subviews>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="260" id="dSe-rk-inc"/>
+                                    <constraint firstAttribute="width" constant="280" id="dSe-rk-inc"/>
                                 </constraints>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="EAK-SN-8mh">
-                                <rect key="frame" x="408" y="111" width="260" height="118"/>
+                                <rect key="frame" x="418" y="111" width="280" height="118"/>
                                 <subviews>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Телефон" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="Hoe-HG-A2p">
-                                        <rect key="frame" x="0.0" y="0.0" width="260" height="34"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="280" height="34"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
                                     </textField>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Город" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="18y-sC-KE2">
-                                        <rect key="frame" x="0.0" y="42" width="260" height="34"/>
+                                        <rect key="frame" x="0.0" y="42" width="280" height="34"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Улица" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="eSa-AN-7DR">
-                                        <rect key="frame" x="0.0" y="84" width="260" height="34"/>
+                                        <rect key="frame" x="0.0" y="84" width="280" height="34"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
                                 </subviews>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="260" id="nvW-Dk-SGT"/>
+                                    <constraint firstAttribute="width" constant="280" id="nvW-Dk-SGT"/>
                                 </constraints>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="Vq6-bL-Keg">
-                                <rect key="frame" x="100" y="111" width="260" height="160"/>
+                                <rect key="frame" x="70" y="111" width="280" height="160"/>
                                 <subviews>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Фамилия" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="rPD-ua-FV2">
-                                        <rect key="frame" x="0.0" y="0.0" width="260" height="34"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="280" height="34"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Имя" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="p6e-oD-xSh">
-                                        <rect key="frame" x="0.0" y="42" width="260" height="34"/>
+                                        <rect key="frame" x="0.0" y="42" width="280" height="34"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Отчество" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="JMI-QF-9Zh">
-                                        <rect key="frame" x="0.0" y="84" width="260" height="34"/>
+                                        <rect key="frame" x="0.0" y="84" width="280" height="34"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Инфо" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="jkX-BL-sG9">
-                                        <rect key="frame" x="0.0" y="126" width="260" height="34"/>
+                                        <rect key="frame" x="0.0" y="126" width="280" height="34"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
                                 </subviews>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="260" id="5J2-6x-405"/>
+                                    <constraint firstAttribute="width" constant="280" id="5J2-6x-405"/>
                                 </constraints>
                             </stackView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aJn-m8-uVw">
-                                <rect key="frame" x="100" y="301" width="568" height="31"/>
-                                <color key="backgroundColor" systemColor="systemOrangeColor"/>
+                            <button opaque="NO" alpha="0.69999999999999996" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aJn-m8-uVw">
+                                <rect key="frame" x="70" y="360" width="628" height="31"/>
+                                <color key="backgroundColor" systemColor="systemYellowColor"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="Добавить">
+                                <buttonConfiguration key="configuration" style="plain" title="Добавить Межкомнатные двери">
                                     <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </buttonConfiguration>
                                 <connections>
                                     <action selector="savePersonButtonAction" destination="I1F-y2-Cx0" eventType="touchUpInside" id="2IF-GH-RPg"/>
                                 </connections>
                             </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="0xB-7C-qMR">
+                                <rect key="frame" x="70" y="301" width="628" height="31"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Включить при оформлении межкомнатных и металлических дверей" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ipz-aU-Oqn">
+                                        <rect key="frame" x="0.0" y="0.0" width="571" height="31"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="00y-Uw-TQP">
+                                        <rect key="frame" x="579" y="0.0" width="51" height="31"/>
+                                    </switch>
+                                </subviews>
+                            </stackView>
+                            <button opaque="NO" alpha="0.90000000000000002" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Lh2-mW-wn3">
+                                <rect key="frame" x="70" y="421" width="628" height="31"/>
+                                <color key="backgroundColor" systemColor="systemRedColor"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Добавить Металлическая дверь">
+                                    <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </buttonConfiguration>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="Zs7-Z4-EsH"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="GOY-rv-wwW" firstAttribute="leading" secondItem="Zs7-Z4-EsH" secondAttribute="leading" constant="20" id="2Lv-36-Bhc"/>
+                            <constraint firstItem="Zs7-Z4-EsH" firstAttribute="trailing" secondItem="Lh2-mW-wn3" secondAttribute="trailing" constant="70" id="31a-6E-KSu"/>
+                            <constraint firstItem="0xB-7C-qMR" firstAttribute="leading" secondItem="Zs7-Z4-EsH" secondAttribute="leading" constant="70" id="6je-wv-qOM"/>
                             <constraint firstItem="GOY-rv-wwW" firstAttribute="top" secondItem="8XC-lz-6zn" secondAttribute="bottom" constant="10" id="DU5-Yu-yh9"/>
-                            <constraint firstItem="aJn-m8-uVw" firstAttribute="top" secondItem="GOY-rv-wwW" secondAttribute="bottom" constant="210" id="Hyq-oe-E5e"/>
+                            <constraint firstItem="Zs7-Z4-EsH" firstAttribute="trailing" secondItem="0xB-7C-qMR" secondAttribute="trailing" constant="70" id="LOl-HA-Sv4"/>
+                            <constraint firstItem="Lh2-mW-wn3" firstAttribute="top" secondItem="aJn-m8-uVw" secondAttribute="bottom" constant="30" id="SJi-Nb-DKk"/>
                             <constraint firstItem="Vq6-bL-Keg" firstAttribute="top" secondItem="GOY-rv-wwW" secondAttribute="bottom" constant="20" id="TX2-22-ipH"/>
                             <constraint firstItem="Zs7-Z4-EsH" firstAttribute="trailing" secondItem="GOY-rv-wwW" secondAttribute="trailing" constant="20" id="U8W-FU-vAt"/>
-                            <constraint firstItem="Zs7-Z4-EsH" firstAttribute="trailing" secondItem="EAK-SN-8mh" secondAttribute="trailing" constant="100" id="Y2l-es-wWz"/>
+                            <constraint firstItem="Zs7-Z4-EsH" firstAttribute="trailing" secondItem="EAK-SN-8mh" secondAttribute="trailing" constant="70" id="Y2l-es-wWz"/>
                             <constraint firstItem="EAK-SN-8mh" firstAttribute="top" secondItem="GOY-rv-wwW" secondAttribute="bottom" constant="20" id="aDn-1E-8bf"/>
-                            <constraint firstItem="aJn-m8-uVw" firstAttribute="leading" secondItem="Zs7-Z4-EsH" secondAttribute="leading" constant="100" id="bOD-Tt-UUk"/>
+                            <constraint firstItem="aJn-m8-uVw" firstAttribute="leading" secondItem="Zs7-Z4-EsH" secondAttribute="leading" constant="70" id="bOD-Tt-UUk"/>
                             <constraint firstItem="Z2Q-62-dvG" firstAttribute="top" secondItem="EAK-SN-8mh" secondAttribute="bottom" constant="8" id="caL-xO-SSz"/>
-                            <constraint firstItem="Zs7-Z4-EsH" firstAttribute="trailing" secondItem="aJn-m8-uVw" secondAttribute="trailing" constant="100" id="jZ9-hj-Fag"/>
-                            <constraint firstItem="Vq6-bL-Keg" firstAttribute="leading" secondItem="Zs7-Z4-EsH" secondAttribute="leading" constant="100" id="jss-Wi-EIz"/>
+                            <constraint firstItem="aJn-m8-uVw" firstAttribute="top" secondItem="Ipz-aU-Oqn" secondAttribute="bottom" constant="28" id="csa-PZ-Leb"/>
+                            <constraint firstItem="Zs7-Z4-EsH" firstAttribute="trailing" secondItem="aJn-m8-uVw" secondAttribute="trailing" constant="70" id="jZ9-hj-Fag"/>
+                            <constraint firstItem="Vq6-bL-Keg" firstAttribute="leading" secondItem="Zs7-Z4-EsH" secondAttribute="leading" constant="70" id="jss-Wi-EIz"/>
+                            <constraint firstItem="Lh2-mW-wn3" firstAttribute="leading" secondItem="Zs7-Z4-EsH" secondAttribute="leading" constant="70" id="rwO-wd-aTm"/>
                             <constraint firstItem="Zs7-Z4-EsH" firstAttribute="trailing" secondItem="8XC-lz-6zn" secondAttribute="trailing" constant="20" id="suD-T0-uFY"/>
-                            <constraint firstItem="Zs7-Z4-EsH" firstAttribute="trailing" secondItem="Z2Q-62-dvG" secondAttribute="trailing" constant="100" id="vXU-Vz-Did"/>
+                            <constraint firstItem="Zs7-Z4-EsH" firstAttribute="trailing" secondItem="Z2Q-62-dvG" secondAttribute="trailing" constant="70" id="vXU-Vz-Did"/>
                             <constraint firstItem="8XC-lz-6zn" firstAttribute="top" secondItem="Zs7-Z4-EsH" secondAttribute="top" constant="20" id="xk0-My-7Vv"/>
+                            <constraint firstItem="0xB-7C-qMR" firstAttribute="top" secondItem="Z2Q-62-dvG" secondAttribute="bottom" constant="30" id="yEy-nJ-iJg"/>
                             <constraint firstItem="8XC-lz-6zn" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="Zs7-Z4-EsH" secondAttribute="leading" symbolic="YES" id="zcg-lu-rdJ"/>
                         </constraints>
                     </view>
@@ -156,6 +184,7 @@
                         <outlet property="patronymicPersonTextField" destination="JMI-QF-9Zh" id="3sq-Jj-BiE"/>
                         <outlet property="phonePersonTextField" destination="Hoe-HG-A2p" id="njA-SB-MrY"/>
                         <outlet property="savePersonButton" destination="aJn-m8-uVw" id="Ms3-m5-jgB"/>
+                        <outlet property="savePersonMetallDoorButton" destination="Lh2-mW-wn3" id="arv-VI-MFc"/>
                         <outlet property="stritPersonTexttField" destination="eSa-AN-7DR" id="GYz-ST-lXN"/>
                         <outlet property="surNameTextField" destination="rPD-ua-FV2" id="lEo-dY-BqR"/>
                         <outlet property="townPersonTextField" destination="18y-sC-KE2" id="3WG-bj-Rnz"/>
@@ -163,7 +192,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="NFf-BV-8OF" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="380" y="-678"/>
+            <point key="canvasLocation" x="379.6875" y="-678.515625"/>
         </scene>
         <!--Межкомнатные двери-->
         <scene sceneID="3GU-SF-cPJ">
@@ -1091,7 +1120,6 @@
                     </view>
                     <navigationItem key="navigationItem" id="8WX-Hi-nxe">
                         <rightBarButtonItems>
-                            <barButtonItem title="Составить заказ" id="OER-b8-nxg"/>
                             <barButtonItem title="Услуги" id="4yw-1x-fUD">
                                 <connections>
                                     <segue destination="k77-7k-Kkc" kind="show" id="WWo-EV-xHX"/>

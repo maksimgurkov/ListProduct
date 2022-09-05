@@ -22,12 +22,14 @@ class AppendInfoPersonViewController: UIViewController {
     @IBOutlet weak var descriptionTextField: UITextField!
     
     @IBOutlet weak var savePersonButton: UIButton!
+    @IBOutlet weak var savePersonMetallDoorButton: UIButton!
     
     private var person: Results<Person>!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         savePersonButton.layer.cornerRadius = 8
+        savePersonMetallDoorButton.layer.cornerRadius = 8
     }
     
     @IBAction func closeViewButton(_ sender: Any) {
