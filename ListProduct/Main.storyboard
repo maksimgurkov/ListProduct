@@ -146,6 +146,7 @@
                             <constraint firstItem="8XC-lz-6zn" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="Zs7-Z4-EsH" secondAttribute="leading" symbolic="YES" id="zcg-lu-rdJ"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="J1B-CE-a1C"/>
                     <connections>
                         <outlet property="bodyPersonTextField" destination="Wbk-a8-Ic7" id="3j9-XR-sgM"/>
                         <outlet property="descriptionTextField" destination="jkX-BL-sG9" id="fDu-eL-VJ7"/>
@@ -164,7 +165,7 @@
             </objects>
             <point key="canvasLocation" x="380" y="-678"/>
         </scene>
-        <!--Клиенты-->
+        <!--Межкомнатные двери-->
         <scene sceneID="3GU-SF-cPJ">
             <objects>
                 <tableViewController id="xPy-g2-kJ9" customClass="PersonsTableViewController" customModule="ListProduct" customModuleProvider="target" sceneMemberID="viewController">
@@ -243,13 +244,7 @@
                             <outlet property="delegate" destination="xPy-g2-kJ9" id="x2H-er-6RD"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Клиенты" id="bWE-yd-IJ5">
-                        <barButtonItem key="rightBarButtonItem" title="Добавить" id="gAW-jW-AGm">
-                            <connections>
-                                <segue destination="I1F-y2-Cx0" kind="presentation" id="lqj-0Z-gQD"/>
-                            </connections>
-                        </barButtonItem>
-                    </navigationItem>
+                    <navigationItem key="navigationItem" title="Межкомнатные двери" id="bWE-yd-IJ5"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="buX-cs-FB3" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -320,7 +315,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9dg-Ii-X5I" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1029" y="-1984"/>
+            <point key="canvasLocation" x="2320" y="-679"/>
         </scene>
         <!--Document Services Person View Controller-->
         <scene sceneID="feR-XE-kRc">
@@ -482,7 +477,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lF3-6M-KGl" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1028.90625" y="-1335.3515625"/>
+            <point key="canvasLocation" x="1679" y="-679"/>
         </scene>
         <!--Product Person Table View Controller-->
         <scene sceneID="dU9-Wu-0uf">
@@ -960,7 +955,7 @@
                                     <segue destination="k77-7k-Kkc" kind="show" id="WWo-EV-xHX"/>
                                 </connections>
                             </barButtonItem>
-                            <barButtonItem title="Маиериал" id="a8A-ob-uTZ">
+                            <barButtonItem title="Материал" id="a8A-ob-uTZ">
                                 <connections>
                                     <segue destination="uMB-Xg-Wcr" kind="show" id="HZU-pG-bnS"/>
                                 </connections>
@@ -2906,7 +2901,13 @@
                             <constraint firstItem="mKH-rL-miW" firstAttribute="centerX" secondItem="QvV-D8-cyb" secondAttribute="centerX" id="v9J-kc-Pmo"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="xBh-KT-EyW"/>
+                    <navigationItem key="navigationItem" id="xBh-KT-EyW">
+                        <barButtonItem key="rightBarButtonItem" title="Добавить Клиента" id="bKZ-Ws-Vy8">
+                            <connections>
+                                <segue destination="I1F-y2-Cx0" kind="presentation" id="idj-qx-M5W"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="fulNameSpecialistLabel" destination="rQF-Ay-MQt" id="u4w-cF-fjM"/>
                         <outlet property="photoSpecialistImageView" destination="mKH-rL-miW" id="tpj-5M-gMH"/>
@@ -2915,7 +2916,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="AjU-0y-jfy" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="379.6875" y="1309.5703125"/>
+            <point key="canvasLocation" x="380" y="-1349"/>
         </scene>
         <!--Specialisr Registration View Controller-->
         <scene sceneID="lFO-36-0Z2">
@@ -3009,23 +3010,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8q4-Bz-7lh" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1052.34375" y="1309.5703125"/>
-        </scene>
-        <!--View Controller-->
-        <scene sceneID="gP2-lJ-Pgs">
-            <objects>
-                <viewController id="bpr-6i-cCO" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="Ln4-mJ-TNI">
-                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <viewLayoutGuide key="safeArea" id="W2z-Q8-lqM"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                    </view>
-                    <navigationItem key="navigationItem" id="c5b-Ll-jOF"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="tEg-j9-dfe" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="380" y="654"/>
+            <point key="canvasLocation" x="1029" y="-1349"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="n6i-2h-IxC">
@@ -3037,9 +3022,9 @@
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>
                     <connections>
+                        <segue destination="UFO-tF-a9S" kind="relationship" relationship="viewControllers" id="QV0-NM-cjf"/>
                         <segue destination="mbv-Y4-irv" kind="relationship" relationship="viewControllers" id="83u-dt-jvS"/>
                         <segue destination="h5A-is-fWT" kind="relationship" relationship="viewControllers" id="bEQ-Zd-tVo"/>
-                        <segue destination="UFO-tF-a9S" kind="relationship" relationship="viewControllers" id="QV0-NM-cjf"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rOs-4N-wfU" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -3080,7 +3065,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pE5-ec-34j" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-291.40625" y="1309.5703125"/>
+            <point key="canvasLocation" x="-291" y="-1349"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="9nu-MU-rZP">
@@ -3096,7 +3081,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4FI-5A-ShM" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-291" y="2023"/>
+            <point key="canvasLocation" x="1679" y="-1349"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="X1R-yL-gr6">
@@ -3164,7 +3149,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nhj-Sb-2A4" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="379.6875" y="2022.6562499999998"/>
+            <point key="canvasLocation" x="2320" y="-1349"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="O3H-S3-5X7">
@@ -3180,7 +3165,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="K9B-jY-D39" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1052" y="2023"/>
+            <point key="canvasLocation" x="1679" y="-2004"/>
         </scene>
         <!--Металлические двери-->
         <scene sceneID="VWu-w9-XGX">
@@ -3188,18 +3173,77 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="h5A-is-fWT" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Металлические двери" image="rectangle.portrait.center.inset.filled" catalog="system" id="tLI-I5-bIU"/>
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="2BA-th-Ujc">
-                        <rect key="frame" x="0.0" y="20" width="768" height="50"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" largeTitles="YES" id="2BA-th-Ujc">
+                        <rect key="frame" x="0.0" y="20" width="768" height="102"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
-                        <segue destination="bpr-6i-cCO" kind="relationship" relationship="rootViewController" id="1ob-gA-VEn"/>
+                        <segue destination="HbD-hL-tfB" kind="relationship" relationship="rootViewController" id="gZq-QY-7dE"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="LmT-dI-tPO" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-291.40625" y="653.90625"/>
+        </scene>
+        <!--Металлические двери-->
+        <scene sceneID="i2i-EW-vmA">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="QIe-Is-549" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <tableViewController id="HbD-hL-tfB" customClass="PersonListMetallTableViewController" customModule="ListProduct" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="00j-v8-S08">
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="metallCell" rowHeight="142" id="h6Z-82-4ao" customClass="MetallDoorTableViewCell" customModule="ListProduct" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="44.5" width="768" height="142"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="h6Z-82-4ao" id="CGd-Hu-dE6">
+                                    <rect key="frame" x="0.0" y="0.0" width="768" height="142"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vFA-aC-E1a">
+                                            <rect key="frame" x="20" y="7" width="728" height="128"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Фамилия Имя" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2kc-7W-8vM">
+                                                    <rect key="frame" x="10" y="7" width="713" height="36"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <color key="backgroundColor" systemColor="systemOrangeColor"/>
+                                            <constraints>
+                                                <constraint firstAttribute="trailing" secondItem="2kc-7W-8vM" secondAttribute="trailing" constant="5" id="EHb-fG-S9l"/>
+                                                <constraint firstAttribute="height" constant="128" id="bU1-sB-YlR"/>
+                                                <constraint firstItem="2kc-7W-8vM" firstAttribute="leading" secondItem="vFA-aC-E1a" secondAttribute="leading" constant="10" id="y9Z-Ei-wnb"/>
+                                                <constraint firstItem="2kc-7W-8vM" firstAttribute="top" secondItem="vFA-aC-E1a" secondAttribute="top" constant="7" id="yVD-ck-mxI"/>
+                                            </constraints>
+                                        </view>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="vFA-aC-E1a" firstAttribute="top" secondItem="CGd-Hu-dE6" secondAttribute="top" constant="7" id="BMU-1P-ogZ"/>
+                                        <constraint firstItem="vFA-aC-E1a" firstAttribute="leading" secondItem="CGd-Hu-dE6" secondAttribute="leading" constant="20" id="GYL-Ub-lAD"/>
+                                        <constraint firstAttribute="bottom" secondItem="vFA-aC-E1a" secondAttribute="bottom" constant="7" id="PUz-Bf-Ocy"/>
+                                        <constraint firstAttribute="trailing" secondItem="vFA-aC-E1a" secondAttribute="trailing" constant="20" id="mxt-f0-xv4"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="fulNamePersonMetallLabel" destination="2kc-7W-8vM" id="Pvu-aw-4zg"/>
+                                    <outlet property="viewColorPersonMetall" destination="vFA-aC-E1a" id="ByR-VJ-TED"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="HbD-hL-tfB" id="ctY-x3-lA9"/>
+                            <outlet property="delegate" destination="HbD-hL-tfB" id="Ajj-3J-g21"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Металлические двери" id="Ucu-kv-Fnn"/>
+                </tableViewController>
+            </objects>
+            <point key="canvasLocation" x="379.6875" y="653.90625"/>
         </scene>
     </scenes>
     <resources>
