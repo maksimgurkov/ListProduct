@@ -116,9 +116,9 @@
                             </stackView>
                             <button opaque="NO" alpha="0.69999999999999996" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aJn-m8-uVw">
                                 <rect key="frame" x="70" y="360" width="628" height="31"/>
-                                <color key="backgroundColor" systemColor="systemYellowColor"/>
+                                <color key="backgroundColor" systemColor="systemOrangeColor"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="Добавить Межкомнатные двери">
+                                <buttonConfiguration key="configuration" style="plain" title="Добавить клиента Межкомнатные двери">
                                     <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </buttonConfiguration>
                                 <connections>
@@ -134,8 +134,11 @@
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="00y-Uw-TQP">
+                                    <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="00y-Uw-TQP">
                                         <rect key="frame" x="579" y="0.0" width="51" height="31"/>
+                                        <connections>
+                                            <action selector="actionSwitch:" destination="I1F-y2-Cx0" eventType="valueChanged" id="Izs-ay-R9B"/>
+                                        </connections>
                                     </switch>
                                 </subviews>
                             </stackView>
@@ -143,7 +146,7 @@
                                 <rect key="frame" x="70" y="421" width="628" height="31"/>
                                 <color key="backgroundColor" systemColor="systemRedColor"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="Добавить Металлическая дверь">
+                                <buttonConfiguration key="configuration" style="plain" title="Добавить клиента Металлическая дверь">
                                     <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </buttonConfiguration>
                                 <connections>
@@ -190,6 +193,7 @@
                         <outlet property="savePersonMetallDoorButton" destination="Lh2-mW-wn3" id="arv-VI-MFc"/>
                         <outlet property="stritPersonTexttField" destination="eSa-AN-7DR" id="GYz-ST-lXN"/>
                         <outlet property="surNameTextField" destination="rPD-ua-FV2" id="lEo-dY-BqR"/>
+                        <outlet property="switchPerson" destination="00y-Uw-TQP" id="Jdf-mP-xdi"/>
                         <outlet property="townPersonTextField" destination="18y-sC-KE2" id="3WG-bj-Rnz"/>
                     </connections>
                 </viewController>

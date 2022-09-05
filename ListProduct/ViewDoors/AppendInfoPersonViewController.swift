@@ -23,6 +23,7 @@ class AppendInfoPersonViewController: UIViewController {
     
     @IBOutlet weak var savePersonButton: UIButton!
     @IBOutlet weak var savePersonMetallDoorButton: UIButton!
+    @IBOutlet weak var switchPerson: UISwitch!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -36,28 +37,66 @@ class AppendInfoPersonViewController: UIViewController {
     
     @IBAction func savePersonButtonAction() {
         let person = Person()
-        guard let name = nameTextField.text, !name.isEmpty else { return }
-        guard let surName = surNameTextField.text, !surName.isEmpty else { return }
-        guard let patronymic = patronymicPersonTextField.text, !patronymic.isEmpty else {return}
-        guard let phone = phonePersonTextField.text, !phone.isEmpty else { return }
-        guard let town = townPersonTextField.text, !town.isEmpty else { return }
-        guard let strit = stritPersonTexttField.text, !strit.isEmpty else { return }
-        guard let numberHous = numberHousePersonTextField.text, !numberHous.isEmpty else { return }
-        guard let body = bodyPersonTextField.text, !body.isEmpty else { return }
-        guard let numberFlat = numberFlatPersonTextField.text, !numberFlat.isEmpty else { return }
-        guard let description = descriptionTextField.text, !description.isEmpty else { return }
-        person.name = name
-        person.surName = surName
-        person.patronymic = patronymic
-        person.phone = phone
-        person.town = town
-        person.strit = strit
-        person.numberHouse = numberHous
-        person.body = body
-        person.numberFlat = numberFlat
-        person.personDescription = description
-        StorageManager.shared.save(person)
-        dismiss(animated: true)
+        let personMetall = PersonMetall()
+        if switchPerson.isOn == false {
+            guard let name = nameTextField.text, !name.isEmpty else { return }
+            guard let surName = surNameTextField.text, !surName.isEmpty else { return }
+            guard let patronymic = patronymicPersonTextField.text, !patronymic.isEmpty else {return}
+            guard let phone = phonePersonTextField.text, !phone.isEmpty else { return }
+            guard let town = townPersonTextField.text, !town.isEmpty else { return }
+            guard let strit = stritPersonTexttField.text, !strit.isEmpty else { return }
+            guard let numberHous = numberHousePersonTextField.text, !numberHous.isEmpty else { return }
+            guard let body = bodyPersonTextField.text, !body.isEmpty else { return }
+            guard let numberFlat = numberFlatPersonTextField.text, !numberFlat.isEmpty else { return }
+            guard let description = descriptionTextField.text, !description.isEmpty else { return }
+            person.name = name
+            person.surName = surName
+            person.patronymic = patronymic
+            person.phone = phone
+            person.town = town
+            person.strit = strit
+            person.numberHouse = numberHous
+            person.body = body
+            person.numberFlat = numberFlat
+            person.personDescription = description
+            StorageManager.shared.save(person)
+            dismiss(animated: true)
+        } else {
+            guard let name = nameTextField.text, !name.isEmpty else { return }
+            guard let surName = surNameTextField.text, !surName.isEmpty else { return }
+            guard let patronymic = patronymicPersonTextField.text, !patronymic.isEmpty else {return}
+            guard let phone = phonePersonTextField.text, !phone.isEmpty else { return }
+            guard let town = townPersonTextField.text, !town.isEmpty else { return }
+            guard let strit = stritPersonTexttField.text, !strit.isEmpty else { return }
+            guard let numberHous = numberHousePersonTextField.text, !numberHous.isEmpty else { return }
+            guard let body = bodyPersonTextField.text, !body.isEmpty else { return }
+            guard let numberFlat = numberFlatPersonTextField.text, !numberFlat.isEmpty else { return }
+            guard let description = descriptionTextField.text, !description.isEmpty else { return }
+            person.name = name
+            person.surName = surName
+            person.patronymic = patronymic
+            person.phone = phone
+            person.town = town
+            person.strit = strit
+            person.numberHouse = numberHous
+            person.body = body
+            person.numberFlat = numberFlat
+            person.personDescription = description
+            personMetall.name = name
+            personMetall.surName = surName
+            personMetall.patronymic = patronymic
+            personMetall.phone = phone
+            personMetall.town = town
+            personMetall.strit = strit
+            personMetall.numberHouse = numberHous
+            personMetall.body = body
+            personMetall.numberFlat = numberFlat
+            personMetall.personDescription = description
+            StorageManager.shared.save(person)
+            StorageManager.shared.savePersonMetall(personMetall)
+            dismiss(animated: true)
+        }
+        
         
     }
     
@@ -85,6 +124,17 @@ class AppendInfoPersonViewController: UIViewController {
         personMetall.personDescription = description
         StorageManager.shared.savePersonMetall(personMetall)
         dismiss(animated: true)
+    }
+    @IBAction func actionSwitch(_ sender: UISwitch) {
+        if sender.isOn {
+            savePersonMetallDoorButton.isHidden = true
+            savePersonButton.titleLabel?.text = "Добавить клиента межкомнатные и Ж/Д"
+            savePersonButton.backgroundColor = .blue
+        } else {
+            savePersonMetallDoorButton.isHidden = false
+            savePersonButton.titleLabel?.text = "Добавить клиента Межкомнатные двери"
+            savePersonButton.backgroundColor = .orange
+        }
     }
     
 
