@@ -19,13 +19,14 @@ class HomeSpecialistViewController: UIViewController {
     }
     @IBOutlet weak var fulNameSpecialistLabel: UILabel!
     @IBOutlet weak var registredPersonButton: UIButton!
+    @IBOutlet weak var extSpecialistButton: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         specialists = StorageManager.shared.realm.objects(Specialist.self)
-        title = "Специалист"
         registredPersonButton.layer.cornerRadius = 8
         countSpecialistClouced()
+        
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -50,12 +51,15 @@ class HomeSpecialistViewController: UIViewController {
     }
     
     private func countSpecialistClouced() {
-        if specialists.count > 0 {
-            registredPersonButton.titleLabel?.text = "Выйти"
+        if !specialists.isEmpty {
             fulNameSpecialistLabel.text = specialistData()
             photoSpecialistImageView.image = UIImage(named: "\(forSpecialistImage())")
+            registredPersonButton.backgroundColor = .blue
+            registredPersonButton.isHidden = true
+            extSpecialistButton.isHidden = false
         } else {
             fulNameSpecialistLabel.text = "Специалист Ф.И"
+            extSpecialistButton.isHidden = true
         }
     }
     
