@@ -3453,6 +3453,7 @@
                                     <outlet property="fulNamePersonMetallLabel" destination="2kc-7W-8vM" id="D40-Bd-oEt"/>
                                     <outlet property="surNamePersonMetall" destination="bBg-y2-5uB" id="U2w-2j-Bgk"/>
                                     <outlet property="viewColorPersonMetall" destination="pCo-P8-Nea" id="LkF-RE-j5b"/>
+                                    <segue destination="Vx9-0v-vS1" kind="show" id="JQc-Wj-pQr"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -3466,6 +3467,67 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="QIe-Is-549" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="379.6875" y="653.90625"/>
+        </scene>
+        <!--List Metall Components Table View Controller-->
+        <scene sceneID="844-tS-txr">
+            <objects>
+                <tableViewController id="Vx9-0v-vS1" customClass="ListMetallComponentsTableViewController" customModule="ListProduct" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="IzZ-ok-gSq">
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="metallDoor" id="nup-2F-uxL">
+                                <rect key="frame" x="0.0" y="44.5" width="768" height="43.5"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="nup-2F-uxL" id="7MO-Cx-Xl0">
+                                    <rect key="frame" x="0.0" y="0.0" width="768" height="43.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <segue destination="Qii-Hg-Mjy" kind="show" id="qxl-iq-Os1"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="Vx9-0v-vS1" id="alC-4p-Vk2"/>
+                            <outlet property="delegate" destination="Vx9-0v-vS1" id="JdN-Ze-pTV"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" id="U0s-iF-29A"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="pUe-ul-YLG" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1029" y="654"/>
+        </scene>
+        <!--Component Table View Controller-->
+        <scene sceneID="rio-gf-MIm">
+            <objects>
+                <tableViewController id="Qii-Hg-Mjy" customClass="ComponentTableViewController" customModule="ListProduct" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="DJy-Z7-qwM">
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="component" id="BA1-Nv-NcB">
+                                <rect key="frame" x="0.0" y="44.5" width="768" height="43.5"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="BA1-Nv-NcB" id="Ihg-Ve-lel">
+                                    <rect key="frame" x="0.0" y="0.0" width="768" height="43.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="Qii-Hg-Mjy" id="g6p-7b-pAV"/>
+                            <outlet property="delegate" destination="Qii-Hg-Mjy" id="6yj-j0-05D"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" id="9y5-3v-SKQ"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cxG-Zr-buL" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1679" y="654"/>
         </scene>
     </scenes>
     <resources>
