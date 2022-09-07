@@ -976,6 +976,9 @@
                                                         <buttonConfiguration key="configuration" style="plain" title="Составить заказ">
                                                             <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         </buttonConfiguration>
+                                                        <connections>
+                                                            <segue destination="Vx9-0v-vS1" kind="show" id="fbn-Rn-31V"/>
+                                                        </connections>
                                                     </button>
                                                 </subviews>
                                             </stackView>
@@ -3453,7 +3456,7 @@
                                     <outlet property="fulNamePersonMetallLabel" destination="2kc-7W-8vM" id="D40-Bd-oEt"/>
                                     <outlet property="surNamePersonMetall" destination="bBg-y2-5uB" id="U2w-2j-Bgk"/>
                                     <outlet property="viewColorPersonMetall" destination="pCo-P8-Nea" id="LkF-RE-j5b"/>
-                                    <segue destination="Vx9-0v-vS1" kind="show" id="JQc-Wj-pQr"/>
+                                    <segue destination="xhw-pC-o1H" kind="show" id="sry-71-w7h"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -3530,6 +3533,9 @@
             <point key="canvasLocation" x="1679" y="654"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="sry-71-w7h"/>
+    </inferredMetricsTieBreakers>
     <resources>
         <image name="chart.xyaxis.line" catalog="system" width="128" height="101"/>
         <image name="gear" catalog="system" width="128" height="119"/>

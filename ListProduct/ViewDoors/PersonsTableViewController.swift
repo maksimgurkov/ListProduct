@@ -11,6 +11,8 @@ import RealmSwift
 class PersonsTableViewController: UITableViewController {
     
     private var persons: Results<Person>!
+    
+    private let flag = false
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -26,6 +28,7 @@ class PersonsTableViewController: UITableViewController {
         guard let index = tableView.indexPathForSelectedRow else { return }
         guard let InfoPersonVC = segue.destination as? InfoPersonViewController else { return }
         InfoPersonVC.person = persons[index.row]
+        InfoPersonVC.flag = flag
     }
     
     private func dateFormat(_ person: Person) -> String {

@@ -11,6 +11,8 @@ import RealmSwift
 class PersonListMetallTableViewController: UITableViewController {
     
     private var personMetall: Results<PersonMetall>!
+    
+    private let flag = true
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -86,14 +88,16 @@ class PersonListMetallTableViewController: UITableViewController {
     }
     */
 
-    /*
+    
     // MARK: - Navigation
 
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+        guard let index = tableView.indexPathForSelectedRow else { return }
+        guard let infoVC = segue.destination as? InfoPersonViewController else { return }
+        
+        infoVC.personMetall = personMetall[index.row]
+        infoVC.flag = flag
     }
-    */
+    
 
 }

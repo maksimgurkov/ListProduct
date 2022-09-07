@@ -10,6 +10,8 @@ import UIKit
 class InfoPersonViewController: UIViewController {
     
     var person: Person!
+    var personMetall: PersonMetall!
+    var flag: Bool!
     
     @IBOutlet weak var viewColorPerson: UIView!
     
@@ -34,19 +36,19 @@ class InfoPersonViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        title = "\(person.name) \(person.patronymic)"
+        title = flag ? "\(personMetall.name) \(personMetall.patronymic)" : "\(person.name) \(person.patronymic)"
         sumPoPersonButton.layer.cornerRadius = 8
         appendSelseButton.layer.cornerRadius = 8
-        surNamePersonLabel.text = person.surName
-        namePersonLabel.text = person.name
-        patronymicPersonLabel.text = person.patronymic
-        phonePersonLabel.text = person.phone
-        addressPersonLabel.text = "г. \(person.town) ул. \(person.strit) \(person.numberHouse)-\(person.body)-\(person.numberFlat)"
-        descriptionPersonLabel.text = person.personDescription
+        surNamePersonLabel.text = flag ? personMetall.surName : person.surName
+        namePersonLabel.text = flag ? personMetall.name : person.name
+        patronymicPersonLabel.text = flag ? personMetall.patronymic : person.patronymic
+        phonePersonLabel.text = flag ? personMetall.phone : person.phone
+        addressPersonLabel.text = flag ? "г. \(personMetall.town) ул. \(personMetall.strit) \(personMetall.numberHouse)-\(personMetall.body)-\(personMetall.numberFlat)" : "г. \(person.town) ул. \(person.strit) \(person.numberHouse)-\(person.body)-\(person.numberFlat)"
+        descriptionPersonLabel.text = flag ? personMetall.personDescription : person.personDescription
         viewColorPerson.layer.cornerRadius = 20
         setupLabel()
-        personSumTextField.placeholder = "\(person.sumPo)"
-        selsePersonTextField.placeholder = "\(person.salse)"
+        personSumTextField.placeholder = flag ? "\(personMetall.sumPo)" : "\(person.sumPo)"
+        selsePersonTextField.placeholder = flag ? "\(personMetall.salse)" : "\(person.salse)"
     }
     
     override func viewWillAppear(_ animated: Bool) {
