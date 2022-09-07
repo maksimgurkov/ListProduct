@@ -53,11 +53,11 @@ class InfoPersonViewController: UIViewController {
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        sumMaterialLabel.text = "Сумма за материал - \(sumPersonMaterial() - resultSumSelsePerson() - person.sumPo) р."
-        sumServicesLabel.text = "Сумма за услуги - \(sumPersonServices()) р."
-        sumLabel.text = "Общая сумма договора - \(sumPersonMaterial() - resultSumSelsePerson() + sumPersonServices()) р."
-        forRenameButtonAppendPo()
-        forRenameButtonAppendSelse()
+//        sumMaterialLabel.text = "Сумма за материал - \(sumPersonMaterial() - resultSumSelsePerson() - person.sumPo) р."
+//        sumServicesLabel.text = "Сумма за услуги - \(sumPersonServices()) р."
+//        sumLabel.text = "Общая сумма договора - \(sumPersonMaterial() - resultSumSelsePerson() + sumPersonServices()) р."
+//        forRenameButtonAppendPo()
+//        forRenameButtonAppendSelse()
     }
     
     @IBAction func actionPoPersonButton() {

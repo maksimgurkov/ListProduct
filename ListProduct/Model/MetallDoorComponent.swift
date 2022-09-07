@@ -9,12 +9,14 @@ import Foundation
 
 class MetallDoorComponent {
     
-    var nameComponent: String
+    var nameComponent: ComponentName
     var discriptionComponent: String
+    var infoComponent: String
     
-    init(nameComponent: String, discriptionComponent: String) {
+    init(nameComponent: ComponentName, discriptionComponent: String, infoComponent: String) {
         self.nameComponent = nameComponent
         self.discriptionComponent = discriptionComponent
+        self.infoComponent = infoComponent
     }
     
     static func components() -> [MetallDoorComponent] {
@@ -23,7 +25,8 @@ class MetallDoorComponent {
     
 }
 
-enum ComponentDescription: String {
-    case standartDescription = "Cтандартные размеры"
-    case nonStandartDescription = "Нестандартные размеры"
+enum ComponentName: String {
+    case dimension = "Размер"
+    case framuga = "Фрамуга"
+    case prifile = "Профиль"
 }

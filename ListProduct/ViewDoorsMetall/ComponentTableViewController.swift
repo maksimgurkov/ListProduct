@@ -8,24 +8,28 @@
 import UIKit
 
 class ComponentTableViewController: UITableViewController {
+    
+    var component: [MetallDoorComponent]!
 
     override func viewDidLoad() {
         super.viewDidLoad()
         title = "Выбор компонента"
+        print(component.count)
 
     }
 
     // MARK: - Table view data source
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 10
+        return component.count
     }
 
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "component", for: indexPath)
+        let compone = component[indexPath.row]
         var content = cell.defaultContentConfiguration()
-        content.text = "Component"
+        content.text = compone.discriptionComponent
         cell.contentConfiguration = content
         return cell
     }
