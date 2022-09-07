@@ -53,9 +53,9 @@ class InfoPersonViewController: UIViewController {
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-//        sumMaterialLabel.text = "Сумма за материал - \(sumPersonMaterial() - resultSumSelsePerson() - person.sumPo) р."
-//        sumServicesLabel.text = "Сумма за услуги - \(sumPersonServices()) р."
-//        sumLabel.text = "Общая сумма договора - \(sumPersonMaterial() - resultSumSelsePerson() + sumPersonServices()) р."
+        sumMaterialLabel.text = "Сумма за материал - \(sumPersonMaterial() - resultSumSelsePerson() - (flag ? personMetall.sumPo : person.sumPo)) р."
+        sumServicesLabel.text = "Сумма за услуги - \(sumPersonServices()) р."
+        sumLabel.text = "Общая сумма договора - \(sumPersonMaterial() - resultSumSelsePerson() + sumPersonServices()) р."
 //        forRenameButtonAppendPo()
 //        forRenameButtonAppendSelse()
     }
@@ -107,7 +107,7 @@ class InfoPersonViewController: UIViewController {
         
     private func sumPersonMaterial() -> Int {
         var sum = 0
-        for door in person.basket {
+        for door in flag ? personMetall.basket : person.basket {
             sum += door.price
         }
         return sum
@@ -115,7 +115,7 @@ class InfoPersonViewController: UIViewController {
     
     private func sumPersonServices() -> Int {
         var sum = 0
-        for services in person.basketService {
+        for services in flag ? personMetall.basketService : person.basketService {
             sum += services.price
         }
         return sum
@@ -140,25 +140,25 @@ class InfoPersonViewController: UIViewController {
     
     private func resultSumSelsePerson() -> Int {
         var result = 0
-        result = sumPersonMaterial() / 100 * person.salse
+        result = sumPersonMaterial() / 100 * (flag ? personMetall.salse : person.salse)
         return result
     }
     
-    private func forRenameButtonAppendSelse() {
-        if person.salse == 0 {
-            appendSelseButton.titleLabel?.text = "Внести"
-        } else {
-            appendSelseButton.titleLabel?.text = "Изменить"
-        }
-    }
+//    private func forRenameButtonAppendSelse() {
+//        if person.salse == 0 {
+//            appendSelseButton.titleLabel?.text = "Внести"
+//        } else {
+//            appendSelseButton.titleLabel?.text = "Изменить"
+//        }
+//    }
     
-    private func forRenameButtonAppendPo() {
-        if person.sumPo == 0 {
-            sumPoPersonButton.titleLabel?.text = "Внести"
-        } else {
-            sumPoPersonButton.titleLabel?.text = "Изменить"
-        }
-    }
+//    private func forRenameButtonAppendPo() {
+//        if person.sumPo == 0 {
+//            sumPoPersonButton.titleLabel?.text = "Внести"
+//        } else {
+//            sumPoPersonButton.titleLabel?.text = "Изменить"
+//        }
+//    }
 }
 
 
