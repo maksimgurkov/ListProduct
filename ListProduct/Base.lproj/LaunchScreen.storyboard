@@ -4,6 +4,7 @@
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -22,19 +23,40 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Компания" translatesAutoresizingMaskIntoConstraints="NO" id="i70-yY-G94">
-                                <rect key="frame" x="20" y="-317.5" width="374" height="1531"/>
+                                <rect key="frame" x="20" y="54" width="374" height="308"/>
                             </imageView>
+                            <view alpha="0.45000000000000001" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JLc-tJ-UOl">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Разработано для компании ООО &quot;Абада Груп&quot;" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aJV-8f-wo7">
+                                        <rect key="frame" x="20" y="775" width="374" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemYellowColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="aJV-8f-wo7" secondAttribute="bottom" constant="100" id="HkX-zq-cQk"/>
+                                    <constraint firstItem="aJV-8f-wo7" firstAttribute="leading" secondItem="JLc-tJ-UOl" secondAttribute="leading" constant="20" id="Xh1-pN-gxn"/>
+                                    <constraint firstAttribute="trailing" secondItem="aJV-8f-wo7" secondAttribute="trailing" constant="20" id="jh5-mP-dno"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="i70-yY-G94" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="3r7-97-UlI"/>
-                            <constraint firstItem="xqn-Lq-WQg" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="Ze5-6b-2t3" secondAttribute="leading" symbolic="YES" id="CKs-FY-UAi"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="i70-yY-G94" secondAttribute="trailing" constant="20" id="HeP-TX-hIR"/>
-                            <constraint firstItem="i70-yY-G94" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="M2y-Ms-eSJ"/>
-                            <constraint firstItem="i70-yY-G94" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="jU7-44-dOT"/>
-                            <constraint firstAttribute="bottomMargin" secondItem="xqn-Lq-WQg" secondAttribute="bottom" constant="57" id="m3R-IH-1Tp"/>
-                            <constraint firstAttribute="trailing" secondItem="xqn-Lq-WQg" secondAttribute="trailing" constant="228" id="rxb-iq-52m"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="xqn-Lq-WQg" secondAttribute="bottom" constant="57" id="9rE-9P-Z9c"/>
+                            <constraint firstItem="JLc-tJ-UOl" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="Fan-zl-FTc"/>
+                            <constraint firstItem="xqn-Lq-WQg" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="Ze5-6b-2t3" secondAttribute="leading" symbolic="YES" id="GYP-hG-o0B"/>
+                            <constraint firstItem="JLc-tJ-UOl" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="IYv-rq-FJ7"/>
+                            <constraint firstItem="JLc-tJ-UOl" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" id="LpQ-xU-3i1"/>
+                            <constraint firstAttribute="trailing" secondItem="xqn-Lq-WQg" secondAttribute="trailing" constant="228" id="PY6-Xp-lyJ"/>
+                            <constraint firstItem="i70-yY-G94" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="Sc6-Et-UgJ"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="i70-yY-G94" secondAttribute="trailing" constant="20" id="Yei-km-wca"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="i70-yY-G94" secondAttribute="bottom" constant="500" id="nI0-k2-9mC"/>
+                            <constraint firstItem="i70-yY-G94" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="10" id="rBH-U2-Q5g"/>
+                            <constraint firstAttribute="bottom" secondItem="JLc-tJ-UOl" secondAttribute="bottom" id="uwx-hP-z9B"/>
                         </constraints>
                     </view>
                 </viewController>
@@ -45,5 +67,8 @@
     </scenes>
     <resources>
         <image name="Компания" width="1531" height="1531"/>
+        <systemColor name="systemYellowColor">
+            <color red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
     </resources>
 </document>
