@@ -15,7 +15,7 @@ class Specialist: Object {
     @Persisted var patronymic = ""
     @Persisted var imageSpecialist = ""
     @Persisted var bazaDoor = List<Person>()
-    @Persisted var bazaMetall = List<PersonMetall>()
+//    @Persisted var bazaMetall = List<PersonMetall>()
 }
 
 class Person: Object {
@@ -32,27 +32,10 @@ class Person: Object {
     @Persisted var sumPo = 0
     @Persisted var salse = 0
     @Persisted var data = Date()
-    @Persisted var basket = List<Doors>()
-    @Persisted var basketService = List<Services>()
-    
-}
-
-class PersonMetall: Object {
-    @Persisted var name = ""
-    @Persisted var patronymic = ""
-    @Persisted var surName = ""
-    @Persisted var phone = ""
-    @Persisted var town = ""
-    @Persisted var strit = ""
-    @Persisted var numberHouse = ""
-    @Persisted var body = ""
-    @Persisted var numberFlat = ""
-    @Persisted var personDescription = ""
-    @Persisted var sumPo = 0
-    @Persisted var salse = 0
-    @Persisted var data = Date()
-    @Persisted var basket = List<Doors>()
-    @Persisted var basketService = List<Services>()
+    @Persisted var basketDoorTree = List<Doors>()
+    @Persisted var basketServiceTree = List<Services>()
+    @Persisted var bascetMetallDoor = List<MetallDoor>()
+    @Persisted var bascetMetallService = List<ServiceMetall>()
     
 }
 
@@ -74,4 +57,12 @@ class Services: Object {
     @Persisted var descriptionService = ""
     @Persisted var price = 0
     
+}
+
+class MetallDoor: Object {
+    @Persisted var nameDoor = ""
+}
+
+class ServiceMetall: Object {
+    @Persisted var nameServiceMetall = ""
 }

@@ -195,14 +195,14 @@ class InfoDoorViewController: UIViewController {
         newDoor.price = price * 3
         newDoor.dimensions = dimensions
         newDoor.countDoors = count
-        if persone.basket.isEmpty {
+        if persone.basketDoorTree.isEmpty {
             StorageManager.shared.saveProduct(persone, door: newDoor)
             countDoorInfo.text = "\(newDoor.countDoors)"
             priceInfo.text = "\(newDoor.price)"
             return
         }
-        if !persone.basket.isEmpty {
-            for door in persone.basket {
+        if !persone.basketDoorTree.isEmpty {
+            for door in persone.basketDoorTree {
                 if door.dimensions == newDoor.dimensions && door.factory == newDoor.factory && door.nameDoor == doorPerson.nameDoor {
                     StorageManager.shared.renameDoor(door, doors: doorPerson, newValue: 1)
                     countDoorInfo.text = "\(door.countDoors)"
@@ -210,8 +210,8 @@ class InfoDoorViewController: UIViewController {
                     return
                 }
             }
-            if !persone.basket.isEmpty {
-                for door in persone.basket {
+            if !persone.basketDoorTree.isEmpty {
+                for door in persone.basketDoorTree {
                     if door.factory == newDoor.factory && door.dimensions != newDoor.dimensions || door.factory != newDoor.factory {
                         StorageManager.shared.saveProduct(persone, door: newDoor)
                         countDoorInfo.text = "\(newDoor.countDoors)"
@@ -232,14 +232,14 @@ class InfoDoorViewController: UIViewController {
         pogonage.price = price * 3
         pogonage.dimensions = dimansion
         pogonage.countDoors = count
-        if persone.basket.isEmpty {
+        if persone.basketDoorTree.isEmpty {
             StorageManager.shared.saveProduct(persone, door: pogonage)
             countInfoPogonage.text = "\(pogonage.countDoors)"
             pricePogonage.text = "\(pogonage.price)"
             return
         }
-        if !persone.basket.isEmpty {
-            for pogonag in persone.basket {
+        if !persone.basketDoorTree.isEmpty {
+            for pogonag in persone.basketDoorTree {
                 if pogonag.namePogonage == pogonage.namePogonage && pogonag.factory == pogonage.factory && pogonag.nameDoor == pogonage.nameDoor && pogonag.dimensions == pogonage.dimensions {
                     StorageManager.shared.renamePogonage(pogonag, pogonages: price, newValue: 1)
                     countInfoPogonage.text = "\(pogonag.countDoors)"
@@ -247,8 +247,8 @@ class InfoDoorViewController: UIViewController {
                     return
                 }
             }
-            if !persone.basket.isEmpty {
-                for pogonag in persone.basket {
+            if !persone.basketDoorTree.isEmpty {
+                for pogonag in persone.basketDoorTree {
                     if pogonag.namePogonage != pogonage.namePogonage {
                         StorageManager.shared.saveProduct(persone, door: pogonage)
                         countInfoPogonage.text = "\(pogonage.countDoors)"
@@ -261,8 +261,8 @@ class InfoDoorViewController: UIViewController {
     }
     
     private func deleteDoor(dimention: String, countLabel: UILabel, priceLabel: UILabel) {
-        if !persone.basket.isEmpty {
-            for door in persone.basket {
+        if !persone.basketDoorTree.isEmpty {
+            for door in persone.basketDoorTree {
                 if door.nameDoor == doorPerson.nameDoor && door.dimensions == dimention {
                     if door.countDoors > 1 {
                         StorageManager.shared.renameDoorDelete(door, doors: doorPerson, newValue: 1)
@@ -279,8 +279,8 @@ class InfoDoorViewController: UIViewController {
     }
     
     private func deletePogonage(name: String, countLabel: UILabel, priceLabel: UILabel, price: Int) {
-        if !persone.basket.isEmpty {
-            for pogonage in persone.basket {
+        if !persone.basketDoorTree.isEmpty {
+            for pogonage in persone.basketDoorTree {
                 if pogonage.nameDoor == doorPerson.nameDoor && pogonage.namePogonage == name {
                     if pogonage.countDoors > 1 {
                         StorageManager.shared.renamePogonageDelete(pogonage, pogonages: price, newValue: 1)
@@ -325,7 +325,7 @@ class InfoDoorViewController: UIViewController {
     }
         
     private func doorCountInfoAndPrice() {
-        for door in persone.basket {
+        for door in persone.basketDoorTree {
             if door.factory == doorPerson.factory.rawValue {
                 if door.dimensions == "550*1900" && door.nameDoor == doorPerson.nameDoor {
                     countDoor550Label.text = "\(door.countDoors)"

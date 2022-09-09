@@ -22,12 +22,6 @@ class StorageManager {
         }
     }
     
-    func savePersonMetall(_ person: PersonMetall) {
-        write {
-            realm.add(person)
-        }
-    }
-    
     func specialistSave(_ specialist: Specialist) {
         write {
             realm.add(specialist)
@@ -55,7 +49,7 @@ class StorageManager {
     
     func saveProduct(_ persone: Person, door: Doors) {
         write {
-            persone.basket.append(door)
+            persone.basketDoorTree.append(door)
         }
     }
     
@@ -119,7 +113,7 @@ class StorageManager {
     
     func saveSerwice(_ persone: Person, service: Services) {
         write {
-            persone.basketService.append(service)
+            persone.basketServiceTree.append(service)
         }
     }
     
@@ -133,12 +127,6 @@ class StorageManager {
     func delete(_ door: Doors) {
         write {
             realm.delete(door)
-        }
-    }
-    
-    func deletePersonMetall(person: PersonMetall) {
-        write {
-            realm.delete(person)
         }
     }
     

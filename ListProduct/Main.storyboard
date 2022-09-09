@@ -115,42 +115,14 @@
                                 </constraints>
                             </stackView>
                             <button opaque="NO" alpha="0.69999999999999996" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aJn-m8-uVw">
-                                <rect key="frame" x="70" y="360" width="628" height="31"/>
+                                <rect key="frame" x="70" y="301" width="628" height="31"/>
                                 <color key="backgroundColor" systemColor="systemOrangeColor"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="Добавить клиента Межкомнатные двери">
+                                <buttonConfiguration key="configuration" style="plain" title="Добавить">
                                     <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </buttonConfiguration>
                                 <connections>
                                     <action selector="savePersonButtonAction" destination="I1F-y2-Cx0" eventType="touchUpInside" id="2IF-GH-RPg"/>
-                                </connections>
-                            </button>
-                            <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="0xB-7C-qMR">
-                                <rect key="frame" x="70" y="301" width="628" height="31"/>
-                                <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Включить при оформлении межкомнатных и металлических дверей" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ipz-aU-Oqn">
-                                        <rect key="frame" x="0.0" y="0.0" width="571" height="31"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <nil key="textColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="00y-Uw-TQP">
-                                        <rect key="frame" x="579" y="0.0" width="51" height="31"/>
-                                        <connections>
-                                            <action selector="actionSwitch:" destination="I1F-y2-Cx0" eventType="valueChanged" id="Izs-ay-R9B"/>
-                                        </connections>
-                                    </switch>
-                                </subviews>
-                            </stackView>
-                            <button opaque="NO" alpha="0.90000000000000002" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Lh2-mW-wn3">
-                                <rect key="frame" x="70" y="421" width="628" height="31"/>
-                                <color key="backgroundColor" systemColor="systemRedColor"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="Добавить клиента Металлическая дверь">
-                                    <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                </buttonConfiguration>
-                                <connections>
-                                    <action selector="actionPersonMetallDoorButton" destination="I1F-y2-Cx0" eventType="touchUpInside" id="lB2-ED-dJ9"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -158,25 +130,19 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="GOY-rv-wwW" firstAttribute="leading" secondItem="Zs7-Z4-EsH" secondAttribute="leading" constant="20" id="2Lv-36-Bhc"/>
-                            <constraint firstItem="Zs7-Z4-EsH" firstAttribute="trailing" secondItem="Lh2-mW-wn3" secondAttribute="trailing" constant="70" id="31a-6E-KSu"/>
-                            <constraint firstItem="0xB-7C-qMR" firstAttribute="leading" secondItem="Zs7-Z4-EsH" secondAttribute="leading" constant="70" id="6je-wv-qOM"/>
                             <constraint firstItem="GOY-rv-wwW" firstAttribute="top" secondItem="8XC-lz-6zn" secondAttribute="bottom" constant="10" id="DU5-Yu-yh9"/>
-                            <constraint firstItem="Zs7-Z4-EsH" firstAttribute="trailing" secondItem="0xB-7C-qMR" secondAttribute="trailing" constant="70" id="LOl-HA-Sv4"/>
-                            <constraint firstItem="Lh2-mW-wn3" firstAttribute="top" secondItem="aJn-m8-uVw" secondAttribute="bottom" constant="30" id="SJi-Nb-DKk"/>
                             <constraint firstItem="Vq6-bL-Keg" firstAttribute="top" secondItem="GOY-rv-wwW" secondAttribute="bottom" constant="20" id="TX2-22-ipH"/>
                             <constraint firstItem="Zs7-Z4-EsH" firstAttribute="trailing" secondItem="GOY-rv-wwW" secondAttribute="trailing" constant="20" id="U8W-FU-vAt"/>
                             <constraint firstItem="Zs7-Z4-EsH" firstAttribute="trailing" secondItem="EAK-SN-8mh" secondAttribute="trailing" constant="70" id="Y2l-es-wWz"/>
                             <constraint firstItem="EAK-SN-8mh" firstAttribute="top" secondItem="GOY-rv-wwW" secondAttribute="bottom" constant="20" id="aDn-1E-8bf"/>
                             <constraint firstItem="aJn-m8-uVw" firstAttribute="leading" secondItem="Zs7-Z4-EsH" secondAttribute="leading" constant="70" id="bOD-Tt-UUk"/>
                             <constraint firstItem="Z2Q-62-dvG" firstAttribute="top" secondItem="EAK-SN-8mh" secondAttribute="bottom" constant="8" id="caL-xO-SSz"/>
-                            <constraint firstItem="aJn-m8-uVw" firstAttribute="top" secondItem="Ipz-aU-Oqn" secondAttribute="bottom" constant="28" id="csa-PZ-Leb"/>
                             <constraint firstItem="Zs7-Z4-EsH" firstAttribute="trailing" secondItem="aJn-m8-uVw" secondAttribute="trailing" constant="70" id="jZ9-hj-Fag"/>
                             <constraint firstItem="Vq6-bL-Keg" firstAttribute="leading" secondItem="Zs7-Z4-EsH" secondAttribute="leading" constant="70" id="jss-Wi-EIz"/>
-                            <constraint firstItem="Lh2-mW-wn3" firstAttribute="leading" secondItem="Zs7-Z4-EsH" secondAttribute="leading" constant="70" id="rwO-wd-aTm"/>
+                            <constraint firstItem="aJn-m8-uVw" firstAttribute="top" secondItem="Z2Q-62-dvG" secondAttribute="bottom" constant="30" id="me5-CN-Uwm"/>
                             <constraint firstItem="Zs7-Z4-EsH" firstAttribute="trailing" secondItem="8XC-lz-6zn" secondAttribute="trailing" constant="20" id="suD-T0-uFY"/>
                             <constraint firstItem="Zs7-Z4-EsH" firstAttribute="trailing" secondItem="Z2Q-62-dvG" secondAttribute="trailing" constant="70" id="vXU-Vz-Did"/>
                             <constraint firstItem="8XC-lz-6zn" firstAttribute="top" secondItem="Zs7-Z4-EsH" secondAttribute="top" constant="20" id="xk0-My-7Vv"/>
-                            <constraint firstItem="0xB-7C-qMR" firstAttribute="top" secondItem="Z2Q-62-dvG" secondAttribute="bottom" constant="30" id="yEy-nJ-iJg"/>
                             <constraint firstItem="8XC-lz-6zn" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="Zs7-Z4-EsH" secondAttribute="leading" symbolic="YES" id="zcg-lu-rdJ"/>
                         </constraints>
                     </view>
@@ -190,10 +156,8 @@
                         <outlet property="patronymicPersonTextField" destination="JMI-QF-9Zh" id="3sq-Jj-BiE"/>
                         <outlet property="phonePersonTextField" destination="Hoe-HG-A2p" id="njA-SB-MrY"/>
                         <outlet property="savePersonButton" destination="aJn-m8-uVw" id="Ms3-m5-jgB"/>
-                        <outlet property="savePersonMetallDoorButton" destination="Lh2-mW-wn3" id="arv-VI-MFc"/>
                         <outlet property="stritPersonTexttField" destination="eSa-AN-7DR" id="GYz-ST-lXN"/>
                         <outlet property="surNameTextField" destination="rPD-ua-FV2" id="lEo-dY-BqR"/>
-                        <outlet property="switchPerson" destination="00y-Uw-TQP" id="Jdf-mP-xdi"/>
                         <outlet property="townPersonTextField" destination="18y-sC-KE2" id="3WG-bj-Rnz"/>
                     </connections>
                 </viewController>
@@ -201,7 +165,7 @@
             </objects>
             <point key="canvasLocation" x="379.6875" y="-678.515625"/>
         </scene>
-        <!--Межкомнатные двери-->
+        <!--Клиентская база-->
         <scene sceneID="3GU-SF-cPJ">
             <objects>
                 <tableViewController id="xPy-g2-kJ9" customClass="PersonsTableViewController" customModule="ListProduct" customModuleProvider="target" sceneMemberID="viewController">
@@ -280,7 +244,7 @@
                             <outlet property="delegate" destination="xPy-g2-kJ9" id="x2H-er-6RD"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Межкомнатные двери" id="bWE-yd-IJ5"/>
+                    <navigationItem key="navigationItem" title="Клиентская база" id="bWE-yd-IJ5"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="buX-cs-FB3" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -1149,19 +1113,28 @@
                     </navigationItem>
                     <connections>
                         <outlet property="addressPersonLabel" destination="ni4-QB-CkE" id="fqV-yY-vjh"/>
+                        <outlet property="apendDoorsAndService" destination="MSb-0f-RbI" id="Ypx-PD-ZJ3"/>
                         <outlet property="appendSelseButton" destination="b0K-8h-vlw" id="6oY-25-A4w"/>
+                        <outlet property="appenndMetallDoorsAndServices" destination="aM3-0V-ovF" id="9FH-Re-tko"/>
+                        <outlet property="countPOMetallDoorsLabel" destination="lvR-oQ-0Mw" id="7id-xv-9nk"/>
+                        <outlet property="countSelsMetallDoorsLabel" destination="q9F-Bl-Lfh" id="2Ji-Tb-BUQ"/>
                         <outlet property="descriptionPersonLabel" destination="5zd-cV-yeZ" id="Yoh-pI-vn0"/>
+                        <outlet property="fulSumMetallDogovorLabel" destination="ZF6-qF-kpD" id="cO5-Vu-8Uo"/>
                         <outlet property="namePersonLabel" destination="yAR-YI-lU9" id="iSc-3w-BtT"/>
+                        <outlet property="pOMetallDoors" destination="Uqi-uS-O7p" id="f8Q-Od-CtH"/>
                         <outlet property="patronymicPersonLabel" destination="t1n-yH-87A" id="JiC-Xs-UM7"/>
                         <outlet property="personSumTextField" destination="HPp-ge-ooo" id="Jma-GZ-xuv"/>
                         <outlet property="phonePersonLabel" destination="bu3-Ps-mZQ" id="tpj-Ng-be8"/>
                         <outlet property="selseCountPersonLabel" destination="qC0-Nl-HtA" id="MpE-uU-HNb"/>
+                        <outlet property="selseMetalldoors" destination="mXC-l6-Uhn" id="IYL-jP-nG7"/>
                         <outlet property="selsePersonTextField" destination="b2f-Dy-aE6" id="FdW-WK-sBF"/>
                         <outlet property="sumLabel" destination="ScS-P4-ReA" id="gSk-tG-Dbf"/>
                         <outlet property="sumMaterialLabel" destination="Hou-jt-hVz" id="ujL-8j-9Ro"/>
+                        <outlet property="sumMaterialMetallDoorsLabel" destination="UfD-Bl-Efp" id="tCk-AB-2rk"/>
                         <outlet property="sumPoPersonButton" destination="cyK-Gc-IXC" id="0l1-wC-KHX"/>
                         <outlet property="sumPoPersonLabel" destination="rfv-MG-ml0" id="3HX-Pb-ao5"/>
                         <outlet property="sumServicesLabel" destination="ipY-i4-CVf" id="MWj-4c-oYK"/>
+                        <outlet property="sumServicesMetallLabel" destination="u5g-7j-2mO" id="Btm-38-ndU"/>
                         <outlet property="surNamePersonLabel" destination="yGZ-aX-Hyg" id="dLY-3L-zUX"/>
                         <outlet property="viewColorPerson" destination="nin-cM-Kut" id="teJ-FS-y9A"/>
                     </connections>
@@ -1340,7 +1313,7 @@
                                 <rect key="frame" x="0.0" y="122" width="768" height="1178"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Kf4-q8-5w5">
-                                        <rect key="frame" x="0.0" y="0.0" width="768" height="1193"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="768" height="1178"/>
                                         <subviews>
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="dcw-9u-LYL">
                                                 <rect key="frame" x="20" y="20" width="242" height="650"/>
@@ -1375,17 +1348,6 @@
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LVj-u4-FvN">
-                                                <rect key="frame" x="20" y="1112" width="728" height="31"/>
-                                                <color key="backgroundColor" systemColor="systemOrangeColor"/>
-                                                <state key="normal" title="Button"/>
-                                                <buttonConfiguration key="configuration" style="plain" title="Оформить монтаж">
-                                                    <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                </buttonConfiguration>
-                                                <connections>
-                                                    <segue destination="jRI-Mb-gZk" kind="show" id="7cD-pL-Rv5"/>
-                                                </connections>
-                                            </button>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="6" translatesAutoresizingMaskIntoConstraints="NO" id="e0L-82-5cF">
                                                 <rect key="frame" x="282" y="54" width="466" height="216"/>
                                                 <subviews>
@@ -2369,17 +2331,50 @@
                                                     </label>
                                                 </subviews>
                                             </stackView>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fpU-EF-ak2">
-                                                <rect key="frame" x="20" y="1061" width="728" height="31"/>
-                                                <color key="backgroundColor" systemColor="systemOrangeColor"/>
-                                                <state key="normal" title="Button"/>
-                                                <buttonConfiguration key="configuration" style="plain" title="Выбрать фурнитуру">
-                                                    <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                </buttonConfiguration>
-                                                <connections>
-                                                    <segue destination="E5X-a6-wce" kind="show" id="SDZ-4L-C2j"/>
-                                                </connections>
-                                            </button>
+                                            <stackView opaque="NO" contentMode="scaleToFill" spacing="64" translatesAutoresizingMaskIntoConstraints="NO" id="NbL-aw-0QE">
+                                                <rect key="frame" x="20" y="1079" width="728" height="31"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fpU-EF-ak2">
+                                                        <rect key="frame" x="0.0" y="0.0" width="200" height="31"/>
+                                                        <color key="backgroundColor" systemColor="systemOrangeColor"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" constant="200" id="uae-RJ-xZ5"/>
+                                                        </constraints>
+                                                        <state key="normal" title="Button"/>
+                                                        <buttonConfiguration key="configuration" style="plain" title="Выбрать фурнитуру">
+                                                            <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </buttonConfiguration>
+                                                        <connections>
+                                                            <segue destination="E5X-a6-wce" kind="show" id="SDZ-4L-C2j"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="30U-mc-vOg">
+                                                        <rect key="frame" x="264" y="0.0" width="200" height="31"/>
+                                                        <color key="backgroundColor" systemColor="systemOrangeColor"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" constant="200" id="fQ0-Xa-Duh"/>
+                                                        </constraints>
+                                                        <state key="normal" title="Button"/>
+                                                        <buttonConfiguration key="configuration" style="plain" title="Доп Материал">
+                                                            <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </buttonConfiguration>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LVj-u4-FvN">
+                                                        <rect key="frame" x="528" y="0.0" width="200" height="31"/>
+                                                        <color key="backgroundColor" systemColor="systemOrangeColor"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" constant="200" id="sbd-1V-ygd"/>
+                                                        </constraints>
+                                                        <state key="normal" title="Button"/>
+                                                        <buttonConfiguration key="configuration" style="plain" title="Оформить монтаж">
+                                                            <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </buttonConfiguration>
+                                                        <connections>
+                                                            <segue destination="jRI-Mb-gZk" kind="show" id="7cD-pL-Rv5"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                            </stackView>
                                         </subviews>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                         <constraints>
@@ -2393,16 +2388,15 @@
                                             <constraint firstItem="OnB-uZ-eXa" firstAttribute="leading" secondItem="Kf4-q8-5w5" secondAttribute="leading" constant="20" id="Ast-7a-fM1"/>
                                             <constraint firstItem="S3c-ZT-G7i" firstAttribute="leading" secondItem="Kf4-q8-5w5" secondAttribute="leading" constant="20" id="BEv-8d-7sx"/>
                                             <constraint firstItem="TtZ-5K-uB5" firstAttribute="top" secondItem="pmb-Ja-c3e" secondAttribute="bottom" constant="20" id="BPR-us-NvX"/>
+                                            <constraint firstItem="NbL-aw-0QE" firstAttribute="leading" secondItem="Kf4-q8-5w5" secondAttribute="leading" constant="20" id="Bfw-7B-ZRv"/>
+                                            <constraint firstAttribute="bottom" secondItem="NbL-aw-0QE" secondAttribute="bottom" constant="68" id="DWh-Rs-ijw"/>
                                             <constraint firstItem="Dgn-cK-TYN" firstAttribute="top" secondItem="dcw-9u-LYL" secondAttribute="bottom" constant="20" id="EUs-g1-DVq"/>
-                                            <constraint firstItem="fpU-EF-ak2" firstAttribute="leading" secondItem="Kf4-q8-5w5" secondAttribute="leading" constant="20" id="F6u-fV-k8l"/>
                                             <constraint firstItem="YkE-r6-TAL" firstAttribute="top" secondItem="Dgn-cK-TYN" secondAttribute="bottom" constant="20" id="FlD-Mx-NVB"/>
                                             <constraint firstAttribute="trailing" secondItem="MOc-Tw-gZ9" secondAttribute="trailing" constant="20" id="I6s-Sk-Hu0"/>
                                             <constraint firstItem="TtZ-5K-uB5" firstAttribute="leading" secondItem="Kf4-q8-5w5" secondAttribute="leading" constant="20" id="JJN-dV-Kaj"/>
                                             <constraint firstItem="YkE-r6-TAL" firstAttribute="leading" secondItem="Kf4-q8-5w5" secondAttribute="leading" constant="20" id="Mpm-iY-ldS"/>
-                                            <constraint firstItem="LVj-u4-FvN" firstAttribute="top" secondItem="fpU-EF-ak2" secondAttribute="bottom" constant="20" id="OVh-Yw-3tH"/>
                                             <constraint firstItem="pmb-Ja-c3e" firstAttribute="leading" secondItem="Kf4-q8-5w5" secondAttribute="leading" constant="20" id="P6J-ek-ZOf"/>
                                             <constraint firstAttribute="trailing" secondItem="S3c-ZT-G7i" secondAttribute="trailing" constant="20" id="QpX-4Q-yho"/>
-                                            <constraint firstItem="LVj-u4-FvN" firstAttribute="top" secondItem="pmb-Ja-c3e" secondAttribute="bottom" constant="251" id="Rl3-m0-sJu"/>
                                             <constraint firstItem="JSa-3P-fqD" firstAttribute="top" secondItem="Kf4-q8-5w5" secondAttribute="top" constant="20" id="Tsm-nZ-UhO"/>
                                             <constraint firstItem="RAv-yf-jNQ" firstAttribute="top" secondItem="e0L-82-5cF" secondAttribute="bottom" constant="10" id="UCa-ze-Eul"/>
                                             <constraint firstAttribute="trailing" secondItem="TtZ-5K-uB5" secondAttribute="trailing" constant="20" id="Vqb-UW-9qJ"/>
@@ -2415,16 +2409,14 @@
                                             <constraint firstItem="MOc-Tw-gZ9" firstAttribute="top" secondItem="RAv-yf-jNQ" secondAttribute="bottom" constant="11" id="bDC-1m-mn6"/>
                                             <constraint firstItem="MOc-Tw-gZ9" firstAttribute="leading" secondItem="dcw-9u-LYL" secondAttribute="trailing" constant="20" id="fMu-dX-s8m"/>
                                             <constraint firstAttribute="trailing" secondItem="JSa-3P-fqD" secondAttribute="trailing" constant="20" id="hDE-V4-n5d"/>
-                                            <constraint firstAttribute="trailing" secondItem="LVj-u4-FvN" secondAttribute="trailing" constant="20" id="huK-CJ-MFu"/>
-                                            <constraint firstItem="LVj-u4-FvN" firstAttribute="leading" secondItem="Kf4-q8-5w5" secondAttribute="leading" constant="20" id="l4G-Fz-PkG"/>
+                                            <constraint firstAttribute="trailing" secondItem="NbL-aw-0QE" secondAttribute="trailing" constant="20" id="k36-oi-TtU"/>
                                             <constraint firstAttribute="trailing" secondItem="OnB-uZ-eXa" secondAttribute="trailing" constant="20" id="lZm-P2-cFL"/>
                                             <constraint firstAttribute="trailing" secondItem="Dgn-cK-TYN" secondAttribute="trailing" constant="20" id="lvD-sy-rtV"/>
                                             <constraint firstItem="b33-ku-tGt" firstAttribute="top" secondItem="TtZ-5K-uB5" secondAttribute="bottom" constant="20" id="lyj-yc-HQC"/>
                                             <constraint firstItem="RAv-yf-jNQ" firstAttribute="leading" secondItem="dcw-9u-LYL" secondAttribute="trailing" constant="20" id="psC-ct-1w4"/>
                                             <constraint firstItem="dcw-9u-LYL" firstAttribute="top" secondItem="Kf4-q8-5w5" secondAttribute="top" constant="20" id="sRT-l4-w63"/>
                                             <constraint firstItem="OnB-uZ-eXa" firstAttribute="top" secondItem="YkE-r6-TAL" secondAttribute="bottom" constant="30" id="t2V-V5-EeJ"/>
-                                            <constraint firstAttribute="trailing" secondItem="fpU-EF-ak2" secondAttribute="trailing" constant="20" id="vm4-VK-CvP"/>
-                                            <constraint firstAttribute="bottom" secondItem="LVj-u4-FvN" secondAttribute="bottom" constant="50" id="wI1-yI-nu8"/>
+                                            <constraint firstItem="NbL-aw-0QE" firstAttribute="top" secondItem="S3c-ZT-G7i" secondAttribute="bottom" constant="60" id="tfJ-D6-Ekg"/>
                                         </constraints>
                                     </view>
                                 </subviews>
@@ -2987,22 +2979,22 @@
                                 <color key="backgroundColor" systemColor="systemRedColor"/>
                             </view>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="person.circle" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="mKH-rL-miW">
-                                <rect key="frame" x="234" y="172.5" width="300" height="299"/>
+                                <rect key="frame" x="209" y="172.5" width="350" height="349"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <color key="tintColor" systemColor="systemGray2Color"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="300" id="70H-nk-kCe"/>
-                                    <constraint firstAttribute="width" constant="300" id="oix-no-QHT"/>
+                                    <constraint firstAttribute="height" constant="350" id="70H-nk-kCe"/>
+                                    <constraint firstAttribute="width" constant="350" id="oix-no-QHT"/>
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Специалист Имя отчество" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rQF-Ay-MQt">
-                                <rect key="frame" x="20" y="492" width="728" height="24"/>
+                                <rect key="frame" x="20" y="542" width="728" height="24"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="S4I-aA-Bm1">
-                                <rect key="frame" x="319.5" y="610" width="129.5" height="38"/>
+                                <rect key="frame" x="319.5" y="660" width="129.5" height="38"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Статистика">
                                     <fontDescription key="titleFontDescription" type="system" pointSize="20"/>
@@ -3012,7 +3004,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="53L-oe-AAC">
-                                <rect key="frame" x="253.5" y="668" width="261" height="38"/>
+                                <rect key="frame" x="253.5" y="718" width="261" height="38"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Расчет заработной платы">
                                     <fontDescription key="titleFontDescription" type="system" pointSize="20"/>
@@ -3022,13 +3014,13 @@
                                 </connections>
                             </button>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="chart.xyaxis.line" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="WTI-Gm-Iz6">
-                                <rect key="frame" x="212" y="620.5" width="21.5" height="17.5"/>
+                                <rect key="frame" x="212" y="670.5" width="21.5" height="17.5"/>
                             </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="slider.vertical.3" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="gHq-V0-mVG">
-                                <rect key="frame" x="214" y="678" width="19" height="17"/>
+                                <rect key="frame" x="214" y="728" width="19" height="17"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IIy-Qc-81a">
-                                <rect key="frame" x="322" y="726" width="124.5" height="38"/>
+                                <rect key="frame" x="322" y="776" width="124.5" height="38"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Настройки">
                                     <fontDescription key="titleFontDescription" type="system" pointSize="20"/>
@@ -3049,7 +3041,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VlT-QT-scT">
-                                <rect key="frame" x="288" y="552" width="192" height="38"/>
+                                <rect key="frame" x="288" y="602" width="192" height="38"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Добавить клиента">
                                     <fontDescription key="titleFontDescription" type="system" pointSize="20"/>
@@ -3059,17 +3051,18 @@
                                 </connections>
                             </button>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="person" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="56T-ti-fKL">
-                                <rect key="frame" x="212" y="562.5" width="19" height="17.5"/>
+                                <rect key="frame" x="212" y="612.5" width="19" height="17.5"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="I3d-RK-4Im">
-                                <rect key="frame" x="342.5" y="784" width="83" height="38"/>
+                                <rect key="frame" x="342.5" y="834" width="83" height="38"/>
+                                <color key="tintColor" systemColor="systemRedColor"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Выход">
                                     <fontDescription key="titleFontDescription" type="system" pointSize="20"/>
                                 </buttonConfiguration>
                             </button>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="gear" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="TV3-Kr-JC9">
-                                <rect key="frame" x="212" y="735" width="22" height="20.5"/>
+                                <rect key="frame" x="212" y="785" width="22" height="20.5"/>
                             </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="1HS-Ts-w8I"/>
@@ -3241,11 +3234,11 @@
             </objects>
             <point key="canvasLocation" x="-1038" y="-15"/>
         </scene>
-        <!--Межкомнатные двери-->
+        <!--Клиентская база-->
         <scene sceneID="zFb-TH-iJ1">
             <objects>
                 <navigationController id="mbv-Y4-irv" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Межкомнатные двери" image="rectangle.portrait" catalog="system" id="Wmc-zV-U3W"/>
+                    <tabBarItem key="tabBarItem" title="Клиентская база" image="rectangle.portrait" catalog="system" id="Wmc-zV-U3W"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" largeTitles="YES" id="dep-TA-FfS">
                         <rect key="frame" x="0.0" y="20" width="768" height="102"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -3414,7 +3407,7 @@
                                     <subviews>
                                         <view alpha="0.69999999999999996" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pCo-P8-Nea">
                                             <rect key="frame" x="20" y="9" width="728" height="128"/>
-                                            <color key="backgroundColor" systemColor="systemOrangeColor"/>
+                                            <color key="backgroundColor" systemColor="systemRedColor"/>
                                         </view>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Имя Отчество" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2kc-7W-8vM">
                                             <rect key="frame" x="30" y="16" width="194" height="36"/>
@@ -3541,7 +3534,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="sry-71-w7h"/>
+        <segue reference="KaS-Od-AhQ"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="chart.xyaxis.line" catalog="system" width="128" height="101"/>

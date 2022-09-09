@@ -262,8 +262,8 @@
 			children = (
 				7671CD252885463A0073B7B5 /* PhotoCollectionViewController.swift */,
 				76A9851228758A2100102AEB /* PersonsTableViewController.swift */,
-				76A9851828758A2100102AEB /* InfoPersonViewController.swift */,
 				76A9851728758A2100102AEB /* AppendInfoPersonViewController.swift */,
+				76A9851828758A2100102AEB /* InfoPersonViewController.swift */,
 				76530C4F28781E8F00487D6C /* ProductPersonTableViewController.swift */,
 				762E8A0D28A4C9FC00D0831F /* DocumentServicesPersonViewController.swift */,
 				76A9851428758A2100102AEB /* FactoryProductTableViewController.swift */,

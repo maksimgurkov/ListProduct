@@ -49,15 +49,15 @@ class ServiceInfoViewController: UIViewController {
         services.descriptionService = servicePerson.descriptionServices
         services.price = servicePerson.priceServices
         services.count = servicePerson.countServices
-        if person.basketService.isEmpty {
+        if person.basketServiceTree.isEmpty {
             alertInfoPerson(name: "Подъем стандарт", service: services)
             StorageManager.shared.saveSerwice(person, service: services)
             countServiceLabel.text = "\(services.count)"
             priceServiceLabel.text = "\(servicePerson.priceServices)"
             return
         }
-        if !person.basketService.isEmpty {
-            for service in person.basketService {
+        if !person.basketServiceTree.isEmpty {
+            for service in person.basketServiceTree {
                 if service.descriptionService == services.descriptionService {
                     alertInfoPerson(name: "Подъем стандарт", service: services)
                     StorageManager.shared.renameServis(service, services: servicePerson, newValue: 1)
@@ -66,8 +66,8 @@ class ServiceInfoViewController: UIViewController {
                     return
                 }
             }
-            if !person.basketService.isEmpty {
-                for service in person.basketService {
+            if !person.basketServiceTree.isEmpty {
+                for service in person.basketServiceTree {
                     if service.descriptionService != services.descriptionService {
                         alertInfoPerson(name: "Подъем стандарт", service: services)
                         StorageManager.shared.saveSerwice(person, service: services)
@@ -82,8 +82,8 @@ class ServiceInfoViewController: UIViewController {
     }
     
     private func deleteService() {
-        if !person.basketService.isEmpty {
-            for servic in person.basketService {
+        if !person.basketServiceTree.isEmpty {
+            for servic in person.basketServiceTree {
                 if servic.name == servicePerson.nameServices {
                     if servic.count > 1 {
                         StorageManager.shared.renameService(servic, services: servicePerson, newValue: 1)
@@ -107,7 +107,7 @@ class ServiceInfoViewController: UIViewController {
     }
         
     private func countService() {
-        for servic in person.basketService {
+        for servic in person.basketServiceTree {
             if servic.name == servicePerson.nameServices {
                 countServiceLabel.text = "\(servic.count)"
             }
@@ -115,7 +115,7 @@ class ServiceInfoViewController: UIViewController {
     }
     
     private func priceServiceResult() {
-        for servic in person.basketService {
+        for servic in person.basketServiceTree {
             if servic.name == servicePerson.nameServices {
                 priceServiceLabel.text = "\(servic.price)"
             }

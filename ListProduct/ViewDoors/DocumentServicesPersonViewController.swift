@@ -28,7 +28,7 @@ class DocumentServicesPersonViewController: UIViewController {
     
     private func forSumPerson() -> Int {
         var resultSum = 0
-        for servic in person.basketService {
+        for servic in person.basketServiceTree {
             resultSum += servic.price
         }
         return resultSum
@@ -45,12 +45,12 @@ class DocumentServicesPersonViewController: UIViewController {
 
 extension DocumentServicesPersonViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return person.basketService.count
+        return person.basketServiceTree.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "materialPersonCell", for: indexPath) as! ServicesTableViewCell
-        let service = person.basketService[indexPath.row]
+        let service = person.basketServiceTree[indexPath.row]
         cell.nameServicesLabel.text = service.name
         cell.descriptionServicesLabel.text = service.descriptionService
         cell.countServicesLabel.text = "\(service.count)"

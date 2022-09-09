@@ -34,7 +34,7 @@ class ProductPersonTableViewController: UIViewController {
     
     private func sumPerson() -> Int {
         var resultSum = 0
-        for product in person.basket {
+        for product in person.basketDoorTree {
             resultSum += product.price
         }
         return resultSum
@@ -74,13 +74,13 @@ class ProductPersonTableViewController: UIViewController {
 extension ProductPersonTableViewController: UITableViewDataSource {
 
      func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return person.basket.count
+        return person.basketDoorTree.count
     }
 
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "productPersonCell", for: indexPath) as! BascetDoorsTableViewCell
-        let product = person.basket[indexPath.row]
+        let product = person.basketDoorTree[indexPath.row]
         cell.factoryDoorLabel.text = product.factory
         cell.materialDoorLabel.text = product.material
         cell.nameDoorLabel.text = product.namePogonage

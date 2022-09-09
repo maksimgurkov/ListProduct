@@ -10,7 +10,6 @@ import UIKit
 class InfoPersonViewController: UIViewController {
     
     var person: Person!
-    var personMetall: PersonMetall!
     var flag: Bool!
     
     @IBOutlet weak var viewColorPerson: UIView!
@@ -27,37 +26,50 @@ class InfoPersonViewController: UIViewController {
     @IBOutlet weak var sumPoPersonLabel: UILabel!
     @IBOutlet weak var selseCountPersonLabel: UILabel!
     
-    @IBOutlet weak var sumPoPersonButton: UIButton!
+    @IBOutlet weak var sumMaterialMetallDoorsLabel: UILabel!
+    @IBOutlet weak var sumServicesMetallLabel: UILabel!
+    @IBOutlet weak var fulSumMetallDogovorLabel: UILabel!
+    @IBOutlet weak var countSelsMetallDoorsLabel: UILabel!
+    @IBOutlet weak var countPOMetallDoorsLabel: UILabel!
     
+    
+    @IBOutlet weak var sumPoPersonButton: UIButton!
     @IBOutlet weak var appendSelseButton: UIButton!
+    @IBOutlet weak var apendDoorsAndService: UIButton!
+    @IBOutlet weak var appenndMetallDoorsAndServices: UIButton!
+    @IBOutlet weak var selseMetalldoors: UIButton!
+    @IBOutlet weak var pOMetallDoors: UIButton!
+    
     
     @IBOutlet weak var personSumTextField: UITextField!
     @IBOutlet weak var selsePersonTextField: UITextField!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        title = flag ? "\(personMetall.name) \(personMetall.patronymic)" : "\(person.name) \(person.patronymic)"
+        title = "\(person.name) \(person.patronymic)"
         sumPoPersonButton.layer.cornerRadius = 8
         appendSelseButton.layer.cornerRadius = 8
-        surNamePersonLabel.text = flag ? personMetall.surName : person.surName
-        namePersonLabel.text = flag ? personMetall.name : person.name
-        patronymicPersonLabel.text = flag ? personMetall.patronymic : person.patronymic
-        phonePersonLabel.text = flag ? personMetall.phone : person.phone
-        addressPersonLabel.text = flag ? "г. \(personMetall.town) ул. \(personMetall.strit) \(personMetall.numberHouse)-\(personMetall.body)-\(personMetall.numberFlat)" : "г. \(person.town) ул. \(person.strit) \(person.numberHouse)-\(person.body)-\(person.numberFlat)"
-        descriptionPersonLabel.text = flag ? personMetall.personDescription : person.personDescription
+        apendDoorsAndService.layer.cornerRadius = 8
+        appenndMetallDoorsAndServices.layer.cornerRadius = 8
+        selseMetalldoors.layer.cornerRadius = 8
+        pOMetallDoors.layer.cornerRadius = 8
+        surNamePersonLabel.text = person.surName
+        namePersonLabel.text =  person.name
+        patronymicPersonLabel.text = person.patronymic
+        phonePersonLabel.text = person.phone
+        addressPersonLabel.text = "г. \(person.town) ул. \(person.strit) \(person.numberHouse)-\(person.body)-\(person.numberFlat)"
+        descriptionPersonLabel.text = person.personDescription
         viewColorPerson.layer.cornerRadius = 20
         setupLabel()
-        personSumTextField.placeholder = flag ? "\(personMetall.sumPo)" : "\(person.sumPo)"
-        selsePersonTextField.placeholder = flag ? "\(personMetall.salse)" : "\(person.salse)"
+        personSumTextField.placeholder = "\(person.sumPo)"
+        selsePersonTextField.placeholder = "\(person.salse)"
     }
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        sumMaterialLabel.text = "Сумма за материал - \(sumPersonMaterial() - resultSumSelsePerson() - (flag ? personMetall.sumPo : person.sumPo)) р."
+        sumMaterialLabel.text = "Сумма за материал - \(sumPersonMaterial() - resultSumSelsePerson() - person.sumPo) р."
         sumServicesLabel.text = "Сумма за услуги - \(sumPersonServices()) р."
         sumLabel.text = "Общая сумма договора - \(sumPersonMaterial() - resultSumSelsePerson() + sumPersonServices()) р."
-//        forRenameButtonAppendPo()
-//        forRenameButtonAppendSelse()
     }
     
     @IBAction func actionPoPersonButton() {
@@ -91,6 +103,16 @@ class InfoPersonViewController: UIViewController {
         sumPoPersonLabel.layer.cornerRadius = 8
         selseCountPersonLabel.layer.masksToBounds = true
         selseCountPersonLabel.layer.cornerRadius = 8
+        sumMaterialMetallDoorsLabel.layer.masksToBounds = true
+        sumMaterialMetallDoorsLabel.layer.cornerRadius = 8
+        sumServicesMetallLabel.layer.masksToBounds = true
+        sumServicesMetallLabel.layer.cornerRadius = 8
+        fulSumMetallDogovorLabel.layer.masksToBounds = true
+        fulSumMetallDogovorLabel.layer.cornerRadius = 8
+        countSelsMetallDoorsLabel.layer.masksToBounds = true
+        countSelsMetallDoorsLabel.layer.cornerRadius = 8
+        countPOMetallDoorsLabel.layer.masksToBounds = true
+        countPOMetallDoorsLabel.layer.cornerRadius = 8
     }
 
     // MARK: - Navigation
@@ -107,15 +129,22 @@ class InfoPersonViewController: UIViewController {
         
     private func sumPersonMaterial() -> Int {
         var sum = 0
-        for door in flag ? personMetall.basket : person.basket {
+        for door in person.basketDoorTree {
             sum += door.price
         }
         return sum
     }
     
+//    private func somOersonMaterialMetall() -> Int {
+//        var sum = 0
+//        for doorMetall in person.bascetMetallDoor {
+//            sum += doorMetall.
+//        }
+//    }
+    
     private func sumPersonServices() -> Int {
         var sum = 0
-        for services in flag ? personMetall.basketService : person.basketService {
+        for services in person.basketServiceTree {
             sum += services.price
         }
         return sum
@@ -140,25 +169,10 @@ class InfoPersonViewController: UIViewController {
     
     private func resultSumSelsePerson() -> Int {
         var result = 0
-        result = sumPersonMaterial() / 100 * (flag ? personMetall.salse : person.salse)
+        result = sumPersonMaterial() / 100 *  person.salse
         return result
     }
     
-//    private func forRenameButtonAppendSelse() {
-//        if person.salse == 0 {
-//            appendSelseButton.titleLabel?.text = "Внести"
-//        } else {
-//            appendSelseButton.titleLabel?.text = "Изменить"
-//        }
-//    }
-    
-//    private func forRenameButtonAppendPo() {
-//        if person.sumPo == 0 {
-//            sumPoPersonButton.titleLabel?.text = "Внести"
-//        } else {
-//            sumPoPersonButton.titleLabel?.text = "Изменить"
-//        }
-//    }
 }
 
 
