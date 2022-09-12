@@ -541,7 +541,7 @@ class InfoDoorViewController: UIViewController {
         case deleteDoor6001900Button:
             deleteDoor(dimention: "600*1900", countLabel: countDoor6001900Label, priceLabel: priceDoor6001900Label)
         case deleteDoor600Button:
-            deleteDoor(dimention: "600*1900", countLabel: countDoor600Label, priceLabel: priceDoor600Label)
+            deleteDoor(dimention: "600*2000", countLabel: countDoor600Label, priceLabel: priceDoor600Label)
         case deleteDoor700Button:
             deleteDoor(dimention: "700*2000", countLabel: countDoor700Label, priceLabel: priceDoor700Label)
         case deleteDoor800Button:
