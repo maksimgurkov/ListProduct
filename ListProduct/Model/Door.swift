@@ -43,4 +43,5 @@ enum Factory: String {
 enum Material: String {
     case shpone = "Шпон"
     case ecoShpone = "ЭкоШпон"
+    case emale = "Эмаль"
 }
