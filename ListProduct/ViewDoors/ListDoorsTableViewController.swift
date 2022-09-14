@@ -10,9 +10,7 @@ import UIKit
 class ListDoorsTableViewController: UITableViewController {
     
     var person: Person!
-    
     var listDoors: [Door]!
-    
     private var filtrateDoors: [Door] = []
     
     private var searchBarIsEmpty: Bool {
@@ -62,6 +60,7 @@ class ListDoorsTableViewController: UITableViewController {
         
         return cell
     }
+    
     
 
     /*

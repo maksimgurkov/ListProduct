@@ -195,6 +195,7 @@ class InfoDoorViewController: UIViewController {
         newDoor.price = price * 3
         newDoor.dimensions = dimensions
         newDoor.countDoors = count
+        newDoor.flag = true 
         if persone.basketDoorTree.isEmpty {
             StorageManager.shared.saveProduct(persone, door: newDoor)
             countDoorInfo.text = "\(newDoor.countDoors)"

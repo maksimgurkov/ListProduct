@@ -44,4 +44,5 @@ enum MaterialPogonage: String {
     case shpone = "Шпон"
     case ecoShpone = "ЭкоШпон"
     case foam = "Пена"
+    case emale = "Эмаль"
 }

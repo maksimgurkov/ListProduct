@@ -11,9 +11,11 @@ class ImageDoorTableViewCell: UITableViewCell {
 
     @IBOutlet weak var doorImage: UIImageView!
     @IBOutlet weak var nameDoorLabel: UILabel!
+    @IBOutlet weak var colorProductView: UIView!
     
     override func awakeFromNib() {
         super.awakeFromNib()
+        colorProductView.layer.cornerRadius = 8
         
     }
 
