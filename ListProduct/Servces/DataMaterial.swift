@@ -21,7 +21,7 @@ class DataDopMaterial {
         DopMaterial(factory: "Брус",
                     material: "Брус",
                     nameMaterial: "Брус",
-                    dimansion: "",
+                    dimansion: "Брус размером 50*50",
                     specifications: "",
                     price: 1200,
                     flag: false),
