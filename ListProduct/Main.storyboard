@@ -2562,6 +2562,9 @@
                                     <rect key="frame" x="0.0" y="0.0" width="768" height="43.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <segue destination="Fsf-57-cdL" kind="show" id="ixW-eZ-DL1"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -2574,6 +2577,22 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="seG-vu-Ies" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="4287" y="-30"/>
+        </scene>
+        <!--Info Dop Material View Controller-->
+        <scene sceneID="4Eb-5M-wYD">
+            <objects>
+                <viewController id="Fsf-57-cdL" customClass="InfoDopMaterialViewController" customModule="ListProduct" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="suB-Px-rNH">
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="4hY-00-91g"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="Vye-xf-oeF"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="QDW-Lw-dYp" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4967" y="-30"/>
         </scene>
         <!--Sets Table View Controller-->
         <scene sceneID="4aL-de-ogR">

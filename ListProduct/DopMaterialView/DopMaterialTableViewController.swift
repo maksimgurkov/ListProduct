@@ -9,7 +9,8 @@ import UIKit
 
 class DopMaterialTableViewController: UITableViewController {
     
-    
+    var person = Person()
+    var materials = DopMaterial.forDopMaterial()
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -19,14 +20,15 @@ class DopMaterialTableViewController: UITableViewController {
     // MARK: - Table view data source
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 10
+        return materials.count
     }
 
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "material", for: indexPath)
+        let material = materials[indexPath.row]
         var content = cell.defaultContentConfiguration()
-        content.text = "jdjdjdd"
+        content.text = material.nameMaterial
         cell.contentConfiguration = content
         return cell
     }
@@ -67,14 +69,15 @@ class DopMaterialTableViewController: UITableViewController {
     }
     */
 
-    /*
+    
     // MARK: - Navigation
 
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+        guard let index = tableView.indexPathForSelectedRow else { return }
+        guard let infoMaterialVC = segue.destination as? InfoDopMaterialViewController else { return }
+        infoMaterialVC.person = person
+        infoMaterialVC.material = materials[index.row]
     }
-    */
+    
 
 }

@@ -27,6 +27,9 @@
 		7662304B288977CA00F1BC6A /* InfoProductSetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7662304A288977CA00F1BC6A /* InfoProductSetViewController.swift */; };
 		7671CD262885463A0073B7B5 /* PhotoCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7671CD252885463A0073B7B5 /* PhotoCollectionViewController.swift */; };
 		7677E1F828D87CFB00FEECB8 /* DopMaterialTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7677E1F728D87CFB00FEECB8 /* DopMaterialTableViewController.swift */; };
+		7677E1FA28D87F3E00FEECB8 /* Material.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7677E1F928D87F3E00FEECB8 /* Material.swift */; };
+		7677E1FC28D8800200FEECB8 /* DataMaterial.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7677E1FB28D8800200FEECB8 /* DataMaterial.swift */; };
+		7677E1FE28D8846C00FEECB8 /* InfoDopMaterialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7677E1FD28D8846C00FEECB8 /* InfoDopMaterialViewController.swift */; };
 		76A737A4289A62C8006332E9 /* Services.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76A737A3289A62C8006332E9 /* Services.swift */; };
 		76A737A6289A63FE006332E9 /* DataServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76A737A5289A63FE006332E9 /* DataServices.swift */; };
 		76A737A8289A9108006332E9 /* ServiceListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76A737A7289A9108006332E9 /* ServiceListTableViewController.swift */; };
@@ -82,6 +85,9 @@
 		7662304A288977CA00F1BC6A /* InfoProductSetViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoProductSetViewController.swift; sourceTree = "<group>"; };
 		7671CD252885463A0073B7B5 /* PhotoCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoCollectionViewController.swift; sourceTree = "<group>"; };
 		7677E1F728D87CFB00FEECB8 /* DopMaterialTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DopMaterialTableViewController.swift; sourceTree = "<group>"; };
+		7677E1F928D87F3E00FEECB8 /* Material.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Material.swift; sourceTree = "<group>"; };
+		7677E1FB28D8800200FEECB8 /* DataMaterial.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataMaterial.swift; sourceTree = "<group>"; };
+		7677E1FD28D8846C00FEECB8 /* InfoDopMaterialViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoDopMaterialViewController.swift; sourceTree = "<group>"; };
 		76A737A3289A62C8006332E9 /* Services.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Services.swift; sourceTree = "<group>"; };
 		76A737A5289A63FE006332E9 /* DataServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataServices.swift; sourceTree = "<group>"; };
 		76A737A7289A9108006332E9 /* ServiceListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceListTableViewController.swift; sourceTree = "<group>"; };
@@ -178,6 +184,7 @@
 			isa = PBXGroup;
 			children = (
 				7677E1F728D87CFB00FEECB8 /* DopMaterialTableViewController.swift */,
+				7677E1FD28D8846C00FEECB8 /* InfoDopMaterialViewController.swift */,
 			);
 			path = DopMaterialView;
 			sourceTree = "<group>";
@@ -253,6 +260,7 @@
 				7662303B2889391000F1BC6A /* DataManagerSets.swift */,
 				76A737A5289A63FE006332E9 /* DataServices.swift */,
 				7647FE4628C727FA00694D46 /* DataManagerMetallComponent.swift */,
+				7677E1FB28D8800200FEECB8 /* DataMaterial.swift */,
 			);
 			path = Servces;
 			sourceTree = "<group>";
@@ -266,6 +274,7 @@
 				76CF4A0B2891158400024C33 /* Pogonage.swift */,
 				76A737A3289A62C8006332E9 /* Services.swift */,
 				7647FE4428C7276E00694D46 /* MetallDoorComponent.swift */,
+				7677E1F928D87F3E00FEECB8 /* Material.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -412,6 +421,7 @@
 				76CF4A0E2891174200024C33 /* DataManagerPogonage.swift in Sources */,
 				766230492889732700F1BC6A /* SetsProductTableViewCell.swift in Sources */,
 				76A737A6289A63FE006332E9 /* DataServices.swift in Sources */,
+				7677E1FE28D8846C00FEECB8 /* InfoDopMaterialViewController.swift in Sources */,
 				766230442889451000F1BC6A /* CategorySetsTableViewController.swift in Sources */,
 				76A9850A287589DF00102AEB /* DataManagerDoors.swift in Sources */,
 				7647FE4B28C72CED00694D46 /* ComponentTableViewController.swift in Sources */,
@@ -433,12 +443,14 @@
 				7647FE4528C7276E00694D46 /* MetallDoorComponent.swift in Sources */,
 				76A9851D28758A2100102AEB /* ListDoorsTableViewController.swift in Sources */,
 				76A984E7287587D100102AEB /* SceneDelegate.swift in Sources */,
+				7677E1FA28D87F3E00FEECB8 /* Material.swift in Sources */,
 				763BD2A4289A9F5D005C1819 /* ServiceInfoViewController.swift in Sources */,
 				76F147F928BF5BF500864C6E /* SpecialisrRegistrationViewController.swift in Sources */,
 				7647FE4928C7299D00694D46 /* ListMetallComponentsTableViewController.swift in Sources */,
 				7662303E28893E1A00F1BC6A /* SetsTableViewController.swift in Sources */,
 				76A9850B287589DF00102AEB /* StorageManager.swift in Sources */,
 				76A737A8289A9108006332E9 /* ServiceListTableViewController.swift in Sources */,
+				7677E1FC28D8800200FEECB8 /* DataMaterial.swift in Sources */,
 				7677E1F828D87CFB00FEECB8 /* DopMaterialTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

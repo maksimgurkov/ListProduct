@@ -579,6 +579,8 @@ class InfoDoorViewController: UIViewController {
             servicesPriceLustVC.person = persone
         } else if let setPriceListVC = segue.destination as? SetsTableViewController {
             setPriceListVC.person = persone
+        } else if let dopMaterialVC = segue.destination as? DopMaterialTableViewController {
+            dopMaterialVC.person = persone
         }
     }
 
