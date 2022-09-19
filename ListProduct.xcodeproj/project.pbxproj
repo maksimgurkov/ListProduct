@@ -26,6 +26,7 @@
 		766230492889732700F1BC6A /* SetsProductTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 766230482889732700F1BC6A /* SetsProductTableViewCell.swift */; };
 		7662304B288977CA00F1BC6A /* InfoProductSetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7662304A288977CA00F1BC6A /* InfoProductSetViewController.swift */; };
 		7671CD262885463A0073B7B5 /* PhotoCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7671CD252885463A0073B7B5 /* PhotoCollectionViewController.swift */; };
+		7677E1F828D87CFB00FEECB8 /* DopMaterialTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7677E1F728D87CFB00FEECB8 /* DopMaterialTableViewController.swift */; };
 		76A737A4289A62C8006332E9 /* Services.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76A737A3289A62C8006332E9 /* Services.swift */; };
 		76A737A6289A63FE006332E9 /* DataServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76A737A5289A63FE006332E9 /* DataServices.swift */; };
 		76A737A8289A9108006332E9 /* ServiceListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76A737A7289A9108006332E9 /* ServiceListTableViewController.swift */; };
@@ -80,6 +81,7 @@
 		766230482889732700F1BC6A /* SetsProductTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetsProductTableViewCell.swift; sourceTree = "<group>"; };
 		7662304A288977CA00F1BC6A /* InfoProductSetViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoProductSetViewController.swift; sourceTree = "<group>"; };
 		7671CD252885463A0073B7B5 /* PhotoCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoCollectionViewController.swift; sourceTree = "<group>"; };
+		7677E1F728D87CFB00FEECB8 /* DopMaterialTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DopMaterialTableViewController.swift; sourceTree = "<group>"; };
 		76A737A3289A62C8006332E9 /* Services.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Services.swift; sourceTree = "<group>"; };
 		76A737A5289A63FE006332E9 /* DataServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataServices.swift; sourceTree = "<group>"; };
 		76A737A7289A9108006332E9 /* ServiceListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceListTableViewController.swift; sourceTree = "<group>"; };
@@ -172,6 +174,14 @@
 			path = CellSets;
 			sourceTree = "<group>";
 		};
+		7677E1F628D87CD400FEECB8 /* DopMaterialView */ = {
+			isa = PBXGroup;
+			children = (
+				7677E1F728D87CFB00FEECB8 /* DopMaterialTableViewController.swift */,
+			);
+			path = DopMaterialView;
+			sourceTree = "<group>";
+		};
 		76A984D8287587D100102AEB = {
 			isa = PBXGroup;
 			children = (
@@ -191,6 +201,7 @@
 		76A984E3287587D100102AEB /* ListProduct */ = {
 			isa = PBXGroup;
 			children = (
+				7677E1F628D87CD400FEECB8 /* DopMaterialView */,
 				76CA182628CB4FFA00BAA6B9 /* Katalog */,
 				765629D928C60864005976B5 /* CellDoorsMetall */,
 				765629D428C5F845005976B5 /* ViewDoorsMetall */,
@@ -428,6 +439,7 @@
 				7662303E28893E1A00F1BC6A /* SetsTableViewController.swift in Sources */,
 				76A9850B287589DF00102AEB /* StorageManager.swift in Sources */,
 				76A737A8289A9108006332E9 /* ServiceListTableViewController.swift in Sources */,
+				7677E1F828D87CFB00FEECB8 /* DopMaterialTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

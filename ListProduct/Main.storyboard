@@ -2191,7 +2191,7 @@
                                                 </subviews>
                                             </stackView>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Выбор полотен." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JSa-3P-fqD">
-                                                <rect key="frame" x="282" y="20" width="466" height="23"/>
+                                                <rect key="frame" x="282" y="20" width="140.5" height="23"/>
                                                 <fontDescription key="fontDescription" style="UICTFontTextStyleTitle2"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
@@ -2368,6 +2368,9 @@
                                                         <buttonConfiguration key="configuration" style="plain" title="Доп Материал">
                                                             <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         </buttonConfiguration>
+                                                        <connections>
+                                                            <segue destination="AJM-QH-oZt" kind="show" id="gp1-g4-bKW"/>
+                                                        </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LVj-u4-FvN">
                                                         <rect key="frame" x="528" y="0.0" width="200" height="31"/>
@@ -2385,6 +2388,14 @@
                                                     </button>
                                                 </subviews>
                                             </stackView>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PYe-gf-tj9">
+                                                <rect key="frame" x="632" y="16" width="116" height="31"/>
+                                                <color key="backgroundColor" systemColor="systemBlueColor"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" title="Выбрать цвет">
+                                                    <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </buttonConfiguration>
+                                            </button>
                                         </subviews>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                         <constraints>
@@ -2399,6 +2410,7 @@
                                             <constraint firstItem="S3c-ZT-G7i" firstAttribute="leading" secondItem="Kf4-q8-5w5" secondAttribute="leading" constant="20" id="BEv-8d-7sx"/>
                                             <constraint firstItem="TtZ-5K-uB5" firstAttribute="top" secondItem="pmb-Ja-c3e" secondAttribute="bottom" constant="20" id="BPR-us-NvX"/>
                                             <constraint firstItem="NbL-aw-0QE" firstAttribute="leading" secondItem="Kf4-q8-5w5" secondAttribute="leading" constant="20" id="Bfw-7B-ZRv"/>
+                                            <constraint firstAttribute="trailing" secondItem="PYe-gf-tj9" secondAttribute="trailing" constant="20" id="CkF-cq-dl6"/>
                                             <constraint firstAttribute="bottom" secondItem="NbL-aw-0QE" secondAttribute="bottom" constant="68" id="DWh-Rs-ijw"/>
                                             <constraint firstItem="Dgn-cK-TYN" firstAttribute="top" secondItem="dcw-9u-LYL" secondAttribute="bottom" constant="20" id="EUs-g1-DVq"/>
                                             <constraint firstItem="YkE-r6-TAL" firstAttribute="top" secondItem="Dgn-cK-TYN" secondAttribute="bottom" constant="20" id="FlD-Mx-NVB"/>
@@ -2418,7 +2430,7 @@
                                             <constraint firstItem="S3c-ZT-G7i" firstAttribute="top" secondItem="b33-ku-tGt" secondAttribute="bottom" constant="20" id="b9p-Ke-HE0"/>
                                             <constraint firstItem="MOc-Tw-gZ9" firstAttribute="top" secondItem="RAv-yf-jNQ" secondAttribute="bottom" constant="11" id="bDC-1m-mn6"/>
                                             <constraint firstItem="MOc-Tw-gZ9" firstAttribute="leading" secondItem="dcw-9u-LYL" secondAttribute="trailing" constant="20" id="fMu-dX-s8m"/>
-                                            <constraint firstAttribute="trailing" secondItem="JSa-3P-fqD" secondAttribute="trailing" constant="20" id="hDE-V4-n5d"/>
+                                            <constraint firstItem="PYe-gf-tj9" firstAttribute="top" secondItem="Kf4-q8-5w5" secondAttribute="top" constant="16" id="iH7-fk-EHZ"/>
                                             <constraint firstAttribute="trailing" secondItem="NbL-aw-0QE" secondAttribute="trailing" constant="20" id="k36-oi-TtU"/>
                                             <constraint firstAttribute="trailing" secondItem="OnB-uZ-eXa" secondAttribute="trailing" constant="20" id="lZm-P2-cFL"/>
                                             <constraint firstAttribute="trailing" secondItem="Dgn-cK-TYN" secondAttribute="trailing" constant="20" id="lvD-sy-rtV"/>
@@ -2499,6 +2511,7 @@
                         <outlet property="korobCountLabel" destination="7tq-sk-065" id="rpL-sz-stU"/>
                         <outlet property="lathButton" destination="M8n-iJ-0LF" id="QPW-f2-fWW"/>
                         <outlet property="lathCountLabel" destination="Cbq-m7-G0I" id="dQg-uA-Iwc"/>
+                        <outlet property="materialButton" destination="30U-mc-vOg" id="ayF-Kv-Rhu"/>
                         <outlet property="nameNonStandartPogonageTextField" destination="717-88-YQ0" id="uWn-8m-9aM"/>
                         <outlet property="nonStandartCountDoorsLabel" destination="sw5-et-XCt" id="fIL-VM-Ac0"/>
                         <outlet property="nonStandartCountPogonageLabel" destination="PB7-9L-cbc" id="t51-c9-caS"/>
@@ -2532,6 +2545,35 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="UxU-wq-LDu" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="3627" y="66"/>
+        </scene>
+        <!--Dop Material Table View Controller-->
+        <scene sceneID="26p-wp-j2I">
+            <objects>
+                <tableViewController id="AJM-QH-oZt" customClass="DopMaterialTableViewController" customModule="ListProduct" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="vLQ-xa-p58">
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="material" id="gxY-dx-115">
+                                <rect key="frame" x="0.0" y="44.5" width="768" height="43.5"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="gxY-dx-115" id="dyK-RF-m1K">
+                                    <rect key="frame" x="0.0" y="0.0" width="768" height="43.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="AJM-QH-oZt" id="5AU-Rh-IQV"/>
+                            <outlet property="delegate" destination="AJM-QH-oZt" id="rqs-pC-bF6"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" id="7sE-9f-Zw4"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="seG-vu-Ies" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4287" y="-30"/>
         </scene>
         <!--Sets Table View Controller-->
         <scene sceneID="4aL-de-ogR">
@@ -3525,6 +3567,9 @@
         <image name="slider.vertical.3" catalog="system" width="128" height="111"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBlueColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemGray2Color">
             <color red="0.68235294117647061" green="0.68235294117647061" blue="0.69803921568627447" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

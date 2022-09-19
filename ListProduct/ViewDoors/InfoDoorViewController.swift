@@ -97,6 +97,7 @@ class InfoDoorViewController: UIViewController {
     @IBOutlet weak var priceLathLabel: UILabel!
     
     @IBOutlet weak var setsButton: UIButton!
+    @IBOutlet weak var materialButton: UIButton!
     @IBOutlet weak var servicesButton: UIButton!
     
     //MARK: - Foam Label
@@ -159,6 +160,7 @@ class InfoDoorViewController: UIViewController {
         nonStandartPogonageButton.layer.cornerRadius = 8
         
         setsButton.layer.cornerRadius = 8
+        materialButton.layer.cornerRadius = 8
         servicesButton.layer.cornerRadius = 8
         
         doorImage.image = UIImage(named: doorPerson.nameDoor)
