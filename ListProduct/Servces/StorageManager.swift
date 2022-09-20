@@ -53,6 +53,20 @@ class StorageManager {
         }
     }
     
+    func renameNewMaterial(_ material: NewMaterialPerson, modelMaterial: DopMaterial, newValue: Int) {
+        write {
+            material.countMaterial += newValue
+            material.price += modelMaterial.price
+        }
+    }
+    
+    func renameDeleteDopMaterial(_ material: NewMaterialPerson, modelMaterial: DopMaterial, newValue: Int) {
+        write {
+            material.countMaterial -= newValue
+            material.price -= modelMaterial.price
+        }
+    }
+    
     func renameDoor(_ door: NewMaterialPerson, doors: Door, newValue: Int) {
         write {
             door.countMaterial += newValue
@@ -60,12 +74,7 @@ class StorageManager {
         }
     }
     
-    func renameNewMaterial(_ material: NewMaterialPerson, modelMaterial: DopMaterial, newValue: Int) {
-        write {
-            material.countMaterial += newValue
-            material.price += modelMaterial.price
-        }
-    }
+    
     
     func renameDoorDelete(_ door: NewMaterialPerson, doors: Door, newValue: Int) {
         write {

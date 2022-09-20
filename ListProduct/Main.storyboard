@@ -2599,29 +2599,75 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ydB-4K-w7e">
-                                <rect key="frame" x="84" y="843" width="600" height="31"/>
-                                <color key="backgroundColor" systemColor="systemOrangeColor"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="Добавить к заказу">
-                                    <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                </buttonConfiguration>
-                                <connections>
-                                    <action selector="activeAppendMaterialButton" destination="Fsf-57-cdL" eventType="touchUpInside" id="1xw-35-Nqg"/>
-                                </connections>
-                            </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="42" translatesAutoresizingMaskIntoConstraints="NO" id="aOV-5g-P5n">
+                                <rect key="frame" x="20" y="622.5" width="728" height="31"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="249" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ydB-4K-w7e">
+                                        <rect key="frame" x="0.0" y="0.0" width="240.5" height="31"/>
+                                        <color key="backgroundColor" systemColor="systemOrangeColor"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Добавить к заказу">
+                                            <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="activeAppendMaterialButton" destination="Fsf-57-cdL" eventType="touchUpInside" id="1xw-35-Nqg"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QgI-wJ-cP7">
+                                        <rect key="frame" x="282.5" y="0.0" width="79" height="31"/>
+                                        <color key="backgroundColor" systemColor="systemRedColor"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Удалить">
+                                            <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="activeDeleteDopMaterialPersonButton" destination="Fsf-57-cdL" eventType="touchUpInside" id="gzr-A4-xWK"/>
+                                        </connections>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Iju-4j-ZU7">
+                                        <rect key="frame" x="403.5" y="0.0" width="40" height="31"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="40" id="c39-aV-nII"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="шт." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NAw-de-cy4">
+                                        <rect key="frame" x="485.5" y="0.0" width="25.5" height="31"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="b92-n8-Rd6">
+                                        <rect key="frame" x="553" y="0.0" width="100" height="31"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="100" id="Duq-mG-ITA"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="руб." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xTB-3k-D3z">
+                                        <rect key="frame" x="695" y="0.0" width="33" height="31"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="4hY-00-91g"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="4hY-00-91g" firstAttribute="trailing" secondItem="2gN-4o-kut" secondAttribute="trailing" constant="84" id="4tb-7m-rZq"/>
-                            <constraint firstItem="ydB-4K-w7e" firstAttribute="leading" secondItem="4hY-00-91g" secondAttribute="leading" constant="84" id="5ev-Pu-AgC"/>
+                            <constraint firstItem="4hY-00-91g" firstAttribute="trailing" secondItem="aOV-5g-P5n" secondAttribute="trailing" constant="20" id="7Xt-mT-dkR"/>
+                            <constraint firstItem="aOV-5g-P5n" firstAttribute="top" secondItem="vIw-s3-sjE" secondAttribute="bottom" constant="30" id="7ml-rY-fHX"/>
                             <constraint firstItem="2gN-4o-kut" firstAttribute="top" secondItem="4hY-00-91g" secondAttribute="top" constant="20" id="8MC-ZN-WpC"/>
+                            <constraint firstItem="aOV-5g-P5n" firstAttribute="leading" secondItem="4hY-00-91g" secondAttribute="leading" constant="20" id="UqA-zF-muj"/>
                             <constraint firstItem="vIw-s3-sjE" firstAttribute="top" secondItem="2gN-4o-kut" secondAttribute="bottom" constant="30" id="YMa-cL-TdD"/>
                             <constraint firstItem="2gN-4o-kut" firstAttribute="leading" secondItem="4hY-00-91g" secondAttribute="leading" constant="84" id="ilg-B1-Xbo"/>
-                            <constraint firstItem="4hY-00-91g" firstAttribute="trailing" secondItem="ydB-4K-w7e" secondAttribute="trailing" constant="84" id="jVM-BP-Gyf"/>
                             <constraint firstItem="vIw-s3-sjE" firstAttribute="leading" secondItem="4hY-00-91g" secondAttribute="leading" constant="20" id="kd5-Ve-dS0"/>
-                            <constraint firstItem="4hY-00-91g" firstAttribute="bottom" secondItem="ydB-4K-w7e" secondAttribute="bottom" constant="100" id="qBh-tp-mUh"/>
                             <constraint firstItem="4hY-00-91g" firstAttribute="trailing" secondItem="vIw-s3-sjE" secondAttribute="trailing" constant="20" id="s3u-Iu-8oO"/>
                         </constraints>
                     </view>
@@ -2629,7 +2675,10 @@
                     <connections>
                         <outlet property="InfoMaterialLabel" destination="vIw-s3-sjE" id="uYF-Xl-CZQ"/>
                         <outlet property="appendMaterialButton" destination="ydB-4K-w7e" id="mpN-zI-eXx"/>
+                        <outlet property="countDopMaterialLabel" destination="Iju-4j-ZU7" id="J6l-Dq-Zuj"/>
+                        <outlet property="deleteDopMaterialButton" destination="QgI-wJ-cP7" id="Z0Z-ax-85e"/>
                         <outlet property="imageDopMaterialImage" destination="2gN-4o-kut" id="0fa-OS-Nir"/>
+                        <outlet property="priceDopMaterialLabel" destination="b92-n8-Rd6" id="GNj-DQ-QCD"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="QDW-Lw-dYp" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
