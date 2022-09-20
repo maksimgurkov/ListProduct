@@ -76,7 +76,7 @@ class DopMaterialTableViewController: UITableViewController {
         guard let index = tableView.indexPathForSelectedRow else { return }
         guard let infoMaterialVC = segue.destination as? InfoDopMaterialViewController else { return }
         infoMaterialVC.person = person
-        infoMaterialVC.material = materials[index.row]
+        infoMaterialVC.materialPerson = materials[index.row]
     }
     
 

@@ -47,51 +47,58 @@ class StorageManager {
     }
     
     
-    func saveProduct(_ persone: Person, door: Doors) {
+    func saveNewMaterial(_ persone: Person, material: NewMaterialPerson) {
         write {
-            persone.basketDoorTree.append(door)
+            persone.basketDoorTree.append(material)
         }
     }
     
-    func renameDoor(_ door: Doors, doors: Door, newValue: Int) {
+    func renameDoor(_ door: NewMaterialPerson, doors: Door, newValue: Int) {
         write {
-            door.countDoors += newValue
+            door.countMaterial += newValue
             door.price += doors.price * 3
         }
     }
     
-    func renameDoorDelete(_ door: Doors, doors: Door, newValue: Int) {
+    func renameNewMaterial(_ material: NewMaterialPerson, modelMaterial: DopMaterial, newValue: Int) {
         write {
-            door.countDoors -= newValue
+            material.countMaterial += newValue
+            material.price += modelMaterial.price
+        }
+    }
+    
+    func renameDoorDelete(_ door: NewMaterialPerson, doors: Door, newValue: Int) {
+        write {
+            door.countMaterial -= newValue
             door.price -= doors.price * 3
         }
     }
     
-    func renameSetAppand(_ door: Doors, doors: Sets, newValue: Int) {
+    func renameSetAppand(_ door: NewMaterialPerson, doors: Sets, newValue: Int) {
         write {
-            door.countDoors += newValue
+            door.countMaterial += newValue
             door.price += doors.priceSet * 3
         }
     }
     
-    func renameSetDelete(_ door: Doors, doors: Sets, newValue: Int) {
+    func renameSetDelete(_ door: NewMaterialPerson, doors: Sets, newValue: Int) {
         write {
-            door.countDoors -= newValue
+            door.countMaterial -= newValue
             door.price -= doors.priceSet * 3
         }
     }
     
-    func renamePogonage(_ pogonage: Doors, pogonages: Int, newValue: Int ) {
+    func renamePogonage(_ pogonage: NewMaterialPerson, pogonages: Int, newValue: Int ) {
         write {
-            pogonage.countDoors += newValue
+            pogonage.countMaterial += newValue
             pogonage.price += pogonages * 3
             
         }
     }
     
-    func renamePogonageDelete(_ pogonage: Doors, pogonages: Int, newValue: Int ) {
+    func renamePogonageDelete(_ pogonage: NewMaterialPerson, pogonages: Int, newValue: Int ) {
         write {
-            pogonage.countDoors -= newValue
+            pogonage.countMaterial -= newValue
             pogonage.price -= pogonages * 3
             
         }
@@ -124,7 +131,7 @@ class StorageManager {
         }
     }
     
-    func delete(_ door: Doors) {
+    func delete(_ door: NewMaterialPerson) {
         write {
             realm.delete(door)
         }

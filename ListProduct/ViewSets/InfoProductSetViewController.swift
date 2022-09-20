@@ -42,33 +42,33 @@ class InfoProductSetViewController: UIViewController {
     
     
     private func saveSetPerson() {
-        let newSet = Doors()
+        let newSet = NewMaterialPerson()
         newSet.factory = infoProduct.factory.rawValue
         newSet.material = infoProduct.category.rawValue
-        newSet.namePogonage = infoProduct.name
+        newSet.dopNameMaterial = infoProduct.name
         newSet.descriptionDoor = infoProduct.description
         newSet.price = infoProduct.priceSet * 3
-        newSet.countDoors = 1
+        newSet.countMaterial = 1
         if person.basketDoorTree.isEmpty {
-            StorageManager.shared.saveProduct(person, door: newSet)
-            countSetLabel.text = "\(newSet.countDoors)"
+            StorageManager.shared.saveNewMaterial(person, material: newSet)
+            countSetLabel.text = "\(newSet.countMaterial)"
             priceSetLabel.text = "\(newSet.price)"
             return
         }
         if !person.basketDoorTree.isEmpty {
             for setProduct in person.basketDoorTree {
-                if setProduct.dimensions == newSet.dimensions && setProduct.factory == newSet.factory && setProduct.namePogonage == infoProduct.name {
+                if setProduct.dimensions == newSet.dimensions && setProduct.factory == newSet.factory && setProduct.dopNameMaterial == infoProduct.name {
                     StorageManager.shared.renameSetAppand(setProduct, doors: infoProduct, newValue: 1)
-                    countSetLabel.text = "\(setProduct.countDoors)"
+                    countSetLabel.text = "\(setProduct.countMaterial)"
                     priceSetLabel.text = "\(setProduct.price)"
                     return
                 }
             }
             if !person.basketDoorTree.isEmpty {
                 for setProduct in person.basketDoorTree {
-                    if setProduct.factory == newSet.factory && setProduct.namePogonage != newSet.namePogonage || setProduct.factory != newSet.factory {
-                        StorageManager.shared.saveProduct(person, door: newSet)
-                        countSetLabel.text = "\(newSet.countDoors)"
+                    if setProduct.factory == newSet.factory && setProduct.dopNameMaterial != newSet.dopNameMaterial || setProduct.factory != newSet.factory {
+                        StorageManager.shared.saveNewMaterial(person, material: newSet)
+                        countSetLabel.text = "\(newSet.countMaterial)"
                         priceSetLabel.text = "\(newSet.price)"
                         return
                     }
@@ -80,12 +80,12 @@ class InfoProductSetViewController: UIViewController {
     private func deleteSet() {
         if !person.basketDoorTree.isEmpty {
             for setProduct in person.basketDoorTree {
-                if setProduct.namePogonage == infoProduct.name {
-                    if setProduct.countDoors > 1 {
+                if setProduct.dopNameMaterial == infoProduct.name {
+                    if setProduct.countMaterial > 1 {
                         StorageManager.shared.renameSetDelete(setProduct, doors: infoProduct, newValue: 1)
-                        countSetLabel.text = "\(setProduct.countDoors)"
+                        countSetLabel.text = "\(setProduct.countMaterial)"
                         priceSetLabel.text = "\(setProduct.price)"
-                    } else if setProduct.countDoors == 1 {
+                    } else if setProduct.countMaterial == 1 {
                         StorageManager.shared.delete(setProduct)
                         countSetLabel.text = "\(0)"
                         priceSetLabel.text = "\(0)"
@@ -97,8 +97,8 @@ class InfoProductSetViewController: UIViewController {
     
     private func forCountSet() {
         for setPerson in person.basketDoorTree {
-            if setPerson.namePogonage == infoProduct.name {
-                countSetLabel.text = "\(setPerson.countDoors)"
+            if setPerson.dopNameMaterial == infoProduct.name {
+                countSetLabel.text = "\(setPerson.countMaterial)"
                 priceSetLabel.text = "\(setPerson.price)"
             }
         }

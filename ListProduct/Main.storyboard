@@ -2606,6 +2606,9 @@
                                 <buttonConfiguration key="configuration" style="plain" title="Добавить к заказу">
                                     <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <action selector="activeAppendMaterialButton" destination="Fsf-57-cdL" eventType="touchUpInside" id="1xw-35-Nqg"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="4hY-00-91g"/>

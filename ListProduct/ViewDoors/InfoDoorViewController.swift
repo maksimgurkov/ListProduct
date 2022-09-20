@@ -188,27 +188,27 @@ class InfoDoorViewController: UIViewController {
     }
     
     private func saveDoorPerson(factory: String, material: String, name: String, description: String, price: Int, dimensions: String, count: Int, countDoorInfo: UILabel, priceInfo: UILabel) {
-        let newDoor = Doors()
+        let newDoor = NewMaterialPerson()
         newDoor.factory = factory
         newDoor.material = material
-        newDoor.nameDoor = name
-        newDoor.namePogonage = name
+        newDoor.nameMaterial = name
+        newDoor.dopNameMaterial = name
         newDoor.descriptionDoor = description
         newDoor.price = price * 3
         newDoor.dimensions = dimensions
-        newDoor.countDoors = count
+        newDoor.countMaterial = count
         newDoor.flag = true 
         if persone.basketDoorTree.isEmpty {
-            StorageManager.shared.saveProduct(persone, door: newDoor)
-            countDoorInfo.text = "\(newDoor.countDoors)"
+            StorageManager.shared.saveNewMaterial(persone, material: newDoor)
+            countDoorInfo.text = "\(newDoor.countMaterial)"
             priceInfo.text = "\(newDoor.price)"
             return
         }
         if !persone.basketDoorTree.isEmpty {
             for door in persone.basketDoorTree {
-                if door.dimensions == newDoor.dimensions && door.factory == newDoor.factory && door.nameDoor == doorPerson.nameDoor {
+                if door.dimensions == newDoor.dimensions && door.factory == newDoor.factory && door.nameMaterial == doorPerson.nameDoor {
                     StorageManager.shared.renameDoor(door, doors: doorPerson, newValue: 1)
-                    countDoorInfo.text = "\(door.countDoors)"
+                    countDoorInfo.text = "\(door.countMaterial)"
                     priceInfo.text = "\(door.price)"
                     return
                 }
@@ -216,8 +216,8 @@ class InfoDoorViewController: UIViewController {
             if !persone.basketDoorTree.isEmpty {
                 for door in persone.basketDoorTree {
                     if door.factory == newDoor.factory && door.dimensions != newDoor.dimensions || door.factory != newDoor.factory {
-                        StorageManager.shared.saveProduct(persone, door: newDoor)
-                        countDoorInfo.text = "\(newDoor.countDoors)"
+                        StorageManager.shared.saveNewMaterial(persone, material: newDoor)
+                        countDoorInfo.text = "\(newDoor.countMaterial)"
                         priceInfo.text = "\(newDoor.price)"
                         return
                     }
@@ -227,34 +227,34 @@ class InfoDoorViewController: UIViewController {
     }
     
     private func savePogonagePerson(factory: String, material: String, name: String, price: Int, dimansion: String, count: Int, countInfoPogonage: UILabel, pricePogonage: UILabel) {
-        let pogonage = Doors()
+        let pogonage = NewMaterialPerson()
         pogonage.factory = factory
         pogonage.material = material
-        pogonage.nameDoor = doorPerson.nameDoor
-        pogonage.namePogonage = name
+        pogonage.nameMaterial = doorPerson.nameDoor
+        pogonage.dopNameMaterial = name
         pogonage.price = price * 3
         pogonage.dimensions = dimansion
-        pogonage.countDoors = count
+        pogonage.countMaterial = count
         if persone.basketDoorTree.isEmpty {
-            StorageManager.shared.saveProduct(persone, door: pogonage)
-            countInfoPogonage.text = "\(pogonage.countDoors)"
+            StorageManager.shared.saveNewMaterial(persone, material: pogonage)
+            countInfoPogonage.text = "\(pogonage.countMaterial)"
             pricePogonage.text = "\(pogonage.price)"
             return
         }
         if !persone.basketDoorTree.isEmpty {
             for pogonag in persone.basketDoorTree {
-                if pogonag.namePogonage == pogonage.namePogonage && pogonag.factory == pogonage.factory && pogonag.nameDoor == pogonage.nameDoor && pogonag.dimensions == pogonage.dimensions {
+                if pogonag.dopNameMaterial == pogonage.dopNameMaterial && pogonag.factory == pogonage.factory && pogonag.nameMaterial == pogonage.nameMaterial && pogonag.dimensions == pogonage.dimensions {
                     StorageManager.shared.renamePogonage(pogonag, pogonages: price, newValue: 1)
-                    countInfoPogonage.text = "\(pogonag.countDoors)"
+                    countInfoPogonage.text = "\(pogonag.countMaterial)"
                     pricePogonage.text = "\(pogonag.price)"
                     return
                 }
             }
             if !persone.basketDoorTree.isEmpty {
                 for pogonag in persone.basketDoorTree {
-                    if pogonag.namePogonage != pogonage.namePogonage {
-                        StorageManager.shared.saveProduct(persone, door: pogonage)
-                        countInfoPogonage.text = "\(pogonage.countDoors)"
+                    if pogonag.dopNameMaterial != pogonage.dopNameMaterial {
+                        StorageManager.shared.saveNewMaterial(persone, material: pogonage)
+                        countInfoPogonage.text = "\(pogonage.countMaterial)"
                         pricePogonage.text = "\(pogonage.price)"
                         return
                     }
@@ -266,12 +266,12 @@ class InfoDoorViewController: UIViewController {
     private func deleteDoor(dimention: String, countLabel: UILabel, priceLabel: UILabel) {
         if !persone.basketDoorTree.isEmpty {
             for door in persone.basketDoorTree {
-                if door.nameDoor == doorPerson.nameDoor && door.dimensions == dimention {
-                    if door.countDoors > 1 {
+                if door.nameMaterial == doorPerson.nameDoor && door.dimensions == dimention {
+                    if door.countMaterial > 1 {
                         StorageManager.shared.renameDoorDelete(door, doors: doorPerson, newValue: 1)
-                        countLabel.text = "\(door.countDoors)"
+                        countLabel.text = "\(door.countMaterial)"
                         priceLabel.text = "\(door.price)"
-                    } else if door.countDoors == 1 {
+                    } else if door.countMaterial == 1 {
                         StorageManager.shared.delete(door)
                         countLabel.text = "0"
                         priceLabel.text = "0"
@@ -284,12 +284,12 @@ class InfoDoorViewController: UIViewController {
     private func deletePogonage(name: String, countLabel: UILabel, priceLabel: UILabel, price: Int) {
         if !persone.basketDoorTree.isEmpty {
             for pogonage in persone.basketDoorTree {
-                if pogonage.nameDoor == doorPerson.nameDoor && pogonage.namePogonage == name {
-                    if pogonage.countDoors > 1 {
+                if pogonage.nameMaterial == doorPerson.nameDoor && pogonage.dopNameMaterial == name {
+                    if pogonage.countMaterial > 1 {
                         StorageManager.shared.renamePogonageDelete(pogonage, pogonages: price, newValue: 1)
-                        countLabel.text = "\(pogonage.countDoors)"
+                        countLabel.text = "\(pogonage.countMaterial)"
                         priceLabel.text = "\(pogonage.price)"
-                    } else if pogonage.countDoors == 1 {
+                    } else if pogonage.countMaterial == 1 {
                         StorageManager.shared.delete(pogonage)
                         countLabel.text = "0"
                         priceLabel.text = "0"
@@ -330,44 +330,44 @@ class InfoDoorViewController: UIViewController {
     private func doorCountInfoAndPrice() {
         for door in persone.basketDoorTree {
             if door.factory == doorPerson.factory.rawValue {
-                if door.dimensions == "550*1900" && door.nameDoor == doorPerson.nameDoor {
-                    countDoor550Label.text = "\(door.countDoors)"
+                if door.dimensions == "550*1900" && door.nameMaterial == doorPerson.nameDoor {
+                    countDoor550Label.text = "\(door.countMaterial)"
                     priceDoor550Label.text = "\(door.price)"
-                } else if door.dimensions == "600*1900" && door.nameDoor == doorPerson.nameDoor {
-                    countDoor6001900Label.text = "\(door.countDoors)"
+                } else if door.dimensions == "600*1900" && door.nameMaterial == doorPerson.nameDoor {
+                    countDoor6001900Label.text = "\(door.countMaterial)"
                     priceDoor6001900Label.text = "\(door.price)"
-                } else if door.dimensions == "600*2000" && door.nameDoor == doorPerson.nameDoor {
-                    countDoor600Label.text = "\(door.countDoors)"
+                } else if door.dimensions == "600*2000" && door.nameMaterial == doorPerson.nameDoor {
+                    countDoor600Label.text = "\(door.countMaterial)"
                     priceDoor600Label.text = "\(door.price)"
-                } else if door.dimensions == "700*2000" && door.nameDoor == doorPerson.nameDoor {
-                    countDoor700Label.text = "\(door.countDoors)"
+                } else if door.dimensions == "700*2000" && door.nameMaterial == doorPerson.nameDoor {
+                    countDoor700Label.text = "\(door.countMaterial)"
                     priceDoor700Label.text = "\(door.price)"
-                } else if door.dimensions == "800*2000" && door.nameDoor == doorPerson.nameDoor {
-                    countDoor800Label.text = "\(door.countDoors)"
+                } else if door.dimensions == "800*2000" && door.nameMaterial == doorPerson.nameDoor {
+                    countDoor800Label.text = "\(door.countMaterial)"
                     priceDoor800Label.text = "\(door.price)"
-                } else if door.dimensions == "900*2000" && door.nameDoor == doorPerson.nameDoor {
-                    countDoor900Label.text = "\(door.countDoors)"
+                } else if door.dimensions == "900*2000" && door.nameMaterial == doorPerson.nameDoor {
+                    countDoor900Label.text = "\(door.countMaterial)"
                     priceDoor900Label.text = "\(door.price)"
-                } else if door.namePogonage == "Короб" && door.nameDoor == doorPerson.nameDoor {
-                    korobCountLabel.text = "\(door.countDoors)"
+                } else if door.dopNameMaterial == "Короб" && door.nameMaterial == doorPerson.nameDoor {
+                    korobCountLabel.text = "\(door.countMaterial)"
                     priceKorobLabel.text = "\(door.price)"
-                } else if door.namePogonage == "Наличник" && door.nameDoor == doorPerson.nameDoor {
-                    casingCountLabel.text = "\(door.countDoors)"
+                } else if door.dopNameMaterial == "Наличник" && door.nameMaterial == doorPerson.nameDoor {
+                    casingCountLabel.text = "\(door.countMaterial)"
                     priceCasingLabel.text = "\(door.price)"
-                } else if door.namePogonage == "Добор 100" && door.nameDoor == doorPerson.nameDoor {
-                    dobor100CountLabel.text = "\(door.countDoors)"
+                } else if door.dopNameMaterial == "Добор 100" && door.nameMaterial == doorPerson.nameDoor {
+                    dobor100CountLabel.text = "\(door.countMaterial)"
                     priceDobor100Label.text = "\(door.price)"
-                } else if door.namePogonage == "Добор 150" && door.nameDoor == doorPerson.nameDoor {
-                    dobor150CountLabel.text = "\(door.countDoors)"
+                } else if door.dopNameMaterial == "Добор 150" && door.nameMaterial == doorPerson.nameDoor {
+                    dobor150CountLabel.text = "\(door.countMaterial)"
                     priceDobor150Label.text = "\(door.price)"
-                } else if door.namePogonage == "Добор 200" && door.nameDoor == doorPerson.nameDoor {
-                    dobor200CountLabel.text = "\(door.countDoors)"
+                } else if door.dopNameMaterial == "Добор 200" && door.nameMaterial == doorPerson.nameDoor {
+                    dobor200CountLabel.text = "\(door.countMaterial)"
                     priceDobor200Label.text = "\(door.price)"
-                } else if door.namePogonage == "Притвор" && door.nameDoor == doorPerson.nameDoor {
-                    lathCountLabel.text = "\(door.countDoors)"
+                } else if door.dopNameMaterial == "Притвор" && door.nameMaterial == doorPerson.nameDoor {
+                    lathCountLabel.text = "\(door.countMaterial)"
                     priceLathLabel.text = "\(door.price)"
-                } else if door.namePogonage == "Пена" && door.nameDoor == doorPerson.nameDoor {
-                    countFoamLabel.text = "\(door.countDoors)"
+                } else if door.dopNameMaterial == "Пена" && door.nameMaterial == doorPerson.nameDoor {
+                    countFoamLabel.text = "\(door.countMaterial)"
                     priceFoamLabel.text = "\(door.price)"
                 }
             }
