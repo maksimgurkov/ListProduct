@@ -1261,8 +1261,8 @@
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6QM-Dl-2YZ">
-                                            <rect key="frame" x="20" y="17" width="728" height="128"/>
-                                            <color key="backgroundColor" red="0.98823523520000001" green="0.92549026010000002" blue="0.63921570780000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                            <rect key="frame" x="20" y="21" width="728" height="120"/>
+                                            <color key="backgroundColor" red="0.96470588450000005" green="0.76862752440000004" blue="0.66666668650000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         </view>
                                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="C68-8G-qtg">
                                             <rect key="frame" x="30" y="11" width="70" height="140"/>
@@ -1282,14 +1282,14 @@
                                         <constraint firstItem="6QM-Dl-2YZ" firstAttribute="leading" secondItem="hw2-bf-Ygr" secondAttribute="leadingMargin" id="19O-2U-dU5"/>
                                         <constraint firstItem="9kC-r7-g7G" firstAttribute="leading" secondItem="C68-8G-qtg" secondAttribute="trailing" constant="40" id="60s-qA-7fn"/>
                                         <constraint firstItem="C68-8G-qtg" firstAttribute="bottom" secondItem="hw2-bf-Ygr" secondAttribute="bottomMargin" id="A6Y-gT-Dq0"/>
-                                        <constraint firstAttribute="bottomMargin" secondItem="6QM-Dl-2YZ" secondAttribute="bottom" constant="6" id="BkW-VV-vkC"/>
+                                        <constraint firstAttribute="bottomMargin" secondItem="6QM-Dl-2YZ" secondAttribute="bottom" constant="10" id="BkW-VV-vkC"/>
                                         <constraint firstItem="C68-8G-qtg" firstAttribute="top" secondItem="hw2-bf-Ygr" secondAttribute="topMargin" id="KBN-2T-t90"/>
                                         <constraint firstAttribute="trailingMargin" secondItem="9kC-r7-g7G" secondAttribute="trailing" constant="20" id="Sfv-fx-Jhv"/>
                                         <constraint firstAttribute="bottomMargin" secondItem="9kC-r7-g7G" secondAttribute="bottom" constant="52" id="TT6-pL-qCD"/>
                                         <constraint firstItem="9kC-r7-g7G" firstAttribute="top" secondItem="hw2-bf-Ygr" secondAttribute="topMargin" constant="51" id="U3o-6F-vpo"/>
                                         <constraint firstItem="6QM-Dl-2YZ" firstAttribute="trailing" secondItem="hw2-bf-Ygr" secondAttribute="trailingMargin" id="aBB-6W-CT4"/>
                                         <constraint firstItem="C68-8G-qtg" firstAttribute="leading" secondItem="hw2-bf-Ygr" secondAttribute="leadingMargin" constant="10" id="by3-ZV-s9P"/>
-                                        <constraint firstItem="6QM-Dl-2YZ" firstAttribute="top" secondItem="hw2-bf-Ygr" secondAttribute="topMargin" constant="6" id="oBS-KO-sNF"/>
+                                        <constraint firstItem="6QM-Dl-2YZ" firstAttribute="top" secondItem="hw2-bf-Ygr" secondAttribute="topMargin" constant="10" id="oBS-KO-sNF"/>
                                     </constraints>
                                 </tableViewCellContentView>
                                 <connections>

@@ -44,4 +44,6 @@ enum Material: String {
     case shpone = "Шпон"
     case ecoShpone = "ЭкоШпон"
     case emale = "Эмаль"
+    case laminat = "Ламинат"
+    case pvh = "ПВХ"
 }
